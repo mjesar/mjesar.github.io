@@ -1,0 +1,25 @@
+# Mohammad Ali Jesar (mjesar)
+
+> Senior Ruby on Rails engineer in Lahore, Pakistan with 7+ years of experience. Shopify and e-commerce apps, integrations, MCP servers, RAG with pgvector and AI agents. Open to remote roles and freelance work. Uses the handle mjesar on GitHub, LinkedIn, Fiverr and Instagram.
+
+## Profiles
+
+- [Website](https://mjesar.github.io/)
+- [GitHub](https://github.com/mjesar)
+- [LinkedIn](https://www.linkedin.com/in/mjesar/)
+- [Fiverr](https://www.fiverr.com/mjesar)
+- [Instagram](https://www.instagram.com/mjesar)
+- Email: mohammadalijaisar@gmail.com
+
+## Experience
+
+- MGLogics (Dec 2021 to Jun 2026, remote): full-stack Ruby on Rails and React engineer on Shopify and BigCommerce apps, catalog and order sync, and Amazon SP-API integrations.
+- SimpleDeploy (Apr 2019 to Dec 2021): backend engineer building Rails REST APIs.
+- Education: B.S. in Information Technology (Software), Sindh Agricultural University, 2012 to 2017.
+
+## Projects
+
+- [shop_mcp_server](https://github.com/mjesar/shop_mcp_server): MCP server in Rails exposing a store's products, orders and inventory to Claude, with pgvector semantic search.
+- [ai_shop_assistant](https://github.com/mjesar/ai_shop_assistant): shopping assistant using RubyLLM, Gemini and Shopify's Catalog API over MCP.
+- [product_geo_agent](https://github.com/mjesar/product_geo_agent): agent that scores how discoverable a Shopify product is to AI assistants (GEO and AEO).
+- [support_engineer](https://github.com/mjesar/support_engineer): Rails 8 AI support agent with human approval before actions.
