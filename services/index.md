@@ -3,26 +3,38 @@ title: Services
 description: Hire Mohammad Ali Jesar (mjesar), a senior Ruby on Rails engineer, for AI integration in Rails (MCP servers, RAG, agents), Shopify and BigCommerce apps, Shopify Functions and e-commerce integrations. Remote, full-time or freelance.
 jsonld:
   "@context": https://schema.org
-  "@type": ProfessionalService
-  name: Mohammad Ali Jesar, Ruby on Rails engineering
+  "@type": Service
+  name: Ruby on Rails, Shopify and AI engineering by Mohammad Ali Jesar
+  serviceType: Software engineering (Ruby on Rails, Shopify, AI integration)
   url: https://mjesar.github.io/services/
-  areaServed: Worldwide (remote)
   provider:
     "@id": https://mjesar.github.io/#person
+  availableChannel:
+    "@type": ServiceChannel
+    serviceUrl: https://mjesar.github.io/services/
+    availableLanguage: English
+  areaServed:
+    - { "@type": Country, name: "United States" }
+    - { "@type": Country, name: "United Kingdom" }
+    - { "@type": Country, name: "Canada" }
+    - { "@type": Country, name: "Australia" }
+    - { "@type": Place, name: "European Union" }
+    - { "@type": Country, name: "Pakistan" }
+    - { "@type": Place, name: "Worldwide (remote)" }
   hasOfferCatalog:
     "@type": OfferCatalog
     name: Services
     itemListElement:
       - "@type": Offer
-        itemOffered: { "@type": Service, name: AI integration for Ruby on Rails apps (MCP servers, RAG, AI agents) }
+        itemOffered: { "@type": Service, name: "AI integration for Ruby on Rails apps (MCP servers, RAG, AI agents)" }
       - "@type": Offer
-        itemOffered: { "@type": Service, name: Shopify and BigCommerce app development }
+        itemOffered: { "@type": Service, name: "Shopify and BigCommerce app development" }
       - "@type": Offer
-        itemOffered: { "@type": Service, name: Shopify Scripts to Functions migration and checkout customization }
+        itemOffered: { "@type": Service, name: "Shopify Scripts to Functions migration and checkout customization" }
       - "@type": Offer
-        itemOffered: { "@type": Service, name: E-commerce integrations and product, inventory and order sync }
+        itemOffered: { "@type": Service, name: "E-commerce integrations and product, inventory and order sync" }
       - "@type": Offer
-        itemOffered: { "@type": Service, name: Ruby on Rails backend and performance work }
+        itemOffered: { "@type": Service, name: "Ruby on Rails backend and performance work" }
 ---
 <div class="hero small">
   <div class="wrap">
