@@ -1,0 +1,27 @@
+---
+title: Writing
+description: Articles and posts by Mohammad Ali Jesar on Ruby on Rails, AI agents, MCP, RAG, Shopify and AI discoverability (GEO and AEO).
+---
+<div class="hero small">
+  <div class="wrap">
+    <div class="bar" aria-hidden="true"></div>
+    <h1>Writing</h1>
+    <p class="lede">Notes on building AI agents, MCP servers and Shopify apps with Ruby on Rails. Many of these first appeared on LinkedIn.</p>
+  </div>
+</div>
+
+<main class="wrap">
+<section>
+{%- if site.posts.size > 0 %}
+  {%- for post in site.posts %}
+  <article class="card">
+    <p class="muted"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%-d %B %Y" }}</time></p>
+    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+    {%- if post.description %}<p>{{ post.description }}</p>{% endif %}
+  </article>
+  {%- endfor %}
+{%- else %}
+  <p>Posts are on their way. Until then, you can read my posts on <a href="https://www.linkedin.com/in/mjesar/recent-activity/all/" rel="noopener" target="_blank">LinkedIn</a> and the write-ups on each <a href="/projects/">project page</a>.</p>
+{%- endif %}
+</section>
+</main>

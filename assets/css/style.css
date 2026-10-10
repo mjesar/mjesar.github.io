@@ -1,0 +1,141 @@
+/* Palette: Sanzo Wada, A Dictionary of Color Combinations, no. 211
+   Deep Indigo #051230 · Apricot Orange #f68c50 · Olive Yellow #a6a159 */
+
+:root {
+  --indigo: #051230;
+  --apricot: #f68c50;
+  --olive: #a6a159;
+
+  --bg: #fbf8f3;
+  --surface: #f2ece2;
+  --border: #e0d7c8;
+  --text: #051230;
+  --muted: #4a5470;
+  --accent: #9a4413;
+  --accent-2: #5c5a1f;
+  --link: #9a4413;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #051230;
+    --surface: #0b1c44;
+    --border: #1d3061;
+    --text: #eef0f5;
+    --muted: #a9b2c8;
+    --accent: #f68c50;
+    --accent-2: #c9c47a;
+    --link: #f68c50;
+  }
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 17px/1.65 "Segoe UI", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+}
+a { color: var(--link); text-underline-offset: 3px; }
+a:hover { text-decoration-thickness: 2px; }
+img { max-width: 100%; height: auto; }
+code { font: 0.9em ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; background: var(--surface); padding: 1px 5px; border-radius: 4px; }
+pre { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; overflow-x: auto; }
+pre code { background: none; padding: 0; }
+
+.wrap { max-width: 860px; margin: 0 auto; padding: 0 16px; }
+
+/* Site header */
+.site-header { background: var(--indigo); color: #eef0f5; }
+.site-header .wrap { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 20px; padding-top: 14px; padding-bottom: 14px; }
+.brand { color: #eef0f5; text-decoration: none; font-weight: 700; display: flex; align-items: center; gap: 10px; margin-right: auto; }
+.brand svg { flex: none; }
+.nav { display: flex; flex-wrap: wrap; gap: 4px 16px; list-style: none; margin: 0; padding: 0; font-size: 15px; }
+.nav a { color: #a9b2c8; text-decoration: none; white-space: nowrap; }
+@media (max-width: 600px) {
+  .site-header nav { width: 100%; overflow-x: auto; }
+  .nav { flex-wrap: nowrap; gap: 16px; padding-bottom: 2px; }
+}
+.nav a:hover, .nav a[aria-current="page"] { color: var(--apricot); }
+
+/* Hero (home and page headers share the indigo band) */
+.hero { background: var(--indigo); color: #eef0f5; padding: 48px 0 52px; }
+.hero.small { padding: 28px 0 36px; }
+.bar { width: 64px; height: 6px; border-radius: 3px; background: var(--apricot); box-shadow: 22px 0 0 -0px var(--olive); margin-bottom: 22px; }
+.hero h1 { font-size: clamp(2rem, 6vw, 3.25rem); line-height: 1.1; margin: 0 0 12px; letter-spacing: -0.01em; }
+.hero.small h1 { font-size: clamp(1.75rem, 5vw, 2.5rem); }
+.hero .lede { font-size: clamp(1.05rem, 2.6vw, 1.35rem); color: #a9b2c8; margin: 0 0 8px; max-width: 46em; }
+.hero .meta { color: #a9b2c8; margin: 0 0 24px; }
+.hero .meta:last-child { margin-bottom: 0; }
+
+.links { display: flex; flex-wrap: wrap; gap: 10px; padding: 0; margin: 0; list-style: none; }
+.btn { display: inline-block; padding: 8px 14px; border-radius: 8px; border: 1px solid #2a3c6e; color: #eef0f5; text-decoration: none; font-size: 15px; background: transparent; }
+.btn:hover { border-color: var(--apricot); }
+.btn.primary { background: var(--apricot); border-color: var(--apricot); color: var(--indigo); font-weight: 600; }
+
+/* Content */
+main section { padding: 36px 0 4px; }
+main > .wrap > :first-child { margin-top: 36px; }
+h2 { font-size: 1.5rem; margin: 0 0 14px; letter-spacing: -0.01em; }
+h3 { font-size: 1.15rem; margin: 0 0 6px; }
+.prose h2 { margin-top: 36px; }
+.prose h3 { margin-top: 24px; }
+ul, ol { padding-left: 22px; }
+li { margin-bottom: 6px; }
+.muted { color: var(--muted); }
+.eyebrow { font-size: 13px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--apricot); margin: 0 0 8px; font-weight: 600; }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px; margin-bottom: 16px; }
+.grid .card { margin-bottom: 0; }
+.card h3 a { color: var(--text); text-decoration: none; }
+.card h3 a:hover { color: var(--accent); }
+.card p { margin: 6px 0; }
+.card h3, .card h3:first-child { margin-top: 0; }
+.stack { color: var(--accent-2); font-size: 15px; }
+.tag { display: inline-block; font-size: 13px; padding: 1px 8px; border-radius: 999px; border: 1px solid var(--border); color: var(--muted); }
+.more { font-weight: 600; text-decoration: none; }
+.more::after { content: " \2192"; }
+
+table { width: 100%; border-collapse: collapse; margin: 12px 0 20px; font-size: 15px; display: block; overflow-x: auto; }
+th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--border); vertical-align: top; }
+th { color: var(--muted); font-weight: 600; }
+
+.callout { border-left: 4px solid var(--apricot); background: var(--surface); padding: 14px 18px; border-radius: 0 10px 10px 0; margin: 20px 0; }
+.callout p { margin: 4px 0; }
+
+dl.faq dt { font-weight: 600; margin-top: 18px; }
+dl.faq dd { margin: 4px 0 0; }
+
+.site-footer { border-top: 1px solid var(--border); margin-top: 48px; padding: 24px 0 40px; color: var(--muted); font-size: 15px; }
+.site-footer .links a { color: var(--muted); }
+
+/* Resume */
+.resume h2 { font-size: 1.2rem; border-bottom: 2px solid var(--apricot); padding-bottom: 4px; margin-top: 28px; }
+.resume .job { margin-bottom: 14px; }
+.resume .job p { margin: 2px 0; }
+
+@media print {
+  .site-header, .site-footer, .no-print { display: none !important; }
+  .hero { background: none; color: #000; padding: 0 0 8px; }
+  .hero .lede, .hero .meta { color: #333; }
+  .bar { display: none; }
+  body { font-size: 11pt; line-height: 1.45; background: #fff; color: #000; }
+  a { color: #000; text-decoration: none; }
+  .wrap { max-width: none; padding: 0; }
+  main section { padding-top: 10px; }
+  .resume h2 { border-color: #c96a32; }
+  .card { border: none; padding: 0; background: none; }
+  body { font-size: 10pt; line-height: 1.4; }
+  .hero h1, .hero.small h1 { font-size: 22pt; margin-bottom: 4px; }
+  .hero .lede { font-size: 12pt; margin-bottom: 2px; }
+  .hero .meta { font-size: 9.5pt; margin: 0; }
+  main section { padding: 0; }
+  .resume h2 { font-size: 12pt; margin: 14px 0 6px; padding-bottom: 2px; }
+  .resume h3 { font-size: 10.5pt; margin: 0; }
+  .resume .job { margin-bottom: 8px; break-inside: avoid; }
+  .resume ul { margin: 4px 0; }
+  .resume li { margin-bottom: 1px; }
+  .resume p { margin: 2px 0; }
+}

@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<div class="hero small">
+  <div class="wrap">
+    <div class="bar" aria-hidden="true"></div>
+    <p class="eyebrow">Writing · <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d %B %Y" }}</time></p>
+    <h1>{{ page.title }}</h1>
+    {%- if page.description %}<p class="lede">{{ page.description }}</p>{% endif %}
+  </div>
+</div>
+<main class="wrap prose">
+<article>
+{{ content }}
+</article>
+{%- if page.linkedin %}
+<p class="muted">First published on <a href="{{ page.linkedin }}" rel="noopener" target="_blank">LinkedIn</a>.</p>
+{%- endif %}
+<p><a class="more" href="/writing/">All writing</a></p>
+</main>

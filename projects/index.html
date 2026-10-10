@@ -1,0 +1,57 @@
+---
+title: Projects
+description: Open-source Ruby on Rails projects by Mohammad Ali Jesar on MCP servers, RAG, AI agents and Shopify, plus upstream contributions and published Shopify apps.
+---
+<div class="hero small">
+  <div class="wrap">
+    <div class="bar" aria-hidden="true"></div>
+    <h1>Projects</h1>
+    <p class="lede">I learn by building real things. Each project below is open source, tested, and written up so another Rails developer can follow it.</p>
+  </div>
+</div>
+
+<main class="wrap">
+
+<section>
+  <h2>AI and agentic commerce</h2>
+  <div class="grid">
+  {%- for p in site.data.projects %}
+    <article class="card">
+      <h3><a href="/projects/{{ p.slug }}/">{{ p.name }}</a></h3>
+      <p>{{ p.summary }}</p>
+      <p class="stack">{{ p.stack }}</p>
+    </article>
+  {%- endfor %}
+    <article class="card">
+      <h3><a href="https://github.com/mjesar/ucp_catalog" rel="noopener" target="_blank">ucp_catalog</a></h3>
+      <p>A Ruby gem, in early development, for talking to any Universal Commerce Protocol (UCP) catalog API through one interface, starting with Shopify's Global Catalog.</p>
+      <p class="stack">Ruby gem · OAuth2 client credentials · RSpec</p>
+    </article>
+  </div>
+</section>
+
+<section id="open-source">
+  <h2>Open-source contributions</h2>
+  <p>While building product_geo_agent on the <a href="https://github.com/littleghostai/little_ghost" rel="noopener" target="_blank">little_ghost</a> Ruby agent gem with Gemini, I hit three bugs in the gem itself. I reproduced each one, reported it, and sent a fix. All three were merged upstream and released in little_ghost 0.11.0.</p>
+  <ul>
+    <li><a href="https://github.com/littleghostai/little_ghost/pull/112" rel="noopener" target="_blank">Replay Gemini thought signatures across multi-turn tool calls</a>: Gemini expects its thought signatures back on later turns of a tool-calling conversation, and the gem did not send them.</li>
+    <li><a href="https://github.com/littleghostai/little_ghost/pull/113" rel="noopener" target="_blank">Send the original function name in functionResponse.name</a>: tool results went back to Gemini with the call id instead of the function name.</li>
+    <li><a href="https://github.com/littleghostai/little_ghost/pull/115" rel="noopener" target="_blank">Preserve Agent lifecycle hooks when building execution snapshots</a>: hooks on an Agent subclass were silently skipped, with no error and a normal-looking response.</li>
+  </ul>
+  <p>I also filed <a href="https://github.com/patvice/ruby_llm-mcp/issues/155" rel="noopener" target="_blank">ruby_llm-mcp#155</a> after the gem crashed on Shopify's MCP handshake response.</p>
+</section>
+
+<section id="shopify-apps">
+  <h2>Shopify App Store apps</h2>
+  <p>Built as part of the MGLogics development team, from architecture through App Store publishing and merchant support:</p>
+  <ul>
+    <li><a href="https://apps.shopify.com/json-express-for-seo" rel="noopener" target="_blank">MGLogics JSON-LD SEO Schema</a> (Shopify and BigCommerce): structured data for rich results and AI search. Rated 4.3/5 across 17 reviews.</li>
+    <li><strong>Express Sync: Order &amp; Inventory</strong> (Shopify and BigCommerce): real-time product, inventory and order sync between supplier and retailer stores.</li>
+    <li><a href="https://apps.shopify.com/express-seo" rel="noopener" target="_blank">MGLogics Express SEO &amp; Schema</a>: image optimization, JSON-LD, alt tags, redirects and schema management.</li>
+    <li><a href="https://apps.shopify.com/express-geo-redirect" rel="noopener" target="_blank">GeoLocation Traffic Redirect</a> (Shopify and BigCommerce): country-based redirects with pop-up and automatic options.</li>
+    <li><a href="https://apps.shopify.com/express-email-validator" rel="noopener" target="_blank">Email Validator by MGLogics</a>: detects fake or invalid emails on orders to prevent order scams.</li>
+  </ul>
+  <p>I also built an Amazon Import &amp; Sync System on Amazon SP-API that keeps listings, variants and images in step between Amazon and e-commerce stores (client work, not public).</p>
+</section>
+
+</main>

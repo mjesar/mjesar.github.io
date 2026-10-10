@@ -1,0 +1,16 @@
+- slug: shop_mcp_server
+  name: shop_mcp_server
+  summary: An MCP server in Rails that gives Claude real access to a store's products, orders and inventory, with semantic search on pgvector.
+  stack: Rails 8.1 · MCP Ruby SDK · PostgreSQL · pgvector · Voyage AI · RSpec
+- slug: ai_shop_assistant
+  name: ai_shop_assistant
+  summary: A shopping chat where the AI searches Shopify's live catalog over MCP instead of making products up.
+  stack: Rails 8.1 · RubyLLM · Gemini · Hotwire · Solid Queue · MongoDB
+- slug: product_geo_agent
+  name: product_geo_agent
+  summary: An AI agent that scores how discoverable a Shopify product is to AI shopping assistants (GEO and AEO).
+  stack: Rails 8.1 · little_ghost · Gemini · Shopify Storefront API · RSpec
+- slug: support_engineer
+  name: support_engineer
+  summary: A Rails support agent, in progress, that investigates orders, searches policies and asks a human before it acts.
+  stack: Rails 8.1 · PostgreSQL · RubyLLM · MCP · pgvector

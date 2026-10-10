@@ -1,0 +1,35 @@
+{%- assign page_title = page.title | default: site.title -%}
+{%- if page.url == "/" -%}{%- assign full_title = page.title -%}{%- else -%}{%- assign full_title = page_title | append: " · Mohammad Ali Jesar" -%}{%- endif -%}
+{%- assign page_description = page.description | default: site.description -%}
+{%- assign page_image = page.image | default: "/og.png" | absolute_url -%}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ full_title }}</title>
+<meta name="description" content="{{ page_description }}">
+<meta name="author" content="Mohammad Ali Jesar">
+<link rel="canonical" href="{{ page.url | absolute_url }}">
+<link rel="me" href="https://github.com/mjesar">
+<link rel="me" href="https://www.linkedin.com/in/mjesar/">
+<link rel="me" href="https://www.fiverr.com/mjesar">
+<link rel="me" href="https://www.instagram.com/mjesar">
+<meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}profile{% endif %}">
+<meta property="og:site_name" content="Mohammad Ali Jesar">
+<meta property="og:title" content="{{ full_title }}">
+<meta property="og:description" content="{{ page_description }}">
+<meta property="og:url" content="{{ page.url | absolute_url }}">
+<meta property="og:image" content="{{ page_image }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#051230">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/css/style.css">
+{%- if page.jsonld %}
+<script type="application/ld+json">
+{{ page.jsonld | jsonify }}
+</script>
+{%- endif %}
+{%- if page.layout == 'post' %}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","headline":{{ page.title | jsonify }},"description":{{ page_description | jsonify }},"datePublished":"{{ page.date | date_to_xmlschema }}","url":"{{ page.url | absolute_url }}","mainEntityOfPage":"{{ page.url | absolute_url }}","author":{"@id":"https://mjesar.github.io/#person"}{% if page.linkedin %},"sameAs":"{{ page.linkedin }}"{% endif %}}
+</script>
+{%- endif %}

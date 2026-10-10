@@ -1,0 +1,32 @@
+---
+layout: default
+---
+<div class="hero small">
+  <div class="wrap">
+    <div class="bar" aria-hidden="true"></div>
+    <p class="eyebrow">Project · {{ page.kind }}</p>
+    <h1>{{ page.title }}</h1>
+    <p class="lede">{{ page.description }}</p>
+    <p class="meta">{{ page.stack }}</p>
+    <ul class="links">
+      <li><a class="btn primary" href="{{ page.repo }}" rel="noopener" target="_blank">View the code on GitHub</a></li>
+      <li><a class="btn" href="/services/">Work with me</a></li>
+    </ul>
+  </div>
+</div>
+<main class="wrap prose">
+{{ content }}
+<section class="no-print">
+  <h2>Other projects</h2>
+  <div class="grid">
+  {%- for p in site.data.projects -%}
+    {%- unless p.slug == page.slug %}
+    <article class="card">
+      <h3><a href="/projects/{{ p.slug }}/">{{ p.name }}</a></h3>
+      <p class="muted">{{ p.summary }}</p>
+    </article>
+    {%- endunless -%}
+  {%- endfor %}
+  </div>
+</section>
+</main>
