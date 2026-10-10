@@ -1,0 +1,156 @@
+/* "Woven Code" preview layer. Loaded after style.css, only on /preview/.
+   Warm cream and oatmeal, indigo, rust, olive. Patterns are accents, drawn in CSS and SVG. */
+
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap");
+
+:root {
+  --serif: "Fraunces", Georgia, "Times New Roman", serif;
+  --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --rust: #a2441b;
+  --maroon: #7a2332;
+
+  --bg: #f4ecdc;
+  --surface: #ede2cc;
+  --border: #d3c2a0;
+  --stitch: #b9a47c;
+  --muted: #4d5472;
+  --accent: #a2441b;
+  --accent-2: #5a5920;
+  --link: #a2441b;
+  --grain: 0.06;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #050e26;
+    --surface: #0a1a42;
+    --border: #1d3061;
+    --stitch: #34498a;
+    --muted: #a9b2c8;
+    --accent: #f68c50;
+    --accent-2: #c9c47a;
+    --link: #f68c50;
+    --grain: 0.09;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #050e26;
+  --surface: #0a1a42;
+  --border: #1d3061;
+  --stitch: #34498a;
+  --muted: #a9b2c8;
+  --accent: #f68c50;
+  --accent-2: #c9c47a;
+  --link: #f68c50;
+  --grain: 0.09;
+}
+
+/* Grain: faint noise over everything, never catches clicks */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  pointer-events: none;
+  opacity: var(--grain);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .9 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* Type: serif headings, mono labels, sans body */
+h1, h2, h3, .brand span { font-family: var(--serif); font-weight: 700; }
+h2 { font-size: 1.75rem; }
+.hero h1 { font-weight: 700; letter-spacing: -0.02em; }
+.nav, .stack, .eyebrow, .tag, .meta, .muted, .btn { font-family: var(--mono); }
+.nav { font-size: 13.5px; letter-spacing: 0.02em; }
+.stack { font-size: 13px; }
+.card .muted { font-size: 13px; }
+.btn { font-size: 14px; }
+.btn.primary { font-weight: 700; }
+
+/* Hero: indigo field of dots, a few glow like nodes in a network */
+.hero {
+  position: relative;
+  background-color: var(--indigo);
+  background-image:
+    radial-gradient(circle at center, rgba(246, 140, 80, 0.95) 0 2.5px, rgba(246, 140, 80, 0.18) 3px 7px, transparent 8px),
+    radial-gradient(circle at center, rgba(246, 140, 80, 0.8) 0 2px, rgba(246, 140, 80, 0.14) 2.5px 6px, transparent 7px),
+    radial-gradient(circle at center, rgba(238, 240, 245, 0.16) 0 1.5px, transparent 2px);
+  background-size: 198px 198px, 242px 242px, 22px 22px;
+  background-position: 66px 44px, 150px 120px, 0 0;
+}
+/* keep the text area calm: fade the pattern out behind the headline block */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, var(--indigo) 0%, rgba(5, 18, 48, 0.88) 38%, rgba(5, 18, 48, 0) 78%);
+  pointer-events: none;
+}
+.hero > .wrap { position: relative; }
+.hero.small::before { background: linear-gradient(90deg, var(--indigo) 0%, rgba(5, 18, 48, 0.92) 50%, rgba(5, 18, 48, 0.2) 100%); }
+
+/* Section dividers: a punch-card strip, drawn as a mask so it follows the theme colour */
+main section + section::before,
+.divider {
+  content: "";
+  display: block;
+  height: 8px;
+  margin-bottom: 30px;
+  background: var(--accent);
+  opacity: 0.55;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='96' height='8'%3E%3Cg fill='black'%3E%3Crect x='0' y='3' width='6' height='2'/%3E%3Crect x='10' y='3' width='2' height='2'/%3E%3Crect x='16' y='3' width='10' height='2'/%3E%3Crect x='30' y='3' width='2' height='2'/%3E%3Crect x='36' y='3' width='2' height='2'/%3E%3Crect x='42' y='3' width='6' height='2'/%3E%3Crect x='52' y='3' width='2' height='2'/%3E%3Crect x='58' y='3' width='12' height='2'/%3E%3Crect x='74' y='3' width='2' height='2'/%3E%3Crect x='80' y='3' width='6' height='2'/%3E%3Crect x='90' y='3' width='2' height='2'/%3E%3C/g%3E%3C/svg%3E") repeat-x left center;
+          mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='96' height='8'%3E%3Cg fill='black'%3E%3Crect x='0' y='3' width='6' height='2'/%3E%3Crect x='10' y='3' width='2' height='2'/%3E%3Crect x='16' y='3' width='10' height='2'/%3E%3Crect x='30' y='3' width='2' height='2'/%3E%3Crect x='36' y='3' width='2' height='2'/%3E%3Crect x='42' y='3' width='6' height='2'/%3E%3Crect x='52' y='3' width='2' height='2'/%3E%3Crect x='58' y='3' width='12' height='2'/%3E%3Crect x='74' y='3' width='2' height='2'/%3E%3Crect x='80' y='3' width='6' height='2'/%3E%3Crect x='90' y='3' width='2' height='2'/%3E%3C/g%3E%3C/svg%3E") repeat-x left center;
+}
+main section + section { padding-top: 14px; }
+
+/* Cards: a dashed inner line, like hand stitching */
+.card {
+  position: relative;
+  border-radius: 10px;
+  padding: 22px;
+}
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 6px;
+  border: 1.5px dashed var(--stitch);
+  border-radius: 6px;
+  pointer-events: none;
+  opacity: 0.8;
+}
+.card > * { position: relative; }
+
+/* Project swatches: a small pattern generated from the project name */
+.swatch { display: block; width: 44px; height: 44px; margin-bottom: 12px; border-radius: 6px; }
+.swatch svg { display: block; width: 100%; height: 100%; border-radius: 6px; }
+
+.callout { border-left-color: var(--rust); }
+
+/* Footer: a narrow patchwork band above the usual links */
+.site-footer {
+  position: relative;
+  border-top: none;
+  padding-top: 34px;
+  margin-top: 56px;
+}
+.site-footer::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 12px;
+  background:
+    repeating-linear-gradient(90deg,
+      #051230 0 24px, #a2441b 24px 36px, #5a5920 36px 60px, #f4ecdc 60px 66px,
+      #7a2332 66px 90px, #f68c50 90px 96px, #051230 96px 120px, #5a5920 120px 132px,
+      #a2441b 132px 156px, #f4ecdc 156px 162px);
+  border-top: 1px dashed rgba(255, 255, 255, 0.35);
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.35);
+}
+
+@media (max-width: 600px) {
+  .hero::before { background: rgba(5, 18, 48, 0.72); }
+  h2 { font-size: 1.5rem; }
+}
+@media print {
+  body::before, .site-footer::before, .card::after { display: none; }
+}
