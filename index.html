@@ -160,10 +160,10 @@ footer { border-top: 1px solid var(--border); margin-top: 40px; padding: 24px 0 
     <p class="meta">mjesar on every platform · Lahore, Pakistan · Open to remote roles and freelance projects</p>
     <ul class="links">
       <li><a class="primary" href="mailto:mohammadalijaisar@gmail.com">Email me</a></li>
-      <li><a href="https://github.com/mjesar" rel="me">GitHub</a></li>
-      <li><a href="https://www.linkedin.com/in/mjesar/" rel="me">LinkedIn</a></li>
-      <li><a href="https://www.fiverr.com/mjesar" rel="me">Fiverr</a></li>
-      <li><a href="https://www.instagram.com/mjesar" rel="me">Instagram</a></li>
+      <li><a href="https://github.com/mjesar" rel="me noopener" target="_blank">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/mjesar/" rel="me noopener" target="_blank">LinkedIn</a></li>
+      <li><a href="https://www.fiverr.com/mjesar" rel="me noopener" target="_blank">Fiverr</a></li>
+      <li><a href="https://www.instagram.com/mjesar" rel="me noopener" target="_blank">Instagram</a></li>
     </ul>
   </div>
 </header>
@@ -190,25 +190,25 @@ footer { border-top: 1px solid var(--border); margin-top: 40px; padding: 24px 0 
   <h2>Featured projects</h2>
 
   <article class="card">
-    <h3><a href="https://github.com/mjesar/shop_mcp_server">shop_mcp_server</a></h3>
+    <h3><a href="https://github.com/mjesar/shop_mcp_server" rel="noopener" target="_blank">shop_mcp_server</a></h3>
     <p>An MCP server in Rails that exposes a store's products, orders and inventory to Claude, with schema-validated tools, approval-gated writes, and semantic product search with Voyage AI embeddings and pgvector. Built on the official MCP Ruby SDK over Streamable HTTP.</p>
     <p class="stack">Rails 8.1 · MCP Ruby SDK · PostgreSQL · pgvector · Voyage AI · RSpec</p>
   </article>
 
   <article class="card">
-    <h3><a href="https://github.com/mjesar/ai_shop_assistant">ai_shop_assistant</a></h3>
+    <h3><a href="https://github.com/mjesar/ai_shop_assistant" rel="noopener" target="_blank">ai_shop_assistant</a></h3>
     <p>A shopping assistant that answers product questions from Shopify's live Catalog API over MCP, with realtime replies over Turbo Streams, background jobs on Solid Queue, and a hand-written JSON-RPC MCP client.</p>
     <p class="stack">Rails 8 · RubyLLM · Google Gemini · Hotwire</p>
   </article>
 
   <article class="card">
-    <h3><a href="https://github.com/mjesar/product_geo_agent">product_geo_agent</a></h3>
+    <h3><a href="https://github.com/mjesar/product_geo_agent" rel="noopener" target="_blank">product_geo_agent</a></h3>
     <p>An agent that rates how discoverable a Shopify product is to AI shopping assistants (GEO and AEO). It checks product data, FAQ content and schema.org structured data, asks an LLM whether it would recommend the product, and produces a deterministic score backed by an eval harness.</p>
     <p class="stack">Rails · little_ghost · Google Gemini · Shopify Storefront API</p>
   </article>
 
   <article class="card">
-    <h3><a href="https://github.com/mjesar/support_engineer">support_engineer</a></h3>
+    <h3><a href="https://github.com/mjesar/support_engineer" rel="noopener" target="_blank">support_engineer</a></h3>
     <p>A Rails 8 AI support agent that investigates orders and shipments, reads company policies, and asks a human before it acts. A learning project, built lesson by lesson.</p>
     <p class="stack">Rails 8 · PostgreSQL · LLM agents</p>
   </article>
@@ -216,11 +216,11 @@ footer { border-top: 1px solid var(--border); margin-top: 40px; padding: 24px 0 
 
 <section id="open-source">
   <h2>Open-source contributions</h2>
-  <p>While building product_geo_agent on the <a href="https://github.com/littleghostai/little_ghost">little_ghost</a> Ruby agent gem, I found and fixed three bugs that were merged upstream in October 2026:</p>
+  <p>While building product_geo_agent on the <a href="https://github.com/littleghostai/little_ghost" rel="noopener" target="_blank">little_ghost</a> Ruby agent gem, I found and fixed three bugs that were merged upstream in October 2026:</p>
   <ul>
-    <li><a href="https://github.com/littleghostai/little_ghost/pull/112">Replay Gemini thought signatures across multi-turn tool calls</a></li>
-    <li><a href="https://github.com/littleghostai/little_ghost/pull/113">Send the original function name in functionResponse.name</a></li>
-    <li><a href="https://github.com/littleghostai/little_ghost/pull/115">Preserve Agent lifecycle hooks when building execution snapshots</a></li>
+    <li><a href="https://github.com/littleghostai/little_ghost/pull/112" rel="noopener" target="_blank">Replay Gemini thought signatures across multi-turn tool calls</a></li>
+    <li><a href="https://github.com/littleghostai/little_ghost/pull/113" rel="noopener" target="_blank">Send the original function name in functionResponse.name</a></li>
+    <li><a href="https://github.com/littleghostai/little_ghost/pull/115" rel="noopener" target="_blank">Preserve Agent lifecycle hooks when building execution snapshots</a></li>
   </ul>
 </section>
 
@@ -228,11 +228,11 @@ footer { border-top: 1px solid var(--border); margin-top: 40px; padding: 24px 0 
   <h2>Shopify App Store apps</h2>
   <p>Built as part of the MGLogics development team, from architecture through App Store publishing and merchant support:</p>
   <ul>
-    <li><a href="https://apps.shopify.com/json-express-for-seo">MGLogics JSON-LD SEO Schema</a> (Shopify and BigCommerce): structured data for rich results and AI search.</li>
+    <li><a href="https://apps.shopify.com/json-express-for-seo" rel="noopener" target="_blank">MGLogics JSON-LD SEO Schema</a> (Shopify and BigCommerce): structured data for rich results and AI search.</li>
     <li><strong>Express Sync: Order &amp; Inventory</strong> (Shopify and BigCommerce): real-time product, inventory and order sync between supplier and retailer stores.</li>
-    <li><a href="https://apps.shopify.com/express-seo">MGLogics Express SEO &amp; Schema</a>: image optimization, JSON-LD, alt tags, redirects and schema management.</li>
-    <li><a href="https://apps.shopify.com/express-geo-redirect">GeoLocation Traffic Redirect</a> (Shopify and BigCommerce): country-based redirects.</li>
-    <li><a href="https://apps.shopify.com/express-email-validator">Email Validator by MGLogics</a>: detects fake or invalid emails on orders.</li>
+    <li><a href="https://apps.shopify.com/express-seo" rel="noopener" target="_blank">MGLogics Express SEO &amp; Schema</a>: image optimization, JSON-LD, alt tags, redirects and schema management.</li>
+    <li><a href="https://apps.shopify.com/express-geo-redirect" rel="noopener" target="_blank">GeoLocation Traffic Redirect</a> (Shopify and BigCommerce): country-based redirects.</li>
+    <li><a href="https://apps.shopify.com/express-email-validator" rel="noopener" target="_blank">Email Validator by MGLogics</a>: detects fake or invalid emails on orders.</li>
   </ul>
 </section>
 
@@ -259,8 +259,8 @@ footer { border-top: 1px solid var(--border); margin-top: 40px; padding: 24px 0 
   <p>I'm open to remote full-time roles and freelance projects: Rails APIs and integrations, Shopify and BigCommerce apps, and adding AI (MCP servers, RAG, agents) to existing Rails applications.</p>
   <ul>
     <li>Email: <a href="mailto:mohammadalijaisar@gmail.com">mohammadalijaisar@gmail.com</a></li>
-    <li>Freelance: <a href="https://www.fiverr.com/mjesar" rel="me">fiverr.com/mjesar</a></li>
-    <li>LinkedIn: <a href="https://www.linkedin.com/in/mjesar/" rel="me">linkedin.com/in/mjesar</a></li>
+    <li>Freelance: <a href="https://www.fiverr.com/mjesar" rel="me noopener" target="_blank">fiverr.com/mjesar</a></li>
+    <li>LinkedIn: <a href="https://www.linkedin.com/in/mjesar/" rel="me noopener" target="_blank">linkedin.com/in/mjesar</a></li>
   </ul>
 </section>
 
@@ -268,7 +268,7 @@ footer { border-top: 1px solid var(--border); margin-top: 40px; padding: 24px 0 
 
 <footer>
   <div class="wrap">
-    Mohammad Ali Jesar (mjesar) · Lahore, Pakistan · <a href="https://github.com/mjesar">github.com/mjesar</a>
+    Mohammad Ali Jesar (mjesar) · Lahore, Pakistan · <a href="https://github.com/mjesar" rel="noopener" target="_blank">github.com/mjesar</a>
   </div>
 </footer>
 
