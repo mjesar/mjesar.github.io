@@ -27,7 +27,7 @@ layout: default
   {%- endfor %}
 </ul>
 {%- endif %}
-{% include faq.html items=page.faq %}
+{%- if page.faq %}{% include faq.html items=page.faq %}{% endif %}
 <section class="no-print">
   <h2>Other services</h2>
   <div class="grid">

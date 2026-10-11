@@ -38,6 +38,9 @@
 {{ page.jsonld | jsonify }}
 </script>
 {%- endif %}
+{%- if page.layout == 'service' or page.url == '/services/' %}
+{% include service-jsonld.html %}
+{%- endif %}
 {%- if page.layout == 'post' %}
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BlogPosting","headline":{{ page.title | jsonify }},"description":{{ page_description | jsonify }},"datePublished":"{{ page.date | date_to_xmlschema }}","url":"{{ page.url | absolute_url }}","mainEntityOfPage":"{{ page.url | absolute_url }}","author":{"@id":"https://mjesar.github.io/#person"}{% if page.linkedin %},"sameAs":"{{ page.linkedin }}"{% endif %}}
