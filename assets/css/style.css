@@ -70,9 +70,9 @@ pre code { background: none; padding: 0; }
 .nav { display: flex; flex-wrap: wrap; gap: 4px 16px; list-style: none; margin: 0; padding: 0; font-size: 15px; }
 .nav a { color: #a9b2c8; text-decoration: none; white-space: nowrap; }
 @media (max-width: 600px) {
-  .site-header nav { width: 100%; overflow-x: auto; order: 2; }
+  .site-header nav { width: 100%; order: 2; }
   .theme-toggle { order: 1; }
-  .nav { flex-wrap: nowrap; gap: 13px; padding-bottom: 2px; font-size: 14px; }
+  .nav { gap: 4px 14px; font-size: 14px; }
 }
 .nav a:hover, .nav a[aria-current="page"] { color: var(--apricot); }
 .theme-toggle { flex: none; display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; padding: 0; border-radius: 8px; border: 1px solid #2a3c6e; background: transparent; color: #a9b2c8; cursor: pointer; }
@@ -162,3 +162,201 @@ dl.faq dd { margin: 4px 0 0; }
   .resume li { margin-bottom: 1px; }
   .resume p { margin: 2px 0; }
 }
+
+/* ===== Woven Code theme layer (loads after the base rules above) ===== */
+/* "Woven Code" preview layer. Loaded after style.css, only on /preview/.
+   Warm cream and oatmeal, indigo, rust, olive. Patterns are accents, drawn in CSS and SVG. */
+
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap");
+
+:root {
+  --serif: "Fraunces", Georgia, "Times New Roman", serif;
+  --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --rust: #a2441b;
+  --maroon: #7a2332;
+
+  --bg: #f4ecdc;
+  --surface: #ede2cc;
+  --border: #d3c2a0;
+  --stitch: #b9a47c;
+  --muted: #4d5472;
+  --accent: #a2441b;
+  --accent-2: #5a5920;
+  --link: #a2441b;
+  --grain: 0.06;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #050e26;
+    --surface: #0a1a42;
+    --border: #1d3061;
+    --stitch: #34498a;
+    --muted: #a9b2c8;
+    --accent: #f68c50;
+    --accent-2: #c9c47a;
+    --link: #f68c50;
+    --grain: 0.09;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #050e26;
+  --surface: #0a1a42;
+  --border: #1d3061;
+  --stitch: #34498a;
+  --muted: #a9b2c8;
+  --accent: #f68c50;
+  --accent-2: #c9c47a;
+  --link: #f68c50;
+  --grain: 0.09;
+}
+
+/* Grain: faint noise over everything, never catches clicks */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  pointer-events: none;
+  opacity: var(--grain);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .9 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* Type: serif headings, mono labels, sans body */
+h1, h2, h3, .brand span { font-family: var(--serif); font-weight: 700; }
+h2 { font-size: 1.75rem; }
+.hero h1 { font-weight: 700; letter-spacing: -0.02em; }
+.nav, .stack, .eyebrow, .tag, .meta, .muted, .btn { font-family: var(--mono); }
+.nav { font-size: 13.5px; letter-spacing: 0.02em; }
+.stack { font-size: 13px; }
+.card .muted { font-size: 13px; }
+.btn { font-size: 14px; }
+.btn.primary { font-weight: 700; }
+
+/* Hero: indigo field of dots, a few glow like nodes in a network */
+.hero {
+  position: relative;
+  background-color: var(--indigo);
+  background-image:
+    radial-gradient(circle at center, rgba(246, 140, 80, 0.95) 0 2.5px, rgba(246, 140, 80, 0.18) 3px 7px, transparent 8px),
+    radial-gradient(circle at center, rgba(246, 140, 80, 0.8) 0 2px, rgba(246, 140, 80, 0.14) 2.5px 6px, transparent 7px),
+    radial-gradient(circle at center, rgba(238, 240, 245, 0.28) 0 1.6px, transparent 2.2px);
+  background-size: 198px 198px, 242px 242px, 22px 22px;
+  background-position: 66px 44px, 150px 120px, 0 0;
+}
+/* keep the text area calm: fade the pattern out behind the headline block */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, var(--indigo) 0%, rgba(5, 18, 48, 0.88) 38%, rgba(5, 18, 48, 0) 78%);
+  pointer-events: none;
+}
+.hero > .wrap { position: relative; }
+.hero.small::before { background: linear-gradient(90deg, var(--indigo) 0%, rgba(5, 18, 48, 0.92) 50%, rgba(5, 18, 48, 0.2) 100%); }
+
+/* Hero network: nodes joined by stitched thread */
+.hero-net { position: absolute; top: 0; right: 0; height: 100%; width: min(58%, 720px); pointer-events: none; }
+.hero-net .thread { fill: none; stroke: #f68c50; stroke-width: 1.6; stroke-dasharray: 7 6; stroke-linecap: round; opacity: 0.7; }
+.hero-net .halo { fill: #f68c50; opacity: 0.16; }
+.hero-net .node { fill: #f68c50; }
+.hero-net .node.olive { fill: #c9c47a; }
+.hero-net .halo.olive { fill: #c9c47a; }
+.hero-net .ring { fill: none; stroke: #eef0f5; stroke-width: 1.4; opacity: 0.55; }
+@media (max-width: 760px) { .hero-net { opacity: 0.16; width: 100%; } }
+
+/* Section dividers: a two-row punch-card strip, drawn as a mask so it follows the theme colour */
+:root {
+  --punch: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='14'%3E%3Cg fill='black'%3E%3Crect x='0' y='2' width='8' height='4'/%3E%3Crect x='12' y='2' width='4' height='4'/%3E%3Crect x='22' y='2' width='14' height='4'/%3E%3Crect x='42' y='2' width='4' height='4'/%3E%3Crect x='56' y='2' width='8' height='4'/%3E%3Crect x='70' y='2' width='4' height='4'/%3E%3Crect x='82' y='2' width='16' height='4'/%3E%3Crect x='106' y='2' width='4' height='4'/%3E%3Crect x='4' y='9' width='4' height='3'/%3E%3Crect x='16' y='9' width='12' height='3'/%3E%3Crect x='34' y='9' width='4' height='3'/%3E%3Crect x='46' y='9' width='8' height='3'/%3E%3Crect x='60' y='9' width='4' height='3'/%3E%3Crect x='72' y='9' width='12' height='3'/%3E%3Crect x='92' y='9' width='4' height='3'/%3E%3Crect x='102' y='9' width='10' height='3'/%3E%3C/g%3E%3C/svg%3E");
+}
+main section + section::before,
+.divider {
+  content: "";
+  display: block;
+  height: 14px;
+  margin-bottom: 28px;
+  background: var(--accent);
+  opacity: 0.8;
+  -webkit-mask: var(--punch) repeat-x left center;
+          mask: var(--punch) repeat-x left center;
+}
+main section + section { padding-top: 14px; }
+
+/* Cards: a dashed inner line, like hand stitching */
+.card {
+  position: relative;
+  border-radius: 10px;
+  padding: 22px;
+}
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 6px;
+  border: 1.5px dashed var(--stitch);
+  border-radius: 6px;
+  pointer-events: none;
+  opacity: 0.8;
+}
+.card > * { position: relative; }
+
+/* Project swatches: a small pattern generated from the project name */
+.swatch { display: block; width: 44px; height: 44px; margin-bottom: 12px; border-radius: 6px; }
+.swatch svg { display: block; width: 100%; height: 100%; border-radius: 6px; }
+
+.callout { border-left-color: var(--rust); }
+
+/* Footer: a narrow patchwork band above the usual links */
+.site-footer {
+  position: relative;
+  border-top: none;
+  padding-top: 34px;
+  margin-top: 56px;
+}
+.site-footer::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 12px;
+  background:
+    repeating-linear-gradient(90deg,
+      #051230 0 24px, #a2441b 24px 36px, #5a5920 36px 60px, #f4ecdc 60px 66px,
+      #7a2332 66px 90px, #f68c50 90px 96px, #051230 96px 120px, #5a5920 120px 132px,
+      #a2441b 132px 156px, #f4ecdc 156px 162px);
+  border-top: 1px dashed rgba(255, 255, 255, 0.35);
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.35);
+}
+
+@media (max-width: 600px) {
+  .hero::before { background: rgba(5, 18, 48, 0.72); }
+  h2 { font-size: 1.5rem; }
+}
+@media print {
+  body::before, .site-footer::before, .card::after { display: none; }
+  /* plain, ink-friendly page: no dark hero, no pattern strips */
+  .hero, .hero.small { background: none !important; border: 0; }
+  .hero::before, .hero::after, .hero-net { display: none !important; }
+  .hero h1, .hero .lede, .hero .meta { color: #000; }
+  main section + section::before, .divider { display: none; }
+  main section + section { padding-top: 0; }
+  h2 { break-after: avoid; }
+}
+
+/* Dark mode: hero and page share an indigo, so mark the hero edge with a thread line */
+.hero { border-bottom: 1px solid var(--border); }
+.hero::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0; bottom: 6px;
+  border-bottom: 1.5px dashed rgba(246, 140, 80, 0.45);
+  pointer-events: none;
+}
+@media print { .hero::after { display: none; } }
+
+/* Hero tagline: the one human line above the keywords */
+.hero .tagline { font-family: var(--serif); font-weight: 500; font-size: clamp(1.15rem, 3vw, 1.5rem); color: var(--apricot); margin: 0 0 10px; }
+
+/* Two-up grid for the four services: 2 x 2 on desktop, one column on phones */
+.grid.two { grid-template-columns: repeat(2, 1fr); }
+.grid.two .card { display: flex; flex-direction: column; }
+.grid.two .card > p:last-child { margin-top: auto; }
+@media (max-width: 640px) { .grid.two { grid-template-columns: 1fr; } }
