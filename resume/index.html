@@ -1,12 +1,12 @@
 ---
 title: "Resume: Rails and AI Engineer"
-description: Resume of Mohammad Ali Jesar, senior full-stack and AI engineer (Ruby on Rails), 7+ years in Shopify, e-commerce integrations, MCP servers and RAG.
+description: "Resume of Mohammad Ali Jesar, senior full-stack Ruby on Rails engineer and AI engineer: 7+ years of production Rails, Shopify and e-commerce, MCP servers and RAG."
 ---
 <div class="hero small">
   <div class="wrap">
     <div class="bar" aria-hidden="true"></div>
     <h1>Mohammad Ali Jesar</h1>
-    <p class="lede">Senior Full-Stack &amp; AI Engineer · Ruby on Rails · Shopify &amp; E-commerce · MCP &amp; RAG</p>
+    <p class="lede">Senior full-stack Ruby on Rails engineer and AI engineer, with 4+ years in Shopify and e-commerce.</p>
     <p class="meta">Lahore, Pakistan · mohammadalijaisar@gmail.com · mjesar.github.io · github.com/mjesar · linkedin.com/in/mjesar</p>
     <ul class="links no-print">
       <li><a class="btn primary" href="/resume/mohammad-ali-jesar-resume.pdf" download>Download PDF</a></li>
@@ -19,17 +19,17 @@ description: Resume of Mohammad Ali Jesar, senior full-stack and AI engineer (Ru
 
 <section>
   <h2>Summary</h2>
-  <p>Full-stack and AI engineer (Ruby on Rails) with 7+ years of experience building production software for international clients, 4+ of them specialized in Shopify and e-commerce. Contributed to five apps on the Shopify App Store (three also on BigCommerce), from architecture through App Store publishing and merchant support. Strong in Rails architecture, Sidekiq background processing, performance work and catalog and order synchronization. Now building AI features on the same stack: MCP servers that expose application data to LLM agents, RAG on PostgreSQL with pgvector, and agents with evals and human approval.</p>
+  <p>Senior full-stack Ruby on Rails engineer and AI engineer with 7+ years of experience building production software for clients in the US and Germany, 4+ of them specialized in Shopify and e-commerce. Contributed, as part of a team, to five apps on the Shopify App Store (three also on BigCommerce), from architecture through App Store publishing and merchant support. Strong in Rails architecture, Sidekiq background processing, and catalog and order synchronization. Now building AI features on the same stack: MCP servers that expose application data to LLM agents, RAG on PostgreSQL with pgvector, and agents with evals and human approval. Three merged pull requests in the little_ghost Ruby agent framework.</p>
 </section>
 
 <section>
   <h2>Skills</h2>
   <ul>
-    <li><strong>Backend:</strong> Ruby on Rails, service objects, RESTful and GraphQL APIs, Sidekiq, Redis caching, query optimization, N+1 resolution, indexing</li>
-    <li><strong>AI and LLM integration:</strong> MCP servers (tools, resources, prompts, JSON Schema validation, read-only and destructive annotations), JSON-RPC 2.0, RAG with pgvector and Voyage AI, tool calling, agent loops, evals, RubyLLM, Claude and Gemini APIs</li>
-    <li><strong>Shopify:</strong> Shopify CLI, Shopify Functions (Scripts-to-Functions migration for discount, delivery and payment customizations), Checkout UI Extensions, Theme App Extensions, Liquid, Polaris and App Bridge, Admin and Storefront APIs, webhooks, App Store publishing</li>
+    <li><strong>Backend:</strong> Ruby on Rails, service objects, RESTful and GraphQL APIs, Sidekiq, Solid Queue, Redis</li>
+    <li><strong>AI and LLM integration:</strong> MCP servers (tools, resources, prompts, JSON Schema validation, read-only and destructive annotations), an MCP client over JSON-RPC 2.0, RAG with pgvector and Voyage AI, tool calling, agent loops, evals, RubyLLM, Claude, OpenAI and Gemini APIs</li>
+    <li><strong>Shopify:</strong> Shopify CLI, Shopify Functions (discount, delivery and payment customizations), Checkout UI Extensions and Checkout Extensibility, Theme App Extensions, Liquid, Polaris and App Bridge, Admin and Storefront APIs, webhooks, App Store publishing</li>
     <li><strong>E-commerce platforms:</strong> BigCommerce apps (Catalog, Orders and Checkout APIs), Amazon SP-API</li>
-    <li><strong>Frontend:</strong> React, JavaScript, Hotwire (Turbo, Stimulus), esbuild, HTML and CSS</li>
+    <li><strong>Frontend:</strong> React, JavaScript, TypeScript, Hotwire (Turbo, Stimulus), esbuild, HTML and CSS</li>
     <li><strong>Data:</strong> PostgreSQL, pgvector, SQLite, MongoDB (Mongoid), Redis</li>
     <li><strong>Practices and DevOps:</strong> RSpec, code review, branch and pull request workflow, CI, AWS, Heroku, Google Cloud, Docker</li>
   </ul>
@@ -42,11 +42,10 @@ description: Resume of Mohammad Ali Jesar, senior full-stack and AI engineer (Ru
     <p class="muted">December 2021 to June 2026 · Remote, US clients</p>
     <ul>
       <li>Designed, built and maintained Shopify and BigCommerce apps with Ruby on Rails and React for furniture and retail merchants.</li>
-      <li>Contributed to five published Shopify apps covering catalog and order sync, SEO and JSON-LD schema, geolocation redirects and order-fraud prevention.</li>
+      <li>Contributed to five published Shopify apps (three also on BigCommerce) covering catalog and order sync, SEO and JSON-LD schema, geolocation redirects and order-fraud prevention.</li>
       <li>Built Amazon SP-API integrations for product listings, variants and image uploads, automating previously manual work.</li>
-      <li>Designed and scaled Sidekiq background processing for synchronization and long-running jobs, with retries and reliability in mind.</li>
-      <li>Improved performance with Redis caching, query optimization, N+1 fixes and indexing for high-volume data processing.</li>
-      <li>Owned deployment, versioning and releases to the Shopify and BigCommerce app stores, including platform compliance and post-release support.</li>
+      <li>Designed Sidekiq background processing for synchronization and long-running jobs, with retries and reliability in mind.</li>
+      <li>Handled deployment, versioning and releases to the Shopify and BigCommerce app stores, including platform compliance and post-release support.</li>
       <li>Diagnosed production issues across app code, DNS and email delivery, and supported merchants directly through to resolution.</li>
       <li>Wrote RSpec tests and took part in architecture decisions and code reviews.</li>
     </ul>
@@ -56,7 +55,7 @@ description: Resume of Mohammad Ali Jesar, senior full-stack and AI engineer (Ru
     <p class="muted">April 2019 to December 2021 · Karachi, Pakistan</p>
     <ul>
       <li>Developed and maintained RESTful API services in Ruby on Rails on SQL and NoSQL databases.</li>
-      <li>Built management MVP tools for German clients, with code quality, security and testing as delivery standards.</li>
+      <li>Built management MVP tools for German clients in real estate and furniture, with code quality, security and testing as delivery standards.</li>
     </ul>
   </div>
 </section>
@@ -76,8 +75,12 @@ description: Resume of Mohammad Ali Jesar, senior full-stack and AI engineer (Ru
     <p>AI agent that scores a Shopify product's AI discoverability (GEO and AEO) with five tools, deterministic scoring in Ruby, an eval harness and live tracing.</p>
   </div>
   <div class="job">
-    <h3>little_ghost (upstream contributions)</h3>
-    <p>Found, reproduced and fixed three bugs in the little_ghost Ruby agent gem (Gemini thought signatures, function response names, dropped agent hooks). All three merged and released in 0.11.0.</p>
+    <h3><a href="/projects/support_engineer/">support_engineer</a> (in progress)</h3>
+    <p>Production-style AI support agent in Rails 8.1, built in 14 lessons. Done so far: import of a public dataset of about 99,000 orders with planted test scenarios, a RubyLLM agent, and four read tools with specs and a recorded tool-calling run. Human approval for refunds, returns and cancellations is planned.</p>
+  </div>
+  <div class="job">
+    <h3><a href="/projects/#open-source">little_ghost</a> (upstream contributions)</h3>
+    <p>Found, reproduced and fixed three bugs in the little_ghost Ruby agent gem, all merged and released in 0.11.0: <a href="https://github.com/littleghostai/little_ghost/pull/112" rel="noopener" target="_blank">#112</a> replay Gemini thought signatures across multi-turn tool calls, <a href="https://github.com/littleghostai/little_ghost/pull/113" rel="noopener" target="_blank">#113</a> send the original function name in functionResponse.name, <a href="https://github.com/littleghostai/little_ghost/pull/115" rel="noopener" target="_blank">#115</a> preserve Agent lifecycle hooks when building execution snapshots.</p>
   </div>
 </section>
 
