@@ -1,6 +1,6 @@
 # Mohammad Ali Jesar (mjesar)
 
-> Senior Ruby on Rails engineer in Lahore, Pakistan with 7+ years of experience. Shopify and e-commerce apps, integrations, MCP servers, RAG with pgvector and AI agents. Open to remote roles and freelance work. Uses the handle mjesar on GitHub, LinkedIn, Fiverr and Instagram.
+> Senior Ruby on Rails engineer in Lahore, Pakistan with 7+ years of experience. Shopify and e-commerce apps, integrations, MCP servers, RAG with pgvector and AI agents. Open to remote roles and freelance work. Uses the handle mjesar on GitHub, LinkedIn and Fiverr.
 
 ## Profiles
 
@@ -10,7 +10,6 @@
 - [GitHub](https://github.com/mjesar)
 - [LinkedIn](https://www.linkedin.com/in/mjesar/)
 - [Fiverr](https://www.fiverr.com/mjesar)
-- [Instagram](https://www.instagram.com/mjesar)
 - Email: mohammadalijaisar@gmail.com
 
 ## Experience
