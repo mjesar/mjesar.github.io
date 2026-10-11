@@ -20,7 +20,7 @@ description: Hire Mohammad Ali Jesar (mjesar), a senior full-stack and AI engine
 
 ## What I can do for you
 
-<div class="grid">
+<div class="grid two">
 {%- for s in site.data.services %}
 <article class="card">
 <h3><a href="/services/{{ s.slug }}/">{{ s.name }}</a></h3>

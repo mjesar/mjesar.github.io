@@ -188,3 +188,9 @@ main section + section { padding-top: 14px; }
 
 /* Hero tagline: the one human line above the keywords */
 .hero .tagline { font-family: var(--serif); font-weight: 500; font-size: clamp(1.15rem, 3vw, 1.5rem); color: var(--apricot); margin: 0 0 10px; }
+
+/* Two-up grid for the four services: 2 x 2 on desktop, one column on phones */
+.grid.two { grid-template-columns: repeat(2, 1fr); }
+.grid.two .card { display: flex; flex-direction: column; }
+.grid.two .card > p:last-child { margin-top: auto; }
+@media (max-width: 640px) { .grid.two { grid-template-columns: 1fr; } }
