@@ -41,7 +41,7 @@ Available for remote full-time roles and freelance work. Contact by email or thr
 ## Pricing (USD)
 
 {% for r in site.data.pricing -%}
-- {{ r.name }}: {% if r.min %}{% capture lo %}{% include money.html n=r.min %}{% endcapture %}{% capture hi %}{% include money.html n=r.max %}{% endcapture %}{{ lo }} to {{ hi }} per {{ r.unit }} ({{ r.time | downcase }}). {% else %}quoted per project ({{ r.time | downcase }}). {% endif %}{{ r.terms }}
+- {{ r.name }}: {{ r.price }}.{% if r.terms %} {{ r.terms }}{% endif %}
 {% endfor %}
 ## Open source
 

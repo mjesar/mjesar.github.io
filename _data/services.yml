@@ -1,32 +1,27 @@
-# One entry per service, matching the four Fiverr gigs. Each links to /services/<slug>/
-# (see services/<slug>/index.md). `fiverr` holds the gig link only; site prices live in pricing.yml.
-- slug: ai-in-rails
-  name: AI integration for Rails apps
-  summary: "Add ChatGPT, Claude or Gemini to your Ruby on Rails app with AI that can only do what you allow, approval before anything important happens, and clean Rails code your team can maintain. That covers MCP servers, chatbots that answer from your own data, and agents with small focused tools."
-  proof:
-    - { name: shop_mcp_server, url: /projects/shop_mcp_server/ }
-    - { name: ai_shop_assistant, url: /projects/ai_shop_assistant/ }
-    - { name: product_geo_agent, url: /projects/product_geo_agent/ }
-    - { name: support_engineer, url: /projects/support_engineer/ }
-  fiverr:
-    url: https://www.fiverr.com/mjesar/integrate-openai-claude-or-mcp-ai-agents-into-your-ruby-on-rails-app
+# One entry per service, in the order shown on /services/. Each links to /services/<slug>/
+# (see services/<slug>/index.md). `summary` is the "What I do" line and feeds the
+# Service structured data and llms.txt; `evidence` is Markdown.
 - slug: rails-development
-  name: Rails fixes, upgrades and new features
-  summary: "Fix bugs and errors, build new features into a Ruby on Rails app you already have, or turn your idea into a working product you can launch. From a single bug fix to a new feature or MVP, with tests and clear hand-over."
-  proof: []
-  fiverr:
-    url: https://www.fiverr.com/mjesar/fix-upgrade-and-build-features-for-your-ruby-on-rails-app
+  name: Full-stack Ruby on Rails development
+  for: founders, CEOs, product teams and agencies.
+  problem: You have an idea that needs to become a working product, or a Rails app that needs new features or fixes.
+  summary: New applications and MVPs from idea to launch, full projects, and work on existing codebases, with Hotwire or React frontends and tests.
+  evidence: 7+ years of production Rails for clients in the US and Germany; [ai_shop_assistant](/projects/ai_shop_assistant/) and [support_engineer](/projects/support_engineer/) built from scratch on Rails 8.1.
+- slug: ai-in-rails
+  name: AI engineering
+  for: companies hiring an AI engineer with Rails, CTOs, CEOs and agencies.
+  problem: You want AI in your product, like an assistant, smart search or an agent, but it has to give correct answers from your real data and must never take actions on its own.
+  summary: LLM integrations, MCP servers, RAG with pgvector on PostgreSQL, and agents with narrow, validated tools, approval before any write, and evals.
+  evidence: "[shop_mcp_server](/projects/shop_mcp_server/), [ai_shop_assistant](/projects/ai_shop_assistant/), [product_geo_agent](/projects/product_geo_agent/), [support_engineer](/projects/support_engineer/) (in progress), and [three merged pull requests in little_ghost](/projects/#open-source)."
 - slug: shopify-development
-  name: Shopify apps, checkout and integrations
-  summary: "Custom Shopify apps (private or public), Checkout UI Extensions, Shopify Functions and API integrations that connect Shopify to your CRM, ERP, warehouse or any third-party tool. I also build for BigCommerce and sync data with Amazon (SP-API)."
-  proof:
-    - { name: past app work, url: /projects/#shopify-apps }
-  fiverr:
-    url: https://www.fiverr.com/mjesar/build-custom-shopify-apps-checkout-extensions-and-api-integrations
+  name: Shopify, BigCommerce and e-commerce
+  for: store owners (merchants), Shopify app companies and agencies.
+  problem: Your store or app needs behavior that existing apps do not provide, or product, inventory and order data has to stay in sync across stores, marketplaces and other systems.
+  summary: Custom and public Shopify apps, Shopify Functions and Checkout UI Extensions, Theme App Extensions and Liquid, BigCommerce apps, Amazon SP-API listings, data sync with webhooks and retried background jobs, and AI shopping features on top of store catalogs.
+  evidence: I contributed to [five apps on the Shopify App Store](/projects/#shopify-apps), three of them also on BigCommerce; [ai_shop_assistant](/projects/ai_shop_assistant/).
 - slug: ai-discoverability
-  name: AI discoverability for Shopify stores (GEO and AEO)
-  summary: "Shoppers now ask ChatGPT, Google AI Mode and Perplexity what to buy. I check whether your store is discoverable by AI shopping agents, then fix what is blocking it, so your products do not get skipped even when they are the best match."
-  proof:
-    - { name: product_geo_agent, url: /projects/product_geo_agent/ }
-  fiverr:
-    url: https://www.fiverr.com/mjesar/make-your-shopify-store-visible-to-chatgpt-and-ai-shopping-agents-ff6a
+  name: AI discoverability for online stores (GEO and AEO)
+  for: e-commerce brands and store owners.
+  problem: Shoppers now ask AI assistants what to buy. A product page that reads well to a person can still be incomplete or hard for an AI assistant to trust.
+  summary: I audit product data, FAQ content and schema.org structured data, test whether an AI assistant would recommend the product, and fix the gaps.
+  evidence: "[product_geo_agent](/projects/product_geo_agent/), plus [structured data (JSON-LD) apps](/projects/#shopify-apps) I worked on for Shopify and BigCommerce."

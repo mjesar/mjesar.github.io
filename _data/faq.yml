@@ -1,12 +1,14 @@
 # Services FAQ. Add entries as "- q:" / "a:" pairs; they render on /services/
 # and are included in the FAQPage structured data automatically.
-- q: What kinds of engagements do you take?
-  a: Remote full-time roles, contracts, and fixed-scope jobs. Tell me which one you have in mind when you get in touch.
-- q: Which time zones do you work in?
-  a: I am based in Lahore, Pakistan (UTC+5) and I adapt my hours to your time zone, including U.S. and European business hours, so you get real-time overlap with your team. Tell me your time zone and the hours you need, and we will agree the overlap before we start.
-- q: How does a project start?
-  a: A short call or message about the problem, then a written plan with scope, approach and risks before any code is written.
-- q: Can you work on a Rails app that already exists?
-  a: Yes. Most of my AI work is adding features to Rails apps that are already running, using the data and actions they already have.
-- q: Do you take smaller, fixed-scope jobs?
-  a: Yes, you can order those on Fiverr (fiverr.com/mjesar), or email me for anything larger.
+- q: Can you build a new product or MVP from an idea?
+  a: Yes. I start with a written plan for the smallest version that proves the idea, then build it in small reviewed steps with tests, so it can grow into a full product.
+- q: Can you work on a Rails app we already run in production?
+  a: Yes. I read the code and tests first, work on branches with pull requests, and keep changes small enough for your team to review.
+- q: How do you keep AI features safe when they use real data?
+  a: The model only gets narrow tools with validated arguments, anything that writes needs approval, and decisions that must be repeatable stay in code. shop_mcp_server and product_geo_agent are working examples.
+- q: Can you take over a Shopify app or integration someone else built?
+  a: Yes. I start by reading the code and checking how it uses the Shopify APIs and webhooks, then fix or extend it.
+- q: Are you available as a full-time remote engineer?
+  a: Yes. I am open to remote full-time roles as well as contracts and project work.
+- q: How much do you charge?
+  a: Hourly work is $45 to $60. Fixed-scope projects are quoted after a written plan, and monthly contract rates are available on request.

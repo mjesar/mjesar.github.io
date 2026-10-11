@@ -1,16 +1,15 @@
 {%- assign rows = site.data.pricing -%}
 {%- if rows and rows.size > 0 %}
 <h2 id="pricing">Pricing</h2>
-<p>All prices are in USD. The exact price within a range depends on the scope of the work and how long we work together.</p>
+<p>All prices are in USD.</p>
 <table>
-  <thead><tr><th>Engagement</th><th>Time</th><th>Price</th><th>Terms</th></tr></thead>
+  <thead><tr><th>Engagement</th><th>Price</th><th>Terms</th></tr></thead>
   <tbody>
   {%- for r in rows %}
     <tr>
       <td><strong>{{ r.name }}</strong></td>
-      <td>{{ r.time }}</td>
-      <td>{% if r.min %}{% include money.html n=r.min %} to {% include money.html n=r.max %} per {{ r.unit }}{% else %}Quoted per project{% endif %}</td>
-      <td>{{ r.terms }}</td>
+      <td>{{ r.price }}</td>
+      <td>{{ r.terms | markdownify | remove: '<p>' | remove: '</p>' | strip }}</td>
     </tr>
   {%- endfor %}
   </tbody>

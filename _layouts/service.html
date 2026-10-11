@@ -10,9 +10,6 @@ layout: default
     <p class="lede">{{ svc.summary }}</p>
     <ul class="links">
       <li><a class="btn primary" href="mailto:mohammadalijaisar@gmail.com?subject={{ svc.name | uri_escape }}">Email me about this</a></li>
-      {%- if svc.fiverr %}
-      <li><a class="btn" href="{{ svc.fiverr.url }}" rel="noopener" target="_blank">Order on Fiverr</a></li>
-      {%- endif %}
       <li><a class="btn" href="/services/">All services</a></li>
     </ul>
   </div>
@@ -20,14 +17,10 @@ layout: default
 <main class="wrap prose">
 {{ content }}
 <h2>Scope and pricing</h2>
-<p>Every project is different, so I scope it from your details. Send me what you are trying to do, your stack and your timeline, and I will reply with a scope and a quote. My general rates are in the <a href="/services/#pricing">pricing table</a>: monthly contracts, hourly, or a quoted fixed-scope project.</p>
-{%- if svc.proof.size > 0 %}
-<h2>Proof</h2>
-<ul>
-  {%- for p in svc.proof %}
-  <li><a href="{{ p.url }}">{{ p.name }}</a></li>
-  {%- endfor %}
-</ul>
+<p>Every project is different, so I scope it from your details. Send me what you are trying to do, your stack and your timeline, and I will reply with a scope and a quote. My general rates are in the <a href="/services/#pricing">pricing table</a>: hourly, a fixed-scope project quoted after a written plan, or a monthly contract.</p>
+{%- if svc.evidence %}
+<h2>Evidence</h2>
+<p>{{ svc.evidence | markdownify | remove: '<p>' | remove: '</p>' | strip }}</p>
 {%- endif %}
 {%- if page.faq %}{% include faq.html items=page.faq %}{% endif %}
 <section class="no-print">
