@@ -2,6 +2,8 @@
 
 > Senior Ruby on Rails engineer in Lahore, Pakistan with 7+ years of experience. Shopify and e-commerce apps, integrations, MCP servers, RAG with pgvector and AI agents. Open to remote roles and freelance work. Uses the handle mjesar on GitHub, LinkedIn and Fiverr.
 
+Identity: Ruby on Rails engineer based in Lahore, Pakistan, who builds Shopify and BigCommerce apps and adds AI (MCP servers, RAG, agents) to Rails applications. Holds a B.S. in Information Technology from Sindh Agricultural University and previously worked as a backend engineer at SimpleDeploy. Online handle: mjesar. Available now for remote roles and freelance work.
+
 ## Profiles
 
 - [Website](https://mjesar.github.io/)
@@ -14,7 +16,7 @@
 
 ## Experience
 
-- MGLogics (Dec 2021 to Jun 2026, remote): full-stack Ruby on Rails and React engineer on Shopify and BigCommerce apps, catalog and order sync, and Amazon SP-API integrations.
+- MGLogics (Dec 2021 to Jun 2026, remote): Ruby on Rails developer, Shopify and BigCommerce app development. Work included catalog and order sync and Amazon SP-API integrations.
 - SimpleDeploy (Apr 2019 to Dec 2021): backend engineer building Rails REST APIs.
 - Education: B.S. in Information Technology (Software), Sindh Agricultural University, 2012 to 2017.
 

@@ -1,7 +1,7 @@
 ---
 title: Now
 description: What Mohammad Ali Jesar is working on right now.
-updated: 2026-10-10
+updated: 2026-10-11
 ---
 <div class="hero small">
   <div class="wrap">
@@ -16,7 +16,7 @@ updated: 2026-10-10
 
 ## Looking for my next role
 
-After four and a half years at MGLogics, I am looking for a **remote full-time role** as a senior Ruby on Rails engineer, ideally where Shopify, e-commerce or AI features meet. I am also taking **freelance projects**. See [Services](/services/) or [email me](mailto:mohammadalijaisar@gmail.com).
+After four and a half years at MGLogics, I am looking for a **remote full-time role** as a senior Ruby on Rails engineer, ideally where Shopify, e-commerce or AI features meet. I am available to start now, and also taking **freelance projects**. See [Services](/services/) or [email me](mailto:mohammadalijaisar@gmail.com).
 
 ## Building
 
