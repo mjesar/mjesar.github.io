@@ -44,10 +44,16 @@ Identity: online handle mjesar. Holds a B.S. in Information Technology (Software
 {% endfor %}
 ## Projects
 
-{%- for p in site.data.projects %}
+{% for p in site.data.projects -%}
 - [{{ p.name }}]({{ "/projects/" | append: p.slug | append: "/" | absolute_url }}): {{ p.summary }} Code: https://github.com/mjesar/{{ p.slug }}
-{%- endfor %}
+{% endfor %}
+{% if site.posts.size > 0 -%}
+## Writing
 
+{% for post in site.posts -%}
+- [{{ post.title }}]({{ post.url | absolute_url }}): {{ post.description }}
+{% endfor %}
+{% endif -%}
 ## Open source
 
 - little_ghost (Ruby agent framework): three merged pull requests, released in 0.11.0.

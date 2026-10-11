@@ -24,5 +24,14 @@ description: Articles and posts by Mohammad Ali Jesar on Ruby on Rails, AI agent
 {%- else %}
   <p>No articles here yet. The best way to see how I think is the <a href="/projects/">project write-ups</a>, which explain how each build works, and my posts on <a href="https://www.linkedin.com/in/mjesar/recent-activity/all/" rel="noopener" target="_blank">LinkedIn</a>.</p>
 {%- endif %}
+{%- if site.data.planned_posts and site.data.planned_posts.size > 0 %}
+  <h2>Coming next</h2>
+  <ul>
+  {%- for post in site.data.planned_posts %}
+    <li>{{ post.title }}</li>
+  {%- endfor %}
+  </ul>
+  <p>Until then, the <a href="/services/">services page</a> explains the kind of work these articles come from.</p>
+{%- endif %}
 </section>
 </main>
