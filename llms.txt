@@ -1,3 +1,8 @@
+---
+layout: null
+sitemap: false
+permalink: /llms.txt
+---
 # Mohammad Ali Jesar (mjesar)
 
 > Senior full-stack and AI engineer (Ruby on Rails) in Lahore, Pakistan with 7+ years of experience. Shopify and e-commerce apps, integrations, MCP servers, RAG with pgvector and AI agents. Open to remote roles and freelance work. Uses the handle mjesar on GitHub, LinkedIn and Fiverr.
@@ -22,15 +27,22 @@ Identity: Ruby on Rails engineer based in Lahore, Pakistan, who builds Shopify a
 
 ## Projects
 
-- [shop_mcp_server](https://mjesar.github.io/projects/shop_mcp_server/): MCP server in Rails exposing a store's products, orders and inventory to Claude, with pgvector semantic search.
-- [ai_shop_assistant](https://mjesar.github.io/projects/ai_shop_assistant/): shopping assistant using RubyLLM, Gemini and Shopify's Catalog API over MCP.
-- [product_geo_agent](https://mjesar.github.io/projects/product_geo_agent/): agent that scores how discoverable a Shopify product is to AI assistants (GEO and AEO).
-- [support_engineer](https://mjesar.github.io/projects/support_engineer/): Rails 8 AI support agent with human approval before actions.
+{%- for p in site.data.projects %}
+- [{{ p.name }}]({{ "/projects/" | append: p.slug | append: "/" | absolute_url }}): {{ p.summary }}
+{%- endfor %}
 
 ## Services
 
-Available for remote full-time roles and freelance work: AI integration for Ruby on Rails apps (MCP servers, RAG, AI agents), Shopify and BigCommerce app development, Shopify Functions and checkout customization, and e-commerce integrations and sync. Contact by email or through Fiverr (https://www.fiverr.com/mjesar).
+Available for remote full-time roles and freelance work. Contact by email or through Fiverr (https://www.fiverr.com/mjesar).
 
+{% for s in site.data.services -%}
+- [{{ s.name }}]({{ "/services/" | append: s.slug | append: "/" | absolute_url }}): {{ s.summary }}
+{% endfor %}
+## Pricing (USD)
+
+{% for r in site.data.pricing -%}
+- {{ r.name }}: {% if r.min %}{% capture lo %}{% include money.html n=r.min %}{% endcapture %}{% capture hi %}{% include money.html n=r.max %}{% endcapture %}{{ lo }} to {{ hi }} per {{ r.unit }} ({{ r.time | downcase }}). {% else %}quoted per project ({{ r.time | downcase }}). {% endif %}{{ r.terms }}
+{% endfor %}
 ## Open source
 
 - Three bug fixes merged into the little_ghost Ruby agent gem (released in 0.11.0): https://github.com/littleghostai/little_ghost/pull/112, https://github.com/littleghostai/little_ghost/pull/113, https://github.com/littleghostai/little_ghost/pull/115
