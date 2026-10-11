@@ -1,5 +1,5 @@
 ---
-title: Now
+title: "Now: Open to Remote Rails and AI Work"
 description: "What Mohammad Ali Jesar is working on right now: open to remote Rails and AI roles and freelance projects, plus current open-source builds."
 updated: 2026-10-11
 ---

@@ -1,7 +1,7 @@
 ---
 layout: service
 slug: ai-discoverability
-title: "AI discoverability for Shopify stores (GEO and AEO)"
+title: AI Visibility for Shopify Stores (GEO)
 description: "Audit and fix your Shopify store so ChatGPT, Google AI Mode and Perplexity can find and recommend your products. By Mohammad Ali Jesar."
 faq:
   - q: "Is this the same as SEO?"

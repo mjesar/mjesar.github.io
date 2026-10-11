@@ -1,5 +1,5 @@
 ---
-title: Services
+title: Hire a Ruby on Rails and AI Engineer
 description: "Hire Mohammad Ali Jesar (mjesar), senior Rails and AI engineer: AI integration, Shopify and BigCommerce apps and integrations. Remote, full-time or freelance."
 ---
 <div class="hero small">
