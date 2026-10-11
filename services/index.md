@@ -1,6 +1,6 @@
 ---
 title: Services
-description: Hire Mohammad Ali Jesar (mjesar), a senior full-stack and AI engineer (Ruby on Rails), for AI integration in Rails (MCP servers, RAG, agents), Shopify and BigCommerce apps, Shopify Functions and e-commerce integrations. Remote, full-time or freelance.
+description: "Hire Mohammad Ali Jesar (mjesar), senior Rails and AI engineer: AI integration, Shopify and BigCommerce apps and integrations. Remote, full-time or freelance."
 ---
 <div class="hero small">
   <div class="wrap">

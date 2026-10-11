@@ -3,7 +3,7 @@ layout: project
 slug: support_engineer
 title: support_engineer
 kind: Production-style AI support agent in Ruby on Rails (in progress)
-description: A Rails support agent that investigates customer problems, searches company policies, checks real order data, and takes safe actions only with human approval. Built lesson by lesson.
+description: A Rails support agent that investigates customer problems, checks real order data and takes safe actions only with human approval. Built lesson by lesson.
 stack: Ruby 4.0 · Rails 8.1 · PostgreSQL · RubyLLM · official MCP Ruby SDK · pgvector (planned)
 repo: https://github.com/mjesar/support_engineer
 jsonld:

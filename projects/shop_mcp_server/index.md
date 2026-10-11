@@ -3,7 +3,7 @@ layout: project
 slug: shop_mcp_server
 title: shop_mcp_server
 kind: MCP server and RAG in Ruby on Rails
-description: An MCP server in Ruby on Rails that lets an AI assistant such as Claude read a store's products, orders and inventory, place orders with approval, and search products by meaning.
+description: An MCP server in Ruby on Rails that lets Claude read a store's products, orders and inventory, place orders with approval, and search by meaning.
 stack: Ruby 4.0 · Rails 8.1 · official MCP Ruby SDK · PostgreSQL · pgvector · Voyage AI · RSpec
 repo: https://github.com/mjesar/shop_mcp_server
 jsonld:

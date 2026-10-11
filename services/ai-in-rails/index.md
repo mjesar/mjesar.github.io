@@ -2,7 +2,7 @@
 layout: service
 slug: ai-in-rails
 title: "AI integration for Rails apps"
-description: "Add ChatGPT, Claude or Gemini to your Rails app with MCP servers, chatbots on your own data and agents that need approval before risky actions. By Mohammad Ali Jesar."
+description: "Add ChatGPT, Claude or Gemini to your Rails app with MCP servers, chatbots on your data and approval-gated agents. By Mohammad Ali Jesar."
 faq:
   - q: "Can you integrate ChatGPT into my existing Rails app?"
     a: "Yes. Most of my AI work is adding features to Rails apps that are already running, using the data and actions they already have."

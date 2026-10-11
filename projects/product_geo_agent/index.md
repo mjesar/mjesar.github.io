@@ -3,7 +3,7 @@ layout: project
 slug: product_geo_agent
 title: product_geo_agent
 kind: AI agent for GEO and AEO in Ruby on Rails
-description: A Ruby on Rails command-line AI agent that checks whether AI shopping assistants can find, understand and recommend a Shopify product, scores it from 0 to 100 and names the top gaps.
+description: A Rails command-line AI agent that checks whether AI assistants can find and recommend a Shopify product, scores it 0 to 100 and names the top gaps.
 stack: Ruby 4.0 · Rails 8.1 · little_ghost · Gemini · Shopify Storefront GraphQL API · PostgreSQL · RSpec
 repo: https://github.com/mjesar/product_geo_agent
 jsonld:
