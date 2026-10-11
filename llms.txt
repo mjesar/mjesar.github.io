@@ -30,7 +30,7 @@ Identity: online handle mjesar. Holds a B.S. in Information Technology (Software
 
 - Rails and web: Ruby on Rails, Hotwire (Turbo, Stimulus), React, JavaScript, TypeScript, PostgreSQL, MongoDB, Redis, Sidekiq, Solid Queue, REST and GraphQL APIs, RSpec, Heroku, AWS, Google Cloud, Docker.
 - Shopify and e-commerce: Polaris, App Bridge, Admin and Storefront APIs (REST and GraphQL), webhooks, Shopify Functions (including migrations from Shopify Scripts), Checkout UI Extensions, Checkout Extensibility, Shopify Plus B2B, Theme App Extensions, Liquid, App Store publishing, BigCommerce apps, Amazon SP-API.
-- AI: LLM integrations (Claude, OpenAI, Gemini, RubyLLM), MCP servers and an MCP client, RAG with pgvector on PostgreSQL, agents with tool calling, evals.
+- AI: agentic AI, workflow and business process automation (n8n or code), LLM integrations (Claude, OpenAI, Gemini, RubyLLM), MCP servers and an MCP client, RAG with pgvector on PostgreSQL, agents with tool calling, evals.
 
 ## Services
 

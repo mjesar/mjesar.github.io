@@ -2,9 +2,9 @@
 layout: service
 slug: ai-in-rails
 title: "AI Engineering in Ruby on Rails: Agents, RAG and MCP"
-description: "AI engineering in Ruby on Rails: LLM features, RAG on PostgreSQL with pgvector, MCP servers and agents that work with your real data and ask before any write."
+description: "Agentic AI engineering in Ruby on Rails: AI agents, workflow automation with n8n, RAG on PostgreSQL with pgvector and MCP servers, integrated into existing systems."
 image: /assets/img/og/ai-in-rails.png
-promise: AI features that answer from your real data and never act without approval, built inside the Rails app you already run.
+promise: Agentic AI and automated workflows that answer from your real data and never act without approval, built into the Rails app and existing systems you already run.
 contact_ask: what you want the AI to do
 faq:
   - q: "Do we need a separate Python service for AI?"
@@ -13,6 +13,8 @@ faq:
     a: "Yes. With the pgvector extension, embeddings are stored in a column next to your existing data and searched with SQL, so there is no separate vector database to run."
   - q: "How do you stop the AI from making mistakes?"
     a: "It gets narrow tools with validated arguments, so it looks facts up instead of guessing. Anything that writes needs a person's approval, exact work such as math stays in Ruby, and evals check the answers before and after each change."
+  - q: "Do you work with n8n?"
+    a: "Yes. I build automated workflows in n8n and connect them to AI models and to your existing systems through webhooks, APIs and MCP. When a workflow needs complex logic, tests or approval steps, I build that part in Rails code."
   - q: "Which AI models do you work with?"
     a: "Claude, OpenAI (ChatGPT) and Gemini. I use RubyLLM so the provider can change with a config change, and Voyage AI for embeddings."
 ---
@@ -25,6 +27,7 @@ Companies hiring an AI engineer with Rails, CTOs and product teams with a Rails 
 - Your customers or staff need answers from your own data (orders, products, documents), not from what a model guesses.
 - Search only finds exact words, so people miss what they are looking for.
 - You want an assistant or agent that can do real tasks, but only with a person's approval before anything changes.
+- Manual business processes, such as order lookups, support triage or data entry, take hours that automation could save.
 - You want AI in your product without adding a second stack your team has to run.
 - You cannot tell whether the AI is giving correct answers, or whether a change made it worse.
 
@@ -34,6 +37,7 @@ Companies hiring an AI engineer with Rails, CTOs and product teams with a Rails 
 - **MCP servers** (Model Context Protocol) on the official MCP Ruby SDK: schema-validated tools, read-only and destructive annotations so writes need approval, resources and prompts.
 - **MCP clients** that call external MCP APIs, such as Shopify's live Catalog API.
 - **RAG** (retrieval-augmented generation) with embeddings stored in your existing PostgreSQL using pgvector, searched by meaning instead of keywords.
+- **Agentic AI and workflow automation**: agents that complete multi-step tasks with tools, and automated workflows built in n8n or in Rails code, connected to your existing systems through APIs, webhooks and MCP.
 - **Agents with tool calling**: narrow tools, validated arguments, approval before any write, and plain Ruby for anything that must be exact, such as scores and totals.
 - **Evals and tracing**: repeatable test runs against hand-written expectations, and a trace of every tool call so you can see what the agent did.
 

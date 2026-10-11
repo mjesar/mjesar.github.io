@@ -27,6 +27,7 @@ Store owners (merchants) on Shopify or BigCommerce, Shopify app companies, and a
 - Your discount, shipping or payment logic still lives in Shopify Scripts and needs to move to Shopify Functions.
 - You sell wholesale on Shopify Plus and need B2B behavior that the built-in features do not cover.
 - Products, inventory or orders get out of sync between your store and other stores, marketplaces or systems.
+- Your team spends hours on manual store work that an automated workflow could handle.
 - Your Amazon listings fall behind your store, and keeping them up to date is manual work.
 - You want AI shopping features that answer from your real catalog.
 
@@ -38,7 +39,7 @@ Store owners (merchants) on Shopify or BigCommerce, Shopify app companies, and a
 - **Storefront features** with Theme App Extensions and Liquid.
 - **BigCommerce apps** on the Catalog, Orders and Checkout APIs.
 - **Amazon SP-API integrations** for listings, variants and images.
-- **Data sync** for products, inventory and orders, with webhooks and background jobs that retry safely.
+- **Workflow automation and data sync** for products, inventory and orders, with webhooks and background jobs that retry safely, replacing manual work.
 - **AI shopping features** on top of a store's catalog, see [AI engineering](/services/ai-in-rails/).
 
 ## Evidence

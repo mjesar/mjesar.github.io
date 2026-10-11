@@ -11,7 +11,7 @@
   name: AI engineering
   for: companies hiring an AI engineer with Rails, CTOs, CEOs and agencies.
   problem: You want AI in your product, like an assistant, smart search or an agent, but it has to give correct answers from your real data and must never take actions on its own.
-  summary: LLM integrations, MCP servers, RAG with pgvector on PostgreSQL, and agents with narrow, validated tools, approval before any write, and evals.
+  summary: Agentic AI, LLM integrations, workflow automation with n8n, MCP servers, RAG with pgvector on PostgreSQL, and agents with narrow, validated tools, approval before any write, and evals.
   evidence: "[shop_mcp_server](/projects/shop_mcp_server/), [ai_shop_assistant](/projects/ai_shop_assistant/), [product_geo_agent](/projects/product_geo_agent/), [support_engineer](/projects/support_engineer/) (in progress), and [three merged pull requests in little_ghost](/projects/#open-source)."
 - slug: shopify-development
   name: Shopify, BigCommerce and e-commerce
