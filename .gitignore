@@ -5,3 +5,6 @@ _site/
 # private design notes
 docs/design.md
 docs/**/*.pdf
+
+# private website plan checklist
+WEBSITE_CHECKLIST.md
