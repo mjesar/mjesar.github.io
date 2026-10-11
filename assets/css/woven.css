@@ -166,6 +166,13 @@ main section + section { padding-top: 14px; }
 }
 @media print {
   body::before, .site-footer::before, .card::after { display: none; }
+  /* plain, ink-friendly page: no dark hero, no pattern strips */
+  .hero, .hero.small { background: none !important; border: 0; }
+  .hero::before, .hero::after, .hero-net { display: none !important; }
+  .hero h1, .hero .lede, .hero .meta { color: #000; }
+  main section + section::before, .divider { display: none; }
+  main section + section { padding-top: 0; }
+  h2 { break-after: avoid; }
 }
 
 /* Dark mode: hero and page share an indigo, so mark the hero edge with a thread line */
