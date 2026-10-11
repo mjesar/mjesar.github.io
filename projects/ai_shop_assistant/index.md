@@ -2,6 +2,7 @@
 layout: project
 slug: ai_shop_assistant
 title: ai_shop_assistant
+seo_title: "AI Shopping Assistant in Rails over MCP: ai_shop_assistant"
 kind: Tool calling and MCP client in Ruby on Rails
 description: A shopping chat built with Rails 8 where the AI decides when to search Shopify's live Global Catalog over MCP and answers with real products, prices and links.
 stack: Ruby 4.0 · Rails 8.1 · RubyLLM · Gemini · Hotwire · Solid Queue · Solid Cable · MongoDB · RSpec

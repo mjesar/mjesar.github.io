@@ -8,6 +8,10 @@ markdown: kramdown
 kramdown:
   input: GFM
 permalink: /writing/:title/
+# Search engine verification tokens (meta tags in _includes/head.html). Leave empty until set.
+# Google is already verified with google61916a52e42dacd9.html.
+google_site_verification:
+bing_site_verification:
 plugins:
   - jekyll-sitemap
 exclude:
