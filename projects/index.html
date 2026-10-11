@@ -16,18 +16,18 @@ description: Open-source Ruby on Rails projects by Mohammad Ali Jesar on MCP ser
   <h2>AI and agentic commerce</h2>
   <div class="grid">
   {%- for p in site.data.projects %}
-    <article class="card">
+    <article class="card card-link">
       <h3><a href="/projects/{{ p.slug }}/">{{ p.name }}</a></h3>
       <p>{{ p.summary }}</p>
       <p class="stack">{{ p.stack }}</p>
     </article>
   {%- endfor %}
-    <article class="card">
+    <article class="card card-link">
       <h3><a href="https://github.com/mjesar/ucp_catalog" rel="noopener" target="_blank">ucp_catalog</a></h3>
       <p>A Ruby gem, in early development, for talking to any Universal Commerce Protocol (UCP) catalog API through one interface, starting with Shopify's Global Catalog.</p>
       <p class="stack">Ruby gem · OAuth2 client credentials · RSpec</p>
     </article>
-    <article class="card">
+    <article class="card card-link">
       <h3><a href="#open-source">little_ghost (open-source contributions)</a></h3>
       <p>Three merged pull requests in the little_ghost Ruby agent framework, fixing bugs I found while building product_geo_agent: <a href="https://github.com/littleghostai/little_ghost/pull/112" rel="noopener" target="_blank">#112</a>, <a href="https://github.com/littleghostai/little_ghost/pull/113" rel="noopener" target="_blank">#113</a> and <a href="https://github.com/littleghostai/little_ghost/pull/115" rel="noopener" target="_blank">#115</a>.</p>
       <p class="stack">Ruby · Gemini · agent framework</p>

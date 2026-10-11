@@ -28,7 +28,7 @@ layout: default
   <div class="grid">
   {%- for p in site.data.projects -%}
     {%- unless p.slug == page.slug %}
-    <article class="card">
+    <article class="card card-link">
       <h3><a href="/projects/{{ p.slug }}/">{{ p.name }}</a></h3>
       <p class="muted">{{ p.summary }}</p>
     </article>

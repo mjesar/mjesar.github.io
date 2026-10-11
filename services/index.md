@@ -22,13 +22,13 @@ image: /assets/img/og/services.png
 
 <div class="grid two">
 {%- for s in site.data.services %}
-<article class="card">
+<article class="card card-link">
 <h3><a href="/services/{{ s.slug }}/">{{ s.name }}</a></h3>
 <p><strong>For:</strong> {{ s.for }}</p>
 <p><strong>The problem:</strong> {{ s.problem }}</p>
 <p><strong>What I do:</strong> {{ s.summary }}</p>
 <p class="stack"><strong>Evidence:</strong> {{ s.evidence | markdownify | remove: '<p>' | remove: '</p>' | strip }}</p>
-<p><a href="/services/{{ s.slug }}/" aria-label="Details: {{ s.name }}">Details</a></p>
+<p class="card-cta" aria-hidden="true"><span class="more">See details</span></p>
 </article>
 {%- endfor %}
 </div>

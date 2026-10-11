@@ -107,7 +107,7 @@ description: "Senior full-stack Ruby on Rails engineer and AI engineer: new apps
   <h2>Featured projects</h2>
   <div class="grid{% if site.data.projects.size == 4 %} two{% endif %}">
   {%- for p in site.data.projects %}
-    <article class="card">
+    <article class="card card-link">
       <div class="swatch" data-seed="{{ p.slug }}" aria-hidden="true"></div>
       <h3><a href="/projects/{{ p.slug }}/">{{ p.name }}</a></h3>
       <p>{{ p.summary }}</p>

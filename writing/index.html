@@ -15,7 +15,7 @@ description: Articles and posts by Mohammad Ali Jesar on Ruby on Rails, AI agent
 <section>
 {%- if site.posts.size > 0 %}
   {%- for post in site.posts %}
-  <article class="card">
+  <article class="card card-link">
     <p class="muted"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%-d %B %Y" }}</time></p>
     <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
     {%- if post.description %}<p>{{ post.description }}</p>{% endif %}

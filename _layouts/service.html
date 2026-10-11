@@ -24,7 +24,7 @@ layout: default
   <div class="grid">
   {%- for s in site.data.services -%}
     {%- unless s.slug == page.slug %}
-    <article class="card">
+    <article class="card card-link">
       <h3><a href="/services/{{ s.slug }}/">{{ s.name }}</a></h3>
     </article>
     {%- endunless -%}
