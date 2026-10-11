@@ -25,7 +25,7 @@ Founders with an idea to turn into a product, CEOs and product teams with a Rail
 - You have an idea and need the smallest working version that proves it, built so it can grow.
 - New features in your app take too long to ship.
 - Bugs in production are costing you customers or time.
-- You need a senior Rails developer who can start on your codebase without a long ramp-up.
+- You need a senior Ruby on Rails developer who can start on your codebase without a long ramp-up.
 
 ## What I build
 

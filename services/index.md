@@ -8,7 +8,7 @@ image: /assets/img/og/services.png
     <div class="bar" aria-hidden="true"></div>
     <h1>Work with me</h1>
     <p class="lede">I am a senior full-stack Ruby on Rails engineer. I build new Rails applications and MVPs, extend applications that are already in production, add AI features that work with real data, and build Shopify and e-commerce software that keeps data correct across systems.</p>
-    <p class="meta">Open to remote full-time roles, contracts and project work · Available now · Usually replies within a few hours · Flexible hours for U.S. and European time zones</p>
+    <p class="meta">Open to remote full-time roles, contracts and freelance projects · Available now · Usually replies within a few hours · Flexible hours for U.S. and European time zones</p>
     <ul class="links">
       <li><a class="btn primary" href="mailto:mohammadalijaisar@gmail.com">Email me</a></li>
       <li><a class="btn" href="https://www.linkedin.com/in/mjesar/" rel="me noopener" target="_blank">LinkedIn</a></li>

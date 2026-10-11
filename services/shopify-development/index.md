@@ -18,7 +18,7 @@ faq:
 ---
 ## Who it is for
 
-Store owners (merchants) on Shopify or BigCommerce, Shopify app companies, and agencies that build for Shopify stores.
+Store owners (merchants) on Shopify or BigCommerce, Shopify app companies, and agencies that build for Shopify stores, who want a Shopify developer that has shipped apps to the Shopify App Store.
 
 ## Problems I solve
 

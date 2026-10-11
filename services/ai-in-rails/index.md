@@ -14,7 +14,7 @@ faq:
   - q: "How do you stop the AI from making mistakes?"
     a: "It gets narrow tools with validated arguments, so it looks facts up instead of guessing. Anything that writes needs a person's approval, exact work such as math stays in Ruby, and evals check the answers before and after each change."
   - q: "Which AI models do you work with?"
-    a: "Claude, OpenAI and Gemini. I use RubyLLM so the provider can change with a config change, and Voyage AI for embeddings."
+    a: "Claude, OpenAI (ChatGPT) and Gemini. I use RubyLLM so the provider can change with a config change, and Voyage AI for embeddings."
 ---
 ## Who it is for
 
@@ -31,9 +31,9 @@ Companies hiring an AI engineer with Rails, CTOs and product teams with a Rails 
 ## What I build
 
 - **LLM features** with Claude, OpenAI or Gemini through RubyLLM, with slow model calls run in background jobs and replies streamed with Turbo Streams.
-- **MCP servers** on the official MCP Ruby SDK: schema-validated tools, read-only and destructive annotations so writes need approval, resources and prompts.
+- **MCP servers** (Model Context Protocol) on the official MCP Ruby SDK: schema-validated tools, read-only and destructive annotations so writes need approval, resources and prompts.
 - **MCP clients** that call external MCP APIs, such as Shopify's live Catalog API.
-- **RAG** with embeddings stored in your existing PostgreSQL using pgvector, searched by meaning instead of keywords.
+- **RAG** (retrieval-augmented generation) with embeddings stored in your existing PostgreSQL using pgvector, searched by meaning instead of keywords.
 - **Agents with tool calling**: narrow tools, validated arguments, approval before any write, and plain Ruby for anything that must be exact, such as scores and totals.
 - **Evals and tracing**: repeatable test runs against hand-written expectations, and a trace of every tool call so you can see what the agent did.
 
