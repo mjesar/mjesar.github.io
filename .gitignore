@@ -4,3 +4,4 @@ _site/
 
 # private design notes
 docs/design.md
+docs/*.pdf
