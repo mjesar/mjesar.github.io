@@ -1,4 +1,4 @@
-{%- assign faqs = site.data.faq -%}
+{%- assign faqs = include.items | default: site.data.faq -%}
 {%- if faqs and faqs.size > 0 %}
 <h2 id="faq">Frequently asked questions</h2>
 <dl class="faq">

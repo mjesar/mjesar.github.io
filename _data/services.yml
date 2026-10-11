@@ -1,0 +1,31 @@
+# One entry per service. Each links to /services/<slug>/ (see services/<slug>/index.md).
+- slug: ai-in-rails
+  name: AI in your Rails app
+  summary: "Connect Claude, OpenAI or Gemini to the data and actions your app already has: an MCP server with safe, approval-gated writes, semantic search with pgvector on the PostgreSQL you already run, or an assistant that answers from real data instead of guessing."
+  proof:
+    - { name: shop_mcp_server, url: /projects/shop_mcp_server/ }
+    - { name: ai_shop_assistant, url: /projects/ai_shop_assistant/ }
+- slug: ai-agents
+  name: AI agents you can trust
+  summary: "Agents with small, focused tools, plain code for anything that must be exact, human approval before risky actions, and evals and tracing so you can see what the agent did and whether its judgment holds up."
+  proof:
+    - { name: product_geo_agent, url: /projects/product_geo_agent/ }
+    - { name: support_engineer, url: /projects/support_engineer/ }
+- slug: shopify-bigcommerce-apps
+  name: Shopify and BigCommerce apps
+  summary: "Embedded apps with Polaris and App Bridge, Admin and Storefront APIs, webhooks, Theme App Extensions and App Store publishing. Five apps on the Shopify App Store, three also on BigCommerce."
+  proof:
+    - { name: published apps, url: /projects/#shopify-apps }
+- slug: shopify-functions-checkout
+  name: Shopify Functions and checkout
+  summary: "Scripts-to-Functions migration for discounts, delivery and payment customizations, Checkout UI Extensions and Checkout Extensibility, and Shopify Plus B2B features."
+  proof: []
+- slug: integrations-sync
+  name: Integrations and sync
+  summary: "Keeping products, inventory and orders in step between suppliers, retailers, Amazon (SP-API) and storefronts, with webhooks and Sidekiq jobs that retry safely."
+  proof: []
+- slug: ai-discoverability
+  name: AI discoverability (GEO and AEO)
+  summary: "Making products easy for AI assistants to read and trust: complete product data, FAQ content and schema.org structured data, checked with the same approach as product_geo_agent."
+  proof:
+    - { name: product_geo_agent, url: /projects/product_geo_agent/ }
