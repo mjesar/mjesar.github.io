@@ -97,6 +97,8 @@ jsonld:
 - You run a Shopify or BigCommerce store or app and need custom functionality, checkout work or integrations.
 - You need a senior Rails engineer who has shipped to production and worked daily with US and European clients, remotely.
 
+{% include faq.html %}
+
 ## Get in touch
 
 The fastest way is email: [mohammadalijaisar@gmail.com](mailto:mohammadalijaisar@gmail.com). Tell me about the project, your stack, and whether you are looking for a full-time hire, a contract, or a fixed-scope job. For smaller fixed-scope work you can also order on [Fiverr](https://www.fiverr.com/mjesar){:target="_blank" rel="noopener"}.
