@@ -13,7 +13,7 @@
     - { name: support_engineer, url: /projects/support_engineer/ }
 - slug: shopify-bigcommerce-apps
   name: Shopify and BigCommerce apps
-  summary: "Embedded apps with Polaris and App Bridge, Admin and Storefront APIs, webhooks, Theme App Extensions and App Store publishing. Five apps on the Shopify App Store, three also on BigCommerce."
+  summary: "Embedded apps with Polaris and App Bridge, Admin and Storefront APIs, webhooks, Theme App Extensions and App Store publishing. I have contributed to five public Shopify apps, three also on BigCommerce."
   proof:
     - { name: published apps, url: /projects/#shopify-apps }
 - slug: shopify-functions-checkout
