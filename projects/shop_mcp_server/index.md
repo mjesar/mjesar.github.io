@@ -2,10 +2,13 @@
 layout: project
 slug: shop_mcp_server
 title: shop_mcp_server
+seo_title: "MCP Server and RAG in Ruby on Rails: shop_mcp_server"
 kind: MCP server and RAG in Ruby on Rails
 description: An MCP server in Ruby on Rails that lets Claude read a store's products, orders and inventory, place orders with approval, and search by meaning.
+image: /assets/img/og/shop_mcp_server.png
 stack: Ruby 4.0 · Rails 8.1 · official MCP Ruby SDK · PostgreSQL · pgvector · Voyage AI · RSpec
 repo: https://github.com/mjesar/shop_mcp_server
+services: [ai-in-rails]
 jsonld:
   "@context": https://schema.org
   "@type": SoftwareSourceCode
@@ -43,6 +46,8 @@ A Rails app that is an MCP server for a small store. Counted from the code:
 
 ## How it works
 
+<figure class="diagram"><img src="/assets/img/projects/shop_mcp_server.svg" width="820" height="312" loading="lazy" alt="Flow diagram of shop_mcp_server in six steps: 1. an MCP client such as Claude or MCP Inspector sends a request, 2. to the /mcp endpoint over Streamable HTTP with JSON-RPC, 3. the MCP server built on the official Ruby SDK routes it, 4. to a tool call (six read-only tools and one write tool that needs approval), 5. the tool reads PostgreSQL through ActiveRecord and pgvector, 6. the model answers from real store data."></figure>
+
 A normal chat reply is `Question → Answer`. With MCP it becomes `Question → pick a tool → real data → Answer`:
 
 1. The client sends `tools/list` and reads every tool's description.
@@ -50,6 +55,14 @@ A normal chat reply is `Question → Answer`. With MCP it becomes `Question → 
 3. The client sends `tools/call` with arguments.
 4. Rails runs plain ActiveRecord code against PostgreSQL.
 5. The model writes its answer from the real numbers.
+
+## What I verified
+
+- **RSpec**, including a spec that proves a failed order line rolls back the whole order, and one that guards the symbol keys of prompt arguments.
+- **MCP Inspector** over Streamable HTTP, calling the tools, resources and prompt by hand.
+- **Claude as a live custom connector** through a tunnel: Claude used the tools to answer from real data and asked before running `create_order_tool`.
+- **CI on every push**: RSpec, RuboCop, Brakeman and bundler-audit.
+- **Not yet covered:** semantic search was checked by hand and has no specs yet.
 
 ## What broke, and what I learned
 
@@ -59,7 +72,7 @@ A normal chat reply is `Question → Answer`. With MCP it becomes `Question → 
 
 The lesson I took from both: docs and tutorials are not the source of truth, running code is.
 
-## Key decisions
+## Approach: key decisions
 
 - **Mount over controller.** The SDK offers two Rails patterns. I mounted one server at boot for the full session lifecycle, accepting that code changes need a restart.
 - **pgvector over a separate vector database.** The app already used PostgreSQL, so embeddings live next to the products.

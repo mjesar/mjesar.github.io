@@ -1,25 +1,13 @@
 {%- assign faqs = include.items -%}
-{%- comment -%} include.pricing adds a "How much do you charge?" entry generated from _data/pricing.yml {%- endcomment -%}
-{%- capture price_a -%}
-{%- if include.pricing -%}
-{%- for r in site.data.pricing -%}{%- if r.min -%}{{ r.name }}: {% include money.html n=r.min %} to {% include money.html n=r.max %} per {{ r.unit }} ({{ r.time | downcase }}). {% endif -%}{%- endfor -%}
-Fixed-scope projects are quoted per project. All prices are in USD, and the exact price depends on scope and how long we work together. Monthly engagements have a minimum of 1 month.
-{%- endif -%}
-{%- endcapture -%}
-{%- assign price_q = "How much do you charge?" -%}
-{%- if faqs.size > 0 or include.pricing %}
+{%- if faqs.size > 0 %}
 <h2 id="faq">Frequently asked questions</h2>
 <dl class="faq">
-{%- if include.pricing %}
-  <dt>{{ price_q }}</dt>
-  <dd>{{ price_a | strip }}</dd>
-{%- endif %}
 {%- for item in faqs %}
   <dt>{{ item.q }}</dt>
   <dd>{{ item.a | markdownify | remove: '<p>' | remove: '</p>' }}</dd>
 {%- endfor %}
 </dl>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{% if include.pricing %}{"@type":"Question","name":{{ price_q | jsonify }},"acceptedAnswer":{"@type":"Answer","text":{{ price_a | strip | jsonify }}}}{% if faqs.size > 0 %},{% endif %}{% endif %}{% for item in faqs %}{"@type":"Question","name":{{ item.q | jsonify }},"acceptedAnswer":{"@type":"Answer","text":{{ item.a | jsonify }}}}{% unless forloop.last %},{% endunless %}{% endfor %}]}
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{% for item in faqs %}{"@type":"Question","name":{{ item.q | jsonify }},"acceptedAnswer":{"@type":"Answer","text":{{ item.a | jsonify }}}}{% unless forloop.last %},{% endunless %}{% endfor %}]}
 </script>
 {%- endif %}

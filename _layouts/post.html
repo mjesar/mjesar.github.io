@@ -16,5 +16,18 @@ layout: default
 {%- if page.linkedin %}
 <p class="muted">First published on <a href="{{ page.linkedin }}" rel="noopener" target="_blank">LinkedIn</a>.</p>
 {%- endif %}
+{%- if page.related_projects or page.related_services %}
+<h2>Related</h2>
+<ul>
+  {%- for slug in page.related_projects %}
+  {%- assign p = site.data.projects | where: "slug", slug | first %}
+  <li>Project: <a href="/projects/{{ p.slug }}/">{{ p.name }}</a>, {{ p.summary | downcase | slice: 0 }}{{ p.summary | slice: 1, 1000 }}</li>
+  {%- endfor %}
+  {%- for slug in page.related_services %}
+  {%- assign s = site.data.services | where: "slug", slug | first %}
+  <li>Service: <a href="/services/{{ s.slug }}/">{{ s.name }}</a></li>
+  {%- endfor %}
+</ul>
+{%- endif %}
 <p><a class="more" href="/writing/">All writing</a></p>
 </main>

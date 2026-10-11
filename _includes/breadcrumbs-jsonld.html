@@ -1,0 +1,17 @@
+{%- comment -%}
+  BreadcrumbList for inner pages, built from the URL: Home > section > page.
+  Names match the visible nav label and the page's h1.
+{%- endcomment -%}
+{%- assign parts = page.url | split: "/" | where_exp: "p", "p != ''" -%}
+{%- assign sections = "projects:Projects,services:Services,writing:Writing,resume:Resume,uses:Uses,now:Now" | split: "," -%}
+{%- assign section_name = parts[0] | capitalize -%}
+{%- for sec in sections -%}{%- assign kv = sec | split: ":" -%}{%- if kv[0] == parts[0] -%}{%- assign section_name = kv[1] -%}{%- endif -%}{%- endfor -%}
+{%- if page.layout == 'service' -%}
+  {%- assign svc = site.data.services | where: "slug", page.slug | first -%}
+  {%- assign leaf_name = svc.name -%}
+{%- else -%}
+  {%- assign leaf_name = page.title -%}
+{%- endif -%}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":{{ "/" | absolute_url | jsonify }}},{"@type":"ListItem","position":2,"name":{{ section_name | jsonify }},"item":{{ "/" | append: parts[0] | append: "/" | absolute_url | jsonify }}}{% if parts.size > 1 %},{"@type":"ListItem","position":3,"name":{{ leaf_name | jsonify }},"item":{{ page.url | absolute_url | jsonify }}}{% endif %}]}
+</script>

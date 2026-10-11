@@ -1,5 +1,6 @@
 ---
 title: Uses
+seo_title: "Uses: My Rails, AI and Shopify Stack"
 description: The tools, stack and setup Mohammad Ali Jesar uses to build Ruby on Rails, Shopify and AI applications.
 ---
 <div class="hero small">

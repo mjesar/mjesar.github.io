@@ -10,12 +10,19 @@ layout: default
     <p class="meta">{{ page.stack }}</p>
     <ul class="links">
       <li><a class="btn primary" href="{{ page.repo }}" rel="noopener" target="_blank">View the code on GitHub</a></li>
-      <li><a class="btn" href="/services/">Work with me</a></li>
+      <li><a class="btn" href="/services/{% if page.services %}{{ page.services[0] }}/{% endif %}">Work with me</a></li>
     </ul>
   </div>
 </div>
 <main class="wrap prose">
 {{ content }}
+{%- if page.services %}
+<h2>Related services</h2>
+<p>Need something like this in your own product? See
+{%- for slug in page.services %}
+{%- assign s = site.data.services | where: "slug", slug | first %} <a href="/services/{{ s.slug }}/">{{ s.name }}</a>{% if forloop.rindex == 2 %} and{% elsif forloop.last %}.{% else %},{% endif %}
+{%- endfor %}</p>
+{%- endif %}
 <section class="no-print">
   <h2>Other projects</h2>
   <div class="grid">

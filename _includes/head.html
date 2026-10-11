@@ -1,4 +1,5 @@
-{%- assign page_title = page.title | default: site.title -%}
+{%- comment -%} `seo_title` overrides the <title> when the visible h1 should stay short (e.g. project names). {%- endcomment -%}
+{%- assign page_title = page.seo_title | default: page.title | default: site.title -%}
 {%- if page.url == "/" -%}{%- assign full_title = page.title -%}{%- else -%}{%- assign full_title = page_title | append: " · Mohammad Ali Jesar" -%}{%- endif -%}
 {%- assign page_description = page.description | default: site.description -%}
 {%- assign page_image = page.image | default: "/og.png" | absolute_url -%}
@@ -11,15 +12,27 @@
 <link rel="me" href="https://github.com/mjesar">
 <link rel="me" href="https://www.linkedin.com/in/mjesar/">
 <link rel="me" href="https://www.fiverr.com/mjesar">
-<meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}profile{% endif %}">
+<meta property="og:type" content="{% if page.layout == 'post' %}article{% elsif page.url == '/' %}profile{% else %}website{% endif %}">
 <meta property="og:site_name" content="Mohammad Ali Jesar">
 <meta property="og:title" content="{{ full_title }}">
 <meta property="og:description" content="{{ page_description }}">
 <meta property="og:url" content="{{ page.url | absolute_url }}">
 <meta property="og:image" content="{{ page_image }}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+{%- capture image_alt -%}Preview card with the title "{{ page_title }}", Mohammad Ali Jesar, mjesar.github.io{%- endcapture %}
+<meta property="og:image:alt" content="{{ image_alt | escape }}">
+<meta name="twitter:image:alt" content="{{ image_alt | escape }}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="#051230">
+{%- comment -%} Search engine verification: set the tokens in _config.yml. {%- endcomment -%}
+{%- if site.google_site_verification %}
+<meta name="google-site-verification" content="{{ site.google_site_verification }}">
+{%- endif %}
+{%- if site.bing_site_verification %}
+<meta name="msvalidate.01" content="{{ site.bing_site_verification }}">
+{%- endif %}
 <script>
   (function () {
     var saved = null;
@@ -40,6 +53,9 @@
 {%- endif %}
 {%- if page.layout == 'service' or page.url == '/services/' %}
 {% include service-jsonld.html %}
+{%- endif %}
+{%- if page.url != '/' %}
+{% include breadcrumbs-jsonld.html %}
 {%- endif %}
 {%- if page.layout == 'post' %}
 <script type="application/ld+json">

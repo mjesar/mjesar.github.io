@@ -12,5 +12,5 @@
   stack: Rails 8.1 · little_ghost · Gemini · Shopify Storefront API · RSpec
 - slug: support_engineer
   name: support_engineer
-  summary: A Rails support agent, in progress, that investigates orders, searches policies and asks a human before it acts.
-  stack: Rails 8.1 · PostgreSQL · RubyLLM · MCP · pgvector
+  summary: A Rails support agent, in progress, that looks up real order data with tools and is designed to ask a human before any risky action.
+  stack: Rails 8.1 · PostgreSQL · RubyLLM · Groq · RSpec
