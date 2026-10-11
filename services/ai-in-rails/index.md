@@ -21,7 +21,3 @@ faq:
 - **MCP servers** so AI assistants can read and act on your data: catalog, orders, inventory and CRM records.
 - **Chatbots that answer from your own documents, help pages or database,** with sources shown (retrieval-augmented generation, or RAG).
 - **AI agents** with small, focused tools, plain code for anything that must be exact, and evals and tracing so you can see what the agent did.
-
-## How I keep it safe
-
-AI that can only do what you allow, approval before anything important happens, and clean Rails code your team can maintain.
