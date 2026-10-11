@@ -1,5 +1,5 @@
 title: Mohammad Ali Jesar
-description: Senior Ruby on Rails engineer. Shopify and e-commerce, AI agents, RAG and MCP.
+description: Senior full-stack and AI engineer (Ruby on Rails). Shopify and e-commerce, AI agents, RAG and MCP.
 url: https://mjesar.github.io
 baseurl: ""
 author: Mohammad Ali Jesar
@@ -12,6 +12,7 @@ plugins:
   - jekyll-sitemap
 exclude:
   - README.md
+  - docs
   - Gemfile
   - Gemfile.lock
 defaults:

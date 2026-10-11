@@ -11,7 +11,6 @@
 <link rel="me" href="https://github.com/mjesar">
 <link rel="me" href="https://www.linkedin.com/in/mjesar/">
 <link rel="me" href="https://www.fiverr.com/mjesar">
-<link rel="me" href="https://www.instagram.com/mjesar">
 <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}profile{% endif %}">
 <meta property="og:site_name" content="Mohammad Ali Jesar">
 <meta property="og:title" content="{{ full_title }}">
@@ -30,10 +29,16 @@
 </script>
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="/assets/css/style.css">
+{%- if page.noindex %}
+<meta name="robots" content="noindex, nofollow">
+{%- endif %}
 {%- if page.jsonld %}
 <script type="application/ld+json">
 {{ page.jsonld | jsonify }}
 </script>
+{%- endif %}
+{%- if page.layout == 'service' or page.url == '/services/' %}
+{% include service-jsonld.html %}
 {%- endif %}
 {%- if page.layout == 'post' %}
 <script type="application/ld+json">

@@ -1,6 +1,6 @@
 ---
-title: Mohammad Ali Jesar (mjesar) · Senior Ruby on Rails Engineer, Shopify and AI
-description: Mohammad Ali Jesar (mjesar) is a senior Ruby on Rails engineer in Lahore, Pakistan with 7+ years of experience in Shopify and e-commerce apps, MCP servers, RAG with pgvector and AI agents. Open to remote roles and freelance work.
+title: Mohammad Ali Jesar (mjesar) · Senior Full-Stack and AI Engineer, Ruby on Rails and Shopify
+description: Mohammad Ali Jesar (mjesar) is a senior full-stack and AI engineer (Ruby on Rails) in Lahore, Pakistan with 7+ years of experience in Shopify and e-commerce apps, MCP servers, RAG with pgvector and AI agents. Open to remote roles and freelance work.
 ---
 <script type="application/ld+json">
 {
@@ -24,8 +24,9 @@ description: Mohammad Ali Jesar (mjesar) is a senior Ruby on Rails engineer in L
       "url": "https://mjesar.github.io/",
       "image": "https://github.com/mjesar.png",
       "email": "mailto:mohammadalijaisar@gmail.com",
-      "jobTitle": "Senior Ruby on Rails Engineer",
-      "description": "Senior Ruby on Rails engineer with 7+ years of experience in Shopify and e-commerce apps, integrations, MCP servers, RAG and AI agents.",
+      "jobTitle": "Senior Full-Stack and AI Engineer (Ruby on Rails)",
+      "disambiguatingDescription": "Ruby on Rails engineer based in Lahore, Pakistan, who builds Shopify and BigCommerce apps and adds AI (MCP servers, RAG, agents) to Rails applications. Holds a B.S. in Information Technology from Sindh Agricultural University and previously worked as a backend engineer at SimpleDeploy. Online handle: mjesar.",
+      "description": "Senior full-stack and AI engineer (Ruby on Rails) with 7+ years of experience in Shopify and e-commerce apps, integrations, MCP servers, RAG and AI agents.",
       "address": { "@type": "PostalAddress", "addressLocality": "Lahore", "addressCountry": "PK" },
       "alumniOf": { "@type": "CollegeOrUniversity", "name": "Sindh Agricultural University" },
       "hasCredential": {
@@ -36,7 +37,7 @@ description: Mohammad Ali Jesar (mjesar) is a senior Ruby on Rails engineer in L
       },
       "hasOccupation": {
         "@type": "Occupation",
-        "name": "Ruby on Rails Engineer",
+        "name": "Full-Stack and AI Engineer (Ruby on Rails)",
         "skills": "Ruby on Rails, PostgreSQL, Redis, Sidekiq, React, Hotwire, Shopify apps, Shopify Functions, Checkout Extensions, BigCommerce apps, Amazon SP-API, MCP servers, RAG, pgvector, AI agents"
       },
       "knowsAbout": [
@@ -48,8 +49,7 @@ description: Mohammad Ali Jesar (mjesar) is a senior Ruby on Rails engineer in L
       "sameAs": [
         "https://github.com/mjesar",
         "https://www.linkedin.com/in/mjesar/",
-        "https://www.fiverr.com/mjesar",
-        "https://www.instagram.com/mjesar"
+        "https://www.fiverr.com/mjesar"
       ]
     },
     {
@@ -64,11 +64,21 @@ description: Mohammad Ali Jesar (mjesar) is a senior Ruby on Rails engineer in L
 </script>
 
 <div class="hero">
+  <svg class="hero-net" viewBox="0 0 600 300" preserveAspectRatio="xMaxYMid slice" aria-hidden="true">
+    <path class="thread" d="M120 220 C 190 150, 230 110, 300 120 S 410 220, 470 150 S 540 60, 575 90"/>
+    <path class="thread" d="M300 120 C 330 60, 380 40, 430 50"/>
+    <path class="thread" d="M470 150 C 500 200, 520 240, 560 250"/>
+    <circle class="halo" cx="120" cy="220" r="16"/><circle class="node" cx="120" cy="220" r="5"/>
+    <circle class="halo olive" cx="300" cy="120" r="20"/><circle class="node olive" cx="300" cy="120" r="6"/>
+    <circle class="halo" cx="470" cy="150" r="18"/><circle class="node" cx="470" cy="150" r="5.5"/>
+    <circle class="ring" cx="430" cy="50" r="7"/><circle class="ring" cx="575" cy="90" r="7"/><circle class="ring" cx="560" cy="250" r="7"/>
+  </svg>
   <div class="wrap">
     <div class="bar" aria-hidden="true"></div>
     <h1>Mohammad Ali Jesar</h1>
-    <p class="lede">Senior Ruby on Rails Engineer · Shopify &amp; E-commerce · AI Agents, RAG &amp; MCP</p>
-    <p class="meta">@mjesar · Lahore, Pakistan · Open to remote roles and freelance projects</p>
+    <p class="tagline">I build Rails apps that AI agents can actually use.</p>
+    <p class="lede">Senior Full-Stack &amp; AI Engineer · Ruby on Rails · Shopify &amp; E-commerce · MCP &amp; RAG</p>
+    <p class="meta">@mjesar · Lahore, Pakistan · Available now for remote roles and freelance projects</p>
     <ul class="links">
       <li><a class="btn primary" href="mailto:mohammadalijaisar@gmail.com">Email me</a></li>
       <li><a class="btn" href="/services/">Services</a></li>
@@ -83,15 +93,17 @@ description: Mohammad Ali Jesar (mjesar) is a senior Ruby on Rails engineer in L
 
 <section id="about">
   <h2>About</h2>
-  <p>I'm Mohammad Ali Jesar (Ali), a senior Ruby on Rails engineer with 7+ years of experience building production software for international clients. I use the handle <strong>mjesar</strong> on GitHub, LinkedIn, Fiverr and Instagram.</p>
-  <p>Most of my work is in Shopify and e-commerce: I contributed to five apps on the Shopify App Store (three also on BigCommerce) and built catalog, order and marketplace integrations. I also add AI to existing Rails applications, including MCP servers, RAG on PostgreSQL, and agents that work with real application data and tools.</p>
+  <p>I'm a Rails engineer who has spent 7+ years in Shopify and e-commerce, and I now build the AI layer on top: MCP servers, RAG on PostgreSQL, and agents that work with real application data and tools.</p>
+  <p>I contributed to five apps on the Shopify App Store (three also on BigCommerce) and built catalog, order and marketplace integrations for international clients. Most of what I do now is add AI to Rails applications that already exist and already matter to a business.</p>
+  <p>I am based in Lahore, Pakistan, and hold a B.S. in Information Technology from Sindh Agricultural University. I use the handle <strong>mjesar</strong> on GitHub, LinkedIn and Fiverr.</p>
 </section>
 
 <section id="projects">
   <h2>Featured projects</h2>
-  <div class="grid">
+  <div class="grid{% if site.data.projects.size == 4 %} two{% endif %}">
   {%- for p in site.data.projects %}
     <article class="card">
+      <div class="swatch" data-seed="{{ p.slug }}" aria-hidden="true"></div>
       <h3><a href="/projects/{{ p.slug }}/">{{ p.name }}</a></h3>
       <p>{{ p.summary }}</p>
       <p class="stack">{{ p.stack }}</p>
@@ -103,12 +115,7 @@ description: Mohammad Ali Jesar (mjesar) is a senior Ruby on Rails engineer in L
 
 <section id="skills">
   <h2>What I work on</h2>
-  <ul>
-    <li><strong>Ruby on Rails:</strong> APIs, PostgreSQL, Redis, Sidekiq, performance work, and React or Hotwire frontends. Deployments on Heroku, AWS, Google Cloud and Docker.</li>
-    <li><strong>Shopify and e-commerce:</strong> Shopify and Shopify Plus apps, Shopify Functions, Checkout UI Extensions, Theme App Extensions, Liquid, and BigCommerce apps.</li>
-    <li><strong>Integrations:</strong> REST and GraphQL APIs, webhooks, and syncing products, inventory and orders between systems, including Amazon SP-API.</li>
-    <li><strong>AI engineering:</strong> MCP servers, RAG with pgvector, AI agents and LLM assistants connected to application data.</li>
-  </ul>
+  <p>Rails backends and integrations, Shopify and BigCommerce apps, and AI features (MCP servers, RAG with pgvector, agents) connected to your real data.</p>
   <p><a class="more" href="/services/">How I can help your team</a></p>
 </section>
 
@@ -116,7 +123,7 @@ description: Mohammad Ali Jesar (mjesar) is a senior Ruby on Rails engineer in L
   <h2>Experience and education</h2>
   <div class="card">
     <h3>MGLogics</h3>
-    <p class="muted">Full-stack Ruby on Rails and React engineer · Dec 2021 to Jun 2026 · Remote</p>
+    <p class="muted">Ruby on Rails developer, Shopify &amp; BigCommerce app development · Dec 2021 to Jun 2026 · Remote</p>
     <p>Shopify and BigCommerce apps, catalog and order sync, and Amazon SP-API integrations. Worked daily with US clients.</p>
   </div>
   <div class="card">
@@ -132,3 +139,24 @@ description: Mohammad Ali Jesar (mjesar) is a senior Ruby on Rails engineer in L
 </section>
 
 </main>
+
+<script>
+  // Each project gets a 5x5 mirrored pattern generated from its name, like a GitHub identicon.
+  (function () {
+    var palettes = [["#051230", "#f68c50"], ["#a2441b", "#f4ecdc"], ["#5a5920", "#f4ecdc"], ["#7a2332", "#f68c50"]];
+    document.querySelectorAll(".swatch").forEach(function (el) {
+      var seed = el.dataset.seed, h = 2166136261;
+      for (var i = 0; i < seed.length; i++) { h ^= seed.charCodeAt(i); h = Math.imul(h, 16777619) >>> 0; }
+      var pal = palettes[h % palettes.length], bits = h >>> 3, cells = "";
+      for (var y = 0; y < 5; y++) {
+        for (var x = 0; x < 3; x++) {
+          if ((bits >> (y * 3 + x)) & 1) {
+            cells += '<rect x="' + x + '" y="' + y + '" width="1" height="1"/>';
+            if (x < 2) cells += '<rect x="' + (4 - x) + '" y="' + y + '" width="1" height="1"/>';
+          }
+        }
+      }
+      el.innerHTML = '<svg viewBox="-0.5 -0.5 6 6"><rect x="-0.5" y="-0.5" width="6" height="6" fill="' + pal[0] + '"/><g fill="' + pal[1] + '">' + cells + '</g></svg>';
+    });
+  })();
+</script>

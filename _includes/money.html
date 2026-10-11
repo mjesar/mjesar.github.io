@@ -1,0 +1,2 @@
+{%- comment -%} Formats include.n as a dollar amount with a thousands comma, e.g. 5000 -> $5,000 {%- endcomment -%}
+{%- if include.n >= 1000 -%}${{ include.n | divided_by: 1000 }},{{ include.n | modulo: 1000 | plus: 1000 | append: '' | slice: 1, 3 }}{%- else -%}${{ include.n }}{%- endif -%}

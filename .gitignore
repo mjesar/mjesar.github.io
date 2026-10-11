@@ -1,3 +1,7 @@
 _site/
 .jekyll-cache/
 .sass-cache/
+
+# private design notes
+docs/design.md
+docs/**/*.pdf

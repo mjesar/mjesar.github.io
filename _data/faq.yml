@@ -1,0 +1,10 @@
+# Services FAQ. Add entries as "- q:" / "a:" pairs; they render on /services/
+# and are included in the FAQPage structured data automatically.
+- q: What kinds of engagements do you take?
+  a: Remote full-time roles, contracts, and fixed-scope jobs. Tell me which one you have in mind when you get in touch.
+- q: How does a project start?
+  a: A short call or message about the problem, then a written plan with scope, approach and risks before any code is written.
+- q: Can you work on a Rails app that already exists?
+  a: Yes. Most of my AI work is adding features to Rails apps that are already running, using the data and actions they already have.
+- q: Do you take smaller, fixed-scope jobs?
+  a: Yes, you can order those on Fiverr (fiverr.com/mjesar), or email me for anything larger.
