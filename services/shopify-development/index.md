@@ -8,6 +8,8 @@ contact_ask: your store or app and what it needs to do
 faq:
   - q: "What is the difference between Shopify Functions and Checkout Extensibility?"
     a: "Checkout Extensibility is Shopify's overall way to customize checkout, and Functions are one part of it. Checkout UI Extensions change what the buyer sees, such as extra fields or messages. Shopify Functions change the logic underneath, such as discounts, delivery options and payment options, and run on Shopify's own servers. Many checkout projects need both."
+  - q: "Can you migrate our Shopify Scripts to Shopify Functions?"
+    a: "Yes. I rebuild each script's discount, shipping or payment logic as a Shopify Function, test it on a development store against how the script behaved, and then switch over."
   - q: "Can you take over a Shopify app someone else built?"
     a: "Yes. I start by reading the code and checking how it uses the Shopify APIs, access scopes and webhooks, then fix or extend it in small, tested changes."
   - q: "How do you keep inventory in sync between systems?"
@@ -21,6 +23,8 @@ Store owners (merchants) on Shopify or BigCommerce, Shopify app companies, and a
 
 - Your store needs a feature that no existing app provides.
 - Your checkout needs custom fields, rules, discounts or delivery and payment options.
+- Your discount, shipping or payment logic still lives in Shopify Scripts and needs to move to Shopify Functions.
+- You sell wholesale on Shopify Plus and need B2B behavior that the built-in features do not cover.
 - Products, inventory or orders get out of sync between your store and other stores, marketplaces or systems.
 - Your Amazon listings fall behind your store, and keeping them up to date is manual work.
 - You want AI shopping features that answer from your real catalog.
@@ -28,7 +32,8 @@ Store owners (merchants) on Shopify or BigCommerce, Shopify app companies, and a
 ## What I build
 
 - **Custom and public Shopify apps** with Polaris and App Bridge, on the Admin and Storefront APIs (REST and GraphQL), with webhooks, through to App Store publishing.
-- **Checkout customization** with Checkout UI Extensions and Shopify Functions (discounts, delivery and payment customizations).
+- **Checkout customization** with Checkout UI Extensions and Shopify Functions (discounts, delivery and payment customizations), including migrations from Shopify Scripts.
+- **Shopify Plus B2B** features for wholesale buyers.
 - **Storefront features** with Theme App Extensions and Liquid.
 - **BigCommerce apps** on the Catalog, Orders and Checkout APIs.
 - **Amazon SP-API integrations** for listings, variants and images.

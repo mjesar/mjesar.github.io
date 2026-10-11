@@ -17,7 +17,7 @@
   name: Shopify, BigCommerce and e-commerce
   for: store owners (merchants), Shopify app companies and agencies.
   problem: Your store or app needs behavior that existing apps do not provide, or product, inventory and order data has to stay in sync across stores, marketplaces and other systems.
-  summary: Custom and public Shopify apps, Shopify Functions and Checkout UI Extensions, Theme App Extensions and Liquid, BigCommerce apps, Amazon SP-API listings, data sync with webhooks and retried background jobs, and AI shopping features on top of store catalogs.
+  summary: Custom and public Shopify apps, Shopify Functions (including migrations from Shopify Scripts) and Checkout UI Extensions, Shopify Plus B2B, Theme App Extensions and Liquid, BigCommerce apps, Amazon SP-API listings, data sync with webhooks and retried background jobs, and AI shopping features on top of store catalogs.
   evidence: I contributed to [five apps on the Shopify App Store](/projects/#shopify-apps), three of them also on BigCommerce; [ai_shop_assistant](/projects/ai_shop_assistant/).
 - slug: ai-discoverability
   name: AI discoverability for online stores (GEO and AEO)

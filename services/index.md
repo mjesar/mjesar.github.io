@@ -7,7 +7,7 @@ description: "Senior Ruby on Rails engineer for full-stack apps and MVPs, AI eng
     <div class="bar" aria-hidden="true"></div>
     <h1>Work with me</h1>
     <p class="lede">I am a senior full-stack Ruby on Rails engineer. I build new Rails applications and MVPs, extend applications that are already in production, add AI features that work with real data, and build Shopify and e-commerce software that keeps data correct across systems.</p>
-    <p class="meta">Open to remote full-time roles, contracts and project work · Available now · Flexible hours for U.S. and European time zones</p>
+    <p class="meta">Open to remote full-time roles, contracts and project work · Available now · Usually replies within a few hours · Flexible hours for U.S. and European time zones</p>
     <ul class="links">
       <li><a class="btn primary" href="mailto:mohammadalijaisar@gmail.com">Email me</a></li>
       <li><a class="btn" href="https://www.linkedin.com/in/mjesar/" rel="me noopener" target="_blank">LinkedIn</a></li>
@@ -45,6 +45,6 @@ description: "Senior Ruby on Rails engineer for full-stack apps and MVPs, AI eng
 
 ## Get in touch
 
-Available now. The fastest way is email: [mohammadalijaisar@gmail.com](mailto:mohammadalijaisar@gmail.com). Tell me whether you want a full-time hire, a contract, or a project, and a little about the work and your stack.
+Available now, and I usually reply within a few hours. The fastest way is email: [mohammadalijaisar@gmail.com](mailto:mohammadalijaisar@gmail.com). Tell me whether you want a full-time hire, a contract, or a project, and a little about the work and your stack.
 
 </main>

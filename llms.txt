@@ -29,7 +29,7 @@ Identity: online handle mjesar. Holds a B.S. in Information Technology (Software
 ## Skills
 
 - Rails and web: Ruby on Rails, Hotwire (Turbo, Stimulus), React, JavaScript, TypeScript, PostgreSQL, MongoDB, Redis, Sidekiq, Solid Queue, REST and GraphQL APIs, RSpec, Heroku, AWS, Google Cloud, Docker.
-- Shopify and e-commerce: Polaris, App Bridge, Admin and Storefront APIs (REST and GraphQL), webhooks, Shopify Functions, Checkout UI Extensions, Checkout Extensibility, Theme App Extensions, Liquid, App Store publishing, BigCommerce apps, Amazon SP-API.
+- Shopify and e-commerce: Polaris, App Bridge, Admin and Storefront APIs (REST and GraphQL), webhooks, Shopify Functions (including migrations from Shopify Scripts), Checkout UI Extensions, Checkout Extensibility, Shopify Plus B2B, Theme App Extensions, Liquid, App Store publishing, BigCommerce apps, Amazon SP-API.
 - AI: LLM integrations (Claude, OpenAI, Gemini, RubyLLM), MCP servers and an MCP client, RAG with pgvector on PostgreSQL, agents with tool calling, evals.
 
 ## Services
@@ -63,4 +63,4 @@ Identity: online handle mjesar. Holds a B.S. in Information Technology (Software
 
 ## Contact
 
-Email mohammadalijaisar@gmail.com. State whether the work is a full-time hire, a contract or a project.
+Email mohammadalijaisar@gmail.com (usually replies within a few hours). State whether the work is a full-time hire, a contract or a project.
