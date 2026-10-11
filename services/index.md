@@ -46,7 +46,9 @@ description: Hire Mohammad Ali Jesar (mjesar), a senior Ruby on Rails engineer, 
 - You run a Shopify or BigCommerce store or app and need custom functionality, checkout work or integrations.
 - You need a senior Rails engineer who has shipped to production and worked daily with US and European clients, remotely.
 
-{% include faq.html items=site.data.faq %}
+{% include pricing.html %}
+
+{% include faq.html items=site.data.faq pricing=true %}
 
 ## Get in touch
 

@@ -1,0 +1,28 @@
+# Engagement pricing, all in USD. Drives the pricing table on /services/, the
+# pricing FAQ answer and the Offer data in the Service structured data.
+# Leave min/max out for a row that is quoted per project (no price published).
+- id: monthly-full-time
+  name: Full-time contract, monthly
+  time: 40 hours a week, about 160 hours a month
+  min: 5000
+  max: 7000
+  unit: month
+  terms: Minimum 1 month. Longer commitments and a clear scope sit toward the low end of the range.
+- id: monthly-part-time
+  name: Part-time contract, monthly
+  time: 20 hours a week, about 80 hours a month
+  min: 3000
+  max: 4000
+  unit: month
+  terms: Minimum 1 month.
+- id: hourly
+  name: Hourly
+  time: Flexible hours
+  min: 45
+  max: 60
+  unit: hour
+  terms: No minimum commitment.
+- id: fixed-scope
+  name: Fixed-scope project
+  time: Defined deliverable
+  terms: Order on Fiverr or email me.
