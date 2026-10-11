@@ -2,12 +2,13 @@
 layout: default
 ---
 {%- assign svc = site.data.services | where: "slug", page.slug | first -%}
+{%- comment -%} Pages with `promise` use the new template (sections in the page, contact here); the rest keep the old blocks until rewritten. {%- endcomment -%}
 <div class="hero small">
   <div class="wrap">
     <div class="bar" aria-hidden="true"></div>
     <p class="eyebrow"><a href="/services/">Services</a></p>
     <h1>{{ svc.name }}</h1>
-    <p class="lede">{{ svc.summary }}</p>
+    <p class="lede">{{ page.promise | default: svc.summary }}</p>
     <ul class="links">
       <li><a class="btn primary" href="mailto:mohammadalijaisar@gmail.com?subject={{ svc.name | uri_escape }}">Email me about this</a></li>
       <li><a class="btn" href="/services/">All services</a></li>
@@ -16,13 +17,19 @@ layout: default
 </div>
 <main class="wrap prose">
 {{ content }}
+{%- unless page.promise %}
 <h2>Scope and pricing</h2>
 <p>Every project is different, so I scope it from your details. Send me what you are trying to do, your stack and your timeline, and I will reply with a scope and a quote. My general rates are in the <a href="/services/#pricing">pricing table</a>: hourly, a fixed-scope project quoted after a written plan, or a monthly contract.</p>
 {%- if svc.evidence %}
 <h2>Evidence</h2>
 <p>{{ svc.evidence | markdownify | remove: '<p>' | remove: '</p>' | strip }}</p>
 {%- endif %}
+{%- endunless %}
 {%- if page.faq %}{% include faq.html items=page.faq %}{% endif %}
+{%- if page.promise %}
+<h2 id="contact">Contact</h2>
+<p>Available now. Email me at <a href="mailto:mohammadalijaisar@gmail.com?subject={{ svc.name | uri_escape }}">mohammadalijaisar@gmail.com</a>. Tell me whether you want a full-time hire, a contract, or a project{% if page.contact_ask %}, and {{ page.contact_ask }}{% endif %}. Rates are in the <a href="/services/#pricing">pricing table</a>.</p>
+{%- endif %}
 <section class="no-print">
   <h2>Other services</h2>
   <div class="grid">
