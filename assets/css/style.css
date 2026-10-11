@@ -56,6 +56,8 @@ body {
 a { color: var(--link); text-underline-offset: 3px; }
 a:hover { text-decoration-thickness: 2px; }
 img { max-width: 100%; height: auto; }
+figure.diagram { margin: 20px 0 24px; }
+figure.diagram img { display: block; width: 100%; }
 code { font: 0.9em ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; background: var(--surface); padding: 1px 5px; border-radius: 4px; }
 pre { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; overflow-x: auto; }
 pre code { background: none; padding: 0; }

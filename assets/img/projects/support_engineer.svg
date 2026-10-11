@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 342" width="820" height="342" role="img">
+<title>support_engineer flow</title>
+<rect x="1" y="1" width="818" height="340" rx="14" fill="#fbf8f3" stroke="#e0d7c8" stroke-width="2"/>
+<text x="40" y="38" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15" fill="#9a4413" letter-spacing="1">SUPPORT_ENGINEER FLOW</text>
+<rect x="40" y="64" width="210" height="76" rx="10" fill="#f2ece2" stroke="#051230" stroke-width="2"/>
+<text x="145.0" y="95" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="17" font-weight="700" fill="#051230">1. Customer message</text>
+<text x="145.0" y="119" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="14" fill="#4a5470">about an order</text>
+<rect x="305" y="64" width="210" height="76" rx="10" fill="#f2ece2" stroke="#051230" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="410.0" y="95" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="17" font-weight="700" fill="#051230">2. Route</text>
+<text x="410.0" y="119" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="14" fill="#4a5470">order data, policy or both</text>
+<rect x="570" y="64" width="210" height="76" rx="10" fill="#f2ece2" stroke="#051230" stroke-width="2"/>
+<text x="675.0" y="95" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="17" font-weight="700" fill="#051230">3. Read tools</text>
+<text x="675.0" y="119" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="14" fill="#4a5470">order, shipment, customer</text>
+<rect x="40" y="196" width="210" height="76" rx="10" fill="#f2ece2" stroke="#051230" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="145.0" y="227" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="17" font-weight="700" fill="#051230">4. Policy search</text>
+<text x="145.0" y="251" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="14" fill="#4a5470">RAG over policies</text>
+<rect x="305" y="196" width="210" height="76" rx="10" fill="#f2ece2" stroke="#9a4413" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="410.0" y="227" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="17" font-weight="700" fill="#9a4413">5. Approval</text>
+<text x="410.0" y="251" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="14" fill="#4a5470">a person approves writes</text>
+<rect x="570" y="196" width="210" height="76" rx="10" fill="#f2ece2" stroke="#051230" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="675.0" y="227" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="17" font-weight="700" fill="#051230">6. Answer</text>
+<text x="675.0" y="251" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="14" fill="#4a5470">cites order and policy</text>
+<line x1="250" y1="102.0" x2="295" y2="102.0" stroke="#051230" stroke-width="2"/>
+<path d="M304 102.0 L293 96.0 L293 108.0 z" fill="#051230"/>
+<line x1="515" y1="102.0" x2="560" y2="102.0" stroke="#051230" stroke-width="2"/>
+<path d="M569 102.0 L558 96.0 L558 108.0 z" fill="#051230"/>
+<path d="M675.0 140 V168.0 H145.0 V186" fill="none" stroke="#051230" stroke-width="2"/>
+<path d="M145.0 195 L139.0 184 L151.0 184 z" fill="#051230"/>
+<line x1="250" y1="234.0" x2="295" y2="234.0" stroke="#051230" stroke-width="2"/>
+<path d="M304 234.0 L293 228.0 L293 240.0 z" fill="#051230"/>
+<line x1="515" y1="234.0" x2="560" y2="234.0" stroke="#051230" stroke-width="2"/>
+<path d="M569 234.0 L558 228.0 L558 240.0 z" fill="#051230"/>
+<rect x="40" y="298" width="34" height="18" rx="4" fill="#f2ece2" stroke="#051230" stroke-width="2"/>
+<text x="84" y="312" font-family="system-ui, sans-serif" font-size="14" fill="#4a5470">built</text>
+<rect x="150" y="298" width="34" height="18" rx="4" fill="#f2ece2" stroke="#051230" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="194" y="312" font-family="system-ui, sans-serif" font-size="14" fill="#4a5470">planned</text>
+</svg>

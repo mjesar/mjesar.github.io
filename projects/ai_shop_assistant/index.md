@@ -7,6 +7,7 @@ kind: Tool calling and MCP client in Ruby on Rails
 description: A shopping chat built with Rails 8 where the AI decides when to search Shopify's live Global Catalog over MCP and answers with real products, prices and links.
 stack: Ruby 4.0 · Rails 8.1 · RubyLLM · Gemini · Hotwire · Solid Queue · Solid Cable · MongoDB · RSpec
 repo: https://github.com/mjesar/ai_shop_assistant
+services: [ai-in-rails, shopify-development]
 jsonld:
   "@context": https://schema.org
   "@type": SoftwareSourceCode
@@ -33,11 +34,19 @@ It is the same tool calling pattern behind the shopping features in ChatGPT, Per
 
 ## How it works
 
+<figure class="diagram"><img src="/assets/img/projects/ai_shop_assistant.svg" width="820" height="312" loading="lazy" alt="Flow diagram of ai_shop_assistant in six steps: 1. the shopper sends a message in the browser, 2. the Rails controller saves it and enqueues a job, 3. a Solid Queue background job runs the model, 4. Gemini, through RubyLLM, decides whether to search, 5. the SearchProducts tool queries Shopify's live Catalog over MCP, 6. the reply streams back to the browser as a Turbo Stream through Solid Cable."></figure>
+
 1. **Save and enqueue.** The controller saves the message and hands the slow model call to a background job, so the web request returns at once.
 2. **Run the model in a job.** `ChatResponseJob` on Solid Queue builds a RubyLLM chat with the `SearchProducts` tool attached.
 3. **Let the model decide.** If it asks for a search, the browser shows a "searching" status line.
 4. **Search the live catalog.** The tool gets an OAuth 2.0 client-credentials token and sends a JSON-RPC `tools/call` to Shopify's catalog MCP endpoint.
 5. **Stream the reply.** The saved message broadcasts itself to the browser with a Turbo Stream.
+
+## What I verified
+
+- **14 RSpec specs** with RubyLLM and HTTP stubbed, including the conversation-memory case ("My name is Alex", then "What is my name?").
+- **End to end against Shopify's live Global Catalog**: the model chose when to search, and replies came back with real products, prices and links, streamed to the browser.
+- **CI on every push**: RuboCop, Brakeman and bundler-audit. The specs run locally.
 
 ## What broke, and what I learned
 
@@ -47,7 +56,7 @@ It is the same tool calling pattern behind the shopping features in ChatGPT, Per
 
 **An MCP gem crashed on the handshake.** `ruby_llm-mcp` failed on Shopify's response, so I filed [ruby_llm-mcp#155](https://github.com/patvice/ruby_llm-mcp/issues/155) and called the endpoint directly with a small hand-written JSON-RPC client over `Net::HTTP`.
 
-## Key decisions
+## Approach: key decisions
 
 - **One tool, not many.** The point was to see the model choose when to search, so the tool surface stays minimal.
 - **MongoDB for chats.** Chats and messages are Mongoid documents, so RubyLLM's ActiveRecord-only `acts_as_chat` could not be used and persistence is written by hand.
