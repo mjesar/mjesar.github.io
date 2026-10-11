@@ -1,6 +1,7 @@
 ---
 title: Hire a Ruby on Rails and AI Engineer
 description: "Senior Ruby on Rails engineer for full-stack apps and MVPs, AI engineering (MCP, RAG, agents), Shopify and e-commerce. Remote full-time, contract or project work."
+image: /assets/img/og/services.png
 ---
 <div class="hero small">
   <div class="wrap">

@@ -5,6 +5,7 @@ title: shop_mcp_server
 seo_title: "MCP Server and RAG in Ruby on Rails: shop_mcp_server"
 kind: MCP server and RAG in Ruby on Rails
 description: An MCP server in Ruby on Rails that lets Claude read a store's products, orders and inventory, place orders with approval, and search by meaning.
+image: /assets/img/og/shop_mcp_server.png
 stack: Ruby 4.0 · Rails 8.1 · official MCP Ruby SDK · PostgreSQL · pgvector · Voyage AI · RSpec
 repo: https://github.com/mjesar/shop_mcp_server
 services: [ai-in-rails]

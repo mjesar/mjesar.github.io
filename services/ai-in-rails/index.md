@@ -3,6 +3,7 @@ layout: service
 slug: ai-in-rails
 title: "AI Engineering in Ruby on Rails: Agents, RAG and MCP"
 description: "AI engineering in Ruby on Rails: LLM features, RAG on PostgreSQL with pgvector, MCP servers and agents that work with your real data and ask before any write."
+image: /assets/img/og/ai-in-rails.png
 promise: AI features that answer from your real data and never act without approval, built inside the Rails app you already run.
 contact_ask: what you want the AI to do
 faq:

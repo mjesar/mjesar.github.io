@@ -3,6 +3,7 @@ layout: service
 slug: shopify-development
 title: "Shopify and E-commerce Development: Apps, Checkout and Integrations"
 description: "Shopify and e-commerce development: custom and public Shopify apps, Checkout UI Extensions, Shopify Functions, BigCommerce apps and Amazon SP-API data sync."
+image: /assets/img/og/shopify-development.png
 promise: Shopify and BigCommerce apps, checkout customization and integrations that keep products, inventory and orders correct everywhere you sell.
 contact_ask: your store or app and what it needs to do
 faq:

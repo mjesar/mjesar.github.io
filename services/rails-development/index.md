@@ -3,6 +3,7 @@ layout: service
 slug: rails-development
 title: "Full-Stack Ruby on Rails Development: MVPs, New and Existing Apps"
 description: "Full-stack Ruby on Rails development: MVPs and new apps from idea to launch, plus features and fixes for existing Rails apps, with Hotwire or React and tests."
+image: /assets/img/og/rails-development.png
 promise: New Rails apps and MVPs from idea to launch, and steady, tested work on the Rails app you already run.
 contact_ask: whether this is a new product or an app you already run
 faq:

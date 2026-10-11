@@ -3,6 +3,7 @@ layout: service
 slug: ai-discoverability
 title: "AI Discoverability for Shopify and E-commerce Stores: GEO and AEO"
 description: "AI discoverability for Shopify and e-commerce stores (GEO and AEO): an audit of product data, FAQ content and schema.org structured data, then the fixes."
+image: /assets/img/og/ai-discoverability.png
 promise: An audit of how AI shopping assistants see your products, then fixes to the product data, FAQ content and structured data they rely on.
 contact_ask: your store address and which products matter most
 faq:

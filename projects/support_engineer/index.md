@@ -5,6 +5,7 @@ title: support_engineer
 seo_title: "AI Support Agent in Ruby on Rails: support_engineer"
 kind: Production-style AI support agent in Ruby on Rails (in progress)
 description: A Rails support agent that investigates customer problems, checks real order data and takes safe actions only with human approval. Built lesson by lesson.
+image: /assets/img/og/support_engineer.png
 stack: Ruby 4.0 · Rails 8.1 · PostgreSQL · RubyLLM · Groq · RSpec · VCR · MCP and pgvector (planned)
 repo: https://github.com/mjesar/support_engineer
 services: [ai-in-rails, rails-development]
