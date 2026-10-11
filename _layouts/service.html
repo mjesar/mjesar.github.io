@@ -10,8 +10,8 @@ layout: default
     <p class="lede">{{ svc.summary }}</p>
     <ul class="links">
       <li><a class="btn primary" href="mailto:mohammadalijaisar@gmail.com?subject={{ svc.name | uri_escape }}">Email me about this</a></li>
-      {%- if page.fiverr %}
-      <li><a class="btn" href="{{ page.fiverr }}" rel="noopener" target="_blank">Order on Fiverr</a></li>
+      {%- if svc.fiverr %}
+      <li><a class="btn" href="{{ svc.fiverr.url }}" rel="noopener" target="_blank">Order on Fiverr</a></li>
       {%- endif %}
       <li><a class="btn" href="/services/">All services</a></li>
     </ul>
