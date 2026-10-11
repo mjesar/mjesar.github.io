@@ -1,26 +1,51 @@
 ---
 layout: service
 slug: shopify-development
-title: "Shopify apps, checkout and integrations"
-description: "Custom Shopify apps, Checkout UI Extensions, Shopify Functions and API integrations to your CRM, ERP or warehouse. By Mohammad Ali Jesar."
+title: "Shopify and E-commerce Development: Apps, Checkout and Integrations"
+description: "Shopify and e-commerce development: custom and public Shopify apps, Checkout UI Extensions, Shopify Functions, BigCommerce apps and Amazon SP-API data sync."
+promise: Shopify and BigCommerce apps, checkout customization and integrations that keep products, inventory and orders correct everywhere you sell.
+contact_ask: your store or app and what it needs to do
 faq:
-  - q: "Do you build public apps for the Shopify App Store?"
-    a: "Yes. I have contributed to five apps that are live there. I can take you from build through review approval."
-  - q: "What's the difference between a checkout extension and a Function?"
-    a: "Extensions change what the buyer sees at checkout (fields, upsells). Functions change the logic underneath (discounts, shipping, payment). Most projects need both."
-  - q: "Can you connect Shopify to a tool that isn't on the App Store?"
-    a: "Yes, that's most of my integration work: CRMs, ERPs, warehouses, custom systems, via the Admin API and webhooks."
-  - q: "My project is big or complicated. Can you still help?"
-    a: "Yes. Message me first so I can scope it. Large builds get a custom quote instead of a standard package."
-  - q: "Do you sign an NDA?"
-    a: "Yes, before you share any store access or code."
+  - q: "What is the difference between Shopify Functions and Checkout Extensibility?"
+    a: "Checkout Extensibility is Shopify's overall way to customize checkout, and Functions are one part of it. Checkout UI Extensions change what the buyer sees, such as extra fields or messages. Shopify Functions change the logic underneath, such as discounts, delivery options and payment options, and run on Shopify's own servers. Many checkout projects need both."
+  - q: "Can you take over a Shopify app someone else built?"
+    a: "Yes. I start by reading the code and checking how it uses the Shopify APIs, access scopes and webhooks, then fix or extend it in small, tested changes."
+  - q: "How do you keep inventory in sync between systems?"
+    a: "With webhooks, so each change is picked up as it happens, and background jobs that retry when an API call fails. Updates are written so that running one twice does no harm, because webhooks and retries can deliver the same change more than once."
 ---
+## Who it is for
+
+Store owners (merchants) on Shopify or BigCommerce, Shopify app companies, and agencies that build for Shopify stores.
+
+## Problems I solve
+
+- Your store needs a feature that no existing app provides.
+- Your checkout needs custom fields, rules, discounts or delivery and payment options.
+- Products, inventory or orders get out of sync between your store and other stores, marketplaces or systems.
+- Your Amazon listings fall behind your store, and keeping them up to date is manual work.
+- You want AI shopping features that answer from your real catalog.
+
 ## What I build
 
-- **Custom Shopify apps** (private or public) on the Admin GraphQL API.
-- **Checkout UI Extensions:** custom fields, upsells and dynamic checkout content.
-- **Shopify Functions:** custom discounts, shipping rules and payment logic.
-- **API integrations:** Shopify to your CRM, ERP, warehouse or any third-party tool.
-- **BigCommerce apps and Amazon SP-API sync** for products, inventory and orders, with jobs that retry safely.
+- **Custom and public Shopify apps** with Polaris and App Bridge, on the Admin and Storefront APIs (REST and GraphQL), with webhooks, through to App Store publishing.
+- **Checkout customization** with Checkout UI Extensions and Shopify Functions (discounts, delivery and payment customizations).
+- **Storefront features** with Theme App Extensions and Liquid.
+- **BigCommerce apps** on the Catalog, Orders and Checkout APIs.
+- **Amazon SP-API integrations** for listings, variants and images.
+- **Data sync** for products, inventory and orders, with webhooks and background jobs that retry safely.
+- **AI shopping features** on top of a store's catalog, see [AI engineering](/services/ai-in-rails/).
 
-My earlier work on public Shopify apps is described in [past work](/projects/#shopify-apps).
+## Evidence
+
+- **[Five apps on the Shopify App Store](/projects/#shopify-apps)**, three of them also on BigCommerce, which I contributed to as part of a team: structured data and SEO, real-time product, inventory and order sync between stores, country-based redirects, and fake email detection on orders.
+- **An Amazon import and sync system** on SP-API that keeps listings, variants and images in step between Amazon and e-commerce stores (client work, not public).
+- **4+ years building Shopify and BigCommerce apps** in Rails and React for US clients (MGLogics, 2021 to 2026).
+- **[ai_shop_assistant](/projects/ai_shop_assistant/)**: a shopping chat that answers from Shopify's live Catalog API over MCP, with real products, prices and links.
+
+## How a project runs
+
+1. **Understand the gap.** What the store or app needs, and whether a Shopify setting or an existing app already covers it, so you do not pay for code you do not need.
+2. **A written plan.** Which APIs, extensions, webhooks and access scopes are involved, and the risks I can see.
+3. **Build on a development store.** Small, tested changes you can try before anything touches your live store.
+4. **Launch.** Installed on your store, or submitted for App Store review for a public app.
+5. **Support after launch.** Fixes and changes as Shopify's APIs and your store evolve.
