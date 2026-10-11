@@ -24,6 +24,7 @@ Identity: online handle mjesar. Holds a B.S. in Information Technology (Software
 
 - MGLogics (Dec 2021 to Jun 2026, remote, US clients): Ruby on Rails developer. Shopify and BigCommerce apps, catalog and order sync, Amazon SP-API integrations. Contributed, as part of a team, to five apps on the Shopify App Store, three of them also on BigCommerce.
 - SimpleDeploy (Apr 2019 to Dec 2021): backend engineer. Rails REST APIs and MVP management tools for German clients in real estate and furniture.
+- Axiom Enterprises (Sep 2018 to Feb 2019): Python AI Bootcamp. Flask web apps with integrated machine learning models (TensorFlow and Keras).
 - Education: B.S. in Information Technology (Software), Sindh Agricultural University, 2012 to 2017.
 
 ## Skills
