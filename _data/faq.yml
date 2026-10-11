@@ -2,6 +2,8 @@
 # and are included in the FAQPage structured data automatically.
 - q: What kinds of engagements do you take?
   a: Remote full-time roles, contracts, and fixed-scope jobs. Tell me which one you have in mind when you get in touch.
+- q: Which time zones do you work in?
+  a: I am based in Lahore, Pakistan (UTC+5) and I adapt my hours to your time zone, including U.S. and European business hours, so you get real-time overlap with your team. Tell me your time zone and the hours you need, and we will agree the overlap before we start.
 - q: How does a project start?
   a: A short call or message about the problem, then a written plan with scope, approach and risks before any code is written.
 - q: Can you work on a Rails app that already exists?

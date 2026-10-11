@@ -7,7 +7,7 @@ description: "Hire Mohammad Ali Jesar (mjesar), senior Rails and AI engineer: AI
     <div class="bar" aria-hidden="true"></div>
     <h1>Work with me</h1>
     <p class="lede">I help teams add AI to Rails apps they already have, and build Shopify and e-commerce software that keeps data in step across systems.</p>
-    <p class="meta">Open to remote full-time roles and freelance projects</p>
+    <p class="meta">Open to remote full-time roles and freelance projects · Flexible hours for U.S. and European time zones</p>
     <ul class="links">
       <li><a class="btn primary" href="mailto:mohammadalijaisar@gmail.com">Email me</a></li>
       <li><a class="btn" href="https://www.fiverr.com/mjesar" rel="me noopener" target="_blank">Hire on Fiverr</a></li>
