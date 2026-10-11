@@ -1,18 +1,51 @@
 ---
 layout: service
 slug: ai-discoverability
-title: AI Visibility for Shopify Stores (GEO)
-description: "Audit and fix your Shopify store so ChatGPT, Google AI Mode and Perplexity can find and recommend your products. By Mohammad Ali Jesar."
+title: "AI Discoverability for Shopify and E-commerce Stores: GEO and AEO"
+description: "AI discoverability for Shopify and e-commerce stores (GEO and AEO): an audit of product data, FAQ content and schema.org structured data, then the fixes."
+promise: An audit of how AI shopping assistants see your products, then fixes to the product data, FAQ content and structured data they rely on.
+contact_ask: your store address and which products matter most
 faq:
+  - q: "How long until AI assistants show my products?"
+    a: "Nobody can give a fixed date. The fixes go live on your store right away, but each AI assistant re-reads stores on its own schedule, and no store owner or developer controls that."
+  - q: "Do you need my theme code?"
+    a: "Usually not. The audit reads your public product pages and your store data, and most fixes to product data, FAQ content and metafields are made in the Shopify admin. Theme access is only needed when the structured data comes from the theme and has to change."
+  - q: "Can you guarantee my store gets recommended?"
+    a: "No, and no one can honestly guarantee that. AI assistants decide what to recommend on their own. What I can do is remove the gaps that make your products hard for them to understand and trust, and show you before and after what changed."
   - q: "Is this the same as SEO?"
-    a: "No. SEO gets you into Google search results. This gets you recommended by AI assistants that shoppers ask directly. Some basics overlap, but the requirements are different."
-  - q: "What access do you need?"
-    a: "Collaborator access to your Shopify admin for the audit. Nothing until we've agreed scope in chat."
+    a: "No. SEO is about ranking in a list of search results. GEO and AEO are about being the product an AI assistant names in its answer. Some basics overlap, such as structured data, but AI assistants also need clear details and direct answers to shoppers' questions."
 ---
-## What I check
+## Who it is for
 
-- **AI agent discovery:** whether your catalog is exposed and readable by agents.
-- **Product data:** the attributes agents need to recommend a product with confidence, not just title and price.
-- **Search and checkout capabilities** working end to end.
+E-commerce brands and store owners (merchants), often the marketing team, who want their products to come up when shoppers ask AI assistants what to buy. Most of this work is on Shopify; the same checks apply to other stores.
 
-You get a written report, and I can fix what the audit finds. The same approach powers [product_geo_agent](/projects/product_geo_agent/).
+## Problems I solve
+
+- "ChatGPT does not recommend my products," even when they are a good match for what the shopper asked.
+- Product descriptions are missing the details shoppers ask AI assistants about, such as sizing, materials or what is included.
+- Common questions about the product are not answered anywhere an AI assistant can read them.
+- The structured data on product pages is missing or incomplete.
+- You do not know where your products stand today, or which fixes matter most.
+
+## What you get
+
+1. **An audit** of the products you choose:
+   - **Product data:** title, description, images and alt text, variants and SEO fields.
+   - **FAQ content:** a store FAQ page and product-level FAQs.
+   - **Structured data:** `Product` and `FAQPage` schema.org data (JSON-LD) on the live product page.
+   - **An AI check:** asking an AI assistant for a recommendation and seeing whether the product comes up.
+2. **A written report** with a score per product and the gaps listed by impact.
+3. **The fixes:** product data, FAQ content and structured data, then the same audit again so you can see what changed.
+
+## Evidence
+
+- **[product_geo_agent](/projects/product_geo_agent/)**: an AI agent I built that runs these checks on a Shopify product and scores it from 0 to 100. On a sandbox store it scored a complete product at 70 and a product with an empty description at 10, and named the gaps in each.
+- **[Structured data (JSON-LD) apps](/projects/#shopify-apps)** for Shopify and BigCommerce, which I contributed to as part of a team.
+
+## How a project runs
+
+1. **Pick the products.** Usually best sellers or one category, so the first results come quickly.
+2. **Audit.** The checks above, on your live store.
+3. **Report.** What is missing, what to fix first, and why.
+4. **Fix.** Changes in your store admin, metafields and structured data, with your approval.
+5. **Re-check.** The same audit again, to show the result of the fixes.
