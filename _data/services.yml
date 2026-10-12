@@ -1,27 +1,42 @@
 # One entry per service, in the order shown on /services/. Each links to /services/<slug>/
-# (see services/<slug>/index.md). `summary` is the "What I do" line and feeds the
-# Service structured data and llms.txt; `evidence` is Markdown.
+# (see services/<slug>/index.md). `summary` describes the service and feeds the
+# Service structured data and llms.txt. The card_* fields are the cards on /services/;
+# card_proof is Markdown.
 - slug: rails-development
   name: Full-stack Ruby on Rails development
   for: founders, CEOs, product teams and agencies.
-  problem: You have an idea that needs to become a working product, or a Rails app that needs new features or fixes.
   summary: New applications and MVPs from idea to launch, full projects, and work on existing codebases, with Hotwire or React frontends and tests.
-  evidence: 7+ years of production Rails for clients in the US and Germany; [ai_shop_assistant](/projects/ai_shop_assistant/) and [support_engineer](/projects/support_engineer/) built from scratch on Rails 8.1.
+  card_headline: Build new products. Improve existing applications.
+  card_intro: I build Rails applications and MVPs from the ground up, and extend software that is already in production, with new features, API integrations, performance fixes and upgrades across the backend and frontend.
+  card_tools: Ruby on Rails · PostgreSQL · Hotwire · React · APIs · Background jobs · Automated tests
+  card_proof: "7+ years of production Rails for clients in the US and Germany. [See my projects](/projects/)."
+  card_cta: Explore Rails development
 - slug: ai-in-rails
-  name: AI engineering
+  name: AI engineering and integration
   for: companies hiring an AI engineer with Rails, CTOs, CEOs and agencies.
-  problem: You want AI in your product, like an assistant, smart search or an agent, and it has to answer from your real data and stay inside the actions you allow.
   summary: LLM integrations, AI agents with validated tools and approval for chosen write actions, MCP servers, RAG with pgvector on PostgreSQL, evals, and workflow automation with n8n or Rails.
-  evidence: "[shop_mcp_server](/projects/shop_mcp_server/), [ai_shop_assistant](/projects/ai_shop_assistant/), [product_geo_agent](/projects/product_geo_agent/), [support_engineer](/projects/support_engineer/) (in progress), and [three merged pull requests in little_ghost](/projects/#open-source)."
+  card_headline: Build AI features that work with real application data.
+  card_intro: I integrate LLMs into Rails apps, build AI agents that use your application's tools, and connect models to business data, with validated tool inputs, controlled write actions, evaluation and tracing.
+  card_tools: LLM integrations · AI agents · MCP servers · RAG with pgvector · Evals · Observability · Workflow automation (n8n)
+  card_proof: "Working projects with MCP, RAG, tool calling and agent evaluation: [shop_mcp_server](/projects/shop_mcp_server/), [ai_shop_assistant](/projects/ai_shop_assistant/) and [product_geo_agent](/projects/product_geo_agent/), plus fixes merged into the [little_ghost](/projects/#open-source) Ruby gem."
+  card_cta: Explore AI engineering
 - slug: shopify-development
   name: Shopify, BigCommerce and e-commerce
   for: store owners (merchants), Shopify app companies and agencies.
-  problem: Your store or app needs behavior that existing apps do not provide, or product, inventory and order data has to stay in sync across stores, marketplaces and other systems.
   summary: Custom and public Shopify apps, Shopify Functions (including migrations from Shopify Scripts) and Checkout UI Extensions, Shopify Plus B2B, Theme App Extensions and Liquid, BigCommerce apps, Amazon SP-API listings, data sync with webhooks and retried background jobs, and AI shopping features on top of store catalogs.
-  evidence: I contributed to [five apps on the Shopify App Store](/projects/#shopify-apps), three of them also on BigCommerce; [ai_shop_assistant](/projects/ai_shop_assistant/).
+  card_headline: Custom commerce features and reliable integrations.
+  card_intro: I build store functionality that off-the-shelf apps do not cover, from custom Shopify apps and checkout changes to Shopify Plus B2B, and keep products, inventory and orders in sync across stores, marketplaces and other systems.
+  card_tools: Shopify apps · Shopify Functions · Checkout UI Extensions · Liquid · BigCommerce · Amazon SP-API · Product, inventory and order sync
+  card_proof: "Contributed to [five published Shopify App Store apps](/projects/#shopify-apps), three also on BigCommerce."
+  card_cta: Explore e-commerce development
 - slug: ai-discoverability
   name: AI discoverability for online stores (GEO and AEO)
   for: e-commerce brands and store owners.
-  problem: Shoppers now ask AI assistants what to buy. A product page that reads well to a person can still be incomplete or hard for an AI assistant to trust.
   summary: I audit product content, FAQs, schema.org structured data and catalog data, test how selected AI assistants answer defined shopper questions, and fix the gaps in order of impact.
-  evidence: "[product_geo_agent](/projects/product_geo_agent/), plus [structured data (JSON-LD) apps](/projects/#shopify-apps) I worked on for Shopify and BigCommerce."
+  card_title: AI search visibility for online stores
+  card_headline: Help AI assistants understand your products.
+  card_intro: I check the product information AI assistants rely on when they answer shopping questions, then fix the gaps in order of impact. No one can guarantee a recommendation, but missing information can be fixed.
+  card_tools_label: What I assess
+  card_tools: Product content · Buyer questions · FAQ coverage · Schema.org structured data · AI search testing
+  card_proof: "I built [product_geo_agent](/projects/product_geo_agent/), an agent that runs these checks and was tested on a Shopify development store."
+  card_cta: Explore AI search visibility
