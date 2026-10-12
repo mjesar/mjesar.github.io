@@ -5,7 +5,7 @@
 - q: "Can you work on a Rails app we already run in production?"
   a: "Yes. I start by understanding the existing codebase, tests and application behavior. Then I make small, tested changes through branches and pull requests so your team can review them."
 - q: "How do you keep AI features safe when they use real data?"
-  a: "Each AI feature gets validated tool inputs, permission checks, and access to only the data and actions it needs. The write actions you choose need a person's approval, and important business rules stay in application code instead of relying on the model alone."
+  a: "Each AI feature gets validated tool inputs, permission checks, and access to only the data and actions it needs. Write actions can require a person's approval based on your requirements, and important business rules stay in application code instead of relying on the model alone."
 - q: "Can you automate business workflows?"
   a: "Yes. I automate repetitive business processes, such as order handling, data entry, support triage and reporting, either in n8n or directly in Rails with background jobs, scheduled tasks and webhooks. Steps that need judgment can use AI or wait for a person's approval, and complex business rules stay in tested Rails code."
 - q: "Do you work in agile teams?"

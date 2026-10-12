@@ -12,7 +12,7 @@ faq:
   - q: "Can we build RAG using our existing PostgreSQL database?"
     a: "Yes. With the pgvector extension, PostgreSQL stores and searches vector embeddings alongside your application data. Depending on your scale and retrieval needs, this can keep your architecture simpler than running a separate vector database."
   - q: "How do you reduce mistakes and control what an AI agent can do?"
-    a: "I use validated tool arguments, permission checks, and limited access to application data and actions. The write actions you choose need a person's approval, deterministic calculations stay in Ruby, and evaluations test how the system behaves across different inputs."
+    a: "I use validated tool arguments, permission checks, and limited access to application data and actions. Write actions can require approval based on your requirements, deterministic calculations stay in Ruby, and evaluations help test how the system behaves across different inputs."
   - q: "Our AI team works in Python. Can you still help?"
     a: "Yes. I can integrate Python-based AI services with Rails through APIs, background jobs and, where it fits the use case, MCP. The goal is to connect your existing AI work to the application without duplicating it."
   - q: "Do you work with n8n?"
@@ -41,7 +41,7 @@ Companies hiring an AI engineer with Rails, CTOs and product teams with a Rails 
 - **MCP servers** (Model Context Protocol) on the official MCP Ruby SDK: schema-validated tools, read-only and destructive annotations so writes need approval, resources and prompts.
 - **MCP clients** that call external MCP APIs, such as Shopify's live Catalog API.
 - **RAG** (retrieval-augmented generation) with embeddings stored in your existing PostgreSQL using pgvector, searched by meaning instead of keywords.
-- **AI agents that call your app's tools and APIs**: narrow tools with validated arguments, permissions on what each tool can do, approval for the write actions you choose, and plain Ruby for anything that must be exact, such as scores and totals.
+- **AI agents that call your app's tools and APIs**: narrow tools with validated arguments, permissions on what each tool can do, approval for write actions where your requirements call for it, and plain Ruby for anything that must be exact, such as scores and totals.
 - **Evaluation, tracing and testing of agent behavior**: repeatable test runs against hand-written expectations, and a trace of every tool call so you can see what the agent did.
 - **Workflow automation and integrations**: automated business workflows in n8n or in Rails code, connected to your existing systems through APIs, webhooks and MCP, with complex logic, tests and approval steps kept in Rails.
 

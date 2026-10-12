@@ -14,7 +14,7 @@
 - slug: ai-in-rails
   name: AI engineering and integration
   for: companies hiring an AI engineer with Rails, CTOs, CEOs and agencies.
-  summary: LLM integrations, AI agents with validated tools and approval for chosen write actions, MCP servers, RAG with pgvector on PostgreSQL, evals, and workflow automation with n8n or Rails.
+  summary: LLM integrations, AI agents with validated tools and approval for write actions where needed, MCP servers, RAG with pgvector on PostgreSQL, evals, and workflow automation with n8n or Rails.
   card_headline: Build AI features that work with real application data.
   card_intro: I integrate LLMs into Rails apps, build AI agents that use your application's tools, and connect models to business data, with validated tool inputs, controlled write actions, evaluation and tracing.
   card_tools: LLM integrations · AI agents · MCP servers · RAG with pgvector · Evals · Observability · Workflow automation (n8n)

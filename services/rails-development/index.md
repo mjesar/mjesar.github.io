@@ -8,11 +8,11 @@ promise: New Rails apps and MVPs from idea to launch, and steady, tested work on
 contact_ask: whether this is a new product or an app you already run
 faq:
   - q: "How do you plan an MVP?"
-    a: "We start with the main problem the product needs to solve and identify the smallest set of features that solves it. I agree on that scope with you before development begins, and everything else goes on a later list."
+    a: "We start with the main problem the product needs to solve and identify the smallest set of features that solves it. We agree on that scope before development begins, and leave additional features for later."
   - q: "Should we use Hotwire or React for our Rails application?"
     a: "I generally use Hotwire when server-rendered interactions fit the application. React is a better choice for some highly interactive interfaces, or when your product and team already use it. The choice depends on the application, not a fixed preference."
   - q: "Do you write automated tests?"
-    a: "Yes. I use RSpec to test application behavior and add or update tests with every feature and fix. External services are stubbed in the test suite, with integration checks where appropriate."
+    a: "Yes. I use RSpec to test application behavior and add or update tests as part of feature development and bug fixes. External services can be stubbed in tests, with integration checks where appropriate."
   - q: "Can you join our existing engineering team?"
     a: "Yes. I work inside your existing process, contributing features and fixes through branches, pull requests, automated tests and code review. I have delivered production software remotely for clients in the US and Germany."
 ---

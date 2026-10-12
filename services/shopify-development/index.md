@@ -14,11 +14,11 @@ faq:
   - q: "Can you build B2B features on Shopify Plus?"
     a: "Yes. I work with Shopify's B2B features on Shopify Plus, such as company accounts, catalogs with custom price lists, quantity rules, volume pricing and payment terms. When the built-in features do not cover your wholesale process, I extend them with custom apps, Shopify Functions and checkout customizations."
   - q: "Shopify keeps updating its API. Can you keep our app up to date?"
-    a: "Yes. Shopify releases a new API version every quarter and retires older versions after about a year, so apps that are not updated eventually stop working correctly. I update public and custom apps to newer API versions, replace deprecated endpoints and fields, move REST calls to GraphQL where Shopify requires it, and test every change on a development store before release."
+    a: "Yes. Shopify releases API versions quarterly and supports each stable version for a limited period. I help keep public and custom apps up to date by upgrading API versions, replacing deprecated fields and endpoints, moving REST integrations to GraphQL where appropriate, and testing changes before release."
   - q: "Can you take over a Shopify app someone else built?"
     a: "Yes. I start by reviewing the codebase, API usage, access scopes and webhook handling. Then I can fix bugs, improve reliability or add features through small, tested changes."
   - q: "Do you build BigCommerce apps?"
-    a: "Yes. I build BigCommerce apps on the Catalog, Orders and Checkout APIs, with webhooks for real-time updates, through to publishing on the BigCommerce App Marketplace. Three of the Shopify apps I worked on are also available on BigCommerce, so I can build features that work on both platforms."
+    a: "Yes. I build BigCommerce apps and integrations on the Catalog, Orders and Checkout APIs, with webhooks for event-driven updates, through to publishing on the BigCommerce App Marketplace. Three Shopify apps I have worked on are also available on BigCommerce, so I have built commerce features across both platforms."
   - q: "Can you customize BigCommerce Multi-Storefront?"
     a: "Yes. BigCommerce Multi-Storefront lets one store run several storefronts, for example for different brands, regions or currencies, each with its own catalog, pricing and settings. I build features and integrations that work per storefront through the BigCommerce APIs, and customize each storefront's theme and behavior."
 ---
