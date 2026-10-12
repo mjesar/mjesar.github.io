@@ -42,10 +42,23 @@ E-commerce brands and store owners (merchants), often the marketing team, who wa
 
 An audit improves the information AI assistants read. It cannot guarantee a citation or a recommendation, because each assistant decides those on its own.
 
+## The same practices on this website
+
+I use the same approach on this site. When I tested how AI assistants describe me, one mixed me up with another engineer with a similar name. To fix that, this site now uses:
+
+- **Structured data (JSON-LD)** for who I am, my services, projects and FAQs, checked with Google's Rich Results Test.
+- **Consistent facts everywhere**: the same name, role, location, education and past employers on this site and my GitHub profile, with my profiles linked to each other as the same person.
+- **Answer-first content**: FAQs and service pages that answer real questions directly, without claims I cannot back up.
+- **An `llms.txt` file**: a plain-text summary written for AI tools, generated from the same data as the site.
+- **Clear technical basics**: descriptive titles and descriptions, a sitemap, canonical URLs, and Google Search Console.
+
+I am re-testing how AI assistants describe me after these changes, and I will publish the before and after results here.
+
 ## Evidence
 
 - **[product_geo_agent](/projects/product_geo_agent/)**: an AI agent I built that runs these checks on a Shopify product and scores it from 0 to 100. On a sandbox store it scored a complete product at 70 and a product with an empty description at 10, and named the gaps in each.
 - **[Structured data (JSON-LD) apps](/projects/#shopify-apps)** for Shopify and BigCommerce, which I contributed to as part of a team.
+- **[This website](https://github.com/mjesar/mjesar.github.io){:target="_blank" rel="noopener"}**: the same structured data, FAQ and consistency practices applied to my own site, with the source code public on GitHub.
 
 ## How a project runs
 
