@@ -11,10 +11,16 @@ faq:
     a: "Checkout Extensibility is Shopify's broader approach to customizing checkout. Checkout UI Extensions add supported interface elements, while Shopify Functions customize supported commerce logic, such as discounts and delivery rules. They solve different problems and can be used together where appropriate."
   - q: "Can you migrate our Shopify Scripts to Shopify Functions?"
     a: "Yes. I review what each script does, rebuild the supported behavior with Shopify Functions, and test the new implementation against the existing behavior before switching over. The approach depends on the script and the Shopify APIs available for its use case."
+  - q: "Can you build B2B features on Shopify Plus?"
+    a: "Yes. I work with Shopify's B2B features on Shopify Plus, such as company accounts, catalogs with custom price lists, quantity rules, volume pricing and payment terms. When the built-in features do not cover your wholesale process, I extend them with custom apps, Shopify Functions and checkout customizations."
+  - q: "Shopify keeps updating its API. Can you keep our app up to date?"
+    a: "Yes. Shopify releases a new API version every quarter and retires older versions after about a year, so apps that are not updated eventually stop working correctly. I update public and custom apps to newer API versions, replace deprecated endpoints and fields, move REST calls to GraphQL where Shopify requires it, and test every change on a development store before release."
   - q: "Can you take over a Shopify app someone else built?"
     a: "Yes. I start by reviewing the codebase, API usage, access scopes and webhook handling. Then I can fix bugs, improve reliability or add features through small, tested changes."
-  - q: "How do you keep inventory synchronized between systems?"
-    a: "I use webhooks and background jobs to process updates, with retries and safeguards against processing the same change twice. The exact approach depends on which systems are involved, how they handle stock changes, and which system is the source of truth."
+  - q: "Do you build BigCommerce apps?"
+    a: "Yes. I build BigCommerce apps on the Catalog, Orders and Checkout APIs, with webhooks for real-time updates, through to publishing on the BigCommerce App Marketplace. Three of the Shopify apps I worked on are also available on BigCommerce, so I can build features that work on both platforms."
+  - q: "Can you customize BigCommerce Multi-Storefront?"
+    a: "Yes. BigCommerce Multi-Storefront lets one store run several storefronts, for example for different brands, regions or currencies, each with its own catalog, pricing and settings. I build features and integrations that work per storefront through the BigCommerce APIs, and customize each storefront's theme and behavior."
 ---
 ## Who it is for
 
@@ -38,7 +44,7 @@ Store owners (merchants) on Shopify or BigCommerce, Shopify app companies, and a
 - **Custom and public Shopify apps** with Polaris and App Bridge, on the Admin and Storefront APIs (REST and GraphQL), with webhooks, through to App Store publishing.
 - **Checkout customization** with Checkout UI Extensions and Shopify Functions (discounts, delivery and payment customizations).
 - **Storefront features** with Theme App Extensions and Liquid.
-- **BigCommerce apps** on the Catalog, Orders and Checkout APIs.
+- **BigCommerce apps and Multi-Storefront customization** on the Catalog, Orders and Checkout APIs, with features that work per storefront.
 
 ### 2. Commerce integrations
 
@@ -50,6 +56,7 @@ Store owners (merchants) on Shopify or BigCommerce, Shopify app companies, and a
 
 - **Shopify Plus B2B** features for wholesale buyers.
 - **Migrations from Shopify Scripts to Shopify Functions**, tested against how each script behaved before switching over.
+- **Shopify API version updates** for public and custom apps: moving to newer API versions, replacing deprecated endpoints and fields, and REST to GraphQL migrations.
 - **AI shopping features** on top of a store's catalog, see [AI engineering](/services/ai-in-rails/).
 
 ## Evidence
