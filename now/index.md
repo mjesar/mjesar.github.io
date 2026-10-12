@@ -16,7 +16,7 @@ updated: 2026-10-11
 
 ## Looking for my next role
 
-After four and a half years at MGLogics, I am looking for a **remote full-time role** as a senior full-stack and AI engineer (Ruby on Rails), ideally where Shopify, e-commerce or AI features meet. I am available to start now, and also taking **freelance projects**. See [Services](/services/) or [email me](mailto:mohammadalijaisar@gmail.com).
+After four and a half years at MGLogics, I am looking for a **remote full-time role** as a senior Ruby on Rails engineer specializing in AI integration, ideally where Shopify, e-commerce or AI features meet. I am available to start now, and also taking **freelance projects**. See [Services](/services/) or [email me](mailto:mohammadalijaisar@gmail.com).
 
 ## Building
 

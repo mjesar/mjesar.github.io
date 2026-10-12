@@ -1,6 +1,8 @@
 {%- comment -%} `seo_title` overrides the <title> when the visible h1 should stay short (e.g. project names). {%- endcomment -%}
 {%- assign page_title = page.seo_title | default: page.title | default: site.title -%}
-{%- if page.url == "/" -%}{%- assign full_title = page.title -%}{%- else -%}{%- assign full_title = page_title | append: " · Mohammad Ali Jesar" -%}{%- endif -%}
+{%- comment -%} The " · Mohammad Ali Jesar" suffix is only added while the title stays within about 60 characters, where Google cuts titles off. {%- endcomment -%}
+{%- assign title_with_name = page_title | append: " · Mohammad Ali Jesar" -%}
+{%- if page.url == "/" -%}{%- assign full_title = page.title -%}{%- elsif title_with_name.size <= 60 -%}{%- assign full_title = title_with_name -%}{%- else -%}{%- assign full_title = page_title -%}{%- endif -%}
 {%- assign page_description = page.description | default: site.description -%}
 {%- assign page_image = page.image | default: "/og.png" | absolute_url -%}
 <meta charset="utf-8">
