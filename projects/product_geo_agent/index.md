@@ -19,8 +19,12 @@ jsonld:
   runtimePlatform: Ruby on Rails
   keywords: AI agent, GEO, AEO, generative engine optimization, Shopify, Gemini, tool calling, evals
   url: https://mjesar.github.io/projects/product_geo_agent/
+  image: https://mjesar.github.io/assets/img/og/product_geo_agent.png
   author:
+    "@type": Person
     "@id": https://mjesar.github.io/#person
+    name: Mohammad Ali Jesar
+    url: https://mjesar.github.io/
 ---
 
 ## The problem

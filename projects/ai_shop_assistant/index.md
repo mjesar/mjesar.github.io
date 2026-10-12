@@ -19,8 +19,12 @@ jsonld:
   runtimePlatform: Ruby on Rails
   keywords: tool calling, MCP, RubyLLM, Gemini, Shopify Catalog API, Hotwire, Ruby on Rails
   url: https://mjesar.github.io/projects/ai_shop_assistant/
+  image: https://mjesar.github.io/assets/img/og/ai_shop_assistant.png
   author:
+    "@type": Person
     "@id": https://mjesar.github.io/#person
+    name: Mohammad Ali Jesar
+    url: https://mjesar.github.io/
 ---
 
 ## The problem
