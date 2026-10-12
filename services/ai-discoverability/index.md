@@ -1,24 +1,26 @@
 ---
 layout: service
 slug: ai-discoverability
-title: "Shopify GEO & AEO Audits for AI Search"
-description: "Assess Shopify product content, FAQs, structured data and AI-search visibility. Get a practical GEO and AEO audit with prioritized improvements."
+title: "GEO & AEO Audits for Brands and Shopify Stores"
+description: "How AI assistants see your products and brand: product content, FAQs, structured data and brand mentions. A practical GEO and AEO audit with prioritized fixes."
 image: /assets/img/og/ai-discoverability.png
-promise: An audit of how AI shopping assistants see your products, then fixes to the product data, FAQ content and structured data they rely on.
+promise: An audit of how AI assistants see your products and your brand, then fixes to the product data, brand information, FAQ content and structured data they rely on.
 contact_ask: your store address and which products matter most
 faq:
-  - q: "How long until AI assistants show my products?"
-    a: "Nobody can give a fixed date. The fixes go live on your store right away, but each AI assistant re-reads stores on its own schedule, and no store owner or developer controls that."
-  - q: "Do you need my theme code?"
-    a: "Usually not. The audit reads your public product pages and your store data, and most fixes to product data, FAQ content and metafields are made in the Shopify admin. Theme access is only needed when the structured data comes from the theme and has to change."
-  - q: "Can you guarantee my store gets recommended?"
-    a: "No, and no one can honestly guarantee that. AI assistants decide what to recommend on their own. What I can do is remove the gaps that make your products hard for them to understand and trust, and show you before and after what changed."
-  - q: "Is this the same as SEO?"
-    a: "No. SEO is about ranking in a list of search results. GEO and AEO are about being the product an AI assistant names in its answer. Some basics overlap, such as structured data, but AI assistants also need clear details and direct answers to shoppers' questions."
+  - q: "How long will it take for AI assistants to show my products?"
+    a: "There is no guaranteed timeline. Different AI assistants discover and update product information in different ways, and changes to your store may not appear immediately. I can identify and fix technical and content gaps, but I cannot control when a particular assistant updates its information."
+  - q: "Do you need access to my Shopify theme code?"
+    a: "Not always. Many improvements can be made through the Shopify admin, product content, FAQs or structured data. Theme changes are needed when the issue comes from how your storefront renders content or exposes product information."
+  - q: "Can you guarantee that AI assistants will recommend my products?"
+    a: "No. AI recommendations depend on each platform's systems, the information available, the shopper's question and other factors outside a store owner's control. I can audit and improve your product information and test defined queries, but I cannot guarantee recommendations or rankings."
+  - q: "Can you check how AI assistants describe our brand, not just our products?"
+    a: "Yes. I test how assistants such as ChatGPT, Gemini and Perplexity describe your brand, which sources they rely on, and where they get facts wrong. Then I make your brand information consistent across your site and profiles, and track mentions and citations over time with an AI visibility monitoring tool such as Promptwatch. As with products, no one can guarantee what an AI assistant says, but missing or inconsistent information can be fixed."
+  - q: "Are GEO and AEO the same as SEO?"
+    a: "They overlap, but they are not the same. SEO helps pages appear in search results. Generative Engine Optimization (GEO) and Answer Engine Optimization (AEO) make information easier for AI-powered search and answer systems to discover, understand and use. None of these approaches guarantees a particular result."
 ---
 ## Who it is for
 
-E-commerce brands and store owners (merchants), often the marketing team, who want their products to come up when shoppers ask AI assistants what to buy. Most of this work is on Shopify; the same checks apply to other stores.
+E-commerce brands and store owners (merchants), often the marketing team, who want their products to come up when shoppers ask AI assistants what to buy, and want those assistants to describe their brand correctly. Most of this work is on Shopify; the same checks apply to other stores.
 
 ## Problems I solve
 
@@ -26,7 +28,8 @@ E-commerce brands and store owners (merchants), often the marketing team, who wa
 - Product descriptions are missing the details shoppers ask AI assistants about, such as sizing, materials or what is included.
 - Common questions about the product are not answered anywhere an AI assistant can read them.
 - The structured data on product pages is missing or incomplete.
-- You do not know where your products stand today, or which fixes matter most.
+- AI assistants describe your brand inaccurately, leave it out, or name competitors instead.
+- You do not know where your products and brand stand today, or which fixes matter most.
 
 ## What you get
 
@@ -36,16 +39,33 @@ E-commerce brands and store owners (merchants), often the marketing team, who wa
    - **Structured data:** `Product` and `FAQPage` schema.org data (JSON-LD) on the live product page.
    - **Catalog data quality:** product feed and catalog fields, where relevant to your store.
    - **AI search tests:** a defined set of shopper questions asked to selected AI assistants, recording whether each product is found, cited or recommended.
-2. **A written report** with a score per product and the gaps listed by impact.
-3. **The fixes**, in order of impact: product content, FAQ content and structured data.
-4. **A follow-up assessment:** the same audit and the same questions again, so you can see what changed.
+2. **A brand AI visibility check:**
+   - **How AI assistants describe your brand:** whether they mention it, which facts they state, which sources they cite, and which competitors they name instead.
+   - **Brand facts and structured data:** a consistent name, description and details across your website, profiles and listings, with `Organization` structured data that links them as one brand.
+   - **Monitoring over time:** brand mentions and citations across AI assistants, tracked with an AI visibility monitoring tool such as Promptwatch, so you can see whether changes make a difference.
+3. **A written report** with a score per product, the brand findings, and the gaps listed by impact.
+4. **The fixes**, in order of impact: product content, brand information, FAQ content and structured data.
+5. **A follow-up assessment:** the same audit and the same questions again, so you can see what changed.
 
 An audit improves the information AI assistants read. It cannot guarantee a citation or a recommendation, because each assistant decides those on its own.
+
+## The same practices on this website
+
+I use the same approach on this site, as brand visibility work applied to a person. When I tested how AI assistants describe me, one mixed me up with another engineer with a similar name. To fix that, this site now uses:
+
+- **Structured data (JSON-LD)** for who I am, my services, projects and FAQs, checked with Google's Rich Results Test.
+- **Consistent facts everywhere**: the same name, role, location, education and past employers on this site and my GitHub profile, with my profiles linked to each other as the same person.
+- **Answer-first content**: FAQs and service pages that answer real questions directly, without claims I cannot back up.
+- **An `llms.txt` file**: a plain-text summary written for AI tools, generated from the same data as the site.
+- **Clear technical basics**: descriptive titles and descriptions, a sitemap, canonical URLs, and Google Search Console.
+
+I am re-testing how AI assistants describe me after these changes, and I will publish the before and after results here.
 
 ## Evidence
 
 - **[product_geo_agent](/projects/product_geo_agent/)**: an AI agent I built that runs these checks on a Shopify product and scores it from 0 to 100. On a sandbox store it scored a complete product at 70 and a product with an empty description at 10, and named the gaps in each.
 - **[Structured data (JSON-LD) apps](/projects/#shopify-apps)** for Shopify and BigCommerce, which I contributed to as part of a team.
+- **[This website](https://github.com/mjesar/mjesar.github.io){:target="_blank" rel="noopener"}**: the same structured data, FAQ and consistency practices applied to my own site, with the source code public on GitHub.
 
 ## How a project runs
 

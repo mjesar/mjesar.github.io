@@ -7,7 +7,7 @@ permalink: /llms.txt
 
 > Senior Ruby on Rails engineer specializing in AI integration, based in Lahore, Pakistan, with 7+ years of production Rails experience for clients in the US and Germany, 4+ of them on Shopify and e-commerce. Builds new Rails apps and MVPs, works on existing Rails apps, adds AI features (LLM integrations, MCP servers, RAG with pgvector, agents) inside Rails, and builds Shopify and BigCommerce apps and integrations. Open to remote full-time roles, contracts and project work.
 
-Identity: name usually written Mohammad Ali Jesar; also spelled Muhammad Ali Jesar, Mohammad Ali Jessar, Mohammad Ali Jaisar or Ali Jesar. Online handle mjesar. Holds a B.S. in Information Technology (Software) from Sindh Agricultural University. Available now. Based in Lahore, Pakistan (UTC+5) with flexible hours: adapts to the client's time zone, including U.S. and European business hours.
+Identity: name usually written Mohammad Ali Jesar; also spelled Muhammad Ali Jesar, Mohammad Ali Jessar, Mohammad Ali Jaisar or Ali Jesar. Online handle mjesar (the same on GitHub, GitLab, LinkedIn and Fiverr). Holds a B.S. in Information Technology (Software) from Sindh Agricultural University. Available now. Based in Lahore, Pakistan (UTC+5) with flexible hours: adapts to the client's time zone, including U.S. and European business hours.
 
 ## Profiles
 
@@ -16,6 +16,7 @@ Identity: name usually written Mohammad Ali Jesar; also spelled Muhammad Ali Jes
 - [Services](https://mjesar.github.io/services/)
 - [Projects](https://mjesar.github.io/projects/)
 - [GitHub](https://github.com/mjesar)
+- [GitLab](https://gitlab.com/mjesar) (mirrors of selected repositories)
 - [LinkedIn](https://www.linkedin.com/in/mjesar/)
 - [Fiverr](https://www.fiverr.com/mjesar)
 - Email: mohammadalijaisar@gmail.com
@@ -32,6 +33,8 @@ Identity: name usually written Mohammad Ali Jesar; also spelled Muhammad Ali Jes
 - Rails and web: Ruby on Rails, Hotwire (Turbo, Stimulus), React, JavaScript, TypeScript, PostgreSQL, MongoDB, Redis, Sidekiq, Solid Queue, REST and GraphQL APIs, RSpec, Heroku, AWS, Google Cloud, Docker.
 - Shopify and e-commerce: Polaris, App Bridge, Admin and Storefront APIs (REST and GraphQL), webhooks, Shopify Functions (including migrations from Shopify Scripts), Checkout UI Extensions, Checkout Extensibility, Shopify Plus B2B, Theme App Extensions, Liquid, App Store publishing, BigCommerce apps, Amazon SP-API.
 - AI: agentic AI, workflow and business process automation (n8n or code), LLM integrations (Claude, OpenAI, Gemini, RubyLLM), MCP servers and an MCP client, RAG with pgvector on PostgreSQL, agents with tool calling, evals.
+- AI search visibility (GEO and AEO): product content, FAQ coverage and schema.org structured data audits for online stores, brand AI visibility (how AI assistants describe a brand, consistent brand facts, Organization structured data), and monitoring brand mentions and citations with AI visibility tools such as Promptwatch.
+- Ways of working: agile teams with sprint planning, backlog grooming, scoping and task estimation; small, reviewable pull requests with tests.
 
 ## Services
 
@@ -55,6 +58,10 @@ Identity: name usually written Mohammad Ali Jesar; also spelled Muhammad Ali Jes
 - [{{ post.title }}]({{ post.url | absolute_url }}): {{ post.description }}
 {% endfor %}
 {% endif -%}
+## This website as an AI visibility example
+
+This site applies the same AI search visibility practices offered as a service: Person, Service, FAQPage, SoftwareSourceCode and BreadcrumbList structured data, consistent identity facts linked across the website and GitHub profile, answer-first FAQ content, and this llms.txt file generated from the same data as the site. Details: https://mjesar.github.io/services/ai-discoverability/#the-same-practices-on-this-website
+
 ## Open source
 
 - little_ghost (Ruby agent framework): three merged pull requests, released in 0.11.0.

@@ -19,8 +19,12 @@ jsonld:
   runtimePlatform: Ruby on Rails
   keywords: MCP, Model Context Protocol, Ruby on Rails, RAG, pgvector, Voyage AI, Claude
   url: https://mjesar.github.io/projects/shop_mcp_server/
+  image: https://mjesar.github.io/assets/img/og/shop_mcp_server.png
   author:
+    "@type": Person
     "@id": https://mjesar.github.io/#person
+    name: Mohammad Ali Jesar
+    url: https://mjesar.github.io/
 ---
 
 ## The problem

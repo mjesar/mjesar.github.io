@@ -19,8 +19,12 @@ jsonld:
   runtimePlatform: Ruby on Rails
   keywords: AI agent, customer support, human in the loop, RAG, MCP, evals, Ruby on Rails
   url: https://mjesar.github.io/projects/support_engineer/
+  image: https://mjesar.github.io/assets/img/og/support_engineer.png
   author:
+    "@type": Person
     "@id": https://mjesar.github.io/#person
+    name: Mohammad Ali Jesar
+    url: https://mjesar.github.io/
 ---
 
 <div class="callout"><p><strong>In progress.</strong> Lessons 1 to 3 of 14 are done: real and planted data, the first LLM call, and four read tools the model chooses between. A hand-written agent loop, an MCP server, policy search, approvals and evals come next. This page marks what works today and what is planned.</p></div>
