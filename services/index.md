@@ -1,22 +1,26 @@
 ---
-title: Hire a Ruby on Rails and AI Engineer
-description: "Senior Ruby on Rails engineer for full-stack apps and MVPs, AI engineering (MCP, RAG, agents), Shopify and e-commerce. Remote full-time, contract or project work."
+title: Hire a Ruby on Rails & AI Engineer
+description: "Hire a senior Ruby on Rails engineer for apps and MVPs, AI integration (MCP, RAG, agents), Shopify and e-commerce. Remote full-time, contract or project work."
 image: /assets/img/og/services.png
 ---
 <div class="hero small">
   <div class="wrap">
     <div class="bar" aria-hidden="true"></div>
     <h1>Work with me</h1>
-    <p class="lede">I am a senior full-stack Ruby on Rails engineer. I build new Rails applications and MVPs, extend applications that are already in production, add AI features that work with real data, and build Shopify and e-commerce software that keeps data correct across systems.</p>
+    <p class="role">Senior Ruby on Rails Engineer specializing in AI integration</p>
+    <p class="lede">I build and extend production Ruby on Rails applications, integrate AI into existing products, and develop software for Shopify and other e-commerce platforms.</p>
     <p class="meta">Open to remote full-time roles, contracts and freelance projects · Available now · Usually replies within a few hours · Flexible hours for U.S. and European time zones</p>
     <ul class="links">
-      <li><a class="btn primary" href="mailto:mohammadalijaisar@gmail.com">Email me</a></li>
+      <li><a class="btn primary" href="mailto:mohammadalijaisar@gmail.com">Have a project? Email me</a></li>
+      <li><a class="btn" href="/resume/">Hiring? View my resume</a></li>
       <li><a class="btn" href="https://www.linkedin.com/in/mjesar/" rel="me noopener" target="_blank">LinkedIn</a></li>
     </ul>
   </div>
 </div>
 
 <main class="wrap prose" markdown="1">
+
+With 7+ years of experience building software for international clients, I work across backend systems, full-stack applications, LLM integrations, AI agents, MCP servers, RAG and e-commerce integrations. I can help you build a new product, improve an existing Rails application, connect AI to real business data, or solve complex Shopify and e-commerce problems.
 
 ## What I can do for you
 
@@ -31,6 +35,10 @@ image: /assets/img/og/services.png
 <p class="card-cta" aria-hidden="true"><span class="more">See details</span></p>
 </article>
 {%- endfor %}
+</div>
+
+<div class="callout" markdown="1">
+**For agencies:** I join your team as a Rails, AI or Shopify developer on client projects, including white-label work, under your process and tools.
 </div>
 
 ## How I work

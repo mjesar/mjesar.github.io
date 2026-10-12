@@ -1,10 +1,10 @@
 ---
 layout: service
 slug: ai-in-rails
-title: "AI Engineering in Ruby on Rails: Agents, RAG and MCP"
-description: "Agentic AI engineering in Ruby on Rails: AI agents, workflow automation with n8n, RAG on PostgreSQL with pgvector and MCP servers, integrated into existing systems."
+title: "AI Engineer for Ruby on Rails, RAG & AI Agents"
+description: "Add AI to Ruby on Rails applications with LLM integrations, MCP servers, RAG, tool-calling agents and evaluation, grounded in real data. n8n workflows too."
 image: /assets/img/og/ai-in-rails.png
-promise: Agentic AI and automated workflows that answer from your real data and never act without approval, built into the Rails app and existing systems you already run.
+promise: AI that answers from your real data and can only do what you allow, built into the Rails app and systems you already run instead of a separate stack.
 contact_ask: what you want the AI to do
 faq:
   - q: "Do we need a separate Python service for AI?"
@@ -12,7 +12,9 @@ faq:
   - q: "Can RAG use our existing PostgreSQL database?"
     a: "Yes. With the pgvector extension, embeddings are stored in a column next to your existing data and searched with SQL, so there is no separate vector database to run."
   - q: "How do you stop the AI from making mistakes?"
-    a: "It gets narrow tools with validated arguments, so it looks facts up instead of guessing. Anything that writes needs a person's approval, exact work such as math stays in Ruby, and evals check the answers before and after each change."
+    a: "Through engineering controls, not hope. Each tool has validated inputs, so the AI looks facts up instead of guessing. Permissions limit what each tool can read or change, and the write actions you choose, such as refunds or order changes, need a person's approval first. Exact work such as math stays in Ruby, and evals check the answers before and after each change."
+  - q: "Our AI team works in Python. Can you still help?"
+    a: "Yes. I connect their models and services to your Rails app through APIs, background jobs and MCP, so they keep their stack and your product gets the feature."
   - q: "Do you work with n8n?"
     a: "Yes. I build automated workflows in n8n and connect them to AI models and to your existing systems through webhooks, APIs and MCP. When a workflow needs complex logic, tests or approval steps, I build that part in Rails code."
   - q: "Which AI models do you work with?"
@@ -26,20 +28,22 @@ Companies hiring an AI engineer with Rails, CTOs and product teams with a Rails 
 
 - Your customers or staff need answers from your own data (orders, products, documents), not from what a model guesses.
 - Search only finds exact words, so people miss what they are looking for.
-- You want an assistant or agent that can do real tasks, but only with a person's approval before anything changes.
+- You want an assistant or agent that can do real tasks, but only the actions you allow, with a person's approval where it matters.
 - Manual business processes, such as order lookups, support triage or data entry, take hours that automation could save.
 - You want AI in your product without adding a second stack your team has to run.
 - You cannot tell whether the AI is giving correct answers, or whether a change made it worse.
 
 ## What I build
 
+- **AI assistants grounded in your data**: answers that come from your orders, products, documents and database records, with sources shown, instead of from what a model remembers.
+- **AI in the product you already have**: features added to your existing Rails app, instead of rebuilding it in another stack.
 - **LLM features** with Claude, OpenAI or Gemini through RubyLLM, with slow model calls run in background jobs and replies streamed with Turbo Streams.
 - **MCP servers** (Model Context Protocol) on the official MCP Ruby SDK: schema-validated tools, read-only and destructive annotations so writes need approval, resources and prompts.
 - **MCP clients** that call external MCP APIs, such as Shopify's live Catalog API.
 - **RAG** (retrieval-augmented generation) with embeddings stored in your existing PostgreSQL using pgvector, searched by meaning instead of keywords.
-- **Agentic AI and workflow automation**: agents that complete multi-step tasks with tools, and automated workflows built in n8n or in Rails code, connected to your existing systems through APIs, webhooks and MCP.
-- **Agents with tool calling**: narrow tools, validated arguments, approval before any write, and plain Ruby for anything that must be exact, such as scores and totals.
-- **Evals and tracing**: repeatable test runs against hand-written expectations, and a trace of every tool call so you can see what the agent did.
+- **AI agents that call your app's tools and APIs**: narrow tools with validated arguments, permissions on what each tool can do, approval for the write actions you choose, and plain Ruby for anything that must be exact, such as scores and totals.
+- **Evaluation, tracing and testing of agent behavior**: repeatable test runs against hand-written expectations, and a trace of every tool call so you can see what the agent did.
+- **Workflow automation and integrations**: automated business workflows in n8n or in Rails code, connected to your existing systems through APIs, webhooks and MCP, with complex logic, tests and approval steps kept in Rails.
 
 ## Why build AI in Rails?
 

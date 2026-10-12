@@ -3,3 +3,5 @@
 - title: Building an MCP server in Rails with the official Ruby SDK
 - title: Adding RAG to an existing Rails app with pgvector
 - title: Why Shopify products do not show up in ChatGPT
+- title: Why mock tests missed bugs in Gemini tool calling
+- title: Evaluating AI agents across repeated runs

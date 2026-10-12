@@ -10,8 +10,8 @@
 - slug: ai-in-rails
   name: AI engineering
   for: companies hiring an AI engineer with Rails, CTOs, CEOs and agencies.
-  problem: You want AI in your product, like an assistant, smart search or an agent, but it has to give correct answers from your real data and must never take actions on its own.
-  summary: Agentic AI, LLM integrations, workflow automation with n8n, MCP servers, RAG with pgvector on PostgreSQL, and agents with narrow, validated tools, approval before any write, and evals.
+  problem: You want AI in your product, like an assistant, smart search or an agent, and it has to answer from your real data and stay inside the actions you allow.
+  summary: LLM integrations, AI agents with validated tools and approval for chosen write actions, MCP servers, RAG with pgvector on PostgreSQL, evals, and workflow automation with n8n or Rails.
   evidence: "[shop_mcp_server](/projects/shop_mcp_server/), [ai_shop_assistant](/projects/ai_shop_assistant/), [product_geo_agent](/projects/product_geo_agent/), [support_engineer](/projects/support_engineer/) (in progress), and [three merged pull requests in little_ghost](/projects/#open-source)."
 - slug: shopify-development
   name: Shopify, BigCommerce and e-commerce
@@ -23,5 +23,5 @@
   name: AI discoverability for online stores (GEO and AEO)
   for: e-commerce brands and store owners.
   problem: Shoppers now ask AI assistants what to buy. A product page that reads well to a person can still be incomplete or hard for an AI assistant to trust.
-  summary: I audit product data, FAQ content and schema.org structured data, test whether an AI assistant would recommend the product, and fix the gaps.
+  summary: I audit product content, FAQs, schema.org structured data and catalog data, test how selected AI assistants answer defined shopper questions, and fix the gaps in order of impact.
   evidence: "[product_geo_agent](/projects/product_geo_agent/), plus [structured data (JSON-LD) apps](/projects/#shopify-apps) I worked on for Shopify and BigCommerce."

@@ -5,7 +5,7 @@ permalink: /llms.txt
 ---
 # Mohammad Ali Jesar (mjesar)
 
-> Senior full-stack Ruby on Rails engineer and AI engineer in Lahore, Pakistan, with 7+ years of production Rails experience for clients in the US and Germany, 4+ of them on Shopify and e-commerce. Builds new Rails apps and MVPs, works on existing Rails apps, adds AI features (LLM integrations, MCP servers, RAG with pgvector, agents) inside Rails, and builds Shopify and BigCommerce apps and integrations. Open to remote full-time roles, contracts and project work.
+> Senior Ruby on Rails engineer specializing in AI integration, based in Lahore, Pakistan, with 7+ years of production Rails experience for clients in the US and Germany, 4+ of them on Shopify and e-commerce. Builds new Rails apps and MVPs, works on existing Rails apps, adds AI features (LLM integrations, MCP servers, RAG with pgvector, agents) inside Rails, and builds Shopify and BigCommerce apps and integrations. Open to remote full-time roles, contracts and project work.
 
 Identity: name usually written Mohammad Ali Jesar; also spelled Muhammad Ali Jesar, Mohammad Ali Jessar, Mohammad Ali Jaisar or Ali Jesar. Online handle mjesar. Holds a B.S. in Information Technology (Software) from Sindh Agricultural University. Available now. Based in Lahore, Pakistan (UTC+5) with flexible hours: adapts to the client's time zone, including U.S. and European business hours.
 

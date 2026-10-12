@@ -1,8 +1,8 @@
 ---
 layout: service
 slug: shopify-development
-title: "Shopify and E-commerce Development: Apps, Checkout and Integrations"
-description: "Shopify and e-commerce development: custom and public Shopify apps, Checkout UI Extensions, Shopify Functions, BigCommerce apps and Amazon SP-API data sync."
+title: "Shopify & BigCommerce App Development"
+description: "Custom Shopify and BigCommerce apps, Shopify Plus checkout and B2B development, and reliable product, inventory, order and marketplace integrations."
 image: /assets/img/og/shopify-development.png
 promise: Shopify and BigCommerce apps, checkout customization and integrations that keep products, inventory and orders correct everywhere you sell.
 contact_ask: your store or app and what it needs to do
@@ -33,13 +33,23 @@ Store owners (merchants) on Shopify or BigCommerce, Shopify app companies, and a
 
 ## What I build
 
+### 1. Custom apps and storefront features
+
 - **Custom and public Shopify apps** with Polaris and App Bridge, on the Admin and Storefront APIs (REST and GraphQL), with webhooks, through to App Store publishing.
-- **Checkout customization** with Checkout UI Extensions and Shopify Functions (discounts, delivery and payment customizations), including migrations from Shopify Scripts.
-- **Shopify Plus B2B** features for wholesale buyers.
+- **Checkout customization** with Checkout UI Extensions and Shopify Functions (discounts, delivery and payment customizations).
 - **Storefront features** with Theme App Extensions and Liquid.
 - **BigCommerce apps** on the Catalog, Orders and Checkout APIs.
+
+### 2. Commerce integrations
+
+- **Product, inventory and order sync** between stores, suppliers and other systems, with webhooks and background jobs that retry safely.
 - **Amazon SP-API integrations** for listings, variants and images.
-- **Workflow automation and data sync** for products, inventory and orders, with webhooks and background jobs that retry safely, replacing manual work.
+- **Workflow automation** that replaces manual store work, and connections to third-party systems through their APIs.
+
+### 3. Complex commerce requirements
+
+- **Shopify Plus B2B** features for wholesale buyers.
+- **Migrations from Shopify Scripts to Shopify Functions**, tested against how each script behaved before switching over.
 - **AI shopping features** on top of a store's catalog, see [AI engineering](/services/ai-in-rails/).
 
 ## Evidence
