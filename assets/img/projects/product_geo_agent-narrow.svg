@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 624" width="420" height="624" role="img">
+<title>product_geo_agent loop</title>
+<rect x="1" y="1" width="418" height="622" rx="14" fill="#fbf8f3" stroke="#e0d7c8" stroke-width="2"/>
+<text x="30" y="38" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15" fill="#9a4413" letter-spacing="1">PRODUCT_GEO_AGENT LOOP</text>
+<rect x="30" y="150" width="360" height="344" rx="12" fill="none" stroke="#8a8540" stroke-opacity=".7" stroke-width="1.5" stroke-dasharray="3 5" stroke-linecap="round"/>
+<text x="376" y="482" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" fill="#8a8540" letter-spacing="1">AGENT LOOP</text>
+<rect x="100" y="60" width="220" height="70" rx="10" fill="#f2ece2" stroke="#051230" stroke-width="2"/>
+<rect x="105" y="65" width="210" height="60" rx="7" fill="none" stroke="#a2441b" stroke-opacity=".45" stroke-width="1.2" stroke-dasharray="4 4"/>
+<text x="210" y="89" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="17" font-weight="700" fill="#051230">1. Context</text>
+<text x="210" y="111" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="13" fill="#4a5470">one Shopify product</text>
+<rect x="100" y="172" width="220" height="70" rx="10" fill="#f2ece2" stroke="#051230" stroke-width="2"/>
+<rect x="105" y="177" width="210" height="60" rx="7" fill="none" stroke="#a2441b" stroke-opacity=".45" stroke-width="1.2" stroke-dasharray="4 4"/>
+<text x="210" y="201" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="17" font-weight="700" fill="#051230">2. Reason</text>
+<text x="210" y="223" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="13" fill="#4a5470">Gemini picks the next tool</text>
+<rect x="100" y="282" width="220" height="70" rx="10" fill="#f2ece2" stroke="#051230" stroke-width="2"/>
+<rect x="105" y="287" width="210" height="60" rx="7" fill="none" stroke="#a2441b" stroke-opacity=".45" stroke-width="1.2" stroke-dasharray="4 4"/>
+<text x="210" y="311" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="17" font-weight="700" fill="#051230">3. Act</text>
+<text x="210" y="333" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="13" fill="#4a5470">one of five tools</text>
+<rect x="100" y="392" width="220" height="70" rx="10" fill="#f2ece2" stroke="#051230" stroke-width="2"/>
+<rect x="105" y="397" width="210" height="60" rx="7" fill="none" stroke="#a2441b" stroke-opacity=".45" stroke-width="1.2" stroke-dasharray="4 4"/>
+<text x="210" y="421" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="17" font-weight="700" fill="#051230">4. Observe</text>
+<text x="210" y="443" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="13" fill="#4a5470">reads the tool result</text>
+<rect x="100" y="530" width="220" height="70" rx="10" fill="#f2ece2" stroke="#a2441b" stroke-width="2"/>
+<rect x="105" y="535" width="210" height="60" rx="7" fill="none" stroke="#a2441b" stroke-opacity=".45" stroke-width="1.2" stroke-dasharray="4 4"/>
+<text x="210" y="559" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="17" font-weight="700" fill="#a2441b">6. Answer</text>
+<text x="210" y="581" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="13" fill="#4a5470">Ruby computes the score</text>
+<path d="M210 132 V158" fill="none" stroke="#051230" stroke-width="2" stroke-dasharray="7 5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M210 170 L204 159 L216 159 z" fill="#051230"/>
+<path d="M210 244 V268" fill="none" stroke="#051230" stroke-width="2" stroke-dasharray="7 5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M210 280 L204 269 L216 269 z" fill="#051230"/>
+<path d="M210 354 V378" fill="none" stroke="#051230" stroke-width="2" stroke-dasharray="7 5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M210 390 L204 379 L216 379 z" fill="#051230"/>
+<path d="M322 427 H350 V207 H334" fill="none" stroke="#a2441b" stroke-width="2.5" stroke-dasharray="7 5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M322 207 L333 201 L333 213 z" fill="#a2441b"/>
+<text transform="translate(372 317) rotate(90)" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="13" fill="#4a5470"><tspan font-weight="700" font-size="15" fill="#a2441b">5. Repeat</tspan> until the checks are done</text>
+<path d="M98 207 H62 V565 H86" fill="none" stroke="#051230" stroke-width="2" stroke-dasharray="7 5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M98 565 L87 559 L87 571 z" fill="#051230"/>
+<text transform="translate(50 317) rotate(-90)" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="#4a5470">done</text>
+</svg>
