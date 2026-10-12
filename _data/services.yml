@@ -30,13 +30,13 @@
   card_proof: "Contributed to [five published Shopify App Store apps](/projects/#shopify-apps), three also on BigCommerce."
   card_cta: Explore e-commerce development
 - slug: ai-discoverability
-  name: AI discoverability for online stores (GEO and AEO)
+  name: AI discoverability for brands and online stores (GEO and AEO)
   for: e-commerce brands and store owners.
-  summary: I audit product content, FAQs, schema.org structured data and catalog data, test how selected AI assistants answer defined shopper questions, and fix the gaps in order of impact.
-  card_title: AI search visibility for online stores
+  summary: I audit product content, FAQs, schema.org structured data, catalog data and brand mentions, test how selected AI assistants answer defined shopper and brand questions, and fix the gaps in order of impact.
+  card_title: AI search visibility for brands and online stores
   card_headline: Help AI assistants understand your products.
-  card_intro: I check the product information AI assistants rely on when they answer shopping questions, then fix the gaps in order of impact. No one can guarantee a recommendation, but missing information can be fixed.
+  card_intro: I check the product and brand information AI assistants rely on when they answer shopping questions, then fix the gaps in order of impact. No one can guarantee a recommendation, but missing information can be fixed.
   card_tools_label: What I assess
-  card_tools: Product content · Buyer questions · FAQ coverage · Schema.org structured data · AI search testing
+  card_tools: Product content · Buyer questions · FAQ coverage · Schema.org structured data · Brand mentions · AI search testing
   card_proof: "I built [product_geo_agent](/projects/product_geo_agent/), an agent that runs these checks and was tested on a Shopify development store."
   card_cta: Explore AI search visibility
