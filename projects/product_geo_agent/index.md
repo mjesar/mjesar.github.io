@@ -37,7 +37,7 @@ Shoppers now ask AI assistants what to buy, and a store owner has no easy way to
 
 An AI agent is a loop, not a single model call: **Context → Reason → Act → Observe → Repeat → Answer.** This one has five tools and decides which to call:
 
-<figure class="diagram"><img src="/assets/img/projects/product_geo_agent.svg" width="820" height="312" loading="lazy" alt="Diagram of the product_geo_agent loop in six steps: 1. context, one Shopify product, 2. reason, Gemini picks the next tool, 3. act, it calls one of five tools, 4. observe, it reads the tool result, 5. repeat until the checks are done, 6. answer, with the score computed in Ruby, not by the model."></figure>
+<figure class="diagram"><picture><source media="(max-width: 560px)" srcset="/assets/img/projects/product_geo_agent-narrow.svg" width="420" height="624"><img src="/assets/img/projects/product_geo_agent.svg" width="820" height="312" loading="lazy" alt="Diagram of the product_geo_agent loop: 1. context, one Shopify product, goes into the agent loop, where Gemini 2. reasons and picks the next tool, 3. acts by calling one of five tools, 4. observes the tool result and 5. repeats until the checks are done. Then 6. it answers, with the score computed in Ruby, not by the model."></picture></figure>
 
 | Tool | What it checks |
 |---|---|
