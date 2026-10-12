@@ -1,8 +1,8 @@
 ---
 layout: service
 slug: rails-development
-title: "Full-Stack Ruby on Rails Development: MVPs, New and Existing Apps"
-description: "Full-stack Ruby on Rails development: MVPs and new apps from idea to launch, plus features and fixes for existing Rails apps, with Hotwire or React and tests."
+title: "Ruby on Rails Developer for Apps, APIs & MVPs"
+description: "Build new Ruby on Rails applications, APIs and MVPs, or extend and maintain production Rails systems. Senior engineering for international clients."
 image: /assets/img/og/rails-development.png
 promise: New Rails apps and MVPs from idea to launch, and steady, tested work on the Rails app you already run.
 contact_ask: whether this is a new product or an app you already run
@@ -24,7 +24,10 @@ Founders with an idea to turn into a product, CEOs and product teams with a Rail
 
 - You have an idea and need the smallest working version that proves it, built so it can grow.
 - New features in your app take too long to ship.
-- Bugs in production are costing you customers or time.
+- Bugs and errors in production are costing you customers or time, and nobody has time to dig into them.
+- Pages are slow, or background jobs pile up, run late or fail without anyone noticing.
+- You need your app connected to another service, such as a payment provider, a CRM or a marketplace, through its API and webhooks.
+- Your app runs on an older Rails version and needs a careful upgrade and ongoing maintenance.
 - You need a senior Ruby on Rails developer who can start on your codebase without a long ramp-up.
 
 ## What I build
@@ -33,7 +36,9 @@ Founders with an idea to turn into a product, CEOs and product teams with a Rail
 - **Features and fixes in existing apps**, on branches with pull requests your team can review.
 - **Frontends** with Hotwire (Turbo and Stimulus) or React, with JavaScript or TypeScript.
 - **APIs and integrations**: REST and GraphQL APIs, and connections to third-party services.
-- **Background jobs** with Sidekiq and Redis, or Solid Queue, for work that should not block a web request.
+- **Background jobs** with Sidekiq and Redis, or Solid Queue, for work that should not block a web request, with retries and monitoring so failures are visible.
+- **Performance and production debugging**: finding slow queries and N+1 problems, adding indexes and caching, and tracing errors back to their cause.
+- **Maintenance and upgrades**: Rails and gem upgrades in small, tested steps.
 - **Data** on PostgreSQL or MongoDB.
 - **Tests and CI**: RSpec, with checks such as RuboCop, Brakeman and bundler-audit on every push.
 - **Deployment** on Heroku, AWS, Google Cloud or Docker.

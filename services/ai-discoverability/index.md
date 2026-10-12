@@ -1,8 +1,8 @@
 ---
 layout: service
 slug: ai-discoverability
-title: "AI Discoverability for Shopify and E-commerce Stores: GEO and AEO"
-description: "AI discoverability for Shopify and e-commerce stores (GEO and AEO): an audit of product data, FAQ content and schema.org structured data, then the fixes."
+title: "Shopify GEO & AEO Audits for AI Search"
+description: "Assess Shopify product content, FAQs, structured data and AI-search visibility. Get a practical GEO and AEO audit with prioritized improvements."
 image: /assets/img/og/ai-discoverability.png
 promise: An audit of how AI shopping assistants see your products, then fixes to the product data, FAQ content and structured data they rely on.
 contact_ask: your store address and which products matter most
@@ -31,12 +31,16 @@ E-commerce brands and store owners (merchants), often the marketing team, who wa
 ## What you get
 
 1. **An audit** of the products you choose:
-   - **Product data:** title, description, images and alt text, variants and SEO fields.
-   - **FAQ content:** a store FAQ page and product-level FAQs.
+   - **Product content:** how complete the title, description, specifications, images and alt text, variants and SEO fields are.
+   - **FAQ coverage:** whether a store FAQ page and product-level FAQs answer the questions buyers actually ask.
    - **Structured data:** `Product` and `FAQPage` schema.org data (JSON-LD) on the live product page.
-   - **An AI check:** asking an AI assistant for a recommendation and seeing whether the product comes up.
+   - **Catalog data quality:** product feed and catalog fields, where relevant to your store.
+   - **AI search tests:** a defined set of shopper questions asked to selected AI assistants, recording whether each product is found, cited or recommended.
 2. **A written report** with a score per product and the gaps listed by impact.
-3. **The fixes:** product data, FAQ content and structured data, then the same audit again so you can see what changed.
+3. **The fixes**, in order of impact: product content, FAQ content and structured data.
+4. **A follow-up assessment:** the same audit and the same questions again, so you can see what changed.
+
+An audit improves the information AI assistants read. It cannot guarantee a citation or a recommendation, because each assistant decides those on its own.
 
 ## Evidence
 
