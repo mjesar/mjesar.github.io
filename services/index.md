@@ -26,13 +26,13 @@ With 7+ years of experience building software for international clients, I work 
 
 <div class="grid two">
 {%- for s in site.data.services %}
-<article class="card card-link">
-<h3><a href="/services/{{ s.slug }}/">{{ s.name }}</a></h3>
-<p><strong>For:</strong> {{ s.for }}</p>
-<p><strong>The problem:</strong> {{ s.problem }}</p>
-<p><strong>What I do:</strong> {{ s.summary }}</p>
-<p class="stack"><strong>Evidence:</strong> {{ s.evidence | markdownify | remove: '<p>' | remove: '</p>' | strip }}</p>
-<p class="card-cta" aria-hidden="true"><span class="more">See details</span></p>
+<article class="card card-link service-card">
+<h3><a href="/services/{{ s.slug }}/">{{ s.card_title | default: s.name }}</a></h3>
+<p class="card-headline">{{ s.card_headline }}</p>
+<p>{{ s.card_intro }}</p>
+<p class="stack"><span class="tools-label">{{ s.card_tools_label | default: "What I work with" }}:</span> {{ s.card_tools }}</p>
+<p class="card-proof">{{ s.card_proof | markdownify | remove: '<p>' | remove: '</p>' | strip }}</p>
+<p class="card-cta" aria-hidden="true"><span class="more">{{ s.card_cta }}</span></p>
 </article>
 {%- endfor %}
 </div>
