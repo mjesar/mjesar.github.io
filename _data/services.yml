@@ -38,5 +38,5 @@
   card_intro: I check the product and brand information AI assistants rely on when they answer shopping questions, then fix the gaps in order of impact. No one can guarantee a recommendation, but missing information can be fixed.
   card_tools_label: What I assess
   card_tools: Product content · Buyer questions · FAQ coverage · Schema.org structured data · Brand mentions · AI search testing
-  card_proof: "I built [product_geo_agent](/projects/product_geo_agent/), an agent that runs these checks and was tested on a Shopify development store."
+  card_proof: "I built [product_geo_agent](/projects/product_geo_agent/), an agent that runs these checks and was tested on a Shopify development store, and I apply the same practices to [this website](/services/ai-discoverability/#the-same-practices-on-this-website)."
   card_cta: Explore AI search visibility
