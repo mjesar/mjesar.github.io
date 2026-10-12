@@ -7,18 +7,18 @@ image: /assets/img/og/ai-in-rails.png
 promise: AI that answers from your real data and can only do what you allow, built into the Rails app and systems you already run instead of a separate stack.
 contact_ask: what you want the AI to do
 faq:
-  - q: "Do we need a separate Python service for AI?"
-    a: "No. LLM calls, tool calling, MCP and RAG can all run inside your Rails app, with RubyLLM, the official MCP Ruby SDK and pgvector on PostgreSQL."
-  - q: "Can RAG use our existing PostgreSQL database?"
-    a: "Yes. With the pgvector extension, embeddings are stored in a column next to your existing data and searched with SQL, so there is no separate vector database to run."
-  - q: "How do you stop the AI from making mistakes?"
-    a: "Through engineering controls, not hope. Each tool has validated inputs, so the AI looks facts up instead of guessing. Permissions limit what each tool can read or change, and the write actions you choose, such as refunds or order changes, need a person's approval first. Exact work such as math stays in Ruby, and evals check the answers before and after each change."
+  - q: "Do we need a separate Python service to add AI to our Rails application?"
+    a: "Not necessarily. Many AI features can be built directly in Ruby on Rails with libraries such as RubyLLM, the official MCP Ruby SDK and pgvector. A separate Python service can still make sense when you need a specific library, a model-serving setup or existing Python infrastructure."
+  - q: "Can we build RAG using our existing PostgreSQL database?"
+    a: "Yes. With the pgvector extension, PostgreSQL stores and searches vector embeddings alongside your application data. Depending on your scale and retrieval needs, this can keep your architecture simpler than running a separate vector database."
+  - q: "How do you reduce mistakes and control what an AI agent can do?"
+    a: "I use validated tool arguments, permission checks, and limited access to application data and actions. The write actions you choose need a person's approval, deterministic calculations stay in Ruby, and evaluations test how the system behaves across different inputs."
   - q: "Our AI team works in Python. Can you still help?"
-    a: "Yes. I connect their models and services to your Rails app through APIs, background jobs and MCP, so they keep their stack and your product gets the feature."
+    a: "Yes. I can integrate Python-based AI services with Rails through APIs, background jobs and, where it fits the use case, MCP. The goal is to connect your existing AI work to the application without duplicating it."
   - q: "Do you work with n8n?"
-    a: "Yes. I build automated workflows in n8n and connect them to AI models and to your existing systems through webhooks, APIs and MCP. When a workflow needs complex logic, tests or approval steps, I build that part in Rails code."
-  - q: "Which AI models do you work with?"
-    a: "Claude, OpenAI (ChatGPT) and Gemini. I use RubyLLM so the provider can change with a config change, and Voyage AI for embeddings."
+    a: "Yes. I build workflows in n8n and connect them to Rails through webhooks and APIs, using MCP where it fits, and keep complex business rules and application-specific logic in Rails code."
+  - q: "Which AI models and providers do you work with?"
+    a: "I work with Claude, OpenAI and Gemini through RubyLLM, and with Voyage AI for embeddings. The best choice depends on your use case, data, evaluation results, cost and latency requirements."
 ---
 ## Who it is for
 

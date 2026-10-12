@@ -8,13 +8,13 @@ promise: Shopify and BigCommerce apps, checkout customization and integrations t
 contact_ask: your store or app and what it needs to do
 faq:
   - q: "What is the difference between Shopify Functions and Checkout Extensibility?"
-    a: "Checkout Extensibility is Shopify's overall way to customize checkout, and Functions are one part of it. Checkout UI Extensions change what the buyer sees, such as extra fields or messages. Shopify Functions change the logic underneath, such as discounts, delivery options and payment options, and run on Shopify's own servers. Many checkout projects need both."
+    a: "Checkout Extensibility is Shopify's broader approach to customizing checkout. Checkout UI Extensions add supported interface elements, while Shopify Functions customize supported commerce logic, such as discounts and delivery rules. They solve different problems and can be used together where appropriate."
   - q: "Can you migrate our Shopify Scripts to Shopify Functions?"
-    a: "Yes. I rebuild each script's discount, shipping or payment logic as a Shopify Function, test it on a development store against how the script behaved, and then switch over."
+    a: "Yes. I review what each script does, rebuild the supported behavior with Shopify Functions, and test the new implementation against the existing behavior before switching over. The approach depends on the script and the Shopify APIs available for its use case."
   - q: "Can you take over a Shopify app someone else built?"
-    a: "Yes. I start by reading the code and checking how it uses the Shopify APIs, access scopes and webhooks, then fix or extend it in small, tested changes."
-  - q: "How do you keep inventory in sync between systems?"
-    a: "With webhooks, so each change is picked up as it happens, and background jobs that retry when an API call fails. Updates are written so that running one twice does no harm, because webhooks and retries can deliver the same change more than once."
+    a: "Yes. I start by reviewing the codebase, API usage, access scopes and webhook handling. Then I can fix bugs, improve reliability or add features through small, tested changes."
+  - q: "How do you keep inventory synchronized between systems?"
+    a: "I use webhooks and background jobs to process updates, with retries and safeguards against processing the same change twice. The exact approach depends on which systems are involved, how they handle stock changes, and which system is the source of truth."
 ---
 ## Who it is for
 

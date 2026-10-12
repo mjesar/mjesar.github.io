@@ -7,14 +7,14 @@ image: /assets/img/og/ai-discoverability.png
 promise: An audit of how AI shopping assistants see your products, then fixes to the product data, FAQ content and structured data they rely on.
 contact_ask: your store address and which products matter most
 faq:
-  - q: "How long until AI assistants show my products?"
-    a: "Nobody can give a fixed date. The fixes go live on your store right away, but each AI assistant re-reads stores on its own schedule, and no store owner or developer controls that."
-  - q: "Do you need my theme code?"
-    a: "Usually not. The audit reads your public product pages and your store data, and most fixes to product data, FAQ content and metafields are made in the Shopify admin. Theme access is only needed when the structured data comes from the theme and has to change."
-  - q: "Can you guarantee my store gets recommended?"
-    a: "No, and no one can honestly guarantee that. AI assistants decide what to recommend on their own. What I can do is remove the gaps that make your products hard for them to understand and trust, and show you before and after what changed."
-  - q: "Is this the same as SEO?"
-    a: "No. SEO is about ranking in a list of search results. GEO and AEO are about being the product an AI assistant names in its answer. Some basics overlap, such as structured data, but AI assistants also need clear details and direct answers to shoppers' questions."
+  - q: "How long will it take for AI assistants to show my products?"
+    a: "There is no guaranteed timeline. Different AI assistants discover and update product information in different ways, and changes to your store may not appear immediately. I can identify and fix technical and content gaps, but I cannot control when a particular assistant updates its information."
+  - q: "Do you need access to my Shopify theme code?"
+    a: "Not always. Many improvements can be made through the Shopify admin, product content, FAQs or structured data. Theme changes are needed when the issue comes from how your storefront renders content or exposes product information."
+  - q: "Can you guarantee that AI assistants will recommend my products?"
+    a: "No. AI recommendations depend on each platform's systems, the information available, the shopper's question and other factors outside a store owner's control. I can audit and improve your product information and test defined queries, but I cannot guarantee recommendations or rankings."
+  - q: "Are GEO and AEO the same as SEO?"
+    a: "They overlap, but they are not the same. SEO helps pages appear in search results. Generative Engine Optimization (GEO) and Answer Engine Optimization (AEO) make information easier for AI-powered search and answer systems to discover, understand and use. None of these approaches guarantees a particular result."
 ---
 ## Who it is for
 
