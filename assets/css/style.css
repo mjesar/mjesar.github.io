@@ -421,3 +421,9 @@ main section + section { padding-top: 14px; }
 .service-card .tools-label { font-weight: 700; }
 .service-card .card-proof { font-size: 15px; color: var(--muted); }
 .service-card .card-cta { margin-top: auto; padding-top: 6px; }
+
+/* Profile photo beside the name: the one photograph on the site, framed by a stitched ring */
+.hero-id { display: flex; align-items: center; gap: 20px; margin: 0 0 12px; }
+.hero-id h1 { margin: 0; }
+.avatar { width: 104px; height: 104px; flex: none; border-radius: 50%; object-fit: cover; padding: 4px; border: 2px dashed var(--apricot); }
+@media (max-width: 760px) { .hero-id { gap: 14px; } .avatar { width: 72px; height: 72px; padding: 3px; } }

@@ -2,9 +2,9 @@
 layout: service
 slug: rails-development
 title: "Ruby on Rails Developer for Apps, APIs & MVPs"
-description: "Build new Ruby on Rails applications, APIs and MVPs, or extend and maintain production Rails systems. Senior engineering for international clients."
+description: "Ruby on Rails developer helping startups launch MVPs, and building and maintaining APIs and production Rails apps for international clients."
 image: /assets/img/og/rails-development.png
-promise: New Rails apps and MVPs from idea to launch, and steady, tested work on the Rails app you already run.
+promise: I help startups launch MVPs on Rails, and do steady, tested work on the Rails app you already run.
 contact_ask: whether this is a new product or an app you already run
 faq:
   - q: "How do you plan an MVP?"
@@ -18,7 +18,7 @@ faq:
 ---
 ## Who it is for
 
-Founders with an idea to turn into a product, CEOs and product teams with a Rails app that needs to move faster, and agencies that need a senior Rails developer for a client project.
+Startups and founders with an idea to turn into an MVP, CEOs and product teams with a Rails app that needs to move faster, and agencies that need a senior Rails developer for a client project.
 
 ## Problems I solve
 
