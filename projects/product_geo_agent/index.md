@@ -66,7 +66,7 @@ These are single runs. Across five eval runs the complete snowboard scored betwe
 
 ## What broke, and what I learned
 
-**A green test suite sat on top of a broken agent.** Every spec passed while a bug in the agent framework silently stopped my hooks (retry handling and tool-result collection among them) from running on real audits. Mocked tests could not catch it, because mocks assume the connection already works. Only running the real agent did. I traced it to three bugs in the `little_ghost` gem, fixed them, and all three fixes were [merged upstream](/projects/#open-source).
+**A green test suite sat on top of a broken AI agent.** Every spec passed while a bug in the agent framework silently stopped my hooks (retry handling and tool-result collection among them) from running on real audits. Mocked tests could not catch it, because mocks assume the connection already works. Only running the real agent did. I traced it to three bugs in the `little_ghost` gem, fixed them, and all three fixes were [merged upstream](/projects/#open-source).
 
 **The model could not add.** In one audit the code calculated 75 points lost, but the model wrote "55". Generating text one word at a time is not arithmetic. I moved all math into Ruby and let the model only describe finished, correct results.
 

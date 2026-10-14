@@ -18,7 +18,7 @@
   card_headline: Build AI features that work with real application data.
   card_intro: I integrate LLMs into Rails apps, build AI agents that use your application's tools, and connect models to business data, with validated tool inputs, controlled write actions, evaluation and tracing.
   card_tools: LLM integrations · AI agents · MCP servers · RAG with pgvector · Evals · Observability · Workflow automation (n8n)
-  card_proof: "Working projects with MCP, RAG, tool calling and agent evaluation: [shop_mcp_server](/projects/shop_mcp_server/), [ai_shop_assistant](/projects/ai_shop_assistant/) and [product_geo_agent](/projects/product_geo_agent/), plus fixes merged into the [little_ghost](/projects/#open-source) Ruby gem."
+  card_proof: "Working projects with MCP, RAG, tool calling and AI agent evaluation: [shop_mcp_server](/projects/shop_mcp_server/), [ai_shop_assistant](/projects/ai_shop_assistant/) and [product_geo_agent](/projects/product_geo_agent/), plus fixes merged into the [little_ghost](/projects/#open-source) Ruby gem."
   card_cta: Explore AI engineering
 - slug: shopify-development
   name: Shopify, BigCommerce and e-commerce
@@ -38,5 +38,5 @@
   card_intro: I check the product and brand information AI assistants rely on when they answer shopping questions, then fix the gaps in order of impact. No one can guarantee a recommendation, but missing information can be fixed.
   card_tools_label: What I assess
   card_tools: Product content · Buyer questions · FAQ coverage · Schema.org structured data · Brand mentions · AI search testing
-  card_proof: "I built [product_geo_agent](/projects/product_geo_agent/), an agent that runs these checks and was tested on a Shopify development store, and I apply the same practices to [this website](/services/ai-discoverability/#the-same-practices-on-this-website)."
+  card_proof: "I built [product_geo_agent](/projects/product_geo_agent/), an AI agent that runs these checks and was tested on a Shopify development store, and I apply the same practices to [this website](/services/ai-discoverability/#the-same-practices-on-this-website)."
   card_cta: Explore AI search visibility

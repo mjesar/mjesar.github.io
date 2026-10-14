@@ -24,7 +24,7 @@ After four and a half years at MGLogics, I am looking for a **remote full-time r
 
 ## Learning
 
-- Making agents reliable: evals, observability and human approval for risky actions.
+- Making AI agents reliable: evals, observability and human approval for risky actions.
 - How AI shopping assistants find and recommend products, and what stores can do about it (GEO and AEO).
 
 <p class="muted">This is a <a href="https://nownownow.com/about" target="_blank" rel="noopener">now page</a>.</p>

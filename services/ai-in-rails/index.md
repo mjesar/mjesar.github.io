@@ -28,7 +28,7 @@ Companies hiring an AI engineer with Rails, CTOs and product teams with a Rails 
 
 - Your customers or staff need answers from your own data (orders, products, documents), not from what a model guesses.
 - Search only finds exact words, so people miss what they are looking for.
-- You want an assistant or agent that can do real tasks, but only the actions you allow, with a person's approval where it matters.
+- You want an AI assistant or AI agent that can do real tasks, but only the actions you allow, with a person's approval where it matters.
 - Manual business processes, such as order lookups, support triage or data entry, take hours that automation could save.
 - You want AI in your product without adding a second stack your team has to run.
 - You cannot tell whether the AI is giving correct answers, or whether a change made it worse.
@@ -42,7 +42,7 @@ Companies hiring an AI engineer with Rails, CTOs and product teams with a Rails 
 - **MCP clients** that call external MCP APIs, such as Shopify's live Catalog API.
 - **RAG** (retrieval-augmented generation) with embeddings stored in your existing PostgreSQL using pgvector, searched by meaning instead of keywords.
 - **AI agents that call your app's tools and APIs**: narrow tools with validated arguments, permissions on what each tool can do, approval for write actions where your requirements call for it, and plain Ruby for anything that must be exact, such as scores and totals.
-- **Evaluation, tracing and testing of agent behavior**: repeatable test runs against hand-written expectations, and a trace of every tool call so you can see what the agent did.
+- **Evaluation, tracing and testing of AI agent behavior**: repeatable test runs against hand-written expectations, and a trace of every tool call so you can see what the agent did.
 - **Workflow automation and integrations**: automated business workflows in n8n or in Rails code, connected to your existing systems through APIs, webhooks and MCP, with complex logic, tests and approval steps kept in Rails.
 
 ## Why build AI in Rails?
@@ -53,9 +53,9 @@ Your data, users, permissions and background jobs already live in your Rails app
 
 - **[shop_mcp_server](/projects/shop_mcp_server/)**: an MCP server in Rails 8.1 that gives Claude a store's products, orders and inventory. Six read-only tools, one approval-gated write, orders in a single transaction with rollback, and semantic search with pgvector. Tested with RSpec, MCP Inspector and Claude as a live custom connector.
 - **[ai_shop_assistant](/projects/ai_shop_assistant/)**: a Rails 8 shopping chat where the model decides when to search Shopify's live catalog over MCP, through a hand-written JSON-RPC client, so it answers with real products and prices.
-- **[product_geo_agent](/projects/product_geo_agent/)**: an agent with five tools that it chooses between. The model judges and Ruby computes the score, so the same facts always give the same number. It has an eval harness and a live trace.
-- **[support_engineer](/projects/support_engineer/)** (in progress): a support agent built around human approval for refunds, returns and cancellations, with planted test cases that have known correct answers.
-- **[little_ghost](/projects/#open-source)**: three merged pull requests fixing bugs in this open-source Ruby agent framework, found while building product_geo_agent.
+- **[product_geo_agent](/projects/product_geo_agent/)**: an AI agent with five tools that it chooses between. The model judges and Ruby computes the score, so the same facts always give the same number. It has an eval harness and a live trace.
+- **[support_engineer](/projects/support_engineer/)** (in progress): an AI support agent built around human approval for refunds, returns and cancellations, with planted test cases that have known correct answers.
+- **[little_ghost](/projects/#open-source)**: three merged pull requests fixing bugs in this open-source Ruby AI agent framework, found while building product_geo_agent.
 
 ## How a project runs
 

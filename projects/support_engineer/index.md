@@ -4,7 +4,7 @@ slug: support_engineer
 title: support_engineer
 seo_title: "AI Support Agent in Ruby on Rails: support_engineer"
 kind: Production-style AI support agent in Ruby on Rails (in progress)
-description: A Rails support agent that investigates customer problems, checks real order data and takes safe actions only with human approval. Built lesson by lesson.
+description: A Rails AI support agent that investigates customer problems, checks real order data and takes safe actions only with human approval. Built lesson by lesson.
 image: /assets/img/og/support_engineer.png
 stack: Ruby 4.0 · Rails 8.1 · PostgreSQL · RubyLLM · Groq · RSpec · VCR · MCP and pgvector (planned)
 repo: https://github.com/mjesar/support_engineer
@@ -79,4 +79,4 @@ To answer correctly, a system has to look up the order, check the shipment, find
 
 ## Roadmap
 
-Three milestones in 14 lessons: a working agent (LLM calls, tool calling, the agent loop, MCP, RAG), quality and safety (routing, hybrid search, approvals, evals, observability), and advanced topics (memory, multi-agent orchestration, deployment). Progress is tracked in the [repo](https://github.com/mjesar/support_engineer#roadmap).
+Three milestones in 14 lessons: a working AI agent (LLM calls, tool calling, the agent loop, MCP, RAG), quality and safety (routing, hybrid search, approvals, evals, observability), and advanced topics (memory, multi-agent orchestration, deployment). Progress is tracked in the [repo](https://github.com/mjesar/support_engineer#roadmap).
