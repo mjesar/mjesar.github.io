@@ -8,7 +8,7 @@ image: /assets/img/og/services.png
     <div class="bar" aria-hidden="true"></div>
     <h1>Work with me</h1>
     <p class="role">Senior Ruby on Rails Engineer specializing in AI integration</p>
-    <p class="lede">I build and extend production Ruby on Rails applications, integrate AI into existing products, and develop software for Shopify and other e-commerce platforms.</p>
+    <p class="lede">I help startups and businesses turn ideas into working applications, automate repetitive workflows with AI, and build e-commerce software.</p>
     <p class="meta">Open to remote full-time roles, contracts and freelance projects · Available now · Usually replies within a few hours · Flexible hours for U.S. and European time zones</p>
     <ul class="links">
       <li><a class="btn primary" href="mailto:mohammadalijaisar@gmail.com">Have a project? Email me</a></li>
@@ -21,6 +21,8 @@ image: /assets/img/og/services.png
 <main class="wrap prose" markdown="1">
 
 With 7+ years of experience building software for international clients, I work across backend systems, full-stack applications, LLM integrations, AI agents, MCP servers, RAG and e-commerce integrations. I can help you build a new product, improve an existing Rails application, connect AI to real business data, or solve complex Shopify and e-commerce problems.
+
+I focus on results, not hours: a working product, less manual work, and processes that run on their own.
 
 ## What I can do for you
 
