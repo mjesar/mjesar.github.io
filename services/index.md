@@ -1,14 +1,14 @@
 ---
 title: Hire a Ruby on Rails & AI Engineer
-description: "Hire a senior Ruby on Rails engineer for apps and MVPs, AI integration (MCP, RAG, agents), Shopify and e-commerce. Remote full-time, contract or project work."
+description: "Hire a Ruby on Rails and AI engineer for apps and MVPs, AI integration (MCP, RAG, agents), Shopify and e-commerce. Remote full-time, contract or project work."
 image: /assets/img/og/services.png
 ---
 <div class="hero small">
   <div class="wrap">
     <div class="bar" aria-hidden="true"></div>
     <h1>Work with me</h1>
-    <p class="role">Senior Ruby on Rails Engineer specializing in AI integration</p>
-    <p class="lede">I help startups and businesses turn ideas into working applications, automate repetitive workflows with AI, and build e-commerce software.</p>
+    <p class="role">Senior Software Engineer specializing in AI automation</p>
+    <p class="lede">I help startups and businesses turn ideas into working applications, automate repetitive workflows with AI, and build software that solves real business problems.</p>
     <p class="meta">Open to remote full-time roles, contracts and freelance projects · Available now · Usually replies within a few hours · Flexible hours for U.S. and European time zones</p>
     <ul class="links">
       <li><a class="btn primary" href="mailto:mohammadalijaisar@gmail.com">Have a project? Email me</a></li>
