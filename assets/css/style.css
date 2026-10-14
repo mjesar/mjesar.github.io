@@ -430,3 +430,9 @@ main section + section { padding-top: 14px; }
 .hero-id h1 { margin: 0; }
 .avatar { width: 104px; height: 104px; flex: none; border-radius: 50%; object-fit: cover; padding: 4px; border: 2px dashed var(--apricot); }
 @media (max-width: 760px) { .hero-id { gap: 14px; } .avatar { width: 72px; height: 72px; padding: 3px; } }
+
+/* Header logo: an apricot tab hanging from the top edge; the paisley takes the page background colour, so it follows the theme */
+.site-header .brand { align-self: flex-start; }
+.brand-tab { display: flex; align-items: flex-end; justify-content: center; flex: none; width: 32px; height: 56px; margin-top: -14px; margin-bottom: -8px; padding-bottom: 8px; background: var(--apricot); color: var(--bg); border-radius: 0 0 4px 4px; }
+.brand-tab svg { display: block; width: 22px; height: 22px; }
+@media (max-width: 600px) { .brand-tab { width: 28px; height: 50px; padding-bottom: 7px; } .brand-tab svg { width: 20px; height: 20px; } }
