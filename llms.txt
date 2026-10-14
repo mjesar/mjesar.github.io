@@ -39,6 +39,7 @@ Terms: MCP (Model Context Protocol), RAG (retrieval-augmented generation), GEO (
 - Rails and web: Ruby on Rails, Hotwire (Turbo, Stimulus), React, JavaScript, TypeScript, PostgreSQL, MongoDB, Redis, Sidekiq, Solid Queue, REST and GraphQL APIs, RSpec, Heroku, AWS, Google Cloud, Docker.
 - Shopify and e-commerce: Polaris, App Bridge, Admin and Storefront APIs (REST and GraphQL), webhooks, Shopify Functions (including migrations from Shopify Scripts), Checkout UI Extensions, Checkout Extensibility, Shopify Plus B2B, Theme App Extensions, Liquid, App Store publishing, BigCommerce apps, Amazon SP-API.
 - AI: agentic AI, workflow and business process automation (n8n or code), LLM integrations (Claude, OpenAI, Gemini, RubyLLM), MCP servers and an MCP client, RAG with pgvector on PostgreSQL, agents with tool calling, evals.
+- AI-assisted development: Claude Code, Cursor, GitHub Copilot, Claude and ChatGPT for coding, research, review and documentation, with my own review, tests and ownership of every change.
 - AI search visibility (GEO and AEO): product content, FAQ coverage and schema.org structured data audits for online stores, brand AI visibility (how AI assistants describe a brand, consistent brand facts, Organization structured data), and monitoring brand mentions and citations with AI visibility tools such as Promptwatch.
 - Ways of working: agile teams with sprint planning, backlog grooming, scoping and task estimation; small, reviewable pull requests with tests.
 
