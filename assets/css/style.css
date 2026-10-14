@@ -436,3 +436,9 @@ main section + section { padding-top: 14px; }
 .brand-tab { display: flex; align-items: flex-end; justify-content: center; flex: none; width: 32px; height: 56px; margin-top: -14px; margin-bottom: -8px; padding-bottom: 8px; background: var(--apricot); color: var(--bg); border-radius: 0 0 4px 4px; }
 .brand-tab svg { display: block; width: 22px; height: 22px; }
 @media (max-width: 600px) { .brand-tab { width: 28px; height: 50px; padding-bottom: 7px; } .brand-tab svg { width: 20px; height: 20px; } }
+
+/* Sticky top bar: stays at the top while scrolling; anchors stop below it */
+.site-header { position: sticky; top: 0; z-index: 50; box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06); }
+html { scroll-padding-top: 84px; }
+@media (max-width: 600px) { html { scroll-padding-top: 112px; } }
+@media print { .site-header { position: static; } }
