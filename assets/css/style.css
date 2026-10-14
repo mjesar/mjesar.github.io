@@ -234,7 +234,7 @@ body::before {
 }
 
 /* Type: serif headings, mono labels, sans body */
-h1, h2, h3, .brand span { font-family: var(--serif); font-weight: 700; }
+h1, h2, h3, .brand-name { font-family: var(--serif); font-weight: 700; }
 h2 { font-size: 1.75rem; }
 .hero h1 { font-weight: 700; letter-spacing: -0.02em; }
 .nav, .stack, .eyebrow, .tag, .meta, .muted, .btn { font-family: var(--mono); }
@@ -431,11 +431,14 @@ main section + section { padding-top: 14px; }
 .avatar { width: 104px; height: 104px; flex: none; border-radius: 50%; object-fit: cover; padding: 4px; border: 2px dashed var(--apricot); }
 @media (max-width: 760px) { .hero-id { gap: 14px; } .avatar { width: 72px; height: 72px; padding: 3px; } }
 
-/* Header logo: an apricot tab hanging from the top edge; the paisley takes the page background colour, so it follows the theme */
-.site-header .brand { align-self: flex-start; }
-.brand-tab { display: flex; align-items: flex-end; justify-content: center; flex: none; width: 32px; height: 56px; margin-top: -14px; margin-bottom: -8px; padding-bottom: 8px; background: var(--apricot); color: var(--bg); border-radius: 0 0 4px 4px; }
+/* Header logo: an apricot tab hanging from the top edge; the paisley takes the page background colour, so it follows the theme.
+   The tab is pinned to the top of the bar (out of the layout), so the name stays centred in the bar and the paisley is sized to line up with it. */
+.site-header .wrap { position: relative; }
+.brand-tab { position: absolute; top: 0; display: flex; align-items: flex-end; justify-content: center; width: 32px; height: 50px; padding-bottom: 8px; box-sizing: border-box; background: var(--apricot); color: var(--bg); border-radius: 0 0 4px 4px; }
 .brand-tab svg { display: block; width: 22px; height: 22px; }
-@media (max-width: 600px) { .brand-tab { width: 28px; height: 50px; padding-bottom: 7px; } .brand-tab svg { width: 20px; height: 20px; } }
+.site-header .brand { align-self: center; min-height: 34px; }
+.brand-name { margin-left: 44px; }
+@media (max-width: 600px) { .brand-tab { width: 28px; height: 48px; padding-bottom: 7px; } .brand-tab svg { width: 20px; height: 20px; } .brand-name { margin-left: 38px; } }
 
 /* Sticky top bar: stays at the top while scrolling; anchors stop below it */
 .site-header { position: sticky; top: 0; z-index: 50; box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06); }
