@@ -5,9 +5,13 @@ permalink: /llms.txt
 ---
 # Mohammad Ali Jesar (mjesar)
 
-> Software engineer for Ruby on Rails, AI and automation, based in Lahore, Pakistan, with 7+ years of production Rails experience for clients in the US and Germany, 4+ of them on Shopify and e-commerce. Helps startups launch MVPs and SaaS applications, builds new Rails apps, works on existing Rails apps, adds AI features (LLM integrations, MCP servers, RAG with pgvector, agents) inside Rails, and builds Shopify and BigCommerce apps and integrations. Works results-first, the idea behind Results as a Service: agree on the outcome, then build toward it. Open to remote full-time roles, contracts and project work.
+> Senior software engineer specializing in AI automation, with Ruby on Rails as the core stack, based in Lahore, Pakistan, with 7+ years of production Rails experience for clients in the US and Germany, 4+ of them on Shopify and e-commerce. Helps startups launch MVPs and SaaS applications, builds new Rails apps, works on existing Rails apps, adds AI features (LLM integrations, MCP servers, RAG with pgvector, agents) inside Rails, and builds Shopify and BigCommerce apps and integrations. Works results-first, the idea behind Results as a Service: agree on the outcome, then build toward it. Open to remote full-time roles, contracts and project work.
 
-Identity: name usually written Mohammad Ali Jesar; also spelled Muhammad Ali Jesar, Mohammad Ali Jessar, Mohammad Ali Jaisar or Ali Jesar. Online handle mjesar (the same on GitHub, GitLab, LinkedIn and Fiverr). Holds a B.S. in Information Technology (Software) from Sindh Agricultural University. Available now. Based in Lahore, Pakistan (UTC+5) with flexible hours: adapts to the client's time zone, including U.S. and European business hours.
+Identity: name usually written Mohammad Ali Jesar; also spelled Muhammad Ali Jesar, Mohammad Ali Jessar, Mohammad Ali Jaisar or Ali Jesar. Online handle mjesar (the same on GitHub, GitLab, LinkedIn and Fiverr). Holds a B.S. in Information Technology (Software) from Sindh Agricultural University. Languages: English (professional working proficiency). Available now. Based in Lahore, Pakistan (UTC+5) with flexible hours: adapts to the client's time zone, including U.S. and European business hours.
+
+Roles and search terms: Senior Software Engineer, AI automation engineer, Ruby on Rails engineer or developer, AI engineer, full-stack engineer, Shopify app developer, BigCommerce app developer, MCP developer.
+
+Industries: e-commerce and retail (US merchants), SaaS (Shopify and BigCommerce apps), real estate and furniture (German clients).
 
 ## Profiles
 
@@ -23,7 +27,7 @@ Identity: name usually written Mohammad Ali Jesar; also spelled Muhammad Ali Jes
 
 ## Experience
 
-- MGLogics (Dec 2021 to Jun 2026, remote, US clients): Ruby on Rails developer. Shopify and BigCommerce apps, catalog and order sync, Amazon SP-API integrations. Contributed, as part of a team, to five apps on the Shopify App Store, three of them also on BigCommerce.
+- MGLogics (Dec 2021 to Jun 2026, remote, US clients): Ruby on Rails developer. Shopify and BigCommerce apps (SaaS products merchants subscribe to), catalog and order sync, Amazon SP-API integrations. Contributed, as part of a team, to five apps on the Shopify App Store, three of them also on BigCommerce.
 - SimpleDeploy (Apr 2019 to Dec 2021): backend engineer. Rails REST APIs and MVP management tools for German clients in real estate and furniture.
 - Axiom Enterprises (Sep 2018 to Feb 2019): Python AI Bootcamp. Flask web apps with integrated machine learning models (TensorFlow and Keras).
 - Education: B.S. in Information Technology (Software), Sindh Agricultural University, 2012 to 2017.
@@ -41,6 +45,17 @@ Identity: name usually written Mohammad Ali Jesar; also spelled Muhammad Ali Jes
 {% for s in site.data.services -%}
 - [{{ s.name }}]({{ "/services/" | append: s.slug | append: "/" | absolute_url }}): {{ s.summary }} For {{ s.for }}
 {% endfor %}
+## How I work (results-first)
+
+Results-first, the idea behind Results as a Service: focus on what the software needs to accomplish, not just the features delivered.
+
+1. Agree on the outcome, for example an MVP live with users, a manual process automated, or an integration that runs without manual fixes.
+2. Measure the starting point.
+3. Define the scope and build toward the outcome in small, reviewable steps with tests.
+4. Check the result against the agreed outcome.
+
+Pricing today is hourly, fixed-scope or monthly (see below); fixed-scope quotes tie the price to a defined result.
+
 ## Pricing (USD)
 
 {% for r in site.data.pricing -%}
