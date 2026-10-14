@@ -16,12 +16,11 @@ updated: 2026-10-11
 
 ## Looking for my next role
 
-After four and a half years at MGLogics, I am looking for a **remote full-time role** as a senior Ruby on Rails engineer specializing in AI integration, ideally where Shopify, e-commerce or AI features meet. I am available to start now, and also taking **freelance projects**. See [Services](/services/) or [email me](mailto:mohammadalijaisar@gmail.com).
+After four and a half years at MGLogics, I am looking for a **remote full-time role** as a software engineer for Ruby on Rails, AI and automation, ideally where Shopify, e-commerce or AI features meet. I am available to start now, and also taking **freelance projects**. See [Services](/services/) or [email me](mailto:mohammadalijaisar@gmail.com).
 
 ## Building
 
 - **[support_engineer](/projects/support_engineer/):** a production-style AI support agent in Rails, built over 14 lessons. Lessons 1 to 3 are done (data import, the first LLM call, and read tools the model chooses between), and a hand-written agent loop is next.
-- **[ucp_catalog](https://github.com/mjesar/ucp_catalog){:target="_blank" rel="noopener"}:** a Ruby gem for talking to Universal Commerce Protocol catalog APIs, starting with Shopify's Global Catalog.
 
 ## Learning
 

@@ -2,10 +2,12 @@
   <div class="wrap">
     <a class="brand" href="/" aria-label="Mohammad Ali Jesar, home">
       <img src="/assets/img/logo.svg" width="36" height="36" alt="" aria-hidden="true">
-      <span>Mohammad Ali Jesar</span>
+      {%- comment -%} On the homepage the full name is the big heading right below, so the bar shows the handle instead. {%- endcomment -%}
+      <span>{% if page.url == "/" %}mjesar{% else %}Mohammad Ali Jesar{% endif %}</span>
     </a>
     <nav aria-label="Main">
       <ul class="nav">
+        <li><a href="/"{% if page.url == "/" %} aria-current="page"{% endif %}>Home</a></li>
         {%- assign nav = "Projects:/projects/,Services:/services/,Writing:/writing/,Resume:/resume/,Uses:/uses/,Now:/now/" | split: "," -%}
         {%- for item in nav -%}
         {%- assign parts = item | split: ":" -%}
