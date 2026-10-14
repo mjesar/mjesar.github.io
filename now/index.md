@@ -21,7 +21,6 @@ After four and a half years at MGLogics, I am looking for a **remote full-time r
 ## Building
 
 - **[support_engineer](/projects/support_engineer/):** a production-style AI support agent in Rails, built over 14 lessons. Lessons 1 to 3 are done (data import, the first LLM call, and read tools the model chooses between), and a hand-written agent loop is next.
-- **[ucp_catalog](https://github.com/mjesar/ucp_catalog){:target="_blank" rel="noopener"}:** a Ruby gem for talking to Universal Commerce Protocol catalog APIs, starting with Shopify's Global Catalog.
 
 ## Learning
 
