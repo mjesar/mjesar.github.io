@@ -27,7 +27,7 @@ description: The tools, stack and setup Mohammad Ali Jesar uses to build Ruby on
 - **little_ghost** for AI agent loops (I contributed three fixes to it).
 - **The official MCP Ruby SDK** for MCP servers, and **MCP Inspector** to test them by hand.
 - **Gemini** on its free tier for experiments, **Claude** as a live MCP client, **Voyage AI** for embeddings.
-- **AI coding assistants:** Claude Code, Cursor and GitHub Copilot.
+- **AI coding assistants:** Claude Code, Cursor and GitHub Copilot, plus Claude and ChatGPT for research, code review and writing. I review, test and own every change they help with.
 
 ## Shopify and e-commerce
 
