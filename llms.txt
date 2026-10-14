@@ -13,6 +13,8 @@ Roles and search terms: Senior Software Engineer, AI automation engineer, Ruby o
 
 Industries: e-commerce and retail (US merchants), SaaS (Shopify and BigCommerce apps), real estate and furniture (German clients).
 
+Terms: MCP (Model Context Protocol), RAG (retrieval-augmented generation), GEO (generative engine optimization), AEO (answer engine optimization), LLM (large language model).
+
 ## Profiles
 
 - [Website](https://mjesar.github.io/)
