@@ -234,7 +234,7 @@ body::before {
 }
 
 /* Type: serif headings, mono labels, sans body */
-h1, h2, h3, .brand span { font-family: var(--serif); font-weight: 700; }
+h1, h2, h3, .brand-name { font-family: var(--serif); font-weight: 700; }
 h2 { font-size: 1.75rem; }
 .hero h1 { font-weight: 700; letter-spacing: -0.02em; }
 .nav, .stack, .eyebrow, .tag, .meta, .muted, .btn { font-family: var(--mono); }
@@ -399,12 +399,12 @@ main section + section { padding-top: 14px; }
   .glance { display: none; }
 }
 
-/* Phone menu: keep all seven links on one line (the mono font is wide) */
+/* Phone menu: keep all six links on one line (the mono font is wide) */
 @media (max-width: 600px) {
-  .nav { flex-wrap: nowrap; gap: 0 9px; font-size: 12.5px; letter-spacing: 0; }
+  .nav { flex-wrap: nowrap; gap: 0 11px; font-size: 12.5px; letter-spacing: 0; }
 }
 @media (max-width: 380px) {
-  .nav { gap: 0 6px; font-size: 11.5px; }
+  .nav { gap: 0 8px; font-size: 12px; }
 }
 @media (max-width: 360px) {
   .site-header nav { overflow-x: auto; }
@@ -430,3 +430,20 @@ main section + section { padding-top: 14px; }
 .hero-id h1 { margin: 0; }
 .avatar { width: 104px; height: 104px; flex: none; border-radius: 50%; object-fit: cover; padding: 4px; border: 2px dashed var(--apricot); }
 @media (max-width: 760px) { .hero-id { gap: 14px; } .avatar { width: 72px; height: 72px; padding: 3px; } }
+
+/* Header logo: an apricot tab hanging from the top edge; the paisley takes the page background colour, so it follows the theme.
+   The tab is pinned to the top of the bar (out of the layout), so the name stays centred in the bar and the paisley is sized to line up with it. */
+.site-header .wrap { position: relative; }
+.brand-tab { position: absolute; top: 0; display: flex; align-items: flex-end; justify-content: center; width: 32px; height: 50px; padding-bottom: 8px; box-sizing: border-box; background: var(--apricot); color: var(--bg); border-radius: 0 0 4px 4px; }
+.brand-tab svg { display: block; width: 22px; height: 22px; }
+.site-header .brand { align-self: center; min-height: 34px; }
+.brand-name { margin-left: 44px; }
+/* On the homepage the name is the "you are here" marker, like the active menu link */
+.brand[aria-current="page"] .brand-name { color: var(--apricot); }
+@media (max-width: 600px) { .brand-tab { width: 28px; height: 48px; padding-bottom: 7px; } .brand-tab svg { width: 20px; height: 20px; } .brand-name { margin-left: 38px; } }
+
+/* Sticky top bar: stays at the top while scrolling; anchors stop below it */
+.site-header { position: sticky; top: 0; z-index: 50; box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06); }
+html { scroll-padding-top: 84px; }
+@media (max-width: 600px) { html { scroll-padding-top: 112px; } }
+@media print { .site-header { position: static; } }
