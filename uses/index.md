@@ -24,7 +24,7 @@ description: The tools, stack and setup Mohammad Ali Jesar uses to build Ruby on
 ## AI
 
 - **RubyLLM** for chat and tool calling across providers.
-- **little_ghost** for agent loops (I contributed three fixes to it).
+- **little_ghost** for AI agent loops (I contributed three fixes to it).
 - **The official MCP Ruby SDK** for MCP servers, and **MCP Inspector** to test them by hand.
 - **Gemini** on its free tier for experiments, **Claude** as a live MCP client, **Voyage AI** for embeddings.
 - **AI coding assistants:** Claude Code, Cursor and GitHub Copilot.

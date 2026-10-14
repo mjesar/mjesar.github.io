@@ -79,7 +79,7 @@ This site applies the same AI search visibility practices offered as a service: 
 
 ## Open source
 
-- little_ghost (Ruby agent framework): three merged pull requests, released in 0.11.0.
+- little_ghost (Ruby AI agent framework): three merged pull requests, released in 0.11.0.
   - #112 Replay Gemini thought signatures across multi-turn tool calls: https://github.com/littleghostai/little_ghost/pull/112
   - #113 Send the original function name in functionResponse.name: https://github.com/littleghostai/little_ghost/pull/113
   - #115 Preserve Agent lifecycle hooks when building execution snapshots: https://github.com/littleghostai/little_ghost/pull/115
