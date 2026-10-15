@@ -1,5 +1,6 @@
 ---
 title: Hire a Ruby on Rails & AI Engineer
+ask_ai_question: "What services does Mohammad Ali Jesar offer at mjesar.github.io/services/, and who are they for?"
 description: "Hire a Ruby on Rails and AI engineer for apps and MVPs, AI integration (MCP, RAG, agents), Shopify and e-commerce. Remote full-time, contract or project work."
 image: /assets/img/og/services.png
 ---
@@ -53,6 +54,8 @@ I focus on results, not hours: a working product, less manual work, and processe
 {% include pricing.html %}
 
 {% include faq.html items=site.data.faq %}
+
+{% include ask-ai.html kind="service" %}
 
 ## Get in touch
 

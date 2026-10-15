@@ -1,5 +1,6 @@
 ---
 layout: service
+ask_ai_question: "What AI discoverability (GEO and AEO) services does Mohammad Ali Jesar offer at mjesar.github.io/services/ai-discoverability/, and what do the plans cost?"
 slug: ai-discoverability
 title: "AI Discoverability (GEO/AEO) for Stores and Brands"
 description: "Independent GEO/AEO specialist. I audit and fix what stops ChatGPT, Perplexity and Google AI from finding your store or brand. Plans from $200."
@@ -18,8 +19,6 @@ contact_ask: your store or brand address and which products matter most
 contact_template: ai_contact
 # Hidden until filled in with real, dated results from the self-audit.
 show_results: false
-# Hidden until the AI answers about me have been checked for accuracy.
-show_ask_ai: false
 faq:
   - q: "Can you guarantee ChatGPT will recommend my store?"
     a: "No, and nobody honestly can. AI tools decide on their own, based on each platform's systems, the information available and the buyer's question. I fix what blocks them from finding and reading your store or brand, then show you a before and after check."
@@ -142,16 +141,3 @@ This site uses the same approach: structured data for who I am and what I offer,
 
 - You want guaranteed rankings or AI recommendations. Nobody can promise that.
 - You cannot give me access to your store, or it has no real products yet. I can only fix what I can see.
-
-{% if page.show_ask_ai %}
-## Ask an AI assistant about me
-
-Want a second opinion? Ask an AI assistant what I offer. Each link opens the assistant with the question already filled in.
-
-{% capture ask %}What does Mohammad Ali Jesar (https://mjesar.github.io/services/ai-discoverability/) offer for AI discoverability (GEO and AEO) for online stores and brands, and what does it cost?{% endcapture -%}
-<ul class="ask-ai">
-  <li><a class="btn" href="https://chatgpt.com/?q={{ ask | url_encode }}" target="_blank" rel="noopener">Ask ChatGPT</a></li>
-  <li><a class="btn" href="https://www.perplexity.ai/search?q={{ ask | url_encode }}" target="_blank" rel="noopener">Ask Perplexity</a></li>
-  <li><a class="btn" href="https://www.google.com/search?udm=50&amp;q={{ ask | url_encode }}" target="_blank" rel="noopener">Ask Google AI Mode</a></li>
-</ul>
-{% endif %}

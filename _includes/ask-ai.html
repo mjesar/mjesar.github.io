@@ -1,0 +1,20 @@
+{%- comment -%}
+  "Ask an AI" buttons that open each assistant with the page's question prefilled.
+  The question is the page's `ask_ai_question` front matter; nothing renders without it.
+  Usage: {% include ask-ai.html kind="profile" %} on home, Resume and Projects, or
+  kind="service" on /services/ and the service pages. No analytics events are sent.
+  uri_escape encodes spaces as %20; the replace chain encodes the characters it leaves
+  alone that would break a query string.
+{%- endcomment -%}
+{%- if page.ask_ai_question -%}
+{%- capture ask_q -%}{{ page.ask_ai_question | uri_escape | replace: "&", "%26" | replace: "?", "%3F" | replace: "#", "%23" | replace: "+", "%2B" }}{%- endcapture -%}
+<section class="ask-ai-section no-print" id="ask-ai">
+  <h2>{% if include.kind == "profile" %}Ask an AI about my background{% else %}Ask an AI assistant{% endif %}</h2>
+  <ul class="ask-ai">
+  {%- for a in site.data.ask_ai.assistants %}
+    <li><a class="btn" href="{{ a.url }}{{ ask_q }}" target="_blank" rel="noopener noreferrer">{{ a.label }}</a></li>
+  {%- endfor %}
+  </ul>
+  <p class="muted">{% if include.kind == "profile" %}Each assistant answers on its own. This site and my resume are the source.{% else %}Each assistant answers on its own. For exact prices and scope, the plans on this site are the source.{% endif %}</p>
+</section>
+{%- endif -%}
