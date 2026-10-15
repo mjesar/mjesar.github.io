@@ -12,6 +12,7 @@
       <li>{{ d }}</li>
     {%- endfor %}
     </ul>
+    {%- if p.note %}<p class="muted plan-note">{{ p.note }}</p>{% endif %}
     <p class="plan-cta"><a class="more" data-ga-location="{{ p.id }}" href="{% include mailto.html contact="ai_contact" plan=p.name %}" target="_blank" rel="noopener" aria-label="Email me about the {{ p.name }} plan">Ask about {{ p.name }}</a></p>
   </article>
 {%- endfor %}
