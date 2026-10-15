@@ -139,7 +139,7 @@ This site uses the same approach: structured data for who I am and what I offer,
 
 - You want guaranteed rankings or AI recommendations. Nobody can promise that.
 - You want a one-time fix but cannot give me access to the store.
-- [TO CONFIRM: your message was cut off after "wants work on a store"]
+- You have no real products yet, or I cannot get access to your store. I can only fix what I can see.
 
 {% if page.show_ask_ai %}
 ## Ask an AI assistant about me
