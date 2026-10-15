@@ -13,6 +13,7 @@ layout: default
 <article>
 {{ content }}
 </article>
+{%- if page.faq %}{% include faq.html items=page.faq %}{% endif %}
 {%- if page.linkedin %}
 <p class="muted">First published on <a href="{{ page.linkedin }}" rel="noopener" target="_blank">LinkedIn</a>.</p>
 {%- endif %}
