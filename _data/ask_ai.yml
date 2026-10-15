@@ -1,0 +1,12 @@
+# Assistants for the "Ask an AI" section (_includes/ask-ai.html), in display order.
+# The question comes from each page's `ask_ai_question` front matter; each link is the
+# assistant's url followed by the encoded question (spaces as %20, never "+").
+assistants:
+  - label: Ask ChatGPT
+    url: "https://chatgpt.com/?q="
+  - label: Ask Claude
+    url: "https://claude.ai/new?q="
+  - label: Ask Perplexity
+    url: "https://www.perplexity.ai/search?q="
+  - label: Ask Google AI Mode
+    url: "https://www.google.com/search?udm=50&q="
