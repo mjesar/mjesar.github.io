@@ -1,0 +1,101 @@
+{%- comment -%}
+  Google Analytics 4 behind a consent banner. Rendered only in production builds
+  (JEKYLL_ENV=production) and never on pages with no_analytics: true.
+  - Nothing from Google loads until the visitor clicks Accept. Decline, or no choice,
+    loads nothing. The choice is kept in localStorage ("analytics-consent").
+  - Google signals and ad personalization are off.
+  - Clicks on mailto: links send an email_click event with only a location label from
+    data-ga-location (no address or other personal data), and only after Accept.
+  - "Cookie settings" in the footer (data-consent-open) reopens the banner.
+{%- endcomment -%}
+<div class="consent" id="consent" role="region" aria-label="Cookie consent" hidden>
+  <p>I use Google Analytics cookies to see which pages are read. No ads, no personal details. <a href="/privacy/">Privacy</a></p>
+  <div class="consent-actions">
+    <button type="button" class="consent-btn" data-consent="granted">Accept</button>
+    <button type="button" class="consent-btn" data-consent="denied">Decline</button>
+  </div>
+</div>
+<script>
+  (function () {
+    var ID = "{{ site.ga4_id }}";
+    var KEY = "analytics-consent";
+    var banner = document.getElementById("consent");
+    var opener = null;
+    var loaded = false;
+
+    function read() { try { return localStorage.getItem(KEY); } catch (e) { return null; } }
+    function write(value) { try { localStorage.setItem(KEY, value); } catch (e) {} }
+
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+
+    function load() {
+      window["ga-disable-" + ID] = false;
+      if (loaded) return;
+      loaded = true;
+      var script = document.createElement("script");
+      script.async = true;
+      script.src = "https://www.googletagmanager.com/gtag/js?id=" + ID;
+      document.head.appendChild(script);
+      gtag("js", new Date());
+      gtag("config", ID, { allow_google_signals: false, allow_ad_personalization_signals: false });
+    }
+
+    // Declining after accepting: stop sending and remove the Analytics cookies.
+    function stop() {
+      window["ga-disable-" + ID] = true;
+      document.cookie.split(";").forEach(function (cookie) {
+        var name = cookie.split("=")[0].trim();
+        if (name.indexOf("_ga") !== 0) return;
+        document.cookie = name + "=; Max-Age=0; path=/";
+        document.cookie = name + "=; Max-Age=0; path=/; domain=" + location.hostname;
+      });
+    }
+
+    // Keep the end of the page reachable above the banner, so it never hides a button.
+    function pad() { document.body.style.paddingBottom = banner.hidden ? "" : banner.offsetHeight + 24 + "px"; }
+
+    function show(from) {
+      opener = from || null;
+      banner.hidden = false;
+      pad();
+      if (opener) banner.querySelector("button").focus();
+    }
+
+    function hide() {
+      banner.hidden = true;
+      pad();
+      if (opener) opener.focus();
+      opener = null;
+    }
+
+    banner.addEventListener("click", function (event) {
+      var button = event.target.closest("[data-consent]");
+      if (!button) return;
+      var choice = button.getAttribute("data-consent");
+      write(choice);
+      if (choice === "granted") load(); else stop();
+      hide();
+    });
+
+    banner.addEventListener("keydown", function (event) {
+      if (event.key === "Escape") hide();
+    });
+
+    document.addEventListener("click", function (event) {
+      if (!event.target.closest) return;
+      var settings = event.target.closest("[data-consent-open]");
+      if (settings) { show(settings); return; }
+      var link = event.target.closest('a[href^="mailto:"]');
+      if (link && loaded && !window["ga-disable-" + ID]) {
+        gtag("event", "email_click", { location: link.getAttribute("data-ga-location") || "other" });
+      }
+    });
+
+    window.addEventListener("resize", pad);
+
+    var saved = read();
+    if (saved === "granted") load();
+    else if (saved !== "denied") show();
+  })();
+</script>

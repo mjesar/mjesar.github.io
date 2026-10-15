@@ -7,6 +7,10 @@
       <li><a href="https://gitlab.com/mjesar" rel="me noopener" target="_blank">GitLab</a></li>
       <li><a href="https://www.linkedin.com/in/mjesar/" rel="me noopener" target="_blank">LinkedIn</a></li>
       <li><a href="https://www.fiverr.com/mjesar" rel="me noopener" target="_blank">Fiverr</a></li>
+      <li><a href="/privacy/">Privacy</a></li>
+      {%- if site.ga4_id and jekyll.environment == "production" and page.no_analytics != true %}
+      <li><button type="button" class="link-button" data-consent-open>Cookie settings</button></li>
+      {%- endif %}
     </ul>
   </div>
 </footer>
