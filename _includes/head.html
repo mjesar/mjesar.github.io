@@ -45,7 +45,8 @@
 </script>
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="preload" href="/assets/fonts/fraunces-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/style.css">
+{%- comment -%} The ?v= build timestamp changes on every deploy, so browsers fetch the new stylesheet instead of a cached one (GitHub Pages caches files for 10 minutes). {%- endcomment %}
+<link rel="stylesheet" href="/assets/css/style.css?v={{ site.time | date: '%s' }}">
 {% feed_meta %}
 {%- comment -%} Google Analytics loads only after consent: see _includes/analytics.html. {%- endcomment -%}
 {%- if page.noindex %}
