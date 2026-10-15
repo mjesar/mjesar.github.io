@@ -101,17 +101,40 @@ Want a quick start on Shopify? A lighter, Shopify-only version of the audit is o
 
 ## Tools and costs
 
-**Tools I use, included in my price.** My own AI audit tool, crawlers and checkers, schema validators, AI assistants for testing your buyer questions, and Google Search Console and Bing Webmaster Tools (free; I only need view access).
+### What AI visibility tools do
 
-**Tools you pay for and keep (optional).** Some tools track your AI visibility over time on a monthly subscription. If you want one, you open the account in your own name and pay the provider directly. Prices start at about $30 per month. I set it up and read the results for you. When the work ends, the account and the data stay with you. I add no markup and take no commission.
+Tools like Promptwatch, Peec AI, Trakkr and HubSpot AEO run the questions your buyers ask across ChatGPT, Gemini, Perplexity and other assistants, on a schedule. They record whether your brand is named, which of your pages are cited, which competitors appear instead, and how you are described. You see the trend in a dashboard.
 
-**My rules.** I ask before any paid tool is added. Tool subscriptions are not included in plan prices unless a plan says so. You are never locked into a tool because of me. Outside tool prices are set by the provider and can change.
+### What they do not do
 
-| Plan | My tools | Your own subscription tool |
-|---|---|---|
-{%- for p in site.data.ai_plans %}
-| {{ p.name }} | Included | {% if p.unit == "month" %}Optional, only if you want a dashboard{% else %}Not needed{% endif %} |
+They measure; they do not fix. A tracker will show that AI assistants skip your products, but it will not change your product data, structured data or crawler rules. That is the work I do. Results also vary from run to run, so I treat the numbers as estimates, not guarantees.
+
+### How I help you with them
+
+1. **Tell you if you need one.** Many small stores do not. A monthly test of about 10 buyer questions gives most of the same information for free. I will say so honestly.
+2. **Choose the right tool** for your store size, platform and budget.
+3. **Set it up properly.** I write the buyer questions, add your competitors and configure the tracking, because a tool with poor prompts gives useless data.
+4. **Record a baseline** before any fix, so you can see a real before and after.
+5. **Read the results with you** and turn them into a short list of fixes, ordered by impact.
+6. **Re-check after the fixes** and report what changed and what did not.
+
+<div class="grid tool-groups">
+{%- for g in site.data.ai_tools %}
+<article class="card" id="tools-{{ g.id }}">
+<h4>{{ g.name }}</h4>
+<p class="muted">{{ g.note }}</p>
+<ul>
+{%- for t in g.tools %}
+<li>{{ t }}</li>
 {%- endfor %}
+</ul>
+</article>
+{%- endfor %}
+</div>
+
+### Who pays
+
+Tools I use in my own work are included in my price. For optional trackers, you subscribe in your own name and keep the account. I never resell or mark up a subscription. Check each tool's website for current pricing.
 
 ## The same practices on this website
 

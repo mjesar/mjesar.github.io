@@ -462,3 +462,8 @@ html { scroll-padding-top: 84px; }
 .ask-ai { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 10px; }
 .prose .ask-ai .btn { color: var(--text); border-color: var(--border); }
 .prose .ask-ai .btn:hover { border-color: var(--accent); }
+
+/* AI tool groups on /services/ai-discoverability/ ("Tools and costs") */
+.tool-groups { margin: 16px 0; }
+.tool-groups h4 { margin: 0 0 4px; font-family: var(--serif); font-size: 1.05rem; }
+.tool-groups ul { margin: 8px 0 0; padding-left: 20px; font-size: 15px; }

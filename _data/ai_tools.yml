@@ -1,0 +1,27 @@
+# Tools on /services/ai-discoverability/ ("Tools and costs"), in three groups. No prices:
+# outside tool prices change, so the page sends readers to each tool's own website.
+- id: included
+  name: Included in my price
+  note: Tools I use in my own work. You pay nothing extra for them.
+  tools:
+    - My own AI audit agent, product_geo_agent
+    - Crawlers and checkers that read your site the way AI bots do
+    - Schema and structured data validators
+    - ChatGPT, Gemini and Perplexity, to test your buyer questions
+    - Google Search Console and Bing Webmaster Tools (I only need view access)
+- id: configured
+  name: Optional trackers I set up for you
+  note: You subscribe in your own name and keep the account. I set them up and read the results.
+  tools:
+    - Promptwatch
+    - Peec AI
+    - Trakkr
+    - HubSpot AEO
+    - Otterly.AI
+- id: enterprise
+  name: Enterprise tools
+  note: Built for large brands and enterprise teams.
+  tools:
+    - Profound
+    - Evertune
+    - Conductor

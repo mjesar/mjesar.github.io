@@ -29,6 +29,7 @@ One store or one brand per plan. Details: [{{ "/services/ai-discoverability/#pla
 - **{{ p.name }}{% if p.most_popular %} (most popular){% endif %}{% if p.optional %} (optional){% endif %}:** {{ p.price_label }}. {{ p.summary }} Includes: {{ p.deliverables | join: "; " }}.
 {% endfor %}
 - **Tools:** my own tools are included in the price. Optional AI visibility tracking subscriptions are opened in the client's own name and paid to the provider directly, with no markup or commission. The account and data stay with the client.
+- **AI visibility tools:** trackers such as Promptwatch, Peec AI, Trakkr and HubSpot AEO run buyer questions across AI assistants on a schedule and record mentions, citations, competitors and descriptions. They measure but do not fix. I help with choosing a tool (or skipping one), setup, a baseline before fixes, reading the results and re-checks after.
 - **No guarantees:** no plan guarantees rankings, citations, traffic or AI recommendations.
 - **Fiverr:** a lighter, Shopify-only version of the audit is offered on [Fiverr](https://www.fiverr.com/mjesar).
 
