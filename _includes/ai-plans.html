@@ -1,0 +1,17 @@
+{%- comment -%} Plan cards from _data/ai_plans.yml, plus the hourly row from _data/pricing.yml. {%- endcomment -%}
+{%- assign hourly = site.data.pricing | where: "id", "hourly" | first -%}
+<div class="grid plans">
+{%- for p in site.data.ai_plans %}
+  <article class="card plan{% if p.most_popular %} popular{% endif %}" id="plan-{{ p.id }}">
+    <h3>{{ p.name }}{% if p.most_popular %} <span class="tag">Most popular</span>{% elsif p.optional %} <span class="tag">Optional</span>{% endif %}</h3>
+    <p class="price">{{ p.price_label }}</p>
+    <p>{{ p.best_for }}</p>
+    <ul>
+    {%- for d in p.deliverables %}
+      <li>{{ d }}</li>
+    {%- endfor %}
+    </ul>
+  </article>
+{%- endfor %}
+</div>
+<p><strong>Hourly:</strong> {{ hourly.price }}, for custom work or anything outside the plans. All prices are in USD. Each plan covers one store or one brand.</p>

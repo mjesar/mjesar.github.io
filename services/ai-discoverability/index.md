@@ -1,53 +1,117 @@
 ---
 layout: service
 slug: ai-discoverability
-title: "GEO & AEO Audits for Brands and Shopify Stores"
-description: "How AI assistants see your products and brand: product content, FAQs, structured data and brand mentions. A practical GEO and AEO audit with prioritized fixes."
+title: "AI Discoverability (GEO/AEO) for Stores and Brands"
+description: "Independent GEO/AEO specialist. I audit and fix what stops ChatGPT, Perplexity and Google AI from finding your store or brand. Plans from $200."
 image: /assets/img/og/ai-discoverability.png
-promise: An audit of how AI assistants see your products and your brand, then fixes to the product data, brand information, FAQ content and structured data they rely on.
-contact_ask: your store address and which products matter most
+role: Independent senior AEO and GEO specialist
+promise: "Can ChatGPT find your store? Does it describe your brand correctly? I help online stores and brands get found and described correctly by ChatGPT, Perplexity and Google AI."
+secondary_cta:
+  label: See a sample report
+  url: /services/ai-discoverability/sample-report/
+contact_ask: your store or brand address and which products matter most
 faq:
-  - q: "How long will it take for AI assistants to show my products?"
-    a: "There is no guaranteed timeline. Different AI assistants discover and update product information in different ways, and changes to your store may not appear immediately. I can identify and fix technical and content gaps, but I cannot control when a particular assistant updates its information."
+  - q: "Can you guarantee ChatGPT will recommend my store?"
+    a: "No, and nobody honestly can. AI tools decide on their own, based on each platform's systems, the information available and the buyer's question. I fix what blocks them from finding and reading your store or brand, then show you a before and after check."
+  - q: "Is this the same as SEO?"
+    a: "Not quite. SEO is about rankings on search engines. Generative engine optimization (GEO) and answer engine optimization (AEO) are about how AI tools read, understand and describe you. They overlap, and none of them guarantees a particular result."
+  - q: "Do you only work with Shopify?"
+    a: "No. I also work with BigCommerce, other online stores and brands."
+  - q: "What do I get in the report?"
+    a: "A written report: what AI tools can and cannot see, what is blocking them, and a prioritized list of fixes."
+  - q: "Do you change my store, or only report?"
+    a: "The Audit is the report only. Fix and Complete include the changes, done with your approval."
+  - q: "What do you need from me?"
+    a: "View access to Google Search Console and Bing Webmaster Tools, store access (a staff or collaborator account) for fixes, your main products or services, and 5 to 10 questions your customers ask."
   - q: "Do you need access to my Shopify theme code?"
     a: "Not always. Many improvements can be made through the Shopify admin, product content, FAQs or structured data. Theme changes are needed when the issue comes from how your storefront renders content or exposes product information."
-  - q: "Can you guarantee that AI assistants will recommend my products?"
-    a: "No. AI recommendations depend on each platform's systems, the information available, the shopper's question and other factors outside a store owner's control. I can audit and improve your product information and test defined queries, but I cannot guarantee recommendations or rankings."
-  - q: "Can you check how AI assistants describe our brand, not just our products?"
-    a: "Yes. I test how assistants such as ChatGPT, Gemini and Perplexity describe your brand, which sources they rely on, and where they get facts wrong. Then I make your brand information consistent across your site and profiles, and track mentions and citations over time with an AI visibility monitoring tool such as Promptwatch. As with products, no one can guarantee what an AI assistant says, but missing or inconsistent information can be fixed."
-  - q: "Are GEO and AEO the same as SEO?"
-    a: "They overlap, but they are not the same. SEO helps pages appear in search results. Generative Engine Optimization (GEO) and Answer Engine Optimization (AEO) make information easier for AI-powered search and answer systems to discover, understand and use. None of these approaches guarantees a particular result."
+  - q: "How long until I see a change?"
+    a: "Fixes can go live within days. AI tools discover and update information on their own schedule, so I cannot give a date. The Complete plan includes a re-check of the same buyer questions."
+  - q: "Do I have to buy a tool?"
+    a: "No. The one-time plans need nothing from you."
+  - q: "Why are tracking tools not included in the price?"
+    a: "They are monthly subscriptions that belong to your business, and you should be able to keep or cancel them yourself."
+  - q: "Who owns the data and accounts?"
+    a: "You do. Any tool account is opened in your name, and everything I deliver stays with you."
+  - q: "Do you resell tools?"
+    a: "No. I add no markup and take no commission."
+  - q: "Can you help a brand that has no online store?"
+    a: "Yes. I check how assistants such as ChatGPT, Gemini and Perplexity describe your brand today and which sources they rely on, fix unclear or conflicting facts across your site and profiles, and give you a prioritized list of what is left."
 ---
+## What is AI discoverability?
+
+SEO helps people find your store on Google. GEO and AEO (generative and answer engine optimization) help AI tools find it, understand it and mention it when buyers ask for a recommendation. I call this AI discoverability.
+
+Many stores and brands are hard for AI tools to find or describe correctly. I find out why, then fix it.
+
+## How it works: Audit, Fix, Re-check
+
+1. **Audit.** I test what ChatGPT, Perplexity and Google AI can and cannot see: crawler access, product or brand data, and structured data. For a store, I start with the products that matter most, usually best sellers or one category.
+2. **Fix.** I fix what blocks them: robots.txt rules for AI bots, product and brand schema, data cleanup and clear facts. Every change is made with your approval.
+3. **Re-check.** I re-test the same buyer questions and show you the before and after.
+
 ## Who it is for
 
-E-commerce brands and store owners (merchants), often the marketing team, who want their products to come up when shoppers ask AI assistants what to buy, and want those assistants to describe their brand correctly. Most of this work is on Shopify; the same checks apply to other stores.
+<div class="grid">
+<article class="card">
+<h3>Shopify</h3>
+<p>Product data, schema and AI-bot rules set up so AI shopping tools can read your catalog.</p>
+</article>
+<article class="card">
+<h3>BigCommerce</h3>
+<p>The same checks and fixes, adapted to BigCommerce templates and settings.</p>
+</article>
+<article class="card">
+<h3>E-commerce</h3>
+<p>Any online store: crawler access, product schema, clean URLs and a readable catalog.</p>
+</article>
+<article class="card">
+<h3>Brands</h3>
+<p>Make sure AI tools have clear, consistent facts about you, and see how they describe you today.</p>
+</article>
+</div>
 
 ## Problems I solve
 
 - "ChatGPT does not recommend my products," even when they are a good match for what the shopper asked.
+- AI crawlers are blocked by robots.txt rules nobody remembers setting.
 - Product descriptions are missing the details shoppers ask AI assistants about, such as sizing, materials or what is included.
 - Common questions about the product are not answered anywhere an AI assistant can read them.
 - The structured data on product pages is missing or incomplete.
 - AI assistants describe your brand inaccurately, leave it out, or name competitors instead.
 - You do not know where your products and brand stand today, or which fixes matter most.
 
-## What you get
+## What I check
 
-1. **An audit** of the products you choose:
-   - **Product content:** how complete the title, description, specifications, images and alt text, variants and SEO fields are.
-   - **FAQ coverage:** whether a store FAQ page and product-level FAQs answer the questions buyers actually ask.
-   - **Structured data:** `Product` and `FAQPage` schema.org data (JSON-LD) on the live product page.
-   - **Catalog data quality:** product feed and catalog fields, where relevant to your store.
-   - **AI search tests:** a defined set of shopper questions asked to selected AI assistants, recording whether each product is found, cited or recommended.
-2. **A brand AI visibility check:**
-   - **How AI assistants describe your brand:** whether they mention it, which facts they state, which sources they cite, and which competitors they name instead.
-   - **Brand facts and structured data:** a consistent name, description and details across your website, profiles and listings, with `Organization` structured data that links them as one brand.
-   - **Monitoring over time:** brand mentions and citations across AI assistants, tracked with an AI visibility monitoring tool such as Promptwatch, so you can see whether changes make a difference.
-3. **A written report** with a score per product, the brand findings, and the gaps listed by impact.
-4. **The fixes**, in order of impact: product content, brand information, FAQ content and structured data.
-5. **A follow-up assessment:** the same audit and the same questions again, so you can see what changed.
+- **AI crawler access:** whether robots.txt and your settings let AI search bots read your pages.
+- **Product content:** how complete the title, description, specifications, images and alt text, variants and SEO fields are.
+- **FAQ coverage:** whether a store FAQ page and product-level FAQs answer the questions buyers actually ask.
+- **Structured data:** `Product`, `FAQPage` and `Organization` schema.org data (JSON-LD) on your live pages.
+- **Catalog data quality:** product feed and catalog fields, where relevant to your store.
+- **Brand facts:** a consistent name, description and details across your website, profiles and listings.
+- **AI search tests:** a defined set of buyer questions asked to selected AI assistants, recording whether your products or brand are found, cited or recommended, and how they are described.
 
-An audit improves the information AI assistants read. It cannot guarantee a citation or a recommendation, because each assistant decides those on its own.
+The report scores each product, lists the brand findings, and orders the gaps by impact. An audit improves the information AI assistants read. It cannot guarantee a citation or a recommendation, because each assistant decides those on its own.
+
+## Plans and pricing {#plans}
+
+{% include ai-plans.html %}
+
+Want a quick start on Shopify? A lighter, Shopify-only version of the audit is on [Fiverr](https://www.fiverr.com/mjesar){:target="_blank" rel="noopener"}.
+
+## Tools and costs
+
+**Tools I use, included in my price.** My own AI audit tool, crawlers and checkers, schema validators, AI assistants for testing your buyer questions, and Google Search Console and Bing Webmaster Tools (free; I only need view access).
+
+**Tools you pay for and keep (optional).** Some tools track your AI visibility over time on a monthly subscription. If you want one, you open the account in your own name and pay the provider directly. Prices start at about $30 per month. I set it up and read the results for you. When the work ends, the account and the data stay with you. I add no markup and take no commission.
+
+**My rules.** I ask before any paid tool is added. Tool subscriptions are not included in plan prices unless a plan says so. You are never locked into a tool because of me. Outside tool prices are set by the provider and can change.
+
+| Plan | My tools | Your own subscription tool |
+|---|---|---|
+{%- for p in site.data.ai_plans %}
+| {{ p.name }} | Included | {% if p.unit == "month" %}Optional, only if you want a dashboard{% else %}Not needed{% endif %} |
+{%- endfor %}
 
 ## The same practices on this website
 
@@ -64,13 +128,24 @@ I am re-testing how AI assistants describe me after these changes, and I will pu
 ## Evidence
 
 - **[product_geo_agent](/projects/product_geo_agent/)**: an AI agent I built that runs these checks on a Shopify product and scores it from 0 to 100. On a sandbox store it scored a complete product at 70 and a product with an empty description at 10, and named the gaps in each.
+- **[Open-source fixes](/projects/#open-source)**: three pull requests merged into little_ghost, the Ruby agent framework product_geo_agent runs on.
 - **[Structured data (JSON-LD) apps](/projects/#shopify-apps)** for Shopify and BigCommerce, which I contributed to as part of a team.
 - **[This website](https://github.com/mjesar/mjesar.github.io){:target="_blank" rel="noopener"}**: the same structured data, FAQ and consistency practices applied to my own site, with the source code public on GitHub.
+- **[A sample report](/services/ai-discoverability/sample-report/)**: what the written report looks like, on a demo store.
 
-## How a project runs
+## Not a fit if
 
-1. **Pick the products.** Usually best sellers or one category, so the first results come quickly.
-2. **Audit.** The checks above, on your live store.
-3. **Report.** What is missing, what to fix first, and why.
-4. **Fix.** Changes in your store admin, metafields and structured data, with your approval.
-5. **Re-check.** The same audit again, to show the result of the fixes.
+You want guaranteed rankings or AI recommendations. Nobody can promise that. I improve what you control and show you the before and after.
+
+## Ask an AI assistant about me
+
+Want a second opinion? Ask an AI assistant what I offer. Each link opens the assistant with the question already filled in.
+
+{% capture ask %}What does Mohammad Ali Jesar (https://mjesar.github.io/services/ai-discoverability/) offer for AI discoverability (GEO and AEO) for online stores and brands, and what does it cost?{% endcapture -%}
+<ul class="ask-ai">
+  <li><a class="btn" href="https://chatgpt.com/?q={{ ask | url_encode }}" target="_blank" rel="noopener">Ask ChatGPT</a></li>
+  <li><a class="btn" href="https://www.perplexity.ai/search?q={{ ask | url_encode }}" target="_blank" rel="noopener">Ask Perplexity</a></li>
+  <li><a class="btn" href="https://www.google.com/search?udm=50&amp;q={{ ask | url_encode }}" target="_blank" rel="noopener">Ask Google AI Mode</a></li>
+</ul>
+
+Want to know what AI tools can see on your store or brand? Email me below.

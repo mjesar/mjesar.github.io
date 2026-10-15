@@ -7,9 +7,15 @@ layout: default
     <div class="bar" aria-hidden="true"></div>
     <p class="eyebrow"><a href="/services/">Services</a></p>
     <h1>{{ svc.name }}</h1>
+    {%- if page.role %}
+    <p class="role">{{ page.role }}</p>
+    {%- endif %}
     <p class="lede">{{ page.promise | default: svc.summary }}</p>
     <ul class="links">
       <li><a class="btn primary" href="mailto:mohammadalijaisar@gmail.com?subject={{ svc.name | uri_escape }}">Email me about this</a></li>
+      {%- if page.secondary_cta %}
+      <li><a class="btn" href="{{ page.secondary_cta.url }}">{{ page.secondary_cta.label }}</a></li>
+      {%- endif %}
       <li><a class="btn" href="/services/">All services</a></li>
     </ul>
   </div>
@@ -18,7 +24,7 @@ layout: default
 {{ content }}
 {%- if page.faq %}{% include faq.html items=page.faq %}{% endif %}
 <h2 id="contact">Contact</h2>
-<p>Available now, and I usually reply within a few hours. Email me at <a href="mailto:mohammadalijaisar@gmail.com?subject={{ svc.name | uri_escape }}">mohammadalijaisar@gmail.com</a>. Tell me whether you want a full-time hire, a contract, or a project{% if page.contact_ask %}, and {{ page.contact_ask }}{% endif %}. Rates are in the <a href="/services/#pricing">pricing table</a>.</p>
+<p>Available now, and I usually reply within a few hours. Email me at <a href="mailto:mohammadalijaisar@gmail.com?subject={{ svc.name | uri_escape }}">mohammadalijaisar@gmail.com</a>. Tell me whether you want a full-time hire, a contract, or a project{% if page.contact_ask %}, and {{ page.contact_ask }}{% endif %}. {% if svc.plans %}Plans and prices are <a href="#plans">above</a>.{% else %}Rates are in the <a href="/services/#pricing">pricing table</a>.{% endif %}</p>
 <section class="no-print">
   <h2>Other services</h2>
   <div class="grid">
