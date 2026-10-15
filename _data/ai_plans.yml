@@ -3,6 +3,7 @@
 # structured data, llms.txt, llms-full.txt, /llm-info/ and /.well-known/services.json.
 # Change a price here and every one of those updates together.
 # delivery is a full phrase, shown as written on the cards and in the fact files.
+# note (optional) is a short condition shown under the plan's list and in the fact files.
 - id: audit
   name: Audit
   price: 200
@@ -43,8 +44,8 @@
     - "14 days of follow-up after the fixes: your questions by email, and corrections to any of my changes"
 - id: monthly-monitor
   name: Monthly Monitor
-  price: 250
-  price_label: $250 per month
+  price: 400
+  price_label: $400 per month
   delivery: "Report each month"
   unit: month
   optional: true
@@ -52,6 +53,6 @@
   summary: A monthly re-test, a short report and small fixes.
   deliverables:
     - A monthly re-test of your buyer questions
-    - A short report
-    # DRAFT wording, confirm (about 5 hours a month in total, from the plan brief)
-    - "Small fixes, such as updating product details, FAQs or structured data, within about 5 hours of work a month"
+    - A short monthly report
+    - "Small fixes: up to 5 hours of work a month, such as product details, FAQs or structured data"
+  note: Unused hours do not roll over. Anything beyond 5 hours is charged at the hourly rate, after I check with you first.

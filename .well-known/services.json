@@ -26,6 +26,7 @@ permalink: /.well-known/services.json
       "bestFor": {{ p.best_for | jsonify }},
       "summary": {{ p.summary | jsonify }},
       "deliverables": {{ p.deliverables | jsonify }},
+      "note": {{ p.note | jsonify }},
       "url": {{ "/services/ai-discoverability/#plan-" | append: p.id | absolute_url | jsonify }},
       "contactUrl": {{ contact | jsonify }}
     }{% unless forloop.last %},{% endunless %}
