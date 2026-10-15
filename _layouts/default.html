@@ -7,5 +7,8 @@
 {% include header.html %}
 {{ content }}
 {% include footer.html %}
+{%- if site.ga4_id and jekyll.environment == "production" and page.no_analytics != true %}
+{% include analytics.html %}
+{%- endif %}
 </body>
 </html>
