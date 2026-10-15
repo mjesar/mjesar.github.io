@@ -22,7 +22,7 @@ permalink: /.well-known/services.json
       "billing": {% if p.unit == "month" %}"monthly"{% else %}"one-time"{% endif %},
       "priceLabel": {{ p.price_label | jsonify }},
       "delivery": {{ p.delivery | jsonify }},
-      "mostPopular": {% if p.most_popular %}true{% else %}false{% endif %},
+      "bestValue": {% if p.best_value %}true{% else %}false{% endif %},
       "bestFor": {{ p.best_for | jsonify }},
       "summary": {{ p.summary | jsonify }},
       "deliverables": {{ p.deliverables | jsonify }},

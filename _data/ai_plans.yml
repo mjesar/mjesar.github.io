@@ -16,7 +16,7 @@
     - A 30-minute call to walk through it
 - id: fix
   name: Fix
-  most_popular: true
+  best_value: true
   price: 600
   price_label: $600 one time
   delivery: "Delivered in 7 to 10 business days"

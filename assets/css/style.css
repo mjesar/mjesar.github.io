@@ -448,13 +448,13 @@ html { scroll-padding-top: 84px; }
 @media (max-width: 600px) { html { scroll-padding-top: 112px; } }
 @media print { .site-header { position: static; } }
 
-/* AI discoverability plan cards: name, price, who it is for, deliverables; the popular plan gets the accent border */
+/* AI discoverability plan cards: name, price, who it is for, deliverables; the best-value plan gets the accent border */
 .plans { grid-template-columns: repeat(2, 1fr); margin: 12px 0 16px; }
 @media (max-width: 640px) { .plans { grid-template-columns: 1fr; } }
 .plan h3 { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
 .plan .tag { font-family: var(--mono); font-weight: 400; font-size: 12px; }
-.plan.popular { border-color: var(--accent); }
-.plan.popular .tag { border-color: var(--accent); color: var(--accent); }
+.plan.best-value { border-color: var(--accent); }
+.plan.best-value .tag { border-color: var(--accent); color: var(--accent); }
 .plan .price { font-family: var(--serif); font-weight: 600; font-size: 1.35rem; color: var(--accent); margin: 2px 0 6px; }
 .plan ul { margin: 8px 0 0; padding-left: 20px; font-size: 15px; }
 
