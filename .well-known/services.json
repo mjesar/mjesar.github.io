@@ -1,0 +1,36 @@
+---
+layout: null
+sitemap: false
+permalink: /.well-known/services.json
+---
+{%- assign hourly = site.data.pricing | where: "id", "hourly" | first -%}
+{%- assign updated = site.facts_updated | date: "%Y-%m-%d" -%}
+{%- assign contact = "/services/ai-discoverability/#contact" | absolute_url -%}
+{
+  "canonicalSource": {{ "/services/ai-discoverability/" | absolute_url | jsonify }},
+  "provider": { "name": "Mohammad Ali Jesar", "url": {{ "/" | absolute_url | jsonify }}, "email": "mohammadalijaisar@gmail.com" },
+  "version": {{ updated | jsonify }},
+  "lastUpdated": {{ updated | jsonify }},
+  "currency": "USD",
+  "guarantee": "No guarantee of rankings, citations, traffic or AI recommendations.",
+  "plans": [
+{%- for p in site.data.ai_plans %}
+    {
+      "id": {{ p.id | jsonify }},
+      "name": {{ p.name | jsonify }},
+      "price": {{ p.price }},
+      "billing": {% if p.unit == "month" %}"monthly"{% else %}"one-time"{% endif %},
+      "priceLabel": {{ p.price_label | jsonify }},
+      "delivery": {{ p.delivery | jsonify }},
+      "bestValue": {% if p.best_value %}true{% else %}false{% endif %},
+      "bestFor": {{ p.best_for | jsonify }},
+      "summary": {{ p.summary | jsonify }},
+      "deliverables": {{ p.deliverables | jsonify }},
+      "url": {{ "/services/ai-discoverability/#plan-" | append: p.id | absolute_url | jsonify }},
+      "contactUrl": {{ contact | jsonify }}
+    }{% unless forloop.last %},{% endunless %}
+{%- endfor %}
+  ],
+  "hourlyRate": { "min": {{ hourly.min }}, "max": {{ hourly.max }}, "currency": "USD" },
+  "toolsPolicy": "Owner's own tools are included. Optional tracker subscriptions are paid by the client in the client's own account, with no markup."
+}

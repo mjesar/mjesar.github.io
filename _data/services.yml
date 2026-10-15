@@ -1,7 +1,8 @@
 # One entry per service, in the order shown on /services/. Each links to /services/<slug>/
 # (see services/<slug>/index.md). `summary` describes the service and feeds the
 # Service structured data and llms.txt. The card_* fields are the cards on /services/;
-# card_proof is Markdown.
+# card_proof is Markdown. Optional: service_type (schema.org serviceType, defaults to
+# name) and plans (name of a _data file whose plans become Offers in the structured data).
 - slug: rails-development
   name: Full-stack Ruby on Rails development
   for: startups, founders, CEOs, product teams and agencies.
@@ -31,12 +32,14 @@
   card_cta: Explore e-commerce development
 - slug: ai-discoverability
   name: AI discoverability for brands and online stores (GEO and AEO)
-  for: e-commerce brands and store owners.
-  summary: I audit product content, FAQs, schema.org structured data, catalog data and brand mentions, test how selected AI assistants answer defined shopper and brand questions, and fix the gaps in order of impact.
-  card_title: AI search visibility for brands and online stores
+  for: Shopify stores, BigCommerce stores, other online stores and brands.
+  service_type: Generative engine optimization (GEO) and answer engine optimization (AEO)
+  plans: ai_plans
+  summary: I help online stores and brands get found and described correctly by ChatGPT, Perplexity and Google AI. I audit AI crawler access, product content, FAQs, schema.org structured data and brand facts, test how AI assistants answer defined buyer questions, fix the gaps in order of impact, and re-check the same questions.
+  card_title: AI discoverability for brands and online stores
   card_headline: Help AI assistants understand your products.
   card_intro: I check the product and brand information AI assistants rely on when they answer shopping questions, then fix the gaps in order of impact. No one can guarantee a recommendation, but missing information can be fixed.
   card_tools_label: What I assess
   card_tools: Product content · Buyer questions · FAQ coverage · Schema.org structured data · Brand mentions · AI search testing
   card_proof: "I built [product_geo_agent](/projects/product_geo_agent/), an AI agent that runs these checks and was tested on a Shopify development store, and I apply the same practices to [this website](/services/ai-discoverability/#the-same-practices-on-this-website)."
-  card_cta: Explore AI search visibility
+  card_cta: Explore AI discoverability

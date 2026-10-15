@@ -12,8 +12,14 @@ permalink: /writing/:title/
 # Google is already verified with google61916a52e42dacd9.html.
 google_site_verification:
 bing_site_verification:
+# Date shown as "last updated" on /llm-info/, llms-full.txt and /.well-known/services.json.
+# Change it whenever a fact, price or plan in _data/ changes.
+facts_updated: 2026-10-16
 plugins:
   - jekyll-sitemap
+  - jekyll-feed
+include:
+  - .well-known
 exclude:
   - README.md
   - docs
