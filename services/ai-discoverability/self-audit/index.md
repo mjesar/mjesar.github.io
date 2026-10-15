@@ -3,6 +3,7 @@ title: "Self-Audit of mjesar.github.io"
 description: "A real audit of mjesar.github.io: what AI tools could see before, what I changed, and the result."
 noindex: true
 sitemap: false
+no_analytics: true
 ---
 {%- comment -%}
   Stub until the self-audit is run. Keep noindex and sitemap: false, and do not link it

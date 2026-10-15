@@ -12,6 +12,10 @@ permalink: /writing/:title/
 # Google is already verified with google61916a52e42dacd9.html.
 google_site_verification:
 bing_site_verification:
+# Google Analytics 4. The tag loads only in production builds (JEKYLL_ENV=production,
+# set by the deploy workflow), so local `jekyll serve` sends nothing. A page can opt out
+# with `no_analytics: true` in its front matter.
+ga4_id: "G-HF9CFGP3C3"
 # Date shown as "last updated" on /llm-info/, llms-full.txt and /.well-known/services.json.
 # Change it whenever a fact, price or plan in _data/ changes.
 facts_updated: 2026-10-16

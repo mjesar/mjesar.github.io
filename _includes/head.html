@@ -47,6 +47,25 @@
 <link rel="preload" href="/assets/fonts/fraunces-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/css/style.css">
 {% feed_meta %}
+{%- comment -%}
+  Google Analytics 4: production builds only, never on pages with no_analytics: true.
+  Signals and ad personalization are off. Clicks on mailto: links send an email_click
+  event with only a location label from data-ga-location (no address or other personal data).
+{%- endcomment -%}
+{%- if site.ga4_id and jekyll.environment == "production" and page.no_analytics != true %}
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.ga4_id }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag("js", new Date());
+  gtag("config", "{{ site.ga4_id }}", { allow_google_signals: false, allow_ad_personalization_signals: false });
+  document.addEventListener("click", function (event) {
+    var link = event.target.closest && event.target.closest('a[href^="mailto:"]');
+    if (!link) return;
+    gtag("event", "email_click", { location: link.getAttribute("data-ga-location") || "other" });
+  });
+</script>
+{%- endif %}
 {%- if page.noindex %}
 <meta name="robots" content="noindex, nofollow">
 {%- endif %}
