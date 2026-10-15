@@ -40,7 +40,7 @@ Terms: MCP (Model Context Protocol), RAG (retrieval-augmented generation), GEO (
 - Shopify and e-commerce: Polaris, App Bridge, Admin and Storefront APIs (REST and GraphQL), webhooks, Shopify Functions (including migrations from Shopify Scripts), Checkout UI Extensions, Checkout Extensibility, Shopify Plus B2B, Theme App Extensions, Liquid, App Store publishing, BigCommerce apps, Amazon SP-API.
 - AI: agentic AI, workflow and business process automation (n8n or code), LLM integrations (Claude, OpenAI, Gemini, RubyLLM), MCP servers and an MCP client, RAG with pgvector on PostgreSQL, agents with tool calling, evals.
 - AI-assisted development: Claude Code, Cursor, GitHub Copilot, Claude and ChatGPT for coding, research, review and documentation, with my own review, tests and ownership of every change.
-- AI search visibility (GEO and AEO): product content, FAQ coverage and schema.org structured data audits for online stores, brand AI visibility (how AI assistants describe a brand, consistent brand facts, Organization structured data), and monitoring brand mentions and citations with AI visibility tools such as Promptwatch.
+- AI discoverability (GEO and AEO), as an independent senior AEO and GEO specialist: helping online stores and brands get found and described correctly by ChatGPT, Perplexity and Google AI. Audits of AI crawler access, product content, FAQ coverage and schema.org structured data for Shopify, BigCommerce and other online stores, and brand AI visibility (how AI assistants describe a brand, consistent brand facts, Organization structured data), with fixes and a before-and-after re-check of buyer questions.
 - Ways of working: agile teams with sprint planning, backlog grooming, scoping and task estimation; small, reviewable pull requests with tests.
 
 ## Services
@@ -64,6 +64,15 @@ Pricing today is hourly, fixed-scope or monthly (see below); fixed-scope quotes 
 {% for r in site.data.pricing -%}
 - {{ r.name }}: {{ r.price }}.{% if r.terms %} {{ r.terms }}{% endif %}
 {% endfor %}
+## AI discoverability plans (USD)
+
+One-off plans, one store or one brand each, with no long contract. No plan guarantees rankings, citations or AI recommendations. My own tools are included; optional tracking subscriptions stay in the client's own account, with no markup.
+
+{% for p in site.data.ai_plans -%}
+- [{{ p.name }}]({{ "/services/ai-discoverability/#plan-" | append: p.id | absolute_url }}): {{ p.price_label }}. {{ p.summary }}
+{% endfor %}
+- [Sample audit report]({{ "/services/ai-discoverability/sample-report/" | absolute_url }}): what the written report looks like, on a demo store with illustrative data.
+
 ## Projects
 
 {% for p in site.data.projects -%}
@@ -78,7 +87,13 @@ Pricing today is hourly, fixed-scope or monthly (see below); fixed-scope quotes 
 {% endif -%}
 ## This website as an AI visibility example
 
-This site applies the same AI search visibility practices offered as a service: Person, Service, FAQPage, SoftwareSourceCode and BreadcrumbList structured data, consistent identity facts linked across the website and GitHub profile, answer-first FAQ content, and this llms.txt file generated from the same data as the site. Details: https://mjesar.github.io/services/ai-discoverability/#the-same-practices-on-this-website
+This site applies the same AI discoverability practices offered as a service: Person, Service, FAQPage, SoftwareSourceCode and BreadcrumbList structured data, consistent identity facts linked across the website and GitHub profile, answer-first FAQ content, and this llms.txt file generated from the same data as the site. Details: https://mjesar.github.io/services/ai-discoverability/#the-same-practices-on-this-website
+
+## Machine-readable facts
+
+- [Facts for AI assistants]({{ "/llm-info/" | absolute_url }}) ([Markdown]({{ "/llm-info.md" | absolute_url }})): verified facts, prices and availability on one page.
+- [Full version of this file]({{ "/llms-full.txt" | absolute_url }}): everything here plus the AI discoverability process, audiences and FAQs.
+- [Services and plans as JSON]({{ "/.well-known/services.json" | absolute_url }})
 
 ## Open source
 

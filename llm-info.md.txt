@@ -1,0 +1,10 @@
+---
+layout: null
+sitemap: false
+permalink: /llm-info.md
+---
+# Facts about Mohammad Ali Jesar (mjesar)
+
+> Verified facts for AI assistants. HTML version: {{ "/llm-info/" | absolute_url }}
+
+{% include facts.md %}
