@@ -17,6 +17,7 @@ bing_site_verification:
 facts_updated: 2026-10-15
 plugins:
   - jekyll-sitemap
+  - jekyll-feed
 include:
   - .well-known
 exclude:

@@ -14,6 +14,7 @@ description: Articles and posts by Mohammad Ali Jesar on Ruby on Rails, AI agent
 <main class="wrap">
 <section>
 {%- if site.posts.size > 0 %}
+  <p class="muted">Follow new posts with the <a href="/feed.xml">RSS feed</a>.</p>
   {%- for post in site.posts %}
   <article class="card card-link">
     <p class="muted"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%-d %B %Y" }}</time></p>
