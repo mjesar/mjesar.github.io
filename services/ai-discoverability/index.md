@@ -52,6 +52,8 @@ faq:
 
 {% include ai-plans.html %}
 
+Delivery time starts once I have access to your store.
+
 **Bigger catalogs.** The Fix plan covers up to 50 products. For a larger catalog, I start with your best sellers or one category, and quote the rest after the audit, once I know how many products need the same fix.
 
 **Fiverr or this page?** On [Fiverr](https://www.fiverr.com/mjesar){:target="_blank" rel="noopener"} I offer a lighter audit for Shopify stores only. The Audit here adds the full written report, a 30-minute call, and covers BigCommerce, other stores and brands.
@@ -97,7 +99,7 @@ SEO helps people find your store on Google. GEO and AEO (generative and answer e
 
 ## Do I need an AI visibility tracker?
 
-Probably not. Trackers such as Promptwatch, Peec AI, Trakkr and HubSpot AEO ask AI assistants your buyers' questions on a schedule and show whether you are named, cited and described correctly. They measure; they do not fix. Most small stores do not need one: a monthly test of about 10 buyer questions gives most of the same information for free. If you want one, I help you choose it and set it up, you hold the subscription in your own name, and I add no markup. Tracker setup is [TO CONFIRM: included in Complete and Monthly Monitor / charged hourly].
+Probably not. Trackers such as Promptwatch, Peec AI, Trakkr and HubSpot AEO ask AI assistants your buyers' questions on a schedule and show whether you are named, cited and described correctly. They measure; they do not fix. Most small stores do not need one: a monthly test of about 10 buyer questions gives most of the same information for free. If you want one, I help you choose it and set it up, you hold the subscription in your own name, and I add no markup. Setup of one tracker is included in Complete. In other plans it is charged hourly.
 
 <details>
 <summary>Tools I use, and trackers I can set up</summary>
@@ -139,8 +141,7 @@ This site uses the same approach: structured data for who I am and what I offer,
 ## Not a fit if
 
 - You want guaranteed rankings or AI recommendations. Nobody can promise that.
-- You want a one-time fix but cannot give me access to the store.
-- You have no real products yet, or I cannot get access to your store. I can only fix what I can see.
+- You cannot give me access to your store, or it has no real products yet. I can only fix what I can see.
 
 {% if page.show_ask_ai %}
 ## Ask an AI assistant about me
