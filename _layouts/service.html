@@ -2,6 +2,14 @@
 layout: default
 ---
 {%- assign svc = site.data.services | where: "slug", page.slug | first -%}
+{%- comment -%} contact_template names a _data file with a prefilled email (see _includes/mailto.html). {%- endcomment -%}
+{%- if page.contact_template -%}
+{%- capture mail_href -%}{% include mailto.html contact=page.contact_template %}{%- endcapture -%}
+{%- assign mail_address = site.data[page.contact_template].email -%}
+{%- else -%}
+{%- capture mail_href -%}mailto:mohammadalijaisar@gmail.com?subject={{ svc.name | uri_escape }}{%- endcapture -%}
+{%- assign mail_address = "mohammadalijaisar@gmail.com" -%}
+{%- endif -%}
 <div class="hero small">
   <div class="wrap">
     <div class="bar" aria-hidden="true"></div>
@@ -25,19 +33,22 @@ layout: default
     <p class="about">{{ page.about }}</p>
     {%- endif %}
     <ul class="links">
-      <li><a class="btn primary" href="mailto:mohammadalijaisar@gmail.com?subject={{ svc.name | uri_escape }}">{{ page.primary_cta_label | default: "Email me about this" }}</a></li>
+      <li><a class="btn primary" href="{{ mail_href }}"{% if page.contact_template %} target="_blank" rel="noopener"{% endif %}>{{ page.primary_cta_label | default: "Email me about this" }}</a></li>
       {%- if page.secondary_cta %}
       <li><a class="btn" href="{{ page.secondary_cta.url }}">{{ page.secondary_cta.label }}</a></li>
       {%- endif %}
       <li><a class="btn" href="/services/">All services</a></li>
     </ul>
+    {%- if page.contact_template %}
+    <p class="mail-fallback">Or write to {{ mail_address }}</p>
+    {%- endif %}
   </div>
 </div>
 <main class="wrap prose">
 {{ content }}
 {%- if page.faq %}{% include faq.html items=page.faq %}{% endif %}
 <h2 id="contact">Contact</h2>
-<p>Available now, and I usually reply within a few hours. Email me at <a href="mailto:mohammadalijaisar@gmail.com?subject={{ svc.name | uri_escape }}">mohammadalijaisar@gmail.com</a>. Tell me whether you want a full-time hire, a contract, or a project{% if page.contact_ask %}, and {{ page.contact_ask }}{% endif %}. {% if svc.plans %}Plans and prices are <a href="#plans">above</a>.{% else %}Rates are in the <a href="/services/#pricing">pricing table</a>.{% endif %}</p>
+<p>Available now, and I usually reply within a few hours. Email me at <a href="{{ mail_href }}"{% if page.contact_template %} target="_blank" rel="noopener"{% endif %}>{{ mail_address }}</a>. Tell me whether you want a full-time hire, a contract, or a project{% if page.contact_ask %}, and {{ page.contact_ask }}{% endif %}. {% if svc.plans %}Plans and prices are <a href="#plans">above</a>.{% else %}Rates are in the <a href="/services/#pricing">pricing table</a>.{% endif %}</p>
 <section class="no-print">
   <h2>Other services</h2>
   <div class="grid">

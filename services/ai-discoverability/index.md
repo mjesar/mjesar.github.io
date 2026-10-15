@@ -15,6 +15,7 @@ secondary_cta:
   label: See the plans
   url: "#plans"
 contact_ask: your store or brand address and which products matter most
+contact_template: ai_contact
 # Hidden until filled in with real, dated results from the self-audit.
 show_results: false
 # Hidden until the AI answers about me have been checked for accuracy.
@@ -57,7 +58,7 @@ faq:
 
 **What happens after you contact me.** I usually reply within a few hours. Then a short call or email to agree the scope, then you give me access to your store, then I start the work.
 
-<p><a class="btn primary" href="mailto:mohammadalijaisar@gmail.com?subject=AI%20discoverability">Email me</a></p>
+Questions first? Write to [{{ site.data.ai_contact.email }}]({% include mailto.html contact="ai_contact" %}){:target="_blank" rel="noopener"}.
 
 ## Who it is for
 

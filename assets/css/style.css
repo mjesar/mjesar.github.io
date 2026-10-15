@@ -451,6 +451,7 @@ html { scroll-padding-top: 84px; }
 /* AI discoverability plan cards: name, price, who it is for, deliverables; the best-value plan gets the accent border */
 .plans { grid-template-columns: repeat(2, 1fr); margin: 12px 0 16px; }
 @media (max-width: 640px) { .plans { grid-template-columns: 1fr; } }
+.plan { display: flex; flex-direction: column; }
 .plan h3 { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
 .plan .tag { font-family: var(--mono); font-weight: 400; font-size: 12px; }
 .plan.best-value { border-color: var(--accent); }
@@ -478,3 +479,8 @@ html { scroll-padding-top: 84px; }
 .prose details { margin: 12px 0 20px; }
 .prose details > summary { cursor: pointer; font-weight: 600; color: var(--link); }
 .prose details[open] > summary { margin-bottom: 8px; }
+
+/* Prefilled "Email me" buttons: one per plan card, pinned to the bottom, plus a plain address to copy */
+.plan .plan-cta { margin-top: auto; padding-top: 12px; }
+.mail-fallback { font-size: 14px; color: var(--muted); margin: 6px 0 0; }
+.hero .mail-fallback { color: #c9cfdc; margin-top: 10px; }

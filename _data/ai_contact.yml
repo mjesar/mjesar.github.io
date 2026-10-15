@@ -1,0 +1,28 @@
+# Prefilled email for every "Email me" button on /services/ai-discoverability/
+# (see _includes/mailto.html). Nothing is sent or stored by the site: the link only
+# opens the visitor's own email app. [plan] is replaced with the plan name. On buttons
+# not tied to one plan, the subject uses `general_plan` and the body line is left blank
+# for the visitor to fill in.
+email: mohammadalijaisar@gmail.com
+subject: "AI discoverability enquiry: [plan]"
+general_plan: not sure yet
+body: |
+  Hi Ali,
+
+  I'd like to know more about AI discoverability for my store/brand.
+
+  Name:
+
+  Store or brand website:
+
+  Platform (Shopify, BigCommerce, other):
+
+  Roughly how many products:
+
+  Plan I'm interested in (Audit, Fix, Complete, Monthly Monitor, not sure): [plan]
+
+  What I want to know or fix (1 or 2 lines):
+
+  What would a customer ask ChatGPT when looking for products like mine? (optional, for example: "best waterproof hiking boots for winter")
+
+  Thanks,
