@@ -11,8 +11,21 @@ layout: default
     <p class="role">{{ page.role }}</p>
     {%- endif %}
     <p class="lede">{{ page.promise | default: svc.summary }}</p>
+    {%- if page.summary %}
+    <ul class="summary">
+      {%- for item in page.summary %}
+      <li>{{ item | markdownify | remove: '<p>' | remove: '</p>' | strip }}</li>
+      {%- endfor %}
+      {%- if svc.plans %}{% assign first_plan = site.data[svc.plans] | first %}
+      <li><strong>Price:</strong> {{ first_plan.name }}s from ${{ first_plan.price }}</li>
+      {%- endif %}
+    </ul>
+    {%- endif %}
+    {%- if page.about %}
+    <p class="about">{{ page.about }}</p>
+    {%- endif %}
     <ul class="links">
-      <li><a class="btn primary" href="mailto:mohammadalijaisar@gmail.com?subject={{ svc.name | uri_escape }}">Email me about this</a></li>
+      <li><a class="btn primary" href="mailto:mohammadalijaisar@gmail.com?subject={{ svc.name | uri_escape }}">{{ page.primary_cta_label | default: "Email me about this" }}</a></li>
       {%- if page.secondary_cta %}
       <li><a class="btn" href="{{ page.secondary_cta.url }}">{{ page.secondary_cta.label }}</a></li>
       {%- endif %}

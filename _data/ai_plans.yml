@@ -2,10 +2,12 @@
 # Drives the plan cards on /services/ai-discoverability/, the Offer data in its Service
 # structured data, llms.txt, llms-full.txt, /llm-info/ and /.well-known/services.json.
 # Change a price here and every one of those updates together.
+# delivery is shown on the plan cards only, until the days are confirmed.
 - id: audit
   name: Audit
   price: 200
   price_label: $200 one time
+  delivery: "[X] days"
   best_for: Stores and brands that want to know what AI tools can and cannot see.
   summary: A written report and a prioritized fix list, with no changes to your store.
   deliverables:
@@ -17,6 +19,7 @@
   most_popular: true
   price: 600
   price_label: $600 one time
+  delivery: "[X] days"
   best_for: Stores and brands that want the problems fixed.
   summary: The audit, then the fixes, done with your approval.
   deliverables:
@@ -29,13 +32,15 @@
   name: Complete
   price: 1200
   price_label: $1,200 one time
+  delivery: "[X] days"
   best_for: Stores and brands that want to see the change.
   summary: The fixes, plus a before-and-after test and follow-up.
   deliverables:
     - Everything in Fix
     - A before-and-after test on 20 buyer questions
     - FAQ content
-    - 14 days of follow-up
+    # DRAFT wording, confirm
+    - "14 days of follow-up after the fixes: your questions by email, and corrections to any of my changes"
 - id: monthly-monitor
   name: Monthly Monitor
   price: 250
@@ -47,4 +52,5 @@
   deliverables:
     - A monthly re-test of your buyer questions
     - A short report
-    - Small fixes
+    # DRAFT wording, confirm (about 5 hours a month in total, from the plan brief)
+    - "Small fixes, such as updating product details, FAQs or structured data, within about 5 hours of work a month"

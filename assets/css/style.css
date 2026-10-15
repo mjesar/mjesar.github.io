@@ -467,3 +467,14 @@ html { scroll-padding-top: 84px; }
 .tool-groups { margin: 16px 0; }
 .tool-groups h4 { margin: 0 0 4px; font-family: var(--serif); font-size: 1.05rem; }
 .tool-groups ul { margin: 8px 0 0; padding-left: 20px; font-size: 15px; }
+
+/* Service hero: a short "who / what / price" summary and a one-line "who I am" */
+.hero .summary { list-style: none; padding: 0; margin: 0 0 12px; color: #eef0f5; }
+.hero .summary li { margin: 4px 0; }
+.hero .summary strong { color: var(--apricot); }
+.hero .about { color: #c9cfdc; font-size: 15px; margin: 0 0 16px; max-width: 62ch; }
+
+/* Collapsible extras on service pages ("Technical details", tool lists) */
+.prose details { margin: 12px 0 20px; }
+.prose details > summary { cursor: pointer; font-weight: 600; color: var(--link); }
+.prose details[open] > summary { margin-bottom: 8px; }
