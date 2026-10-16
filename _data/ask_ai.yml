@@ -4,8 +4,8 @@
 assistants:
   - label: Ask ChatGPT
     url: "https://chatgpt.com/?q="
-  - label: Ask Claude
-    url: "https://claude.ai/new?q="
+  - label: Ask Grok
+    url: "https://grok.com/?q="
   - label: Ask Perplexity
     url: "https://www.perplexity.ai/search?q="
   - label: Ask Google AI Mode
