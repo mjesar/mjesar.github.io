@@ -55,10 +55,9 @@ description: "Mohammad Ali Jesar (mjesar): Senior Software Engineer specializing
         "LLM evals", "Generative Engine Optimization", "GEO", "Answer Engine Optimization", "AEO", "Brand visibility in AI search", "AI visibility monitoring", "MVP development for startups", "SaaS development", "Results as a Service", "Agile software development", "JSON-LD", "Schema.org structured data"
       ],
       "sameAs": [
-        "https://github.com/mjesar",
-        "https://gitlab.com/mjesar",
-        "https://www.linkedin.com/in/mjesar/",
-        "https://www.fiverr.com/mjesar"
+{%- for pr in site.data.profile.profiles %}
+        {{ pr.url | jsonify }}{% unless forloop.last %},{% endunless %}
+{%- endfor %}
       ]
     },
     {
