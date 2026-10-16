@@ -1,0 +1,108 @@
+---
+layout: null
+sitemap: false
+permalink: /webmcp.json
+---
+{%- comment -%}
+  Data for the read-only WebMCP tools in /assets/js/webmcp.js, built from _data/ and the
+  service pages' front matter so prices and text are never copied by hand.
+{%- endcomment -%}
+{%- assign profile = site.data.profile -%}
+{%- assign email = site.data.ai_contact.email -%}
+{%- capture ai_mailto -%}{% include mailto.html contact="ai_contact" %}{%- endcapture -%}
+{
+  "updated": {{ site.facts_updated | date: "%Y-%m-%d" | jsonify }},
+  "source": {{ "/" | absolute_url | jsonify }},
+  "services": [
+{%- for s in site.data.services %}
+{%- assign url = "/services/" | append: s.slug | append: "/" -%}
+{%- assign pg = site.pages | where: "url", url | first -%}
+{%- if pg.contact_template -%}
+{%- capture mail -%}{% include mailto.html contact=pg.contact_template %}{%- endcapture -%}
+{%- else -%}
+{%- capture mail -%}mailto:{{ email }}?subject={{ s.name | uri_escape }}{%- endcapture -%}
+{%- endif -%}
+{%- capture start -%}Email {{ email }} and say whether you want a full-time hire, a contract or a project{% if pg.contact_ask %}, and {{ pg.contact_ask }}{% endif %}. Available now, {{ profile.reply_time }}.{%- endcapture %}
+    {
+      "slug": {{ s.slug | jsonify }},
+      "name": {{ s.name | jsonify }},
+      "summary": {{ s.summary | jsonify }},
+      "for": {{ s.for | jsonify }},
+      "headline": {{ s.card_headline | jsonify }},
+      "overview": {{ pg.promise | default: s.card_intro | jsonify }},
+      "description": {{ s.card_intro | jsonify }},
+      "included": {{ s.card_tools | split: " · " | jsonify }},
+{%- if s.plans %}
+      "plans": [
+{%- for p in site.data[s.plans] %}
+        { "name": {{ p.name | jsonify }}, "price": {{ p.price_label | jsonify }}, "includes": {{ p.deliverables | jsonify }} }{% unless forloop.last %},{% endunless %}
+{%- endfor %}
+      ],
+      "plans_url": {{ url | append: "#plans" | absolute_url | jsonify }},
+{%- else %}
+      "pricing_url": {{ "/services/#pricing" | absolute_url | jsonify }},
+{%- endif %}
+      "how_to_start": {
+        "steps": {{ start | jsonify }},
+        "email_link": {{ mail | replace: "&amp;", "&" | jsonify }},
+        "contact_url": {{ url | append: "#contact" | absolute_url | jsonify }}
+      },
+      "url": {{ url | absolute_url | jsonify }}
+    }{% unless forloop.last %},{% endunless %}
+{%- endfor %}
+  ],
+  "plans": {
+    "currency": "USD",
+    "scope": "One store or one brand per plan.",
+    "guarantee": "No plan guarantees rankings, citations, traffic or AI recommendations.",
+    "url": {{ "/services/ai-discoverability/#plans" | absolute_url | jsonify }},
+    "items": [
+{%- for p in site.data.ai_plans %}
+      {
+        "id": {{ p.id | jsonify }},
+        "name": {{ p.name | jsonify }},
+        "price": {{ p.price }},
+        "price_label": {{ p.price_label | jsonify }},
+        "billing": {% if p.unit == "month" %}"monthly"{% else %}"one-time"{% endif %},
+        "delivery": {{ p.delivery | jsonify }},
+        "badge": {% if p.best_value %}"Best value"{% elsif p.optional %}"Optional"{% else %}null{% endif %},
+        "best_for": {{ p.best_for | jsonify }},
+        "summary": {{ p.summary | jsonify }},
+        "includes": {{ p.deliverables | jsonify }},
+        "note": {{ p.note | jsonify }},
+        "url": {{ "/services/ai-discoverability/#plan-" | append: p.id | absolute_url | jsonify }}
+      }{% unless forloop.last %},{% endunless %}
+{%- endfor %}
+    ]
+  },
+  "contact": {
+    "email": {{ email | jsonify }},
+    "email_link": {{ "mailto:" | append: email | jsonify }},
+    "ai_discoverability_email_link": {{ ai_mailto | replace: "&amp;", "&" | jsonify }},
+    "reply_time": {{ profile.reply_time | jsonify }},
+    "location": {{ profile.location | jsonify }},
+    "time_zone": {{ profile.utc_offset | append: ". " | append: profile.hours | jsonify }},
+    "availability": {{ profile.availability | jsonify }},
+    "contact_page": {{ "/services/#get-in-touch" | absolute_url | jsonify }},
+    "note": "These are links for a person to open. The tools never send email or submit forms."
+  },
+  "resume": {
+    "name": {{ site.author | jsonify }},
+    "role": {{ profile.role | jsonify }},
+    "location": {{ profile.location | jsonify }},
+    "experience": {{ profile.experience | jsonify }},
+    "availability": {{ profile.availability | jsonify }},
+    "skills": [
+{%- for g in profile.skills %}
+      { "area": {{ g.area | jsonify }}, "items": {{ g.items | jsonify }} }{% unless forloop.last %},{% endunless %}
+{%- endfor %}
+    ],
+    "selected_projects": [
+{%- for p in site.data.projects %}
+      { "name": {{ p.name | jsonify }}, "summary": {{ p.summary | jsonify }}, "stack": {{ p.stack | jsonify }}, "url": {{ "/projects/" | append: p.slug | append: "/" | absolute_url | jsonify }} }{% unless forloop.last %},{% endunless %}
+{%- endfor %}
+    ],
+    "education": {{ profile.education | jsonify }},
+    "resume_url": {{ "/resume/" | absolute_url | jsonify }}
+  }
+}

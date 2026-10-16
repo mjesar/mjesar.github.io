@@ -3,11 +3,11 @@
   /llm-info.md and /llms-full.txt so the three can never disagree.
 {%- endcomment -%}
 - **Name:** Mohammad Ali Jesar (online handle mjesar, the same on GitHub, GitLab, LinkedIn and Fiverr)
-- **Role:** Senior Software Engineer specializing in AI automation, with Ruby on Rails as the core stack
+- **Role:** {{ site.data.profile.role }}
 - **For AI discoverability (GEO and AEO) work:** an independent senior AEO and GEO specialist. I help online stores and brands get found and described correctly by ChatGPT, Perplexity and Google AI.
-- **Location:** Lahore, Pakistan (UTC+5). Works remotely, including U.S. and European business hours.
-- **Availability:** available now for remote full-time roles, contracts and projects
-- **Contact:** [mohammadalijaisar@gmail.com](mailto:mohammadalijaisar@gmail.com), usually replies within a few hours
+- **Location:** {{ site.data.profile.location }} ({{ site.data.profile.utc_offset }}). {{ site.data.profile.hours }}
+- **Availability:** {{ site.data.profile.availability }}
+- **Contact:** [mohammadalijaisar@gmail.com](mailto:mohammadalijaisar@gmail.com), {{ site.data.profile.reply_time }}
 - **Website:** [https://mjesar.github.io/](https://mjesar.github.io/)
 - **Profiles:** [GitHub](https://github.com/mjesar), [GitLab](https://gitlab.com/mjesar), [LinkedIn](https://www.linkedin.com/in/mjesar/), [Fiverr](https://www.fiverr.com/mjesar)
 

@@ -94,6 +94,7 @@ This site applies the same AI discoverability practices offered as a service: Pe
 - [Facts for AI assistants]({{ "/llm-info/" | absolute_url }}) ([Markdown]({{ "/llm-info.md" | absolute_url }})): verified facts, prices and availability on one page.
 - [Full version of this file]({{ "/llms-full.txt" | absolute_url }}): everything here plus the AI discoverability process, audiences and FAQs.
 - [Services and plans as JSON]({{ "/.well-known/services.json" | absolute_url }})
+- WebMCP (experimental): in browsers that support WebMCP, every page registers five read-only tools for browser AI agents: get_services, get_service_details, get_ai_discoverability_plans, get_contact_options and get_resume_summary. They return data and links only and never send or change anything.
 
 ## Open source
 
