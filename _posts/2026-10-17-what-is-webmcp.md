@@ -18,7 +18,7 @@ faq:
   - q: "Do I need WebMCP on my website?"
     a: "If your store runs on a standard Shopify theme, you already have it. For other websites, not yet: in October 2026 only a few AI agents in Chrome and Edge can use it. Start with the basics first: clear product information and pages that AI tools can read, because WebMCP tools can only share the data you have."
   - q: "How is WebMCP different from showing up in ChatGPT or Google?"
-    a: "They solve different problems. ChatGPT, Perplexity and Google Search collect page content with their crawlers, and crawlers do not call WebMCP tools, so showing up in their answers depends on clear, complete information on your pages. WebMCP helps later, once an AI agent is already on your site, working for a shopper."
+    a: "They solve different problems. ChatGPT, Perplexity and Google Search collect page content with their crawlers, and crawlers do not call WebMCP tools, so showing up in their answers depends on clear, complete information on your pages. That is the work of SEO, and of GEO and AEO for AI answers. WebMCP helps later, once an AI agent is already on your site, working for a shopper."
   - q: "Is WebMCP the same as MCP?"
     a: "It comes from the same idea. MCP (Model Context Protocol) is a standard that lets AI apps use tools running on a server. WebMCP brings those tools into the web page itself, so they run in the visitor's browser. In both, each tool has a name, a description, the input it needs and a function that does the work."
   - q: "Which browsers support WebMCP?"
@@ -34,7 +34,7 @@ Think of a restaurant. Today an AI agent has to walk into the kitchen and work o
 
 WebMCP is still a draft standard, but it is already in real use. Shopify's developer documentation says it [provides WebMCP tools on every Liquid storefront](https://shopify.dev/docs/api/web-mcp), which means every store built on a Shopify theme, such as the default Dawn theme. The documentation describes no setup for merchants.
 
-An AI agent visiting a Shopify store can now:
+This is what people mean by agentic commerce: AI agents that shop on a person's behalf. An AI agent visiting a Shopify store can now:
 
 - search the catalog for products, collections, articles and pages,
 - get full product details, including variants, prices and stock,
@@ -48,15 +48,15 @@ When a cart request is unclear, for example which size to add, the tool returns 
 
 I checked this on my own Shopify test store, which runs Dawn, Shopify's free default theme, with nothing installed. Chrome listed 12 tools, a few more than the documentation describes, including `add_to_cart`, `update_cart_lines` and `get_ucp_profile`. The set is clearly still changing.
 
-One of them shows where this is heading. `get_ucp_profile` returns the store's profile for the Universal Commerce Protocol (UCP), a separate standard for AI agents to shop with a store. On my test store it pointed to the store's own service for AI agents (an MCP server) and listed what it supports: catalog search, cart, checkout, shipping, discounts, buyer consent and orders. Shopify's description says agents can use it to discover how to continue a purchase with the store over UCP. So an agent can start on the web page and then move to the store's own commerce services to finish the job.
+One tool hints at where this is heading. `get_ucp_profile` tells an AI agent how to shop with the store directly, using the Universal Commerce Protocol (UCP), another new standard for AI shopping. On my test store, it pointed to the store's own service for AI agents and listed what it can do, such as search products, manage the cart and check out. So an agent can start on the web page and then continue the purchase directly with the store.
 
 The tool descriptions are worth reading, because they are written for the AI model (the AI behind the agent, such as Gemini or GPT), not for people. The one for `add_to_cart` tells the agent that the shopper's request is the permission, so it should add the items without asking again. Adding to a cart is easy to undo. Placing the order is treated very differently, as the next section shows.
 
 Shopify notes one limit: agent support is currently only in Chromium-based browsers, such as Chrome and Edge. Still, every standard Shopify store now offers a set of actions to AI agents, without the merchant lifting a finger. That is a strong sign of where websites are going.
 
-## Why it matters
+## Why WebMCP matters
 
-**For business owners and merchants.** An agent that reads your page can misread a price, miss a variant or give up. An agent that calls your tool gets your real price, stock and policies, straight from your system. It can also do something useful, like put the right product in the cart. Your website starts to serve two kinds of visitors: people, and the AI agents working for them.
+**For business owners and merchants.** An AI agent that only reads your page can misread a price, miss a variant or give up. It also has to work through the whole page to find one answer, which is slower and costs more to run. One that uses your website's actions gets your real price, stock and policies, straight from your system. It can also do something useful, like put the right product in the cart. Your website starts to serve two kinds of visitors: people, and the AI agents working for them.
 
 **For shoppers and customers.** Asking "any waterproof boots in size 42?" and getting a correct answer, with the right pair already in the cart, is faster than clicking through filters.
 
@@ -71,7 +71,7 @@ Shopify notes one limit: agent support is currently only in Chromium-based brows
 | Taking an action | Clicks buttons and hopes they do what they look like | Calls an action like "add to cart" with checked input |
 | Who decides what is allowed | The agent | The website |
 
-## How it works, in one picture
+## How WebMCP works, in one picture
 
 <figure class="diagram"><picture><source media="(max-width: 560px)" srcset="/assets/img/writing/webmcp-how-it-works-narrow.svg" width="420" height="820"><img src="/assets/img/writing/webmcp-how-it-works.svg" width="820" height="600" loading="lazy" alt="Diagram of how WebMCP works, using an example online store open in a browser with an AI agent side panel. 1. The web page registers its tools, such as search_products, get_price and add_to_cart. 2. A shopper asks the agent: any waterproof boots in size 42? 3. The AI model picks the search_products tool and the agent calls it. 4. The page runs the tool with its own code and returns data: 2 boots found. 5. The agent answers: yes, 2 pairs in size 42."></picture></figure>
 
@@ -168,11 +168,12 @@ The extension found all five tools. When I asked about the AI discoverability pl
 
 These timings come from one test, not a benchmark.
 
-Four things I learned:
+Five things I learned:
 
 - **The description decides.** When I asked the agent to "say hello to me", it ignored a test tool called `say_hello` and simply answered by itself. If a description is vague, the agent may never use the tool.
 - **Tools live only as long as the page.** A test tool I added by hand disappeared after a page reload. The website's own tools come back because the page registers them on every load.
 - **The page does not need to know which AI is used.** The extension translated my tools into the format Gemini expects. The same page would work with another agent or model.
+- **Much less to read.** On this website, the plans page is about 36,000 characters of HTML. The plans tool returns the same prices in about 2,700 characters, roughly 13 times less. Less to read means a faster, cheaper answer for the AI agent.
 - **The browser does not check the input for you.** In a second test, I called the tools directly in the browser and sent a service name that does not exist. Chrome passed it straight to my tool, even though the tool's input rules list the valid names. The tool's own check caught it and answered with the correct options. Every tool has to check its own input.
 
 ## What it does not do yet
