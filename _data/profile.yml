@@ -14,7 +14,7 @@ skills:
   - area: Backend
     items: Ruby on Rails, service objects, RESTful and GraphQL APIs, Sidekiq, Solid Queue, Redis
   - area: AI and LLM integration
-    items: agentic AI, workflow automation with n8n, MCP servers (tools, resources, prompts, JSON Schema validation, read-only and destructive annotations), an MCP client over JSON-RPC 2.0, RAG with pgvector and Voyage AI, tool calling, agent loops, evals, RubyLLM, Claude, OpenAI and Gemini APIs
+    items: agentic AI, workflow automation with n8n, MCP servers (tools, resources, prompts, JSON Schema validation, read-only and destructive annotations), WebMCP tools for browser AI agents, an MCP client over JSON-RPC 2.0, RAG with pgvector and Voyage AI, tool calling, agent loops, evals, RubyLLM, Claude, OpenAI and Gemini APIs
   - area: Shopify
     items: Shopify CLI, Shopify Functions (Scripts-to-Functions migration for discount, delivery and payment customizations), Checkout UI Extensions and Checkout Extensibility, Shopify Plus B2B, Theme App Extensions, Liquid, Polaris and App Bridge, Admin and Storefront APIs, webhooks, App Store publishing
   - area: E-commerce platforms
