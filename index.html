@@ -1,7 +1,7 @@
 ---
 title: "Mohammad Ali Jesar · Rails, AI & Automation Engineer"
-ask_ai_question: "Who is Mohammad Ali Jesar, the software engineer at mjesar.github.io? Summarize his experience, skills and projects for a hiring manager."
-description: "Software engineer for Ruby on Rails, AI and automation: helping startups launch MVPs and SaaS apps, AI agents, MCP, RAG and e-commerce. Remote, from Lahore."
+ask_ai_question: "Who is Mohammad Ali Jesar, the software engineer at mjesar.github.io? Summarize his experience, skills and projects for a hiring manager, and what kind of work is he available for?"
+description: "Mohammad Ali Jesar (mjesar): Senior Software Engineer specializing in AI automation. I turn ideas into working apps and automate workflows with AI."
 ---
 <script type="application/ld+json">
 {
@@ -66,6 +66,7 @@ description: "Software engineer for Ruby on Rails, AI and automation: helping st
       "@id": "https://mjesar.github.io/#site",
       "url": "https://mjesar.github.io/",
       "name": "Mohammad Ali Jesar",
+      "alternateName": "mjesar",
       "publisher": { "@id": "https://mjesar.github.io/#person" }
     }
   ]
@@ -142,6 +143,8 @@ description: "Software engineer for Ruby on Rails, AI and automation: helping st
     <li><a href="/services/ai-discoverability/">AI discoverability for brands and online stores</a>: I help online stores and brands get found and described correctly by ChatGPT, Perplexity and Google AI.</li>
   </ul>
   <p>Who I work with: product teams, agencies, founders and store owners.</p>
+  {%- assign cheapest_plan = site.data.ai_plans | sort: "price" | first -%}
+  <p><a href="/services/ai-discoverability/">AI discoverability audits from ${{ cheapest_plan.price }}</a>: find out what ChatGPT, Perplexity and Google AI can and cannot see about your store or brand.</p>
   <p><a class="more" href="/services/">Services, pricing and how I work</a></p>
 </section>
 
