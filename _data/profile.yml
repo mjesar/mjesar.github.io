@@ -25,3 +25,45 @@ skills:
     items: PostgreSQL, pgvector, SQLite, MongoDB (Mongoid), Redis
   - area: Practices and DevOps
     items: RSpec, code review, branch and pull request workflow, CI, AWS, Heroku, Google Cloud, Docker
+# Public profiles, in this order on the facts files and in the WebMCP tools.
+profiles:
+  - name: GitHub
+    url: https://github.com/mjesar
+  - name: GitLab
+    url: https://gitlab.com/mjesar
+  - name: LinkedIn
+    url: https://www.linkedin.com/in/mjesar/
+  - name: Fiverr
+    url: https://www.fiverr.com/mjesar
+# Work history, newest first. Short form for llms.txt and the WebMCP resume tool; the
+# longer version with bullet points is on /resume/. `where` is optional.
+work_history:
+  - company: MGLogics
+    role: Ruby on Rails developer
+    dates: Dec 2021 to Jun 2026
+    where: remote, US clients
+    summary: Shopify and BigCommerce apps (SaaS products merchants subscribe to), catalog and order sync, Amazon SP-API integrations. Contributed, as part of a team, to five apps on the Shopify App Store, three of them also on BigCommerce.
+  - company: SimpleDeploy
+    role: backend engineer
+    dates: Apr 2019 to Dec 2021
+    summary: Rails REST APIs and MVP management tools for German clients in real estate and furniture.
+  - company: Axiom Enterprises
+    role: Python AI Bootcamp
+    dates: Sep 2018 to Feb 2019
+    summary: Flask web apps with integrated machine learning models (TensorFlow and Keras).
+# Open-source contributions to other projects.
+open_source:
+  - name: little_ghost
+    kind: Ruby AI agent framework
+    url: https://github.com/littleghostai/little_ghost
+    summary: three merged pull requests, released in 0.11.0.
+    contributions:
+      - number: 112
+        title: Replay Gemini thought signatures across multi-turn tool calls
+        url: https://github.com/littleghostai/little_ghost/pull/112
+      - number: 113
+        title: Send the original function name in functionResponse.name
+        url: https://github.com/littleghostai/little_ghost/pull/113
+      - number: 115
+        title: Preserve Agent lifecycle hooks when building execution snapshots
+        url: https://github.com/littleghostai/little_ghost/pull/115

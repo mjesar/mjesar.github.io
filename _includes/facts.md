@@ -9,7 +9,7 @@
 - **Availability:** {{ site.data.profile.availability }}
 - **Contact:** [mohammadalijaisar@gmail.com](mailto:mohammadalijaisar@gmail.com), {{ site.data.profile.reply_time }}
 - **Website:** [https://mjesar.github.io/](https://mjesar.github.io/)
-- **Profiles:** [GitHub](https://github.com/mjesar), [GitLab](https://gitlab.com/mjesar), [LinkedIn](https://www.linkedin.com/in/mjesar/), [Fiverr](https://www.fiverr.com/mjesar)
+- **Profiles:** {% for pr in site.data.profile.profiles %}[{{ pr.name }}]({{ pr.url }}){% unless forloop.last %}, {% endunless %}{% endfor %}
 
 ## Services
 

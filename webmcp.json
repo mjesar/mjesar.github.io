@@ -84,6 +84,7 @@ permalink: /webmcp.json
     "time_zone": {{ profile.utc_offset | append: ". " | append: profile.hours | jsonify }},
     "availability": {{ profile.availability | jsonify }},
     "contact_page": {{ "/services/#get-in-touch" | absolute_url | jsonify }},
+    "profiles": {{ site.data.profile.profiles | jsonify }},
     "note": "These are links for a person to open. The tools never send email or submit forms."
   },
   "resume": {
@@ -102,7 +103,18 @@ permalink: /webmcp.json
       { "name": {{ p.name | jsonify }}, "summary": {{ p.summary | jsonify }}, "stack": {{ p.stack | jsonify }}, "url": {{ "/projects/" | append: p.slug | append: "/" | absolute_url | jsonify }} }{% unless forloop.last %},{% endunless %}
 {%- endfor %}
     ],
+    "work_history": [
+{%- for j in profile.work_history %}
+      { "company": {{ j.company | jsonify }}, "role": {{ j.role | jsonify }}, "dates": {{ j.dates | jsonify }}, "where": {{ j.where | jsonify }}, "summary": {{ j.summary | jsonify }} }{% unless forloop.last %},{% endunless %}
+{%- endfor %}
+    ],
+    "open_source": [
+{%- for o in profile.open_source %}
+      { "project": {{ o.name | jsonify }}, "kind": {{ o.kind | jsonify }}, "summary": {{ o.summary | jsonify }}, "url": {{ o.url | jsonify }}, "contributions": {{ o.contributions | jsonify }} }{% unless forloop.last %},{% endunless %}
+{%- endfor %}
+    ],
     "education": {{ profile.education | jsonify }},
+    "profiles": {{ site.data.profile.profiles | jsonify }},
     "resume_url": {{ "/resume/" | absolute_url | jsonify }}
   }
 }
