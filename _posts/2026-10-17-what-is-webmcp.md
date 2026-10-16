@@ -1,6 +1,6 @@
 ---
 title: "What is WebMCP? Websites are starting to give AI agents a menu of actions"
-description: "WebMCP lets a website hand AI agents a set of ready-made actions, like search products or add to cart, instead of making them read and click the page. Shopify already turns it on for stores on its standard themes. What it means for businesses, and how it works."
+description: "WebMCP lets a website hand AI agents a set of ready-made actions, like search products or add to cart, instead of making them read and click the page. What it means for businesses, and how it works."
 ask_ai_question: "What services does Mohammad Ali Jesar offer at mjesar.github.io/services/, and who are they for? How can a client work with him?"
 image: /assets/img/og/what-is-webmcp.png
 image_alt: "Preview card for the article What is WebMCP? Websites are starting to give AI agents a menu of actions, with a list of example actions: search_products, get_price and add_to_cart. @mjesar, mjesar.github.io"
@@ -10,11 +10,11 @@ faq:
   - q: "What is WebMCP in simple words?"
     a: "It is a way for a website to tell AI agents which actions it offers, such as search products, check the cart or answer a policy question. The agent can then call those actions directly instead of reading the page and guessing which buttons to click."
   - q: "Does Shopify support WebMCP?"
-    a: "Yes. Shopify's developer documentation says it provides WebMCP tools on every standard (Liquid) storefront, with tools to search the catalog, show product details, manage the cart, go to checkout, open order history and answer policy and FAQ questions. Hydrogen storefronts can turn them on."
+    a: "Yes. Shopify's developer documentation says it provides WebMCP tools on every Liquid storefront, meaning every store built on a Shopify theme, with tools to search the catalog, show product details, manage the cart, go to checkout, open order history and answer policy and FAQ questions. Eligible checkouts add their own tools, and stores with a custom-built Hydrogen storefront can turn WebMCP on."
   - q: "Can WebMCP tools take actions, like adding to a cart?"
-    a: "Yes. Shopify's tools can add items to the cart, change quantities and take the shopper to checkout. Tools that change something should check their inputs and leave important decisions, like paying, to the person."
+    a: "Yes. Shopify's tools can add items to the cart, change quantities and take the shopper to checkout, and its checkout tools can place the order once the buyer confirms it. Tools that change something should check their inputs and leave important decisions, like paying, to the person."
   - q: "Is WebMCP safe? Can an AI agent buy something without me?"
-    a: "A website decides which actions it offers, and the agent can only use those. Reading information is low risk. Actions like adding to a cart need more care: the tool should check what the agent sends, and anything important, like paying, should be confirmed by the person. Shopify's checkout tool, for example, takes the shopper to the checkout page."
+    a: "A website decides which actions it offers, and the agent can only use those. Reading information is low risk. Actions like adding to a cart need more care: the tool should check what the agent sends, and anything important, like paying, should be confirmed by the person. Shopify's checkout tools, for example, place an order only after the agent shows the buyer the order and the total and gets their permission."
   - q: "Do I need WebMCP on my website?"
     a: "If your store runs on a standard Shopify theme, you already have it. For other websites, not yet: in October 2026 only a few AI agents in Chrome and Edge can use it. Start with the basics first: clear product information and pages that AI tools can read, because WebMCP tools can only share the data you have."
   - q: "How is WebMCP different from showing up in ChatGPT or Google?"
@@ -32,7 +32,7 @@ Think of a restaurant. Today an AI agent has to walk into the kitchen and work o
 
 ## It is already happening: Shopify turned it on
 
-This is not only a proposal. Shopify's developer documentation says it [provides WebMCP tools on every Liquid storefront](https://shopify.dev/docs/api/web-mcp), the standard type of Shopify store. Merchants do not install anything. Stores built with Shopify's Hydrogen framework can turn them on.
+WebMCP is still a draft standard, but it is already in real use. Shopify's developer documentation says it [provides WebMCP tools on every Liquid storefront](https://shopify.dev/docs/api/web-mcp), which means every store built on a Shopify theme, such as the default Dawn theme. The documentation describes no setup for merchants.
 
 An AI agent visiting a Shopify store can now:
 
@@ -40,7 +40,7 @@ An AI agent visiting a Shopify store can now:
 - get full product details, including variants, prices and stock,
 - show a product with a specific variant selected, for example a color,
 - see what is in the cart, add or remove items, or empty it,
-- take the shopper to checkout,
+- take the shopper to checkout, and on eligible checkouts, fill in the checkout and [place the order once the buyer confirms it](https://shopify.dev/docs/agents/carts-and-checkout/checkout-webmcp),
 - open the order history page,
 - answer questions about policies, such as returns and shipping.
 
@@ -50,7 +50,7 @@ I checked this on my own Shopify test store, which runs Dawn, Shopify's free def
 
 One of them shows where this is heading. `get_ucp_profile` returns the store's profile for the Universal Commerce Protocol (UCP), a separate standard for AI agents to shop with a store. On my test store it pointed to the store's own service for AI agents (an MCP server) and listed what it supports: catalog search, cart, checkout, shipping, discounts, buyer consent and orders. Shopify's description says agents can use it to discover how to continue a purchase with the store over UCP. So an agent can start on the web page and then move to the store's own commerce services to finish the job.
 
-The tool descriptions are worth reading, because they are written for the AI model (the AI behind the agent, such as Gemini or GPT), not for people. The one for `add_to_cart` tells the agent that the shopper's request is the permission, so it should add the items without asking again. Adding to a cart is easy to undo. Paying still happens at checkout.
+The tool descriptions are worth reading, because they are written for the AI model (the AI behind the agent, such as Gemini or GPT), not for people. The one for `add_to_cart` tells the agent that the shopper's request is the permission, so it should add the items without asking again. Adding to a cart is easy to undo. Placing the order is treated very differently, as the next section shows.
 
 Shopify notes one limit: agent support is currently only in Chromium-based browsers, such as Chrome and Edge. Still, every standard Shopify store now offers a set of actions to AI agents, without the merchant lifting a finger. That is a strong sign of where websites are going.
 
@@ -104,7 +104,7 @@ WebMCP comes from the same idea as MCP (Model Context Protocol), the standard ma
 
 Some tools only read, like "show product details". Others change something, like "add to cart". Tools that change something need more care:
 
-- **Ask the person for important steps.** Paying, cancelling an order or anything that cannot be undone should be confirmed by the person, not decided by the AI model. Small steps that are easy to undo, like adding to a cart, can go ahead: Shopify's `add_to_cart` tool does not ask again, and its `proceed_to_checkout` tool only takes the shopper to the checkout page.
+- **Ask the person for important steps.** Paying, cancelling an order or anything that cannot be undone should be confirmed by the person, not decided by the AI model. Shopify shows both sides. Its `add_to_cart` tool does not ask again, because adding to a cart is easy to undo. Its checkout tool places an order only after the agent shows the buyer the order and the total and gets their permission, and if the total changes, it must ask again. Steps like signing in to Shop Pay or a payment check stay with the buyer on the checkout page.
 - **Check the input.** The AI model fills in the details, so the tool should check them: a real product, a sensible quantity.
 - **Label what each tool does.** WebMCP lets a website mark tools as read-only, or as having real effects, so agents can be careful with them.
 - **Keep the website's own rules.** A tool's description and labels do not give anyone permission to do anything. The tool must apply the same login, permission and business rules as the rest of the website.
