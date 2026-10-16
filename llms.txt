@@ -29,16 +29,16 @@ Terms: MCP (Model Context Protocol), RAG (retrieval-augmented generation), GEO (
 
 ## Experience
 
-- MGLogics (Dec 2021 to Jun 2026, remote, US clients): Ruby on Rails developer. Shopify and BigCommerce apps (SaaS products merchants subscribe to), catalog and order sync, Amazon SP-API integrations. Contributed, as part of a team, to five apps on the Shopify App Store, three of them also on BigCommerce.
-- SimpleDeploy (Apr 2019 to Dec 2021): backend engineer. Rails REST APIs and MVP management tools for German clients in real estate and furniture.
-- Axiom Enterprises (Sep 2018 to Feb 2019): Python AI Bootcamp. Flask web apps with integrated machine learning models (TensorFlow and Keras).
+{% for j in site.data.profile.work_history -%}
+- {{ j.company }} ({{ j.dates }}{% if j.where %}, {{ j.where }}{% endif %}): {{ j.role }}. {{ j.summary }}
+{% endfor -%}
 - Education: B.S. in Information Technology (Software), 2017.
 
 ## Skills
 
 - Rails and web: Ruby on Rails, Hotwire (Turbo, Stimulus), React, JavaScript, TypeScript, PostgreSQL, MongoDB, Redis, Sidekiq, Solid Queue, REST and GraphQL APIs, RSpec, Heroku, AWS, Google Cloud, Docker.
 - Shopify and e-commerce: Polaris, App Bridge, Admin and Storefront APIs (REST and GraphQL), webhooks, Shopify Functions (including migrations from Shopify Scripts), Checkout UI Extensions, Checkout Extensibility, Shopify Plus B2B, Theme App Extensions, Liquid, App Store publishing, BigCommerce apps, Amazon SP-API.
-- AI: agentic AI, workflow and business process automation (n8n or code), LLM integrations (Claude, OpenAI, Gemini, RubyLLM), MCP servers and an MCP client, RAG with pgvector on PostgreSQL, AI agents with tool calling, evals.
+- AI: agentic AI, workflow and business process automation (n8n or code), LLM integrations (Claude, OpenAI, Gemini, RubyLLM), MCP servers and an MCP client, WebMCP tools for browser AI agents, RAG with pgvector on PostgreSQL, AI agents with tool calling, evals.
 - AI-assisted development: Claude Code, Cursor, GitHub Copilot, Claude and ChatGPT for coding, research, review and documentation, with my own review, tests and ownership of every change.
 - AI discoverability (GEO and AEO), as an independent senior AEO and GEO specialist: helping online stores and brands get found and described correctly by ChatGPT, Perplexity and Google AI. Audits of AI crawler access, product content, FAQ coverage and schema.org structured data for Shopify, BigCommerce and other online stores, and brand AI visibility (how AI assistants describe a brand, consistent brand facts, Organization structured data), with fixes and a before-and-after re-check of buyer questions.
 - Ways of working: agile teams with sprint planning, backlog grooming, scoping and task estimation; small, reviewable pull requests with tests.
@@ -69,7 +69,7 @@ Pricing today is hourly, fixed-scope or monthly (see below); fixed-scope quotes 
 One-off plans, one store or one brand each, with no long contract. No plan guarantees rankings, citations or AI recommendations. My own tools are included; optional tracking subscriptions stay in the client's own account, with no markup.
 
 {% for p in site.data.ai_plans -%}
-- [{{ p.name }}]({{ "/services/ai-discoverability/#plan-" | append: p.id | absolute_url }}): {{ p.price_label }}. {{ p.summary }}
+- [{{ p.name }}]({{ "/services/ai-discoverability/#plan-" | append: p.id | absolute_url }}): {% include price-label.html plan=p %}. {{ p.summary }}
 {% endfor %}
 - [Sample audit report]({{ "/services/ai-discoverability/sample-report/" | absolute_url }}): what the written report looks like, on a demo store with illustrative data.
 
@@ -94,14 +94,14 @@ This site applies the same AI discoverability practices offered as a service: Pe
 - [Facts for AI assistants]({{ "/llm-info/" | absolute_url }}) ([Markdown]({{ "/llm-info.md" | absolute_url }})): verified facts, prices and availability on one page.
 - [Full version of this file]({{ "/llms-full.txt" | absolute_url }}): everything here plus the AI discoverability process, audiences and FAQs.
 - [Services and plans as JSON]({{ "/.well-known/services.json" | absolute_url }})
+- WebMCP (experimental): in browsers that support WebMCP, every page registers five read-only tools for browser AI agents: get_services, get_service_details, get_ai_discoverability_plans, get_contact_options and get_resume_summary. They return data and links only and never send or change anything. How WebMCP works and what it means for websites: {{ "/writing/what-is-webmcp/" | absolute_url }}
 
 ## Open source
 
-- little_ghost (Ruby AI agent framework): three merged pull requests, released in 0.11.0.
-  - #112 Replay Gemini thought signatures across multi-turn tool calls: https://github.com/littleghostai/little_ghost/pull/112
-  - #113 Send the original function name in functionResponse.name: https://github.com/littleghostai/little_ghost/pull/113
-  - #115 Preserve Agent lifecycle hooks when building execution snapshots: https://github.com/littleghostai/little_ghost/pull/115
-
+{% for o in site.data.profile.open_source -%}
+- {{ o.name }} ({{ o.kind }}): {{ o.summary }}
+{% for c in o.contributions %}  - #{{ c.number }} {{ c.title }}: {{ c.url }}
+{% endfor %}{% endfor %}
 ## Contact
 
 Email mohammadalijaisar@gmail.com (usually replies within a few hours). State whether the work is a full-time hire, a contract or a project.

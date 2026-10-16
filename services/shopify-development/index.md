@@ -59,6 +59,7 @@ Store owners (merchants) on Shopify or BigCommerce, Shopify app companies, and a
 - **Migrations from Shopify Scripts to Shopify Functions**, tested against how each script behaved before switching over.
 - **Shopify API version updates** for public and custom apps: moving to newer API versions, replacing deprecated endpoints and fields, and REST to GraphQL migrations.
 - **AI shopping features** on top of a store's catalog, see [AI engineering](/services/ai-in-rails/).
+- **WebMCP for stores**: checking which WebMCP tools your store offers to AI agents, turning them on for custom-built (Hydrogen) storefronts, and adding tools for store features that Shopify's built-in tools do not cover.
 
 ## Evidence
 

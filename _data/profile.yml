@@ -1,0 +1,70 @@
+# Profile facts shared by the facts files (_includes/facts.md, used by /llm-info/,
+# /llm-info.md and /llms-full.txt) and the WebMCP resume tool (webmcp.json).
+# Education is the degree only, with no school name and no dates.
+role: Senior Software Engineer specializing in AI automation, with Ruby on Rails as the core stack
+location: Lahore, Pakistan
+utc_offset: UTC+5
+hours: Works remotely, including U.S. and European business hours.
+availability: available now for remote full-time roles, contracts and projects
+reply_time: usually replies within a few hours
+experience: 7+ years of production software for clients in the US and Germany, 4+ of them on Shopify and e-commerce
+education: B.S. in Information Technology (Software)
+# Same groups as the Skills section on /resume/.
+skills:
+  - area: Backend
+    items: Ruby on Rails, service objects, RESTful and GraphQL APIs, Sidekiq, Solid Queue, Redis
+  - area: AI and LLM integration
+    items: agentic AI, workflow automation with n8n, MCP servers (tools, resources, prompts, JSON Schema validation, read-only and destructive annotations), WebMCP tools for browser AI agents, an MCP client over JSON-RPC 2.0, RAG with pgvector and Voyage AI, tool calling, agent loops, evals, RubyLLM, Claude, OpenAI and Gemini APIs
+  - area: Shopify
+    items: Shopify CLI, Shopify Functions (Scripts-to-Functions migration for discount, delivery and payment customizations), Checkout UI Extensions and Checkout Extensibility, Shopify Plus B2B, Theme App Extensions, Liquid, Polaris and App Bridge, Admin and Storefront APIs, webhooks, App Store publishing
+  - area: E-commerce platforms
+    items: BigCommerce apps (Catalog, Orders and Checkout APIs), Amazon SP-API
+  - area: Frontend
+    items: React, JavaScript, TypeScript, Hotwire (Turbo, Stimulus), esbuild, HTML and CSS
+  - area: Data
+    items: PostgreSQL, pgvector, SQLite, MongoDB (Mongoid), Redis
+  - area: Practices and DevOps
+    items: RSpec, code review, branch and pull request workflow, CI, AWS, Heroku, Google Cloud, Docker
+# Public profiles, in this order on the facts files and in the WebMCP tools.
+profiles:
+  - name: GitHub
+    url: https://github.com/mjesar
+  - name: GitLab
+    url: https://gitlab.com/mjesar
+  - name: LinkedIn
+    url: https://www.linkedin.com/in/mjesar/
+  - name: Fiverr
+    url: https://www.fiverr.com/mjesar
+# Work history, newest first. Short form for llms.txt and the WebMCP resume tool; the
+# longer version with bullet points is on /resume/. `where` is optional.
+work_history:
+  - company: MGLogics
+    role: Ruby on Rails developer
+    dates: Dec 2021 to Jun 2026
+    where: remote, US clients
+    summary: Shopify and BigCommerce apps (SaaS products merchants subscribe to), catalog and order sync, Amazon SP-API integrations. Contributed, as part of a team, to five apps on the Shopify App Store, three of them also on BigCommerce.
+  - company: SimpleDeploy
+    role: backend engineer
+    dates: Apr 2019 to Dec 2021
+    where: Karachi, Pakistan
+    summary: Rails REST APIs and MVP management tools for German clients in real estate and furniture.
+  - company: Axiom Enterprises
+    role: Python AI Bootcamp
+    dates: Sep 2018 to Feb 2019
+    summary: Flask web apps with integrated machine learning models (TensorFlow and Keras).
+# Open-source contributions to other projects.
+open_source:
+  - name: little_ghost
+    kind: Ruby AI agent framework
+    url: https://github.com/littleghostai/little_ghost
+    summary: three merged pull requests, released in 0.11.0.
+    contributions:
+      - number: 112
+        title: Replay Gemini thought signatures across multi-turn tool calls
+        url: https://github.com/littleghostai/little_ghost/pull/112
+      - number: 113
+        title: Send the original function name in functionResponse.name
+        url: https://github.com/littleghostai/little_ghost/pull/113
+      - number: 115
+        title: Preserve Agent lifecycle hooks when building execution snapshots
+        url: https://github.com/littleghostai/little_ghost/pull/115

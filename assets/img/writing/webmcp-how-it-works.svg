@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 600" width="820" height="600" role="img">
+<title>How WebMCP works</title>
+<rect x="1" y="1" width="818" height="598" rx="14" fill="#fbf8f3" stroke="#e0d7c8" stroke-width="2"/>
+<text x="40" y="38" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15" fill="#9a4413">HOW WEBMCP WORKS</text>
+<text x="780" y="38" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12.5" fill="#4a5470">example: an online store</text>
+<rect x="30" y="56" width="760" height="520" rx="12" fill="#fffdf9" stroke="#051230" stroke-width="2"/>
+<path d="M30 92 H790" stroke="#051230" stroke-width="2"/>
+<path d="M31 91 V68 Q31 57 42 57 H778 Q789 57 789 68 V91 z" fill="#f2ece2"/>
+<circle cx="50" cy="74" r="5" fill="#a2441b"/>
+<circle cx="66" cy="74" r="5" fill="#8a8540"/>
+<circle cx="82" cy="74" r="5" fill="#f68c50"/>
+<rect x="106" y="64" width="220" height="20" rx="10" fill="#fbf8f3" stroke="#e0d7c8" stroke-width="1.5"/>
+<text x="120" y="78" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="#4a5470">shop.example.com</text>
+<path d="M520 94 V574" stroke="#e0d7c8" stroke-width="2"/>
+<text x="50" y="120" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="#8a8540">WEB PAGE</text>
+<rect x="50" y="132" width="136" height="92" rx="8" fill="#ffffff" stroke="#e0d7c8" stroke-width="1.5"/>
+<rect x="60" y="142" width="116" height="44" rx="5" fill="#e9dfcf"/>
+<rect x="60" y="194" width="96" height="8" rx="4" fill="#e0d7c8"/>
+<rect x="60" y="208" width="66" height="8" rx="4" fill="#e0d7c8"/>
+<rect x="200" y="132" width="136" height="92" rx="8" fill="#ffffff" stroke="#e0d7c8" stroke-width="1.5"/>
+<rect x="210" y="142" width="116" height="44" rx="5" fill="#e9dfcf"/>
+<rect x="210" y="194" width="96" height="8" rx="4" fill="#e0d7c8"/>
+<rect x="210" y="208" width="66" height="8" rx="4" fill="#e0d7c8"/>
+<rect x="350" y="132" width="136" height="92" rx="8" fill="#ffffff" stroke="#e0d7c8" stroke-width="1.5"/>
+<rect x="360" y="142" width="116" height="44" rx="5" fill="#e9dfcf"/>
+<rect x="360" y="194" width="96" height="8" rx="4" fill="#e0d7c8"/>
+<rect x="360" y="208" width="66" height="8" rx="4" fill="#e0d7c8"/>
+<rect x="50" y="248" width="450" height="306" rx="12" fill="#f2ece2" stroke="#051230" stroke-width="2"/>
+<circle cx="74" cy="278" r="13" fill="#a2441b"/>
+<text x="74" y="283" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="14" font-weight="700" fill="#ffffff">1</text>
+<text x="96" y="284" text-anchor="start" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="16" font-weight="700" fill="#051230">The page registers its tools</text>
+<text x="96" y="304" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="#4a5470">registerTool() when the page loads</text>
+<rect x="70" y="326" width="200" height="34" rx="8" fill="#fbe1cf" stroke="#a2441b" stroke-width="2.5"/>
+<text x="170.0" y="348" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" font-weight="600" fill="#a2441b">search_products</text>
+<rect x="70" y="372" width="200" height="34" rx="8" fill="#f2ece2" stroke="#051230" stroke-width="1.5"/>
+<text x="170.0" y="394" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" font-weight="600" fill="#051230">get_price</text>
+<rect x="70" y="418" width="200" height="34" rx="8" fill="#f2ece2" stroke="#051230" stroke-width="1.5"/>
+<text x="170.0" y="440" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" font-weight="600" fill="#051230">add_to_cart</text>
+<text x="70" y="484" text-anchor="start" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="12.5" fill="#4a5470">Each tool: a name, a description,</text>
+<text x="70" y="502" text-anchor="start" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="12.5" fill="#4a5470">an input schema and a function.</text>
+<text x="70" y="528" text-anchor="start" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="12.5" font-weight="600" fill="#051230">It runs as the page's own JavaScript.</text>
+<text x="540" y="120" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="#8a8540">AI AGENT (side panel)</text>
+<rect x="586" y="136" width="186" height="50" rx="14" fill="#051230"/>
+<text x="679" y="157" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="13" fill="#ffffff">Any waterproof boots</text>
+<text x="679" y="175" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="13" fill="#ffffff">in size 42?</text>
+<circle cx="566" cy="161" r="13" fill="#a2441b"/>
+<text x="566" y="166" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="14" font-weight="700" fill="#ffffff">2</text>
+<rect x="552" y="214" width="220" height="52" rx="10" fill="#fbf8f3" stroke="#8a8540" stroke-width="1.5" stroke-dasharray="4 4"/>
+<text x="566" y="236" text-anchor="start" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="12.5" fill="#4a5470">AI model picks a tool:</text>
+<text x="566" y="255" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" font-weight="700" fill="#a2441b">search_products</text>
+<circle cx="540" cy="240" r="13" fill="#a2441b"/>
+<text x="540" y="245" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="14" font-weight="700" fill="#ffffff">3</text>
+<rect x="552" y="300" width="220" height="52" rx="10" fill="#eef0dd" stroke="#8a8540" stroke-width="1.5"/>
+<text x="566" y="322" text-anchor="start" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="12.5" fill="#4a5470">The page returns data:</text>
+<text x="566" y="341" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" font-weight="700" fill="#051230">2 boots found (JSON)</text>
+<circle cx="540" cy="326" r="13" fill="#a2441b"/>
+<text x="540" y="331" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="14" font-weight="700" fill="#ffffff">4</text>
+<rect x="552" y="386" width="220" height="56" rx="14" fill="#ffffff" stroke="#051230" stroke-width="1.5"/>
+<text x="568" y="409" text-anchor="start" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="13" fill="#051230">Yes, 2 pairs in size 42.</text>
+<text x="568" y="429" text-anchor="start" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="13" fill="#051230">Here are both.</text>
+<circle cx="540" cy="414" r="13" fill="#a2441b"/>
+<text x="540" y="419" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="14" font-weight="700" fill="#ffffff">5</text>
+<rect x="552" y="520" width="220" height="34" rx="17" fill="#fffdf9" stroke="#e0d7c8" stroke-width="1.5"/>
+<text x="570" y="542" text-anchor="start" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="12.5" fill="#4a5470">Ask the agent anything</text>
+<path d="M526 240 C 420 240, 380 334, 286 338" fill="none" stroke="#a2441b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M272.0 339.0 L283.7 332.4 L284.3 344.4 z" fill="#a2441b"/>
+<text x="392" y="270" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="12.5" font-weight="700" fill="#a2441b">calls it</text>
+<path d="M272 356 C 390 360, 420 326, 516 326" fill="none" stroke="#8a8540" stroke-width="2.5" stroke-dasharray="7 5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M527.0 326.0 L515.0 332.0 L515.0 320.0 z" fill="#8a8540"/>
+<text x="398" y="372" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="12.5" font-weight="700" fill="#8a8540">result</text>
+</svg>

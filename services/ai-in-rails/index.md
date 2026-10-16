@@ -41,6 +41,7 @@ Companies hiring an AI engineer with Rails, CTOs and product teams with a Rails 
 - **LLM features** with Claude, OpenAI or Gemini through RubyLLM, with slow model calls run in background jobs and replies streamed with Turbo Streams.
 - **MCP servers** (Model Context Protocol) on the official MCP Ruby SDK: schema-validated tools, read-only and destructive annotations so writes need approval, resources and prompts.
 - **MCP clients** that call external MCP APIs, such as Shopify's live Catalog API.
+- **WebMCP tools** that let AI agents in the browser use your website directly: read-only tools for information, and action tools with input checks and confirmation for anything important. [How WebMCP works](/writing/what-is-webmcp/).
 - **RAG** (retrieval-augmented generation) with embeddings stored in your existing PostgreSQL using pgvector, searched by meaning instead of keywords.
 - **AI agents that call your app's tools and APIs**: narrow tools with validated arguments, permissions on what each tool can do, approval for write actions where your requirements call for it, and plain Ruby for anything that must be exact, such as scores and totals.
 - **Evaluation, tracing and testing of AI agent behavior**: repeatable test runs against hand-written expectations, and a trace of every tool call so you can see what the agent did.

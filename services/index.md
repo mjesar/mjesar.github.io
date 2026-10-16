@@ -64,4 +64,6 @@ I focus on results, not hours: a working product, less manual work, and processe
 
 Available now, and I usually reply within a few hours. The fastest way is email: [mohammadalijaisar@gmail.com](mailto:mohammadalijaisar@gmail.com). Tell me whether you want a full-time hire, a contract, or a project, and a little about the work and your stack.
 
+Experimental: this site exposes read-only tools to browser AI agents (WebMCP).
+
 </main>

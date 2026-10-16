@@ -1,13 +1,14 @@
 # AI discoverability (GEO and AEO) plans, all in USD. One store or one brand per plan.
 # Drives the plan cards on /services/ai-discoverability/, the Offer data in its Service
 # structured data, llms.txt, llms-full.txt, /llm-info/ and /.well-known/services.json.
-# Change a price here and every one of those updates together.
+# Change a price here and every one of those updates together. The price text
+# ("$1,200 one time", "$400 per month") is built from `price` and `unit` by
+# _includes/price-label.html, so there is no separate label to keep in sync.
 # delivery is a full phrase, shown as written on the cards and in the fact files.
 # note (optional) is a short condition shown under the plan's list and in the fact files.
 - id: audit
   name: Audit
   price: 200
-  price_label: $200 one time
   delivery: "Delivered in 3 to 5 business days"
   best_for: Stores and brands that want to know what AI tools can and cannot see.
   summary: A written report and a prioritized fix list, with no changes to your store.
@@ -19,7 +20,6 @@
   name: Fix
   best_value: true
   price: 600
-  price_label: $600 one time
   delivery: "Delivered in 7 to 10 business days"
   best_for: Stores and brands that want the problems fixed.
   summary: The audit, then the fixes, done with your approval.
@@ -32,7 +32,6 @@
 - id: complete
   name: Complete
   price: 1200
-  price_label: $1,200 one time
   delivery: "Delivered in 10 to 14 business days"
   best_for: Stores and brands that want to see the change.
   summary: The fixes, plus a before-and-after test and follow-up.
@@ -45,7 +44,6 @@
 - id: monthly-monitor
   name: Monthly Monitor
   price: 400
-  price_label: $400 per month
   delivery: "Report each month"
   unit: month
   optional: true
