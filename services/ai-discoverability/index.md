@@ -124,7 +124,7 @@ Probably not. Trackers such as Promptwatch, Peec AI, Trakkr and HubSpot AEO ask 
 - **[This website](https://github.com/mjesar/mjesar.github.io){:target="_blank" rel="noopener"}**: the same practices on my own site, with the source code public on GitHub.
 - **[A sample report](/services/ai-discoverability/sample-report/)**: what the written report looks like, on a demo store.
 
-Open source: I also fixed three bugs in [little_ghost](/projects/#open-source), the Ruby agent framework product_geo_agent runs on.
+Open source: I also fixed three bugs in [little_ghost](/projects/#open-source), the Ruby AI agent framework product_geo_agent runs on.
 {: .muted}
 
 {% if page.show_results %}

@@ -31,7 +31,7 @@ I am currently open to client projects, freelance work and remote full-time role
 
 ## Open source
 
-I contribute to Ruby AI projects, including three [merged pull requests](/projects/#open-source) in the little_ghost agent framework, and share what I learn through code, project write-ups and experiments. I am most interested in making AI agents reliable and useful in real applications.
+I contribute to Ruby AI projects, including three [merged pull requests](/projects/#open-source) in the little_ghost AI agent framework, and share what I learn through code, project write-ups and experiments. I am most interested in making AI agents reliable and useful in real applications.
 
 <p class="muted">This is my <a href="https://nownownow.com/about" target="_blank" rel="noopener">now page</a>: a snapshot of what I am working on and exploring right now.</p>
 

@@ -35,7 +35,7 @@ Key pages:
 
 - [AI discoverability service and plans]({{ "/services/ai-discoverability/" | absolute_url }})
 - [Sample audit report (illustrative data)]({{ "/services/ai-discoverability/sample-report/" | absolute_url }})
-- [product_geo_agent, the audit agent I built]({{ "/projects/product_geo_agent/" | absolute_url }})
+- [product_geo_agent, the AI audit agent I built]({{ "/projects/product_geo_agent/" | absolute_url }})
 - [Plans as JSON]({{ "/.well-known/services.json" | absolute_url }})
 
 ## AI discoverability FAQ
