@@ -1,6 +1,6 @@
 ---
 title: "Why Shopify products do not show up in ChatGPT"
-description: "Often the AI assistant cannot read enough about the product to recommend it. What my audit agent found on three Shopify products, and how to check your own store."
+description: "Often the AI assistant cannot read enough about the product to recommend it. What my AI audit agent found on three Shopify products, and how to check your own store."
 related_projects: [product_geo_agent]
 related_services: [ai-discoverability, shopify-development]
 faq:
@@ -19,7 +19,7 @@ I built an AI agent, [product_geo_agent](/projects/product_geo_agent/), that che
 
 Before anything else, the page has to be reachable. If a store's robots.txt blocks OAI-SearchBot, the crawler OpenAI uses for ChatGPT search, that crawler will not read those pages. [My post on GPTBot and robots.txt](/writing/should-i-block-gptbot-in-robots-txt/) covers which bots do what.
 
-After that, my agent looks at seven things. The weights are my own choice, not a published standard:
+After that, my AI agent looks at seven things. The weights are my own choice, not a published standard:
 
 | What it checks | Points |
 |---|---|

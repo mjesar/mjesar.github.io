@@ -3,7 +3,7 @@ layout: service
 ask_ai_question: "What AI engineering and integration services does Mohammad Ali Jesar offer at mjesar.github.io/services/ai-in-rails/?"
 slug: ai-in-rails
 title: "AI Engineer for Ruby on Rails, RAG & AI Agents"
-description: "Add AI to Ruby on Rails applications with LLM integrations, MCP servers, RAG, tool-calling agents and evaluation, grounded in real data. n8n workflows too."
+description: "Add AI to Ruby on Rails applications with LLM integrations, MCP servers, RAG, tool-calling AI agents and evaluation, grounded in real data. n8n workflows too."
 image: /assets/img/og/ai-in-rails.png
 promise: AI that answers from your real data and can only do what you allow, built into the Rails app and systems you already run instead of a separate stack.
 contact_ask: what you want the AI to do

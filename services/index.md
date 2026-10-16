@@ -1,6 +1,6 @@
 ---
 title: Hire a Ruby on Rails & AI Engineer
-ask_ai_question: "What services does Mohammad Ali Jesar offer at mjesar.github.io/services/, and who are they for?"
+ask_ai_question: "What services does Mohammad Ali Jesar offer at mjesar.github.io/services/, and who are they for? How can a client work with him?"
 description: "Hire a Ruby on Rails and AI engineer for apps and MVPs, AI integration (MCP, RAG, agents), Shopify and e-commerce. Remote full-time, contract or project work."
 image: /assets/img/og/services.png
 ---
@@ -39,6 +39,9 @@ I focus on results, not hours: a working product, less manual work, and processe
 </article>
 {%- endfor %}
 </div>
+
+{%- assign cheapest_plan = site.data.ai_plans | sort: "price" | first -%}
+<p><a href="/services/ai-discoverability/">AI discoverability audits from ${{ cheapest_plan.price }}</a>: find out what ChatGPT, Perplexity and Google AI can and cannot see about your store or brand.</p>
 
 <div class="callout" markdown="1">
 **For agencies:** I join your team as a Rails, AI or Shopify developer on client projects, including white-label work, under your process and tools.
