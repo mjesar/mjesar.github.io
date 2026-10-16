@@ -4,6 +4,9 @@ url: https://mjesar.github.io
 baseurl: ""
 author: Mohammad Ali Jesar
 lang: en
+# Build in Pakistan time, so GitHub's UTC build does not treat today's posts as
+# future posts and skip them.
+timezone: Asia/Karachi
 markdown: kramdown
 kramdown:
   input: GFM
