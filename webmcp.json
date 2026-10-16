@@ -34,8 +34,8 @@ permalink: /webmcp.json
       "included": {{ s.card_tools | split: " · " | jsonify }},
 {%- if s.plans %}
       "plans": [
-{%- for p in site.data[s.plans] %}
-        { "name": {{ p.name | jsonify }}, "price": {{ p.price_label | jsonify }}, "includes": {{ p.deliverables | jsonify }} }{% unless forloop.last %},{% endunless %}
+{%- for p in site.data[s.plans] %}{% capture price_label %}{% include price-label.html plan=p %}{% endcapture %}
+        { "name": {{ p.name | jsonify }}, "price": {{ price_label | jsonify }}, "includes": {{ p.deliverables | jsonify }} }{% unless forloop.last %},{% endunless %}
 {%- endfor %}
       ],
       "plans_url": {{ url | append: "#plans" | absolute_url | jsonify }},
@@ -57,12 +57,12 @@ permalink: /webmcp.json
     "guarantee": "No plan guarantees rankings, citations, traffic or AI recommendations.",
     "url": {{ "/services/ai-discoverability/#plans" | absolute_url | jsonify }},
     "items": [
-{%- for p in site.data.ai_plans %}
+{%- for p in site.data.ai_plans %}{% capture price_label %}{% include price-label.html plan=p %}{% endcapture %}
       {
         "id": {{ p.id | jsonify }},
         "name": {{ p.name | jsonify }},
         "price": {{ p.price }},
-        "price_label": {{ p.price_label | jsonify }},
+        "price_label": {{ price_label | jsonify }},
         "billing": {% if p.unit == "month" %}"monthly"{% else %}"one-time"{% endif %},
         "delivery": {{ p.delivery | jsonify }},
         "badge": {% if p.best_value %}"Best value"{% elsif p.optional %}"Optional"{% else %}null{% endif %},

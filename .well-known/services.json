@@ -14,13 +14,13 @@ permalink: /.well-known/services.json
   "currency": "USD",
   "guarantee": "No guarantee of rankings, citations, traffic or AI recommendations.",
   "plans": [
-{%- for p in site.data.ai_plans %}
+{%- for p in site.data.ai_plans %}{% capture price_label %}{% include price-label.html plan=p %}{% endcapture %}
     {
       "id": {{ p.id | jsonify }},
       "name": {{ p.name | jsonify }},
       "price": {{ p.price }},
       "billing": {% if p.unit == "month" %}"monthly"{% else %}"one-time"{% endif %},
-      "priceLabel": {{ p.price_label | jsonify }},
+      "priceLabel": {{ price_label | jsonify }},
       "delivery": {{ p.delivery | jsonify }},
       "bestValue": {% if p.best_value %}true{% else %}false{% endif %},
       "bestFor": {{ p.best_for | jsonify }},

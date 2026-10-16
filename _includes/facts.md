@@ -26,7 +26,7 @@
 One store or one brand per plan. Details: [{{ "/services/ai-discoverability/#plans" | absolute_url }}]({{ "/services/ai-discoverability/#plans" | absolute_url }})
 
 {% for p in site.data.ai_plans -%}
-- **{{ p.name }}{% if p.best_value %} (best value){% endif %}{% if p.optional %} (optional){% endif %}:** {{ p.price_label }}. {% if p.delivery %}{{ p.delivery }}. {% endif %}{{ p.summary }} Includes: {{ p.deliverables | join: "; " }}.{% if p.note %} {{ p.note }}{% endif %}
+- **{{ p.name }}{% if p.best_value %} (best value){% endif %}{% if p.optional %} (optional){% endif %}:** {% include price-label.html plan=p %}. {% if p.delivery %}{{ p.delivery }}. {% endif %}{{ p.summary }} Includes: {{ p.deliverables | join: "; " }}.{% if p.note %} {{ p.note }}{% endif %}
 {% endfor %}
 - **Tools:** my own tools are included in the price. Optional AI visibility tracking subscriptions are opened in the client's own name and paid to the provider directly, with no markup or commission. The account and data stay with the client.
 - **AI visibility tools:** trackers such as Promptwatch, Peec AI, Trakkr and HubSpot AEO run buyer questions across AI assistants on a schedule and record mentions, citations, competitors and descriptions. They measure but do not fix. I help with choosing a tool (or skipping one), setup, a baseline before fixes, reading the results and re-checks after.

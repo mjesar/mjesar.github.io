@@ -4,7 +4,7 @@
 {%- for p in site.data.ai_plans %}
   <article class="card plan{% if p.best_value %} best-value{% endif %}" id="plan-{{ p.id }}">
     <h3>{{ p.name }}{% if p.best_value %} <span class="tag">Best value</span>{% elsif p.optional %} <span class="tag">Optional</span>{% endif %}</h3>
-    <p class="price">{{ p.price_label }}</p>
+    <p class="price">{% include price-label.html plan=p %}</p>
     {%- if p.delivery %}<p class="muted">{{ p.delivery }}</p>{% endif %}
     <p>{{ p.best_for }}</p>
     <ul>

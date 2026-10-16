@@ -1,0 +1,15 @@
+{%- comment -%}
+  Prints a plan's price as text, built from its number so the price lives in one place.
+  Usage: {% include price-label.html plan=p %} with a plan from _data/ai_plans.yml.
+  200 gives "$200 one time", 1200 gives "$1,200 one time", and unit: month gives
+  "$400 per month". Thousands get a comma; prices are whole dollars.
+{%- endcomment -%}
+{%- assign n = include.plan.price | plus: 0 -%}
+{%- if n >= 1000 -%}
+{%- assign thousands = n | divided_by: 1000 -%}
+{%- assign rest = n | modulo: 1000 | prepend: "00" | slice: -3, 3 -%}
+{%- capture amount -%}{{ thousands }},{{ rest }}{%- endcapture -%}
+{%- else -%}
+{%- assign amount = n -%}
+{%- endif -%}
+${{ amount }} {% if include.plan.unit == "month" %}per month{% else %}one time{% endif %}
