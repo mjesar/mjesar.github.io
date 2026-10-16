@@ -31,6 +31,7 @@ exclude:
   - WEBSITE_CHECKLIST.md
   - Gemfile
   - Gemfile.lock
+  - test
 defaults:
   - scope:
       path: ""
