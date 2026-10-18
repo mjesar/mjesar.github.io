@@ -26,7 +26,7 @@ faq:
 ---
 Websites were built for people. An AI agent that wants to shop, compare or book something for you has to use them like a person would: look at the page, read the text, guess which button does what, and click. That is slow, it costs money to run, and it can break when the design changes.
 
-WebMCP changes that. A website can now hand AI agents a short list of ready-made actions, such as "search products", "show this product" or "add to cart". The agent calls the action, and the website answers with exact data. No guessing, no clicking. Developers call these actions tools.
+WebMCP changes that. A website can now hand AI agents a short list of ready-made actions, such as "search products", "show this product" or "add to cart". The agent calls the action, and the website answers with exact data. Developers call these actions tools.
 
 Think of a restaurant. Today an AI agent has to walk into the kitchen and work out what is cooking. With WebMCP, the website hands it a menu.
 
@@ -52,7 +52,7 @@ One tool hints at where this is heading. `get_ucp_profile` tells an AI agent how
 
 The tool descriptions are worth reading, because they are written for the AI model (the AI behind the agent, such as Gemini or GPT), not for people. The one for `add_to_cart` tells the agent that the shopper's request is the permission, so it should add the items without asking again. Adding to a cart is easy to undo. Placing the order is treated very differently, as the next section shows.
 
-Shopify notes one limit: agent support is currently only in Chromium-based browsers, such as Chrome and Edge. Still, every standard Shopify store now offers a set of actions to AI agents, without the merchant lifting a finger. That is a strong sign of where websites are going.
+Shopify notes one limit: agent support is currently only in Chromium-based browsers, such as Chrome and Edge. Still, every standard Shopify store now offers a set of actions to AI agents, with no setup from the merchant. That is a strong sign of where websites are going.
 
 ## Why WebMCP matters
 

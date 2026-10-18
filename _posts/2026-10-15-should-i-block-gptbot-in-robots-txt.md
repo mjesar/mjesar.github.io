@@ -14,7 +14,7 @@ faq:
 ---
 Only if you do not want OpenAI to train on your pages. GPTBot is OpenAI's training crawler. Blocking it does not remove you from ChatGPT search, because ChatGPT search uses a different bot, OAI-SearchBot, which you can allow separately.
 
-The useful question is not "should I block AI bots?" It is "which ones, and for what?"
+A more useful question than "should I block AI bots?" is "which ones, and for what?"
 
 ## Three kinds of AI bots
 
