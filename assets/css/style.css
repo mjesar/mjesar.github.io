@@ -63,6 +63,8 @@ pre { background: var(--surface); border: 1px solid var(--border); border-radius
 pre code { background: none; padding: 0; }
 
 .wrap { max-width: 860px; margin: 0 auto; padding: 0 16px; }
+/* Running text stays at a comfortable line length (about 65 to 75 characters) */
+main p, main li { max-width: 65ch; }
 
 /* Site header */
 .site-header { background: var(--indigo); color: #eef0f5; }
@@ -90,7 +92,7 @@ pre code { background: none; padding: 0; }
 .bar { width: 64px; height: 6px; border-radius: 3px; background: var(--apricot); box-shadow: 22px 0 0 -0px var(--olive); margin-bottom: 22px; }
 .hero h1 { font-size: clamp(2rem, 6vw, 3.25rem); line-height: 1.1; margin: 0 0 12px; letter-spacing: -0.01em; }
 .hero.small h1 { font-size: clamp(1.75rem, 5vw, 2.5rem); }
-.hero .lede { font-size: clamp(1.05rem, 2.6vw, 1.35rem); color: #a9b2c8; margin: 0 0 8px; max-width: 46em; }
+.hero .lede { font-size: clamp(1.05rem, 2.6vw, 1.35rem); color: #a9b2c8; margin: 0 0 8px; max-width: 65ch; }
 .hero .meta { color: #a9b2c8; margin: 0 0 24px; }
 .hero .meta:last-child { margin-bottom: 0; }
 
