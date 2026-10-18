@@ -1,7 +1,7 @@
 {%- comment -%}
   Prints a prefilled mailto: URL (for an href) from a contact data file.
   Usage: {% include mailto.html contact="ai_contact" plan="Audit" %}; leave out `plan`
-  for a general enquiry. Callers add target="_blank" so the email opens in a new tab. uri_escape turns spaces into %20 and line breaks into %0A;
+  for a general enquiry. _plugins/new_tab_links.rb makes every mailto link open in a new tab. uri_escape turns spaces into %20 and line breaks into %0A;
   the replace chain then encodes the characters uri_escape leaves alone but that
   would break a mailto link (& starts a new field, # ends the link, ? and + can be
   misread). url_encode is not used because it turns spaces into "+".

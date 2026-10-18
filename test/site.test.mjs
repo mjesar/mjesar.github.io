@@ -121,3 +121,18 @@ test("tool data matches the site's facts", async () => {
       `${plan.name}: label "${plan.price_label}" does not match price ${plan.price}`);
   }
 });
+
+test("email links and links to other sites open in a new tab", () => {
+  const own = ["https://mjesar.github.io", "http://localhost", "http://127.0.0.1"];
+  const sameTab = [];
+  for (const path of files().filter((p) => extname(p) === ".html")) {
+    for (const tag of readFileSync(path, "utf8").match(/<a\b[^>]*>/g) ?? []) {
+      const href = tag.match(/\shref="([^"]*)"/)?.[1];
+      if (!href) continue;
+      const leaves = href.startsWith("mailto:") ||
+        (/^https?:\/\//.test(href) && !own.some((o) => href.startsWith(o)));
+      if (leaves && !/\starget="_blank"/.test(tag)) sameTab.push(`${path.replace(SITE, "")}: ${href}`);
+    }
+  }
+  assert.deepEqual(sameTab, [], "these links open in the same tab");
+});
