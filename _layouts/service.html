@@ -14,11 +14,8 @@ layout: default
   <div class="wrap">
     <div class="bar" aria-hidden="true"></div>
     <p class="eyebrow"><a href="/services/">Services</a></p>
-    <h1>{{ svc.name }}</h1>
-    {%- if page.role %}
-    <p class="role">{{ page.role }}</p>
-    {%- endif %}
-    <p class="lede">{{ page.promise | default: svc.summary }}</p>
+    <h1{% if svc.name.size > 40 %} class="long"{% endif %}>{{ svc.name }}</h1>
+    <p class="lede">{% if page.role %}<strong class="role">{{ page.role }}.</strong> {% endif %}{{ page.promise | default: svc.summary }}</p>
     {%- if page.summary %}
     <ul class="summary">
       {%- for item in page.summary %}
@@ -37,11 +34,11 @@ layout: default
       {%- if page.secondary_cta %}
       <li><a class="btn" href="{{ page.secondary_cta.url }}">{{ page.secondary_cta.label }}</a></li>
       {%- endif %}
-      <li><a class="btn" href="/services/">All services</a></li>
     </ul>
     {%- if page.contact_template %}
     <p class="mail-fallback">Or write to {{ mail_address }}</p>
     {%- endif %}
+    <p class="hero-text-links"><a href="/services/">All services</a></p>
   </div>
 </div>
 <main class="wrap prose">
