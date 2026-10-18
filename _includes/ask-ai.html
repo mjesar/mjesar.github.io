@@ -2,7 +2,7 @@
   "Ask an AI" buttons that open each assistant with the page's question prefilled.
   The question is the page's `ask_ai_question` front matter; nothing renders without it.
   Usage: {% include ask-ai.html kind="profile" %} on home, Resume and Projects, or
-  kind="service" on /services/ and the service pages. No analytics events are sent.
+  kind="service" on /services/ and the service pages, or kind="article" on posts. No analytics events are sent.
   uri_escape encodes spaces as %20; the replace chain encodes the characters it leaves
   alone that would break a query string.
 {%- endcomment -%}
@@ -15,6 +15,6 @@
     <li><a class="btn" href="{{ a.url }}{{ ask_q }}" target="_blank" rel="noopener noreferrer">{{ a.label }}</a></li>
   {%- endfor %}
   </ul>
-  <p class="muted">{% if include.kind == "profile" %}Each assistant answers on its own. This site and my resume are the source.{% else %}Each assistant answers on its own. For exact prices and scope, the plans on this site are the source.{% endif %}</p>
+  <p class="muted">{% if include.kind == "profile" %}Each assistant answers on its own. This site and my resume are the source.{% elsif include.kind == "article" %}Each assistant answers on its own. This article is the source.{% else %}Each assistant answers on its own. For exact prices and scope, the plans on this site are the source.{% endif %}</p>
 </section>
 {%- endif -%}

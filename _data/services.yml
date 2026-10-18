@@ -8,7 +8,7 @@
   for: startups, founders, CEOs, product teams and agencies.
   summary: Helping startups launch MVPs, plus new applications, full projects and work on existing codebases, with Hotwire or React frontends and tests.
   card_headline: Build new products. Improve existing applications.
-  card_intro: I help startups launch MVPs and build Rails applications from the ground up, and extend software that is already in production, with new features, API integrations, performance fixes and upgrades across the backend and frontend.
+  card_intro: I help startups launch MVPs on Rails. For apps already in production, I add features, connect APIs, fix slow pages and handle upgrades.
   card_tools: Ruby on Rails · PostgreSQL · Hotwire · React · APIs · Background jobs · Automated tests
   card_proof: "7+ years of production Rails for clients in the US and Germany. [See my projects](/projects/)."
   card_cta: Explore Rails development
@@ -17,7 +17,7 @@
   for: companies hiring an AI engineer with Rails, CTOs, CEOs and agencies.
   summary: LLM integrations, AI agents with validated tools and approval for write actions where needed, MCP servers, RAG with pgvector on PostgreSQL, evals, and workflow automation with n8n or Rails.
   card_headline: Build AI features that work with real application data.
-  card_intro: I integrate LLMs into Rails apps, build AI agents that use your application's tools, and connect models to business data, with validated tool inputs, controlled write actions, evaluation and tracing.
+  card_intro: I add AI features to Rails apps that answer from your own data, and AI agents that can only take the actions you allow. Every feature is tested against real cases before launch.
   card_tools: LLM integrations · AI agents · MCP servers · RAG with pgvector · Evals · Observability · Workflow automation (n8n)
   card_proof: "Working projects with MCP, RAG, tool calling and AI agent evaluation: [shop_mcp_server](/projects/shop_mcp_server/), [ai_shop_assistant](/projects/ai_shop_assistant/) and [product_geo_agent](/projects/product_geo_agent/), plus fixes merged into the [little_ghost](/projects/#open-source) Ruby gem."
   card_cta: Explore AI engineering
@@ -26,7 +26,7 @@
   for: store owners (merchants), Shopify app companies and agencies.
   summary: Custom and public Shopify apps, Shopify Functions (including migrations from Shopify Scripts) and Checkout UI Extensions, Shopify Plus B2B, Theme App Extensions and Liquid, BigCommerce apps, Amazon SP-API listings, data sync with webhooks and retried background jobs, and AI shopping features on top of store catalogs.
   card_headline: Custom commerce features and reliable integrations.
-  card_intro: I build store functionality that off-the-shelf apps do not cover, from custom Shopify apps and checkout changes to Shopify Plus B2B, and keep products, inventory and orders in sync across stores, marketplaces and other systems.
+  card_intro: I build the store features that existing apps do not cover, from custom apps to checkout changes and Shopify Plus B2B. I also keep products, inventory and orders in sync everywhere you sell.
   card_tools: Shopify apps · Shopify Functions · Checkout UI Extensions · Liquid · BigCommerce · Amazon SP-API · Product, inventory and order sync
   card_proof: "Contributed to [five published Shopify App Store apps](/projects/#shopify-apps), three also on BigCommerce."
   card_cta: Explore e-commerce development

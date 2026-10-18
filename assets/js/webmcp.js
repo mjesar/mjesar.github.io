@@ -45,20 +45,21 @@
     {
       name: "get_services",
       title: "List services",
-      description: "Lists the services Mohammad Ali Jesar offers, with a one-line summary, who each is for and the page URL.",
+      description: "Lists the services Mohammad Ali Jesar offers, with a one-line summary, who each is for and the page URL, plus the pricing in USD (hourly, project, part-time and full-time monthly).",
       inputSchema: noInput,
       execute: withData(function (data) {
         return {
           services: data.services.map(function (s) {
             return { slug: s.slug, name: s.name, summary: s.summary, for: s.for, url: s.url };
-          })
+          }),
+          pricing: data.pricing
         };
       })
     },
     {
       name: "get_service_details",
       title: "Get service details",
-      description: "Returns one service in detail: summary, what is included, who it is for, how to start and the page URL. Use a slug from get_services.",
+      description: "Returns one service in detail: summary, what is included, who it is for, pricing or plans, how to start and the page URL. Use a slug from get_services.",
       inputSchema: {
         type: "object",
         properties: {

@@ -1,6 +1,6 @@
 ---
 layout: service
-ask_ai_question: "What AI discoverability (GEO and AEO) services does Mohammad Ali Jesar offer at mjesar.github.io/services/ai-discoverability/, and what do the plans cost?"
+ask_ai_question: "Read https://mjesar.github.io/services/ai-discoverability/ and tell me what the AI discoverability (GEO and AEO) plans include and what they cost."
 slug: ai-discoverability
 title: "AI Discoverability (GEO/AEO) for Stores and Brands"
 description: "Independent GEO/AEO specialist. I audit and fix what stops ChatGPT, Perplexity and Google AI from finding your store or brand. Plans from $200."

@@ -115,6 +115,12 @@ test("tool data matches the site's facts", async () => {
   const resume = await run("get_resume_summary");
   assert.equal(resume.education, "B.S. in Information Technology (Software)");
   assert.ok(resume.work_history.length > 0 && resume.profiles.length > 0);
+  const { pricing } = await run("get_services");
+  const table = read("services/index.html").match(/<h2 id="pricing">[\s\S]*?<\/table>/)[0];
+  for (const item of pricing.items) {
+    assert.ok(table.includes(`<strong>${item.name}</strong>`) && table.includes(item.price),
+      `pricing "${item.name}: ${item.price}" from the tools is not in the /services/ pricing table`);
+  }
   const plans = await run("get_ai_discoverability_plans");
   for (const plan of plans.items) {
     assert.ok(plan.price_label.startsWith(`$${plan.price.toLocaleString("en-US")} `),
@@ -135,4 +141,29 @@ test("email links and links to other sites open in a new tab", () => {
     }
   }
   assert.deepEqual(sameTab, [], "these links open in the same tab");
+});
+
+test("structured FAQ answers match the FAQ text visible on the page", () => {
+  const entities = { "&amp;": "&", "&quot;": '"', "&#39;": "'", "&rsquo;": "'", "’": "'" };
+  const text = (s) => s.replace(/<[^>]+>/g, " ")
+    .replace(/&amp;|&quot;|&#39;|&rsquo;|’/g, (m) => entities[m])
+    .replace(/\s+/g, " ").trim();
+  const mismatches = [];
+  for (const path of files().filter((p) => extname(p) === ".html")) {
+    const html = readFileSync(path, "utf8");
+    const visible = text(html.replace(/<script[\s\S]*?<\/script>/g, ""));
+    for (const [, json] of html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)) {
+      const data = JSON.parse(json);
+      for (const item of data["@graph"] ?? [data]) {
+        if (item["@type"] !== "FAQPage") continue;
+        for (const q of item.mainEntity) {
+          const answer = text(q.acceptedAnswer.text).slice(0, 120);
+          if (!visible.includes(text(q.name)) || !visible.includes(answer)) {
+            mismatches.push(`${path.replace(SITE, "")}: ${q.name}`);
+          }
+        }
+      }
+    }
+  }
+  assert.deepEqual(mismatches, [], "structured FAQ differs from the visible FAQ");
 });

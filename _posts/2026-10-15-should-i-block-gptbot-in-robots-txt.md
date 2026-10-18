@@ -1,6 +1,8 @@
 ---
 title: "Should I block GPTBot in robots.txt? Search bots versus training bots"
+seo_title: "Should I block GPTBot? Search bots vs training bots"
 description: "Blocking GPTBot stops OpenAI training on your pages, not ChatGPT search. Which AI bots train, which search, which follow robots.txt, and which may not."
+ask_ai_question: "Read https://mjesar.github.io/writing/should-i-block-gptbot-in-robots-txt/ and explain whether I should block GPTBot in robots.txt, and which AI bots I should allow."
 related_services: [ai-discoverability]
 faq:
   - q: "Does blocking GPTBot remove my store from ChatGPT search?"
@@ -14,7 +16,7 @@ faq:
 ---
 Only if you do not want OpenAI to train on your pages. GPTBot is OpenAI's training crawler. Blocking it does not remove you from ChatGPT search, because ChatGPT search uses a different bot, OAI-SearchBot, which you can allow separately.
 
-The useful question is not "should I block AI bots?" It is "which ones, and for what?"
+A more useful question than "should I block AI bots?" is "which ones, and for what?"
 
 ## Three kinds of AI bots
 

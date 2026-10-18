@@ -1,6 +1,7 @@
 ---
 title: "Why Shopify products do not show up in ChatGPT"
-description: "Often the AI assistant cannot read enough about the product to recommend it. What my AI audit agent found on three Shopify products, and how to check your own store."
+description: "Often an AI assistant cannot read enough about a product to recommend it. What my AI audit agent found on three Shopify products, and how to check your store."
+ask_ai_question: "Read https://mjesar.github.io/writing/why-shopify-products-do-not-show-up-in-chatgpt/ and explain why my Shopify products may not show up in ChatGPT, and how I can check my store."
 related_projects: [product_geo_agent]
 related_services: [ai-discoverability, shopify-development]
 faq:
@@ -11,7 +12,7 @@ faq:
   - q: "Can I run product_geo_agent on my store?"
     a: "It is open source on GitHub. It is a project about building a reliable AI agent, not a complete audit tool, so treat its score as a starting point."
 ---
-Often the problem is not the product. It is what an AI assistant can read about it: a thin description, no answers to the questions buyers ask, incomplete structured data, or crawlers that are not allowed in.
+Often the problem is what an AI assistant can read about the product: a thin description, no answers to the questions buyers ask, incomplete structured data, or crawlers that are not allowed in.
 
 I built an AI agent, [product_geo_agent](/projects/product_geo_agent/), that checks these things on a Shopify product and scores it from 0 to 100. Here is what it found on three products, and how you can check your own store.
 

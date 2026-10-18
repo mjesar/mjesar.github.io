@@ -1,12 +1,15 @@
 ---
 layout: service
-ask_ai_question: "What AI engineering and integration services does Mohammad Ali Jesar offer at mjesar.github.io/services/ai-in-rails/?"
+ask_ai_question: "Read https://mjesar.github.io/services/ai-in-rails/ and tell me what AI engineering and integration work is offered, who it is for and how a project runs."
 slug: ai-in-rails
 contact_template: project_contact
+secondary_cta:
+  label: See pricing
+  url: /services/#pricing
 title: "AI Engineer for Ruby on Rails, RAG & AI Agents"
 description: "Add AI to Ruby on Rails applications with LLM integrations, MCP servers, RAG, tool-calling AI agents and evaluation, grounded in real data. n8n workflows too."
 image: /assets/img/og/ai-in-rails.png
-promise: AI that answers from your real data and can only do what you allow, built into the Rails app and systems you already run instead of a separate stack.
+promise: AI that answers from your real data and only does what you allow. I build it into the Rails app you already run.
 contact_ask: what you want the AI to do
 faq:
   - q: "Do we need a separate Python service to add AI to our Rails application?"
@@ -37,16 +40,14 @@ Companies hiring an AI engineer with Rails, CTOs and product teams with a Rails 
 
 ## What I build
 
-- **AI assistants grounded in your data**: answers that come from your orders, products, documents and database records, with sources shown, instead of from what a model remembers.
-- **AI in the product you already have**: features added to your existing Rails app, instead of rebuilding it in another stack.
-- **LLM features** with Claude, OpenAI or Gemini through RubyLLM, with slow model calls run in background jobs and replies streamed with Turbo Streams.
-- **MCP servers** (Model Context Protocol) on the official MCP Ruby SDK: schema-validated tools, read-only and destructive annotations so writes need approval, resources and prompts.
-- **MCP clients** that call external MCP APIs, such as Shopify's live Catalog API.
-- **WebMCP tools** that let AI agents in the browser use your website directly: read-only tools for information, and action tools with input checks and confirmation for anything important. [How WebMCP works](/writing/what-is-webmcp/).
-- **RAG** (retrieval-augmented generation) with embeddings stored in your existing PostgreSQL using pgvector, searched by meaning instead of keywords.
-- **AI agents that call your app's tools and APIs**: narrow tools with validated arguments, permissions on what each tool can do, approval for write actions where your requirements call for it, and plain Ruby for anything that must be exact, such as scores and totals.
-- **Evaluation, tracing and testing of AI agent behavior**: repeatable test runs against hand-written expectations, and a trace of every tool call so you can see what the agent did.
-- **Workflow automation and integrations**: automated business workflows in n8n or in Rails code, connected to your existing systems through APIs, webhooks and MCP, with complex logic, tests and approval steps kept in Rails.
+- **AI assistants grounded in your data**: answers from your orders, products, documents and database records, with sources shown.
+- **LLM features in your existing Rails app** with Claude, OpenAI or Gemini through RubyLLM, so you do not rebuild in another stack.
+- **MCP servers and clients** (Model Context Protocol) on the official MCP Ruby SDK. AI tools such as Claude get safe access to your app, and changes need a person's approval where it matters. Your app can also call external MCP APIs, such as Shopify's live Catalog API.
+- **WebMCP tools** that let AI agents in the browser use your website directly, with confirmation for anything important. [How WebMCP works](/writing/what-is-webmcp/).
+- **RAG** (retrieval-augmented generation): search by meaning instead of exact words, with pgvector in the PostgreSQL database you already have.
+- **AI agents that use your app's tools**: each tool does one job, checks its inputs and only has the permissions it needs. Exact numbers, such as totals and scores, are calculated in plain Ruby.
+- **Evaluation and tracing**: repeatable test runs with expected answers, and a record of every step the agent took.
+- **Workflow automation** in n8n or Rails, connected to your systems through APIs, webhooks and MCP.
 
 ## Why build AI in Rails?
 

@@ -74,7 +74,7 @@ A normal chat reply is `Question → Answer`. With MCP it becomes `Question → 
 
 **The docs were wrong about argument keys.** The SDK's docs show prompt arguments with string keys. At runtime they arrive as symbols. I found it with a debug log line, and a spec now guards against someone "fixing" it back.
 
-The lesson I took from both: docs and tutorials are not the source of truth, running code is.
+The lesson I took from both is to trust running code over docs and tutorials.
 
 ## Approach: key decisions
 
