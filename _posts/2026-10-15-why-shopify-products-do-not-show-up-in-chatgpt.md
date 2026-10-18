@@ -1,6 +1,6 @@
 ---
 title: "Why Shopify products do not show up in ChatGPT"
-description: "Often the AI assistant cannot read enough about the product to recommend it. What my AI audit agent found on three Shopify products, and how to check your own store."
+description: "Often an AI assistant cannot read enough about a product to recommend it. What my AI audit agent found on three Shopify products, and how to check your store."
 related_projects: [product_geo_agent]
 related_services: [ai-discoverability, shopify-development]
 faq:
