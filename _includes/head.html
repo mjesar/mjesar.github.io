@@ -41,6 +41,12 @@
     var saved = null;
     try { saved = localStorage.getItem("theme"); } catch (e) {}
     if (saved === "light" || saved === "dark") document.documentElement.setAttribute("data-theme", saved);
+    // Entrance motion: only when allowed, and never leave content hidden if motion.js does not run
+    var root = document.documentElement;
+    if ("IntersectionObserver" in window && !matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      root.classList.add("motion");
+      setTimeout(function () { if (!window.motionReady) root.classList.remove("motion"); }, 3000);
+    }
   })();
 </script>
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
