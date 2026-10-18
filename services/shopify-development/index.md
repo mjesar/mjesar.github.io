@@ -3,6 +3,9 @@ layout: service
 ask_ai_question: "What Shopify, BigCommerce and e-commerce development services does Mohammad Ali Jesar offer at mjesar.github.io/services/shopify-development/?"
 slug: shopify-development
 contact_template: project_contact
+secondary_cta:
+  label: See pricing
+  url: /services/#pricing
 title: "Shopify & BigCommerce App Development"
 description: "Custom Shopify and BigCommerce apps, Shopify Plus checkout and B2B development, and reliable product, inventory, order and marketplace integrations."
 image: /assets/img/og/shopify-development.png
@@ -26,7 +29,7 @@ faq:
 ---
 ## Who it is for
 
-Store owners (merchants) on Shopify or BigCommerce, Shopify app companies, and agencies that build for Shopify stores, who want a Shopify developer that has shipped apps to the Shopify App Store.
+Store owners (merchants) on Shopify or BigCommerce, Shopify app companies, and agencies that build for Shopify stores. You get a developer who has shipped apps to the Shopify App Store.
 
 ## Problems I solve
 
@@ -43,7 +46,7 @@ Store owners (merchants) on Shopify or BigCommerce, Shopify app companies, and a
 
 ### 1. Custom apps and storefront features
 
-- **Custom and public Shopify apps** with Polaris and App Bridge, on the Admin and Storefront APIs (REST and GraphQL), with webhooks, through to App Store publishing.
+- **Custom and public Shopify apps** built with Polaris and App Bridge on Shopify's Admin and Storefront APIs, from the first version to App Store publishing.
 - **Checkout customization** with Checkout UI Extensions and Shopify Functions (discounts, delivery and payment customizations).
 - **Storefront features** with Theme App Extensions and Liquid.
 - **BigCommerce apps and Multi-Storefront customization** on the Catalog, Orders and Checkout APIs, with features that work per storefront.
@@ -58,9 +61,9 @@ Store owners (merchants) on Shopify or BigCommerce, Shopify app companies, and a
 
 - **Shopify Plus B2B** features for wholesale buyers.
 - **Migrations from Shopify Scripts to Shopify Functions**, tested against how each script behaved before switching over.
-- **Shopify API version updates** for public and custom apps: moving to newer API versions, replacing deprecated endpoints and fields, and REST to GraphQL migrations.
+- **Shopify API version updates** for public and custom apps, including REST to GraphQL migrations.
 - **AI shopping features** on top of a store's catalog, see [AI engineering](/services/ai-in-rails/).
-- **WebMCP for stores**: checking which WebMCP tools your store offers to AI agents, turning them on for custom-built (Hydrogen) storefronts, and adding tools for store features that Shopify's built-in tools do not cover.
+- **WebMCP for stores**: checking which tools your store offers to AI agents, and adding tools for features that Shopify's built-in ones do not cover, including on Hydrogen storefronts.
 
 ## Evidence
 

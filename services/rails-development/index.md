@@ -3,10 +3,13 @@ layout: service
 ask_ai_question: "What Ruby on Rails development services does Mohammad Ali Jesar offer at mjesar.github.io/services/rails-development/, and who are they for?"
 slug: rails-development
 contact_template: project_contact
+secondary_cta:
+  label: See pricing
+  url: /services/#pricing
 title: "Ruby on Rails Developer for Apps, APIs & MVPs"
 description: "Ruby on Rails developer helping startups launch MVPs, and building and maintaining APIs and production Rails apps for international clients."
 image: /assets/img/og/rails-development.png
-promise: I help startups launch MVPs on Rails, and do steady, tested work on the Rails app you already run.
+promise: I help startups launch their first version on Rails, and add features and fixes to the Rails app you already run.
 contact_ask: whether this is a new product or an app you already run
 faq:
   - q: "How do you plan an MVP?"
@@ -38,12 +41,10 @@ Startups and founders with an idea to turn into an MVP, CEOs and product teams w
 - **Features and fixes in existing apps**, on branches with pull requests your team can review.
 - **Frontends** with Hotwire (Turbo and Stimulus) or React, with JavaScript or TypeScript.
 - **APIs and integrations**: REST and GraphQL APIs, and connections to third-party services.
-- **Background jobs** with Sidekiq and Redis, or Solid Queue, for work that should not block a web request, with retries and monitoring so failures are visible.
-- **Performance and production debugging**: finding slow queries and N+1 problems, adding indexes and caching, and tracing errors back to their cause.
+- **Background jobs** with Sidekiq and Redis, or Solid Queue, so slow work does not hold up your pages. Failed jobs are retried, and you can see them.
+- **Performance and production debugging**: finding slow queries, adding indexes and caching, and tracing errors back to their cause.
 - **Maintenance and upgrades**: Rails and gem upgrades in small, tested steps.
-- **Data** on PostgreSQL or MongoDB.
-- **Tests and CI**: RSpec, with checks such as RuboCop, Brakeman and bundler-audit on every push.
-- **Deployment** on Heroku, AWS, Google Cloud or Docker.
+- **Data, tests and deployment**: PostgreSQL or MongoDB, RSpec tests with security checks on every push, and deploys to Heroku, AWS, Google Cloud or Docker.
 
 Want AI in the app as well? See [AI engineering](/services/ai-in-rails/).
 
