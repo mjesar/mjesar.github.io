@@ -83,7 +83,7 @@ main p, main li { max-width: 65ch; }
 @media (max-width: 600px) {
   .site-header nav { width: 100%; order: 2; }
   .theme-toggle { order: 1; }
-  .nav { gap: 4px 14px; font-size: 14px; }
+  .nav { gap: 4px 14px; }
 }
 .nav a:hover, .nav a[aria-current="page"] { color: var(--apricot); }
 .theme-toggle { flex: none; display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; padding: 0; border-radius: 8px; border: 1px solid #2a3c6e; background: transparent; color: #a9b2c8; cursor: pointer; }
@@ -412,12 +412,13 @@ main section + section { padding-top: 14px; }
   .glance { display: none; }
 }
 
-/* Phone menu: keep all six links on one line (the mono font is wide) */
+/* Phone menu: the four main links on one readable line; Uses and Now move to the footer */
 @media (max-width: 600px) {
-  .nav { flex-wrap: nowrap; gap: 0 11px; font-size: 12.5px; letter-spacing: 0; }
+  .nav { flex-wrap: nowrap; gap: 0 16px; letter-spacing: 0; }
+  .nav .nav-extra { display: none; }
 }
 @media (max-width: 380px) {
-  .nav { gap: 0 8px; font-size: 12px; }
+  .nav { gap: 0 12px; }
 }
 @media (max-width: 360px) {
   .site-header nav { overflow-x: auto; }
