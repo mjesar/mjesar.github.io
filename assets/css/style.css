@@ -99,8 +99,11 @@ main p, main li { max-width: 65ch; }
 .bar { width: 64px; height: 6px; border-radius: 3px; background: var(--apricot); box-shadow: 22px 0 0 -0px var(--olive); margin-bottom: 22px; }
 .hero h1 { font-size: clamp(2rem, 6vw, 4.25rem); line-height: 1.05; margin: 0 0 12px; letter-spacing: -0.01em; text-wrap: balance; }
 .hero.small h1 { font-size: clamp(1.75rem, 5vw, 3.5rem); }
+/* titles over 40 characters (set in the layouts) step down so they stay within two lines */
+.hero.small h1.long { font-size: clamp(1.4rem, 4vw, 2.5rem); }
 .hero .lede { font-size: clamp(1.05rem, 2.6vw, var(--fs-lead)); color: #a9b2c8; margin: 0 0 8px; max-width: 65ch; text-wrap: pretty; }
-.hero .meta { color: #a9b2c8; margin: 0 0 24px; font-size: var(--fs-label); }
+.hero .meta { color: #a9b2c8; margin: 0; font-size: var(--fs-label); }
+.hero .links { margin-top: 24px; }
 .hero .meta:last-child { margin-bottom: 0; }
 
 .links { display: flex; flex-wrap: wrap; gap: 10px; padding: 0; margin: 0; list-style: none; }
@@ -395,10 +398,10 @@ main section + section { padding-top: 14px; }
 .hero .lede .role { font-weight: 600; color: #eef0f5; }
 @media print { .hero .lede .role { color: inherit; } }
 
-/* Hero contact links: quieter than the two main buttons */
-.hero-social { font-family: var(--mono); font-size: var(--fs-label); color: #a9b2c8; margin: 16px 0 0; }
-.hero-social a { color: #eef0f5; text-underline-offset: 4px; }
-.hero-social a:hover { color: var(--apricot); }
+/* Hero text links: quieter than the (at most two) main buttons */
+.hero-text-links { font-family: var(--mono); font-size: var(--fs-label); color: #a9b2c8; margin: 16px 0 0; }
+.hero-text-links a { color: #eef0f5; text-underline-offset: 4px; }
+.hero-text-links a:hover { color: var(--apricot); }
 
 /* At a glance: quick facts for recruiters */
 .glance { padding-top: 32px; }
@@ -487,7 +490,7 @@ html { scroll-padding-top: 84px; }
 .hero .summary { list-style: none; padding: 0; margin: 0 0 12px; color: #eef0f5; }
 .hero .summary li { margin: 4px 0; }
 .hero .summary strong { color: var(--apricot); }
-.hero .about { color: #c9cfdc; font-size: var(--fs-small); margin: 0 0 16px; max-width: 62ch; }
+.hero .about { color: #c9cfdc; font-size: var(--fs-small); margin: 0; max-width: 62ch; }
 
 /* Collapsible extras on service pages ("Technical details", tool lists) */
 .prose details { margin: 12px 0 20px; }

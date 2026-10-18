@@ -8,14 +8,13 @@ image: /assets/img/og/services.png
   <div class="wrap">
     <div class="bar" aria-hidden="true"></div>
     <h1>Work with me</h1>
-    <p class="role">Senior Software Engineer specializing in AI automation</p>
-    <p class="lede">I help startups and businesses turn ideas into working applications, automate repetitive workflows with AI, and build software that solves real business problems.</p>
+    <p class="lede"><strong class="role">Senior Software Engineer specializing in AI automation.</strong> I help startups and businesses turn ideas into working applications, automate repetitive workflows with AI, and build software that solves real business problems.</p>
     <p class="meta">Open to remote full-time roles, contracts and freelance projects · Available now · Usually replies within a few hours · Flexible hours for U.S. and European time zones</p>
     <ul class="links">
       <li><a class="btn primary" href="mailto:mohammadalijaisar@gmail.com">Have a project? Email me</a></li>
       <li><a class="btn" href="/resume/">Hiring? View my resume</a></li>
-      <li><a class="btn" href="https://www.linkedin.com/in/mjesar/" rel="me noopener" target="_blank">LinkedIn</a></li>
     </ul>
+    <p class="hero-text-links"><a href="https://github.com/mjesar" rel="me noopener" target="_blank">GitHub</a> · <a href="https://www.linkedin.com/in/mjesar/" rel="me noopener" target="_blank">LinkedIn</a></p>
   </div>
 </div>
 
