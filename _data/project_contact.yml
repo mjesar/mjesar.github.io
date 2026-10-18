@@ -1,0 +1,23 @@
+# Prefilled email for the project "Email me" buttons: /services/, the home page and the
+# Rails, AI engineering and Shopify service pages (see _includes/mailto.html). Nothing is
+# sent or stored by the site: the link only opens the visitor's own email app. On a
+# service page the subject uses `service_subject` with [service] replaced by its name.
+email: mohammadalijaisar@gmail.com
+subject: "Services enquiry"
+service_subject: "Services enquiry: [service]"
+body: |
+  Hi Ali,
+
+  Name:
+
+  Company or website:
+
+  What I need (hourly, a project, part-time or full-time):
+
+  What I want built or fixed (1 or 2 lines):
+
+  Current stack, if any:
+
+  When I would like to start:
+
+  Thanks,

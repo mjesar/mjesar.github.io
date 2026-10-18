@@ -4,7 +4,7 @@ layout: default
 {%- assign svc = site.data.services | where: "slug", page.slug | first -%}
 {%- comment -%} contact_template names a _data file with a prefilled email (see _includes/mailto.html). {%- endcomment -%}
 {%- if page.contact_template -%}
-{%- capture mail_href -%}{% include mailto.html contact=page.contact_template %}{%- endcapture -%}
+{%- capture mail_href -%}{% include mailto.html contact=page.contact_template service=svc.name %}{%- endcapture -%}
 {%- assign mail_address = site.data[page.contact_template].email -%}
 {%- else -%}
 {%- capture mail_href -%}mailto:mohammadalijaisar@gmail.com?subject={{ svc.name | uri_escape }}{%- endcapture -%}

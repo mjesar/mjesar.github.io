@@ -11,7 +11,7 @@ image: /assets/img/og/services.png
     <p class="lede"><strong class="role">Senior Software Engineer specializing in AI automation.</strong> I help startups and businesses turn ideas into working applications, automate repetitive workflows with AI, and build software that solves real business problems.</p>
     <p class="meta">Open to remote full-time roles, contracts and freelance projects · Available now · Usually replies within a few hours · Flexible hours for U.S. and European time zones</p>
     <ul class="links">
-      <li><a class="btn primary" href="mailto:mohammadalijaisar@gmail.com">Have a project? Email me</a></li>
+      <li><a class="btn primary" href="{% include mailto.html contact="project_contact" %}">Have a project? Email me</a></li>
       <li><a class="btn" href="/resume/">Hiring? View my resume</a></li>
     </ul>
     <p class="hero-text-links"><a href="https://github.com/mjesar" rel="me noopener" target="_blank">GitHub</a> · <a href="https://www.linkedin.com/in/mjesar/" rel="me noopener" target="_blank">LinkedIn</a></p>
@@ -61,7 +61,7 @@ I focus on results, not hours: a working product, less manual work, and processe
 
 ## Get in touch
 
-Available now, and I usually reply within a few hours. The fastest way is email: [mohammadalijaisar@gmail.com](mailto:mohammadalijaisar@gmail.com). Tell me whether you want a full-time hire, a contract, or a project, and a little about the work and your stack.
+Available now, and I usually reply within a few hours. The fastest way is email: [mohammadalijaisar@gmail.com]({% include mailto.html contact="project_contact" %}). Tell me whether you want a full-time hire, a contract, or a project, and a little about the work and your stack.
 
 Experimental: this site exposes read-only tools to browser AI agents (WebMCP).
 

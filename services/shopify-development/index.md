@@ -2,6 +2,7 @@
 layout: service
 ask_ai_question: "What Shopify, BigCommerce and e-commerce development services does Mohammad Ali Jesar offer at mjesar.github.io/services/shopify-development/?"
 slug: shopify-development
+contact_template: project_contact
 title: "Shopify & BigCommerce App Development"
 description: "Custom Shopify and BigCommerce apps, Shopify Plus checkout and B2B development, and reliable product, inventory, order and marketplace integrations."
 image: /assets/img/og/shopify-development.png

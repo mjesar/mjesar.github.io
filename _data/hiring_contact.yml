@@ -1,0 +1,19 @@
+# Prefilled email for the "Email me" button on /resume/, for recruiters and hiring
+# managers (see _includes/mailto.html). Nothing is sent or stored by the site: the link
+# only opens the visitor's own email app.
+email: mohammadalijaisar@gmail.com
+subject: "Job opportunity for Mohammad Ali Jesar"
+body: |
+  Hi Ali,
+
+  Company:
+
+  Role:
+
+  Full-time or contract:
+
+  Remote, or which time zone:
+
+  Link to the job description:
+
+  Thanks,

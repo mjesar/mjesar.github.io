@@ -1,7 +1,8 @@
 {%- comment -%}
   Prints a prefilled mailto: URL (for an href) from a contact data file.
   Usage: {% include mailto.html contact="ai_contact" plan="Audit" %}; leave out `plan`
-  for a general enquiry. _plugins/new_tab_links.rb makes every mailto link open in a new tab. uri_escape turns spaces into %20 and line breaks into %0A;
+  for a general enquiry. Pass service="..." to use the file's `service_subject`
+  (with [service] replaced) instead of `subject`. _plugins/new_tab_links.rb makes every mailto link open in a new tab. uri_escape turns spaces into %20 and line breaks into %0A;
   the replace chain then encodes the characters uri_escape leaves alone but that
   would break a mailto link (& starts a new field, # ends the link, ? and + can be
   misread). url_encode is not used because it turns spaces into "+".
@@ -9,7 +10,9 @@
 {%- assign c = site.data[include.contact] -%}
 {%- assign subject_plan = include.plan | default: c.general_plan -%}
 {%- assign body_plan = include.plan | default: "" -%}
-{%- capture subject -%}{{ c.subject | replace: "[plan]", subject_plan }}{%- endcapture -%}
+{%- assign subject_template = c.subject -%}
+{%- if include.service and c.service_subject -%}{%- assign subject_template = c.service_subject | replace: "[service]", include.service -%}{%- endif -%}
+{%- capture subject -%}{{ subject_template | replace: "[plan]", subject_plan }}{%- endcapture -%}
 {%- capture body -%}{{ c.body | replace: "[plan]", body_plan | strip }}{%- endcapture -%}
 {%- capture subject_q -%}{{ subject | uri_escape | replace: "&", "%26" | replace: "?", "%3F" | replace: "#", "%23" | replace: "+", "%2B" }}{%- endcapture -%}
 {%- capture body_q -%}{{ body | uri_escape | replace: "&", "%26" | replace: "?", "%3F" | replace: "#", "%23" | replace: "+", "%2B" }}{%- endcapture -%}
