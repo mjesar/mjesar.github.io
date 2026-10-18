@@ -1,6 +1,6 @@
 ---
 layout: service
-ask_ai_question: "What AI engineering and integration services does Mohammad Ali Jesar offer at mjesar.github.io/services/ai-in-rails/?"
+ask_ai_question: "Read https://mjesar.github.io/services/ai-in-rails/ and tell me what AI engineering and integration work is offered, who it is for and how a project runs."
 slug: ai-in-rails
 contact_template: project_contact
 secondary_cta:

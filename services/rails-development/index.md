@@ -1,6 +1,6 @@
 ---
 layout: service
-ask_ai_question: "What Ruby on Rails development services does Mohammad Ali Jesar offer at mjesar.github.io/services/rails-development/, and who are they for?"
+ask_ai_question: "Read https://mjesar.github.io/services/rails-development/ and tell me what Ruby on Rails work is offered, who it is for and how a project runs."
 slug: rails-development
 contact_template: project_contact
 secondary_cta:

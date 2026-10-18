@@ -1,6 +1,6 @@
 ---
 title: Hire a Ruby on Rails & AI Engineer
-ask_ai_question: "What services does Mohammad Ali Jesar offer at mjesar.github.io/services/, and who are they for? How can a client work with him?"
+ask_ai_question: "Read https://mjesar.github.io/services/ and tell me what services are offered, who they are for and how much they cost."
 description: "Hire a Ruby on Rails and AI engineer for apps and MVPs, AI integration (MCP, RAG, agents), Shopify and e-commerce. Remote full-time, contract or project work."
 image: /assets/img/og/services.png
 ---

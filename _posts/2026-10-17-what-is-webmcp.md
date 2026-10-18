@@ -2,7 +2,7 @@
 title: "What is WebMCP? Websites are starting to give AI agents a menu of actions"
 seo_title: "What is WebMCP? How websites give AI agents actions"
 description: "WebMCP lets websites give AI agents ready-made actions, such as search products or add to cart. What it means for businesses, and how it works."
-ask_ai_question: "What services does Mohammad Ali Jesar offer at mjesar.github.io/services/, and who are they for? How can a client work with him?"
+ask_ai_question: "Read https://mjesar.github.io/writing/what-is-webmcp/ and explain what WebMCP is and what it means for an online store."
 image: /assets/img/og/what-is-webmcp.png
 image_alt: "Preview card for the article What is WebMCP? Websites are starting to give AI agents a menu of actions, with a list of example actions: search_products, get_price and add_to_cart. @mjesar, mjesar.github.io"
 related_projects: [shop_mcp_server]

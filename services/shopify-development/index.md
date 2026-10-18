@@ -1,6 +1,6 @@
 ---
 layout: service
-ask_ai_question: "What Shopify, BigCommerce and e-commerce development services does Mohammad Ali Jesar offer at mjesar.github.io/services/shopify-development/?"
+ask_ai_question: "Read https://mjesar.github.io/services/shopify-development/ and tell me what Shopify, BigCommerce and e-commerce work is offered, who it is for and how a project runs."
 slug: shopify-development
 contact_template: project_contact
 secondary_cta:

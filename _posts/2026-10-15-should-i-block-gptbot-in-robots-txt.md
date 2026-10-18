@@ -2,6 +2,7 @@
 title: "Should I block GPTBot in robots.txt? Search bots versus training bots"
 seo_title: "Should I block GPTBot? Search bots vs training bots"
 description: "Blocking GPTBot stops OpenAI training on your pages, not ChatGPT search. Which AI bots train, which search, which follow robots.txt, and which may not."
+ask_ai_question: "Read https://mjesar.github.io/writing/should-i-block-gptbot-in-robots-txt/ and explain whether I should block GPTBot in robots.txt, and which AI bots I should allow."
 related_services: [ai-discoverability]
 faq:
   - q: "Does blocking GPTBot remove my store from ChatGPT search?"
