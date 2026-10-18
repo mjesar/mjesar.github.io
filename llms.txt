@@ -57,7 +57,7 @@ Results-first, the idea behind Results as a Service: focus on what the software 
 3. Define the scope and build toward the outcome in small, reviewable steps with tests.
 4. Check the result against the agreed outcome.
 
-Pricing today is hourly, fixed-scope or monthly (see below); fixed-scope quotes tie the price to a defined result.
+Pricing is monthly, hourly or fixed price (see below).
 
 ## Pricing (USD)
 

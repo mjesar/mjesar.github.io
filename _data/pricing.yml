@@ -1,16 +1,33 @@
 # Engagement pricing, all in USD. Drives the pricing table on /services/, llms.txt
-# and the Offer data in the Service structured data (only rows with min/max get an Offer).
+# and the Offer data in the Service structured data (only rows with min get an Offer;
+# max is optional, for "from" prices). `unit` is hour, month or project and sets the
+# Offer's unit, so a monthly price is never read as per hour.
+# Every price comes from one hourly rate: monthly contracts are that rate with a discount for guaranteed hours, fixed prices
+# are estimated hours times the rate plus a buffer for unknowns.
 - id: hourly
   name: Hourly
   price: $45 to $60 per hour
   min: 45
   max: 60
   unit: hour
-  terms: Flexible hours, no minimum.
-- id: fixed-scope
-  name: Fixed-scope project
-  price: Quoted after a written plan
-  terms: Small jobs can also be ordered on [Fiverr](https://www.fiverr.com/mjesar).
-- id: monthly
-  name: Monthly contract (part-time or full-time)
-  price: Rates on request
+  terms: Pay only for the hours you use.
+- id: project
+  name: Project
+  price: From $400
+  min: 400
+  unit: project
+  terms: A fixed price, agreed before I start.
+- id: part-time
+  name: Part-time monthly
+  price: $3,000 to $4,000 per month
+  min: 3000
+  max: 4000
+  unit: month
+  terms: 20 hours a week.
+- id: full-time
+  name: Full-time monthly
+  price: $5,000 to $7,000 per month
+  min: 5000
+  max: 7000
+  unit: month
+  terms: 40 hours a week.

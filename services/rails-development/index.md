@@ -2,6 +2,7 @@
 layout: service
 ask_ai_question: "What Ruby on Rails development services does Mohammad Ali Jesar offer at mjesar.github.io/services/rails-development/, and who are they for?"
 slug: rails-development
+contact_template: project_contact
 title: "Ruby on Rails Developer for Apps, APIs & MVPs"
 description: "Ruby on Rails developer helping startups launch MVPs, and building and maintaining APIs and production Rails apps for international clients."
 image: /assets/img/og/rails-development.png
