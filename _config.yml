@@ -22,7 +22,7 @@ bing_site_verification:
 ga4_id: "G-HF9CFGP3C3"
 # Date shown as "last updated" on /llm-info/, llms-full.txt and /.well-known/services.json.
 # Change it whenever a fact, price or plan in _data/ changes.
-facts_updated: 2026-10-16
+facts_updated: 2026-10-18
 plugins:
   - jekyll-sitemap
   - jekyll-feed
