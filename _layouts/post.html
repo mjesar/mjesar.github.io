@@ -4,7 +4,7 @@ layout: default
 <div class="hero small">
   <div class="wrap">
     <div class="bar" aria-hidden="true"></div>
-    <p class="eyebrow">Writing · <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d %B %Y" }}</time></p>
+    <p class="eyebrow">Writing · <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d %B %Y" }}</time> · By <a href="/" rel="author">Mohammad Ali Jesar</a></p>
     <h1{% if page.title.size > 40 %} class="long"{% endif %}>{{ page.title }}</h1>
     {%- if page.description %}<p class="lede">{{ page.description }}</p>{% endif %}
   </div>
