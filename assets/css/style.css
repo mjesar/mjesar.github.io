@@ -90,10 +90,10 @@ main p, main li { max-width: 65ch; }
 .hero { background: var(--indigo); color: #eef0f5; padding: 48px 0 52px; }
 .hero.small { padding: 28px 0 36px; }
 .bar { width: 64px; height: 6px; border-radius: 3px; background: var(--apricot); box-shadow: 22px 0 0 -0px var(--olive); margin-bottom: 22px; }
-.hero h1 { font-size: clamp(2rem, 6vw, 3.25rem); line-height: 1.1; margin: 0 0 12px; letter-spacing: -0.01em; }
-.hero.small h1 { font-size: clamp(1.75rem, 5vw, 2.5rem); }
-.hero .lede { font-size: clamp(1.05rem, 2.6vw, 1.35rem); color: #a9b2c8; margin: 0 0 8px; max-width: 65ch; }
-.hero .meta { color: #a9b2c8; margin: 0 0 24px; }
+.hero h1 { font-size: clamp(2rem, 6vw, 4.25rem); line-height: 1.05; margin: 0 0 12px; letter-spacing: -0.01em; text-wrap: balance; }
+.hero.small h1 { font-size: clamp(1.75rem, 5vw, 3.5rem); }
+.hero .lede { font-size: clamp(1.05rem, 2.6vw, 1.35rem); color: #a9b2c8; margin: 0 0 8px; max-width: 65ch; text-wrap: pretty; }
+.hero .meta { color: #a9b2c8; margin: 0 0 24px; font-size: 15px; }
 .hero .meta:last-child { margin-bottom: 0; }
 
 .links { display: flex; flex-wrap: wrap; gap: 10px; padding: 0; margin: 0; list-style: none; }
@@ -386,8 +386,14 @@ main section + section { padding-top: 14px; }
 @media (prefers-reduced-motion: reduce) { .card-link { transition: none; } }
 @media (max-width: 640px) { .grid.two { grid-template-columns: 1fr; } }
 
-/* Hero role line: the job title recruiters scan for */
-.hero .role { font-family: var(--mono); font-weight: 700; font-size: clamp(0.95rem, 2.4vw, 1.1rem); letter-spacing: 0.02em; color: #eef0f5; margin: 0 0 10px; }
+/* Hero role: the job title recruiters scan for, opening the intro in white */
+.hero .lede .role { font-weight: 600; color: #eef0f5; }
+@media print { .hero .lede .role { color: inherit; } }
+
+/* Hero contact links: quieter than the two main buttons */
+.hero-social { font-family: var(--mono); font-size: 15px; color: #a9b2c8; margin: 16px 0 0; }
+.hero-social a { color: #eef0f5; text-underline-offset: 4px; }
+.hero-social a:hover { color: var(--apricot); }
 
 /* At a glance: quick facts for recruiters */
 .glance { padding-top: 32px; }
