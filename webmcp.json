@@ -10,6 +10,20 @@ permalink: /webmcp.json
 {%- assign profile = site.data.profile -%}
 {%- assign email = site.data.ai_contact.email -%}
 {%- capture ai_mailto -%}{% include mailto.html contact="ai_contact" %}{%- endcapture -%}
+{%- capture services_mailto -%}{% include mailto.html contact="project_contact" %}{%- endcapture -%}
+{%- capture hiring_mailto -%}{% include mailto.html contact="hiring_contact" %}{%- endcapture -%}
+{%- capture pricing_json -%}
+{
+    "currency": "USD",
+    "applies_to": "Ruby on Rails, AI engineering and Shopify work. AI discoverability has its own plans.",
+    "url": {{ "/services/#pricing" | absolute_url | jsonify }},
+    "items": [
+{%- for r in site.data.pricing %}
+      { "id": {{ r.id | jsonify }}, "name": {{ r.name | jsonify }}, "price": {{ r.price | jsonify }}, "min": {{ r.min | jsonify }}, "max": {{ r.max | jsonify }}, "unit": {{ r.unit | default: "quote" | jsonify }}, "terms": {{ r.terms | jsonify }} }{% unless forloop.last %},{% endunless %}
+{%- endfor %}
+    ]
+  }
+{%- endcapture -%}
 {
   "updated": {{ site.facts_updated | date: "%Y-%m-%d" | jsonify }},
   "source": {{ "/" | absolute_url | jsonify }},
@@ -22,7 +36,7 @@ permalink: /webmcp.json
 {%- else -%}
 {%- capture mail -%}mailto:{{ email }}?subject={{ s.name | uri_escape }}{%- endcapture -%}
 {%- endif -%}
-{%- capture start -%}Email {{ email }} and say whether you want a full-time hire, a contract or a project{% if pg.contact_ask %}, and {{ pg.contact_ask }}{% endif %}. Available now, {{ profile.reply_time }}.{%- endcapture %}
+{%- capture start -%}Email {{ email }} and say whether you want hourly work, a project, or a part-time or full-time monthly contract{% if pg.contact_ask %}, and {{ pg.contact_ask }}{% endif %}. Available now, {{ profile.reply_time }}.{%- endcapture %}
     {
       "slug": {{ s.slug | jsonify }},
       "name": {{ s.name | jsonify }},
@@ -40,7 +54,7 @@ permalink: /webmcp.json
       ],
       "plans_url": {{ url | append: "#plans" | absolute_url | jsonify }},
 {%- else %}
-      "pricing_url": {{ "/services/#pricing" | absolute_url | jsonify }},
+      "pricing": {{ pricing_json }},
 {%- endif %}
       "how_to_start": {
         "steps": {{ start | jsonify }},
@@ -51,6 +65,7 @@ permalink: /webmcp.json
     }{% unless forloop.last %},{% endunless %}
 {%- endfor %}
   ],
+  "pricing": {{ pricing_json }},
   "plans": {
     "currency": "USD",
     "scope": "One store or one brand per plan.",
@@ -78,6 +93,8 @@ permalink: /webmcp.json
   "contact": {
     "email": {{ email | jsonify }},
     "email_link": {{ "mailto:" | append: email | jsonify }},
+    "services_email_link": {{ services_mailto | replace: "&amp;", "&" | jsonify }},
+    "hiring_email_link": {{ hiring_mailto | replace: "&amp;", "&" | jsonify }},
     "ai_discoverability_email_link": {{ ai_mailto | replace: "&amp;", "&" | jsonify }},
     "reply_time": {{ profile.reply_time | jsonify }},
     "location": {{ profile.location | jsonify }},

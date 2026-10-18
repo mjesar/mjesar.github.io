@@ -115,6 +115,12 @@ test("tool data matches the site's facts", async () => {
   const resume = await run("get_resume_summary");
   assert.equal(resume.education, "B.S. in Information Technology (Software)");
   assert.ok(resume.work_history.length > 0 && resume.profiles.length > 0);
+  const { pricing } = await run("get_services");
+  const table = read("services/index.html").match(/<h2 id="pricing">[\s\S]*?<\/table>/)[0];
+  for (const item of pricing.items) {
+    assert.ok(table.includes(`<strong>${item.name}</strong>`) && table.includes(item.price),
+      `pricing "${item.name}: ${item.price}" from the tools is not in the /services/ pricing table`);
+  }
   const plans = await run("get_ai_discoverability_plans");
   for (const plan of plans.items) {
     assert.ok(plan.price_label.startsWith(`$${plan.price.toLocaleString("en-US")} `),
