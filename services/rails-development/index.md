@@ -9,7 +9,7 @@ secondary_cta:
 title: "Ruby on Rails Developer for Apps, APIs & MVPs"
 description: "Ruby on Rails developer helping startups launch MVPs, and building and maintaining APIs and production Rails apps for international clients."
 image: /assets/img/og/rails-development.png
-promise: I help startups launch their first version on Rails, and add features and fixes to the Rails app you already run.
+promise: I help startups launch MVPs on Rails, and add features and fixes to the Rails app you already run.
 contact_ask: whether this is a new product or an app you already run
 faq:
   - q: "How do you plan an MVP?"

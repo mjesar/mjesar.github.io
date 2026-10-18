@@ -8,7 +8,7 @@
   for: startups, founders, CEOs, product teams and agencies.
   summary: Helping startups launch MVPs, plus new applications, full projects and work on existing codebases, with Hotwire or React frontends and tests.
   card_headline: Build new products. Improve existing applications.
-  card_intro: I help startups launch their first version on Rails. For apps already in production, I add features, connect APIs, fix slow pages and handle upgrades.
+  card_intro: I help startups launch MVPs on Rails. For apps already in production, I add features, connect APIs, fix slow pages and handle upgrades.
   card_tools: Ruby on Rails · PostgreSQL · Hotwire · React · APIs · Background jobs · Automated tests
   card_proof: "7+ years of production Rails for clients in the US and Germany. [See my projects](/projects/)."
   card_cta: Explore Rails development
