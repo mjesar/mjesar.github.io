@@ -55,7 +55,7 @@ Delivery time starts once I have access to your store.
 
 **Bigger catalogs.** The Fix plan covers up to 50 products. For a larger catalog, I start with your best sellers or one category, and quote the rest after the audit, once I know how many products need the same fix.
 
-**Fiverr or this page?** On [Fiverr](https://www.fiverr.com/mjesar){:target="_blank" rel="noopener"} I offer a lighter audit for Shopify stores only. The Audit here adds the full written report, a 30-minute call, and covers BigCommerce, other stores and brands.
+**Prefer Fiverr?** The same plans are also on [Fiverr](https://www.fiverr.com/mjesar){:target="_blank" rel="noopener"}, if you would rather order and pay there.
 
 **What happens after you contact me.** I usually reply within a few hours. Then a short call or email to agree the scope, then you give me access to your store, then I start the work.
 
