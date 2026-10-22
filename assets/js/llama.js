@@ -50,7 +50,11 @@
     return '<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ' + w + " " + h + '" shape-rendering="crispEdges">' + rects + "</svg>";
   }
   var svgs = {};
-  for (var name in FRAMES) svgs[name] = draw(FRAMES[name]);
+  for (var name in FRAMES) {
+    svgs[name] = draw(FRAMES[name]);
+    // the same frame with the eye shut, for blinks and naps
+    svgs[name + "-blink"] = draw(FRAMES[name].map(function (row) { return row.replace("e", "s"); }));
+  }
   var heartSvg = draw(HEART);
 
   var llama = document.createElement("button");
@@ -62,14 +66,16 @@
   band.appendChild(llama);
 
   var x = 0, dir = 1, state = "walk", until = 0, flip = 0, flipAt = 0, shown = "", bite = null;
+  var blinkUntil = 0, nextBlink = 0, zAt = 0;
   function room() { return Math.max(0, band.clientWidth - llama.offsetWidth); }
   function rand(min, max) { return min + Math.random() * (max - min); }
 
-  function render() {
+  function render(now) {
     var frame = "stand";
     if (state === "walk" || state === "run") frame = flip ? "step" : "stand";
     else if (state === "graze") frame = flip ? "chew" : "graze";
-    else if (state === "sit") frame = "sit";
+    else if (state === "sit" || state === "nap") frame = "sit";
+    if (state === "nap" || now < blinkUntil) frame += "-blink";
     if (frame !== shown) { sprite.innerHTML = svgs[frame]; shown = frame; }
     llama.style.transform = "translateX(" + x + "px)";
     sprite.style.transform = "scaleX(" + dir + ")";
@@ -93,7 +99,9 @@
   }
 
   function decide(now) {
-    if (state === "walk" && Math.random() < 0.65) return setState("graze", rand(2.5, 4.5), now);
+    var roll = Math.random();
+    if (state === "walk" && roll < 0.55) return setState("graze", rand(2.5, 4.5), now);
+    if (state === "walk" && roll < 0.7) return setState("nap", rand(4, 6), now);
     if (state === "walk") return setState("idle", rand(1, 2), now);
     if (Math.random() < 0.3) dir = -dir;
     setState("walk", rand(3, 6), now);
@@ -113,7 +121,9 @@
     }
     x = Math.min(Math.max(x, 0), max);
     if (now - flipAt > (state === "run" ? 110 : state === "graze" ? 320 : 240)) { flip ^= 1; flipAt = now; }
-    render();
+    if (now > nextBlink) { blinkUntil = now + 150; nextBlink = now + rand(2000, 5000); }
+    if (state === "nap" && now > zAt) { pop("llama-z", "z", mouth(0.7), 1.6); zAt = now + 900; }
+    render(now);
     requestAnimationFrame(tick);
   }
 
@@ -143,16 +153,28 @@
     function (now) { setState("sit", 2.5, now); },
     function (now) { dir = -dir; setState("run", 1.6, now); }
   ];
+  // The first pet startles it: a "!" and it runs off, away from the side it was touched on
+  // (a keyboard press has no side, so it just turns around)
+  function shy(event, now) {
+    var r = llama.getBoundingClientRect();
+    if (!event.detail) dir = -dir;
+    else dir = event.clientX > r.left + r.width / 2 ? -1 : 1;
+    pop("llama-z llama-shy", "!", mouth(0.64), 0.8);
+    setState("run", 1.8, now);
+  }
+
   var petted = 0;
-  llama.addEventListener("click", function () {
+  llama.addEventListener("click", function (event) {
     if (still) return pop("llama-heart", heartSvg, mouth(0.64), 1.2);
-    reactions[petted++ % reactions.length](performance.now());
+    var now = performance.now();
+    if (petted++ === 0) return shy(event, now);
+    reactions[(petted - 2) % reactions.length](now);
   });
 
   // A new spot and heading on every page load
   x = room() * Math.random();
   dir = Math.random() < 0.5 ? 1 : -1;
-  render();
+  render(0);
   if (still) return;
 
   // Only walk while the band is on screen and the tab is visible
@@ -164,4 +186,17 @@
   }
   new IntersectionObserver(function (entries) { onScreen = entries[0].isIntersecting; update(); }).observe(llama);
   document.addEventListener("visibilitychange", update);
+
+  // When a mouse comes close, it stops what it is doing and turns to look (a nap is not interrupted)
+  var lookedAt = 0;
+  document.addEventListener("pointermove", function (event) {
+    var now = performance.now();
+    if (!running || event.pointerType !== "mouse" || now - lookedAt < 150) return;
+    if (state !== "walk" && state !== "graze" && state !== "idle") return;
+    lookedAt = now;
+    var r = llama.getBoundingClientRect(), cx = r.left + r.width / 2;
+    if (Math.abs(event.clientX - cx) > 90 || Math.abs(event.clientY - (r.top + r.height / 2)) > 70) return;
+    dir = event.clientX < cx ? -1 : 1;
+    setState("idle", 1.5, now);
+  }, { passive: true });
 })();
