@@ -6,8 +6,9 @@
   if (!band || !window.requestAnimationFrame) return;
   var still = matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-  // Pixel art in the site palette; "o" is the outline, added around the shape when drawn
-  var COLORS = { o: "#051230", e: "#051230", w: "#f4ecdc", s: "#d9c9ab", a: "#f68c50", l: "#a6a159", r: "#a2441b" };
+  // Pixel art in the site palette; "o" is the outline, added around the shape when drawn.
+  // Wool, shade, eye and hooves come from CSS so the coat can change with the theme.
+  var COLORS = { o: "#051230", e: "var(--llama-e)", w: "var(--llama-w)", s: "var(--llama-s)", a: "#f68c50", l: "#a6a159", r: "var(--llama-r)" };
   var EMPTY = "................";
   var HEAD_UP = [
     ".........w.w....",
@@ -16,24 +17,24 @@
     "........wwweww..",
     "........wwwwwr..",
     "........wwww....",
-    "........www.....",
-    "........www....."
+    "........wsw.....",
+    "w.......wws....."
   ];
   var BODY = [
-    ".wwwaaaawww.....",
-    "wwwwalaawww.....",
     "wwwwaaaawww.....",
-    ".wwwwwwwwww....."
+    "wwwwalaawsw.....",
+    "wswwaaaawww.....",
+    ".swswswswsw....."
   ];
   var LEGS_A = [".w.s....w.s.....", ".w.s....w.s.....", ".r.r....r.r....."];
   var LEGS_B = [".w.s....w.s.....", "w...s..w...s....", "r...r..r...r...."];
-  var GRAZE = [EMPTY, EMPTY, EMPTY, EMPTY, EMPTY, EMPTY, EMPTY, EMPTY, ".wwwaaaawww.....", "wwwwalaawwww....", "wwwwaaaawwwwww.w"];
+  var GRAZE = [EMPTY, EMPTY, EMPTY, EMPTY, EMPTY, EMPTY, EMPTY, "w...............", "wwwwaaaawww.....", "wwwwalaawswww...", "wswwaaaawwwwww.w"];
   var FRAMES = {
     stand: HEAD_UP.concat(BODY, LEGS_A),
     step: HEAD_UP.concat(BODY, LEGS_B),
-    sit: [EMPTY, EMPTY, EMPTY].concat(HEAD_UP, BODY.slice(0, 3), [".rwwwwwwwwr....."]),
-    graze: GRAZE.concat([".wwwwwwwwww.www.", ".w.s....w.s.wwew", ".w.s....w.s..www", ".r.r....r.r...wr"]),
-    chew: GRAZE.concat([".wwwwwwwwww.wwew", ".w.s....w.s..www", ".w.s....w.s...wr", ".r.r....r.r....."])
+    sit: [EMPTY, EMPTY, EMPTY].concat(HEAD_UP, BODY.slice(0, 3), [".rswswswswr....."]),
+    graze: GRAZE.concat([".swswswswsw.www.", ".w.s....w.s.wwew", ".w.s....w.s..www", ".r.r....r.r...wr"]),
+    chew: GRAZE.concat([".swswswswsw.wwew", ".w.s....w.s..www", ".w.s....w.s...wr", ".r.r....r.r....."])
   };
   var HEART = [".a.a.", "aaaaa", "aaaaa", ".aaa.", "..a.."];
 
@@ -43,7 +44,7 @@
     for (var y = 0; y < h; y++) {
       for (var x = 0; x < w; x++) {
         var c = at(x, y) || (at(x - 1, y) || at(x + 1, y) || at(x, y - 1) || at(x, y + 1) ? "o" : "");
-        if (c) rects += '<rect x="' + x + '" y="' + y + '" width="1" height="1" fill="' + COLORS[c] + '"/>';
+        if (c) rects += '<rect x="' + x + '" y="' + y + '" width="1" height="1" style="fill:' + COLORS[c] + '"/>';
       }
     }
     return '<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ' + w + " " + h + '" shape-rendering="crispEdges">' + rects + "</svg>";
@@ -148,7 +149,9 @@
     reactions[petted++ % reactions.length](performance.now());
   });
 
-  x = room() * 0.7;
+  // A new spot and heading on every page load
+  x = room() * Math.random();
+  dir = Math.random() < 0.5 ? 1 : -1;
   render();
   if (still) return;
 
