@@ -7,34 +7,48 @@
   var still = matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   // Pixel art in the site palette; "o" is the outline, added around the shape when drawn.
-  // Wool, shade, eye and hooves come from CSS so the coat can change with the theme.
-  var COLORS = { o: "#051230", e: "var(--llama-e)", w: "var(--llama-w)", s: "var(--llama-s)", a: "#f68c50", l: "#a6a159", r: "var(--llama-r)" };
-  var EMPTY = "................";
+  // Wool, shade, muzzle, eye and hooves come from CSS so the coat can change with the theme;
+  // the woven blanket and the ear tassel keep the site colours in both themes.
+  var COLORS = { o: "#051230", e: "var(--llama-e)", w: "var(--llama-w)", s: "var(--llama-s)", m: "var(--llama-m)", r: "var(--llama-r)", a: "#f68c50", l: "#a6a159", t: "#a2441b" };
+  var EMPTY = "....................";
   var HEAD_UP = [
-    ".........w.w....",
-    ".........www....",
-    "........wwwww...",
-    "........wwweww..",
-    "........wwwwwr..",
-    "........wwww....",
-    "........wsw.....",
-    "w.......wws....."
+    "..............w.w...",
+    "..............w.w...",
+    ".............awwww..",
+    ".............twweww.",
+    "..............wwwwmm",
+    "..............wwwmm.",
+    "..............wsw...",
+    "..............wws...",
+    "..............wsw...",
+    ".w............wws...",
+    "ww...........wwsw..."
   ];
   var BODY = [
-    "wwwwaaaawww.....",
-    "wwwwalaawsw.....",
-    "wswwaaaawww.....",
-    ".swswswswsw....."
+    "wswwtlalalaltwsww...",
+    ".wwwaaaaaaaaawwsw...",
+    ".swwtlalalaltwww....",
+    "..wsaaaaaaaaaswsw...",
+    "..s.a.a.a.a.a.s....."
   ];
-  var LEGS_A = [".w.s....w.s.....", ".w.s....w.s.....", ".r.r....r.r....."];
-  var LEGS_B = [".w.s....w.s.....", "w...s..w...s....", "r...r..r...r...."];
-  var GRAZE = [EMPTY, EMPTY, EMPTY, EMPTY, EMPTY, EMPTY, EMPTY, "w...............", "wwwwaaaawww.....", "wwwwalaawswww...", "wswwaaaawwwwww.w"];
+  var LEGS_A = ["..w.s........w.s....", "..w.s........w.s....", "..r.r........r.r...."];
+  var LEGS_B = ["..w..s......w..s....", ".w....s....w....s...", ".r....r....r....r..."];
+  // grazing: the neck bends down so the muzzle reaches the band
+  var GRAZE = [EMPTY, EMPTY, EMPTY, EMPTY, EMPTY, EMPTY, EMPTY, EMPTY, EMPTY,
+    ".w..................",
+    "ww..................",
+    "wswwtlalalaltwwws...",
+    ".wwwaaaaaaaaawwsww.w",
+    ".swwtlalalaltwww.wsw",
+    "..wsaaaaaaaaaswsawww",
+    "..s.a.a.a.a.a.s.twew"
+  ];
   var FRAMES = {
     stand: HEAD_UP.concat(BODY, LEGS_A),
     step: HEAD_UP.concat(BODY, LEGS_B),
-    sit: [EMPTY, EMPTY, EMPTY].concat(HEAD_UP, BODY.slice(0, 3), [".rswswswswr....."]),
-    graze: GRAZE.concat([".swswswswsw.www.", ".w.s....w.s.wwew", ".w.s....w.s..www", ".r.r....r.r...wr"]),
-    chew: GRAZE.concat([".swswswswsw.wwew", ".w.s....w.s..www", ".w.s....w.s...wr", ".r.r....r.r....."])
+    sit: [EMPTY, EMPTY, EMPTY].concat(HEAD_UP, BODY.slice(0, 4), [".rswswswswswswsr...."]),
+    graze: GRAZE.concat(["..w.s........w.s..ww", "..w.s........w.s.mmw", "..r.r........r.r.mm."]),
+    chew: GRAZE.concat(["..w.s........w.s.mmw", "..w.s........w.s.mm.", "..r.r........r.r...."])
   };
   var HEART = [".a.a.", "aaaaa", "aaaaa", ".aaa.", "..a.."];
 
@@ -90,7 +104,7 @@
     if (next === "graze") {
       bite = document.createElement("span");
       bite.className = "llama-bite";
-      bite.style.left = x + llama.offsetWidth * mouth(0.92) + "px";
+      bite.style.left = x + llama.offsetWidth * mouth(0.84) + "px";
       bite.style.animationDuration = seconds + "s, 1.5s";
       band.appendChild(bite);
       var done = bite;
@@ -122,7 +136,7 @@
     x = Math.min(Math.max(x, 0), max);
     if (now - flipAt > (state === "run" ? 110 : state === "graze" ? 320 : 240)) { flip ^= 1; flipAt = now; }
     if (now > nextBlink) { blinkUntil = now + 150; nextBlink = now + rand(2000, 5000); }
-    if (state === "nap" && now > zAt) { pop("llama-z", "z", mouth(0.7), 1.6); zAt = now + 900; }
+    if (state === "nap" && now > zAt) { pop("llama-z", "z", mouth(0.76), 1.6); zAt = now + 900; }
     render(now);
     requestAnimationFrame(tick);
   }
@@ -144,11 +158,11 @@
       llama.classList.remove("hop");
       void llama.offsetWidth; // restart the hop animation
       llama.classList.add("hop");
-      pop("llama-heart", heartSvg, mouth(0.64), 1.2);
+      pop("llama-heart", heartSvg, mouth(0.76), 1.2);
     },
     function (now) {
       setState("idle", 1, now);
-      pop("llama-spit", "", mouth(0.8), 0.7);
+      pop("llama-spit", "", mouth(0.9), 0.7);
     },
     function (now) { setState("sit", 2.5, now); },
     function (now) { dir = -dir; setState("run", 1.6, now); }
@@ -159,13 +173,13 @@
     var r = llama.getBoundingClientRect();
     if (!event.detail) dir = -dir;
     else dir = event.clientX > r.left + r.width / 2 ? -1 : 1;
-    pop("llama-z llama-shy", "!", mouth(0.64), 0.8);
+    pop("llama-z llama-shy", "!", mouth(0.76), 0.8);
     setState("run", 1.8, now);
   }
 
   var petted = 0;
   llama.addEventListener("click", function (event) {
-    if (still) return pop("llama-heart", heartSvg, mouth(0.64), 1.2);
+    if (still) return pop("llama-heart", heartSvg, mouth(0.76), 1.2);
     var now = performance.now();
     if (petted++ === 0) return shy(event, now);
     reactions[(petted - 2) % reactions.length](now);
