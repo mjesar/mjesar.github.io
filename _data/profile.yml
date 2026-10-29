@@ -8,7 +8,7 @@ hours: Works remotely, including U.S. and European business hours.
 availability: available now for remote full-time roles, contracts and projects
 reply_time: usually replies within a few hours
 experience: 7+ years of production software for clients in the US and Germany, 4+ of them on Shopify and e-commerce
-education: B.S. in Information Technology (Software)
+education: BS-IT (Software), Hons, 16 years of education
 # Same groups as the Skills section on /resume/.
 skills:
   - area: Backend
@@ -35,16 +35,35 @@ profiles:
     url: https://www.linkedin.com/in/mjesar/
   - name: Fiverr
     url: https://www.fiverr.com/mjesar
+  - name: Wellfound
+    url: https://wellfound.com/u/mjesar
+  - name: Arc.dev
+    url: https://arc.dev/@mjesar
+  - name: Contra
+    url: https://contra.com/alijesar
+  - name: Braintrust
+    url: https://app.usebraintrust.com/talent/2298091/
+  - name: Medium
+    url: https://mjesar.medium.com
+  - name: DEV
+    url: https://dev.to/mjesar
+  - name: Hashnode
+    url: https://hashnode.com/@mjesar
 # Work history, newest first. Short form for llms.txt and the WebMCP resume tool; the
 # longer version with bullet points is on /resume/. `where` is optional.
 work_history:
+  - company: Independent
+    role: software engineer, AI and automation
+    dates: Jun 2026 to now
+    where: remote
+    summary: Freelance and open-source work on AI that works with real business data, including shop_mcp_server, ai_shop_assistant, product_geo_agent and three merged little_ghost pull requests.
   - company: MGLogics
     role: Ruby on Rails developer
     dates: Dec 2021 to Jun 2026
     where: remote, US clients
     summary: Shopify and BigCommerce apps (SaaS products merchants subscribe to), catalog and order sync, Amazon SP-API integrations. Contributed, as part of a team, to five apps on the Shopify App Store, three of them also on BigCommerce.
   - company: SimpleDeploy
-    role: backend engineer
+    role: backend software engineer
     dates: Apr 2019 to Dec 2021
     where: Karachi, Pakistan
     summary: Rails REST APIs and MVP management tools for German clients in real estate and furniture.
