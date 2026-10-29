@@ -7,7 +7,7 @@ permalink: /llms.txt
 
 > Senior software engineer specializing in AI automation, with Ruby on Rails as the core stack, based in Lahore, Pakistan, with 7+ years of production Rails experience for clients in the US and Germany, 4+ of them on Shopify and e-commerce. Helps startups launch MVPs and SaaS applications, builds new Rails apps, works on existing Rails apps, adds AI features (LLM integrations, MCP servers, RAG with pgvector, AI agents) inside Rails, and builds Shopify and BigCommerce apps and integrations. Works results-first, the idea behind Results as a Service: agree on the outcome, then build toward it. Open to remote full-time roles, contracts and project work.
 
-Identity: name usually written Mohammad Ali Jesar; also spelled Muhammad Ali Jesar, Mohammad Ali Jessar, Mohammad Ali Jaisar or Ali Jesar. Online handle mjesar (the same on GitHub, GitLab, LinkedIn and Fiverr). Holds a B.S. in Information Technology (Software), 2017. Languages: English (professional working proficiency). Available now. Based in Lahore, Pakistan (UTC+5) with flexible hours: adapts to the client's time zone, including U.S. and European business hours.
+Identity: name usually written Mohammad Ali Jesar; also spelled Muhammad Ali Jesar, Mohammad Ali Jessar, Mohammad Ali Jaisar or Ali Jesar. Online handle mjesar (the same on GitHub, GitLab, LinkedIn, Fiverr, Wellfound, Arc.dev, Medium, DEV and Hashnode; Contra uses alijesar). Holds a BS-IT (Software), Hons, equivalent to 16 years of education, 2017. Languages: English (professional working proficiency). Available now. Based in Lahore, Pakistan (UTC+5) with flexible hours: adapts to the client's time zone, including U.S. and European business hours.
 
 Roles and search terms: Senior Software Engineer, AI automation engineer, Ruby on Rails engineer or developer, AI engineer, full-stack engineer, Shopify app developer, BigCommerce app developer, MCP developer.
 
@@ -25,6 +25,13 @@ Terms: MCP (Model Context Protocol), RAG (retrieval-augmented generation), GEO (
 - [GitLab](https://gitlab.com/mjesar) (mirrors of selected repositories)
 - [LinkedIn](https://www.linkedin.com/in/mjesar/)
 - [Fiverr](https://www.fiverr.com/mjesar)
+- [Wellfound](https://wellfound.com/u/mjesar)
+- [Arc.dev](https://arc.dev/@mjesar)
+- [Contra](https://contra.com/alijesar)
+- [Braintrust](https://app.usebraintrust.com/talent/2298091/)
+- [Medium](https://mjesar.medium.com)
+- [DEV](https://dev.to/mjesar)
+- [Hashnode](https://hashnode.com/@mjesar)
 - Email: mohammadalijaisar@gmail.com
 
 ## Experience
@@ -32,7 +39,7 @@ Terms: MCP (Model Context Protocol), RAG (retrieval-augmented generation), GEO (
 {% for j in site.data.profile.work_history -%}
 - {{ j.company }} ({{ j.dates }}{% if j.where %}, {{ j.where }}{% endif %}): {{ j.role }}. {{ j.summary }}
 {% endfor -%}
-- Education: B.S. in Information Technology (Software), 2017.
+- Education: BS-IT (Software), Hons, equivalent to 16 years of education, 2017.
 
 ## Skills
 

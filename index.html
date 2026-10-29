@@ -26,7 +26,7 @@ description: "Mohammad Ali Jesar (mjesar): Senior Software Engineer specializing
       "image": "https://mjesar.github.io/assets/img/mohammad-ali-jesar.webp",
       "email": "mailto:mohammadalijaisar@gmail.com",
       "jobTitle": ["Senior Software Engineer specializing in AI automation", "Ruby on Rails Engineer", "AI Engineer"],
-      "disambiguatingDescription": "Ruby on Rails engineer based in Lahore, Pakistan, who builds Shopify and BigCommerce apps and adds AI (MCP servers, RAG, agents) to Rails applications. Holds a B.S. in Information Technology (Software), 2017. Previously worked at MGLogics on Shopify and BigCommerce apps (2021 to 2026) and as a backend engineer at SimpleDeploy (2019 to 2021). Online handle: mjesar.",
+      "disambiguatingDescription": "Ruby on Rails engineer based in Lahore, Pakistan, who builds Shopify and BigCommerce apps and adds AI (MCP servers, RAG, agents) to Rails applications. Holds a BS-IT (Software), Hons, 2017. Independent since June 2026; previously worked at MGLogics on Shopify and BigCommerce apps (2021 to 2026) and as a backend software engineer at SimpleDeploy (2019 to 2021). Online handle: mjesar.",
       "description": "Senior software engineer specializing in AI automation, with Ruby on Rails as the core stack and 7+ years of experience: helping startups launch MVPs and SaaS applications, building new Rails apps and working on existing ones, AI agents, MCP servers and RAG, workflow automation, and e-commerce apps and integrations. Works results-first, the idea behind Results as a Service.",
       "address": { "@type": "PostalAddress", "addressLocality": "Lahore", "addressCountry": "PK" },
       "knowsLanguage": { "@type": "Language", "name": "English", "alternateName": "en" },
@@ -35,7 +35,8 @@ description: "Mohammad Ali Jesar (mjesar): Senior Software Engineer specializing
       "hasCredential": {
         "@type": "EducationalOccupationalCredential",
         "credentialCategory": "degree",
-        "name": "B.S. in Information Technology (Software)",
+        "name": "BS-IT (Software), Hons",
+        "description": "Bachelor's degree in information technology (software), equivalent to 16 years of education",
         "recognizedBy": { "@type": "GovernmentOrganization", "name": "Higher Education Commission Pakistan", "url": "https://www.hec.gov.pk" }
       },
       "hasOccupation": {
@@ -85,7 +86,7 @@ description: "Mohammad Ali Jesar (mjesar): Senior Software Engineer specializing
   <div class="wrap">
     <div class="bar" aria-hidden="true"></div>
     <div class="hero-id">
-      <img class="avatar" src="/assets/img/mohammad-ali-jesar.webp" width="400" height="400" alt="Portrait of Mohammad Ali Jesar, software engineer, in glasses and a pink shirt">
+      <img class="avatar" src="/assets/img/mohammad-ali-jesar.webp" srcset="/assets/img/mohammad-ali-jesar-208.webp 208w, /assets/img/mohammad-ali-jesar.webp 400w" sizes="(max-width: 760px) 72px, 104px" width="400" height="400" alt="Portrait of Mohammad Ali Jesar, software engineer, in glasses and a pink shirt">
       <h1>Mohammad Ali Jesar</h1>
     </div>
     <p class="tagline">From ideas to apps. From manual work to automation.</p>
@@ -95,7 +96,7 @@ description: "Mohammad Ali Jesar (mjesar): Senior Software Engineer specializing
       <li><a class="btn primary" href="/resume/">Hiring? View my resume</a></li>
       <li><a class="btn primary" href="/services/">Have a project? See services</a></li>
     </ul>
-    <p class="hero-text-links"><a href="{% include mailto.html contact="project_contact" %}">Email me</a> · <a href="https://github.com/mjesar" rel="me noopener" target="_blank">GitHub</a> · <a href="https://www.linkedin.com/in/mjesar/" rel="me noopener" target="_blank">LinkedIn</a></p>
+    <p class="hero-text-links"><a data-ga-location="hero" href="{% include mailto.html contact="project_contact" %}">Email me</a> · <a href="https://github.com/mjesar" rel="me noopener" target="_blank">GitHub</a> · <a href="https://www.linkedin.com/in/mjesar/" rel="me noopener" target="_blank">LinkedIn</a></p>
   </div>
 </div>
 
@@ -147,13 +148,18 @@ description: "Mohammad Ali Jesar (mjesar): Senior Software Engineer specializing
 <section id="experience">
   <h2>Experience and education</h2>
   <div class="card">
+    <h3>Independent</h3>
+    <p class="muted">Software engineer, AI and automation · Jun 2026 to now · Remote</p>
+    <p>Freelance and open-source work on AI that works with real business data: <a href="/projects/shop_mcp_server/">shop_mcp_server</a>, <a href="/projects/ai_shop_assistant/">ai_shop_assistant</a>, <a href="/projects/product_geo_agent/">product_geo_agent</a> and three merged little_ghost pull requests.</p>
+  </div>
+  <div class="card">
     <h3>MGLogics</h3>
     <p class="muted">Ruby on Rails developer, Shopify &amp; BigCommerce app development · Dec 2021 to Jun 2026 · Remote</p>
     <p>Shopify and BigCommerce apps, catalog and order sync, and Amazon SP-API integrations. Worked daily with US clients.</p>
   </div>
   <div class="card">
     <h3>SimpleDeploy</h3>
-    <p class="muted">Backend engineer · Apr 2019 to Dec 2021</p>
+    <p class="muted">Backend software engineer · Apr 2019 to Dec 2021</p>
     <p>Rails REST APIs on SQL and NoSQL databases, and management MVP tools for German clients.</p>
   </div>
   <div class="card">
@@ -162,7 +168,8 @@ description: "Mohammad Ali Jesar (mjesar): Senior Software Engineer specializing
     <p>Python web apps with Flask and integrated machine learning models (TensorFlow and Keras), from training to testing, in team and individual projects.</p>
   </div>
   <div class="card">
-    <h3>B.S. in Information Technology (Software), 2017</h3>
+    <h3>BS-IT (Software), Hons, 2017</h3>
+    <p class="muted">Equivalent to 16 years of education</p>
   </div>
   <p><a class="more" href="/resume/">Full resume</a></p>
 </section>
@@ -172,7 +179,7 @@ description: "Mohammad Ali Jesar (mjesar): Senior Software Engineer specializing
 <section id="contact">
   <h2>Get in touch</h2>
   <p>Available now, and I usually reply within a few hours. Tell me whether you want a full-time hire, a contract, or a project.</p>
-  <p><a class="btn primary" href="{% include mailto.html contact="project_contact" %}">Email me</a></p>
+  <p><a class="btn primary" data-ga-location="contact" href="{% include mailto.html contact="project_contact" %}">Email me</a></p>
 </section>
 
 </main>

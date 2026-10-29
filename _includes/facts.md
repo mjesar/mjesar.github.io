@@ -2,7 +2,7 @@
   Verified facts in Markdown, generated from _data/ and _config.yml. Shared by /llm-info/,
   /llm-info.md and /llms-full.txt so the three can never disagree.
 {%- endcomment -%}
-- **Name:** Mohammad Ali Jesar (online handle mjesar, the same on GitHub, GitLab, LinkedIn and Fiverr)
+- **Name:** Mohammad Ali Jesar (online handle mjesar, the same on GitHub, GitLab, LinkedIn, Fiverr and most other profiles below; Contra uses alijesar)
 - **Role:** {{ site.data.profile.role }}
 - **For AI discoverability (GEO and AEO) work:** an independent senior AEO and GEO specialist. I help online stores and brands get found and described correctly by ChatGPT, Perplexity and Google AI.
 - **Location:** {{ site.data.profile.location }} ({{ site.data.profile.utc_offset }}). {{ site.data.profile.hours }}
