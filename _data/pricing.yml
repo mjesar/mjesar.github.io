@@ -2,6 +2,9 @@
 # and the Offer data in the Service structured data (only rows with min get an Offer;
 # max is optional, for "from" prices). `unit` is hour, month or project and sets the
 # Offer's unit, so a monthly price is never read as per hour.
+# The homepage pricing line and the llms.txt summary read from here too. The /services/
+# meta description repeats the rates as plain text (front matter cannot use Liquid),
+# so update services/index.md when a price changes.
 # Every price comes from one hourly rate: monthly contracts are that rate with a discount for guaranteed hours, fixed prices
 # are estimated hours times the rate plus a buffer for unknowns.
 - id: hourly

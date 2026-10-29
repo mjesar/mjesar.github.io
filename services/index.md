@@ -1,7 +1,7 @@
 ---
 title: Hire a Ruby on Rails & AI Engineer
 ask_ai_question: "Read https://mjesar.github.io/services/ and tell me what services are offered, who they are for and how much they cost."
-description: "Hire a Ruby on Rails and AI engineer for apps and MVPs, AI integration (MCP, RAG, agents), Shopify and e-commerce. Remote full-time, contract or project work."
+description: "Hire a Ruby on Rails and AI engineer for apps, MVPs, AI integration and Shopify: $45 to $60 per hour, projects from $400, monthly from $3,000."
 image: /assets/img/og/services.png
 ---
 <div class="hero small">

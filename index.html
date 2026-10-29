@@ -145,6 +145,10 @@ description: "Mohammad Ali Jesar (mjesar), Senior Software Engineer specializing
     <li><a href="/services/ai-discoverability/">AI discoverability for brands and online stores (GEO and AEO)</a>: getting found and described correctly by ChatGPT, Perplexity and Google AI.</li>
   </ul>
   <p>Who I work with: product teams, agencies, founders and store owners.</p>
+  {%- assign hourly = site.data.pricing | where: "id", "hourly" | first -%}
+  {%- assign project = site.data.pricing | where: "id", "project" | first -%}
+  {%- assign part_time = site.data.pricing | where: "id", "part-time" | first -%}
+  <p><a href="/services/#pricing">Pricing</a>: {{ hourly.price }}, fixed-price projects from ${{ project.min }}, or a monthly contract from {{ part_time.price | split: " " | first }}.</p>
   {%- assign cheapest_plan = site.data.ai_plans | sort: "price" | first -%}
   <p><a href="/services/ai-discoverability/">AI discoverability audits from ${{ cheapest_plan.price }}</a>: find out what ChatGPT, Perplexity and Google AI can and cannot see about your store or brand. See a <a href="/services/ai-discoverability/sample-report/">sample report</a>, or read <a href="/writing/why-shopify-products-do-not-show-up-in-chatgpt/">why Shopify products do not show up in ChatGPT</a> and <a href="/writing/should-i-block-gptbot-in-robots-txt/">whether to block GPTBot</a>.</p>
   <p><a class="more" href="/services/">Services, pricing and how I work</a></p>
