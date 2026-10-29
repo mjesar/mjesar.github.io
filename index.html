@@ -1,7 +1,7 @@
 ---
 title: "Mohammad Ali Jesar (mjesar) · Rails, AI & Automation Engineer"
 ask_ai_question: "Read https://mjesar.github.io/ and summarize Ali Jesar's experience, skills and projects for a hiring manager. What kind of work is he available for?"
-description: "Mohammad Ali Jesar (mjesar): Senior Software Engineer specializing in AI automation. I turn ideas into working apps and automate workflows with AI."
+description: "Mohammad Ali Jesar (mjesar), Senior Software Engineer specializing in AI automation: Rails apps, AI agents, Shopify apps and AI discoverability (GEO and AEO)."
 ---
 <script type="application/ld+json">
 {
@@ -31,6 +31,11 @@ description: "Mohammad Ali Jesar (mjesar): Senior Software Engineer specializing
       "address": { "@type": "PostalAddress", "addressLocality": "Lahore", "addressCountry": "PK" },
       "knowsLanguage": { "@type": "Language", "name": "English", "alternateName": "en" },
       "seeks": { "@type": "Demand", "name": "Remote full-time roles, contracts and project work in software engineering, AI automation and Ruby on Rails" },
+      "makesOffer": [
+{%- for s in site.data.services %}
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": {{ s.name | jsonify }}, "serviceType": {{ s.service_type | default: s.name | jsonify }}, "description": {{ s.summary | jsonify }}, "url": {{ "/services/" | append: s.slug | append: "/" | absolute_url | jsonify }} } }{% unless forloop.last %},{% endunless %}
+{%- endfor %}
+      ],
       "alumniOf": { "@type": "CollegeOrUniversity", "name": "SAU" },
       "hasCredential": {
         "@type": "EducationalOccupationalCredential",
@@ -110,6 +115,7 @@ description: "Mohammad Ali Jesar (mjesar): Senior Software Engineer specializing
   <p>I help businesses turn ideas into working products, improve existing applications, and automate repetitive processes. My work includes AI agents, MCP servers, RAG, and LLM integrations that connect models to real application data and business tools. Each one gets only the permissions it needs, and a person approves the actions that matter.</p>
   <p>My approach is results-first: agree on the outcome, define the scope, and work toward it in small, reviewable steps. This is the idea behind Results as a Service: the work is measured by what the software achieves for you.</p>
   <p>I use AI tools to work faster, and I review, test and take responsibility for every change that ships.</p>
+  <p>I also help online stores and brands get found and described correctly by AI assistants such as ChatGPT, Perplexity and Google AI (GEO and AEO). I built <a href="/projects/product_geo_agent/">product_geo_agent</a>, an AI agent that scores how discoverable a Shopify product is to AI shopping assistants, and I apply the same checks to this website.</p>
   <p>My e-commerce experience includes contributions to published apps used by merchants, catalog and order integrations, and marketplace connections. I have also built management MVPs for clients in real estate and furniture.</p>
   <p>I am based in Lahore, Pakistan, and hold a BS-IT (Hons) degree, equivalent to 16 years of education.</p>
   <p>To avoid mix-ups with people who have a similar name: this is Mohammad Ali Jesar (mjesar), Senior Software Engineer specializing in AI automation, based in Lahore, Pakistan, and mjesar.github.io is my official website.</p>
@@ -131,17 +137,17 @@ description: "Mohammad Ali Jesar (mjesar): Senior Software Engineer specializing
   <p><a class="more" href="/projects/">All projects and open-source work</a></p>
 </section>
 
-<section id="skills">
-  <h2>What I work on</h2>
+<section id="services">
+  <h2>Services</h2>
   <ul>
     <li><a href="/services/rails-development/">Full-stack Ruby on Rails development</a>: new apps and MVPs, and features and fixes in apps already in production.</li>
     <li><a href="/services/ai-in-rails/">AI engineering and integration</a>: agentic AI, workflow automation, MCP servers, RAG and AI agents that work with your real data.</li>
     <li><a href="/services/shopify-development/">Shopify, BigCommerce and e-commerce</a>: apps, checkout customization and data sync across stores and marketplaces.</li>
-    <li><a href="/services/ai-discoverability/">AI discoverability for brands and online stores</a>: getting found and described correctly by ChatGPT, Perplexity and Google AI.</li>
+    <li><a href="/services/ai-discoverability/">AI discoverability for brands and online stores (GEO and AEO)</a>: getting found and described correctly by ChatGPT, Perplexity and Google AI.</li>
   </ul>
   <p>Who I work with: product teams, agencies, founders and store owners.</p>
   {%- assign cheapest_plan = site.data.ai_plans | sort: "price" | first -%}
-  <p><a href="/services/ai-discoverability/">AI discoverability audits from ${{ cheapest_plan.price }}</a>: find out what ChatGPT, Perplexity and Google AI can and cannot see about your store or brand.</p>
+  <p><a href="/services/ai-discoverability/">AI discoverability audits from ${{ cheapest_plan.price }}</a>: find out what ChatGPT, Perplexity and Google AI can and cannot see about your store or brand. See a <a href="/services/ai-discoverability/sample-report/">sample report</a>, or read <a href="/writing/why-shopify-products-do-not-show-up-in-chatgpt/">why Shopify products do not show up in ChatGPT</a> and <a href="/writing/should-i-block-gptbot-in-robots-txt/">whether to block GPTBot</a>.</p>
   <p><a class="more" href="/services/">Services, pricing and how I work</a></p>
 </section>
 
@@ -181,5 +187,7 @@ description: "Mohammad Ali Jesar (mjesar): Senior Software Engineer specializing
   <p>Available now, and I usually reply within a few hours. Tell me whether you want a full-time hire, a contract, or a project.</p>
   <p><a class="btn primary" data-ga-location="contact" href="{% include mailto.html contact="project_contact" %}">Email me</a></p>
 </section>
+
+<p class="muted">Last updated <time datetime="{{ site.facts_updated | date: '%Y-%m-%d' }}">{{ site.facts_updated | date: "%-d %B %Y" }}</time></p>
 
 </main>
