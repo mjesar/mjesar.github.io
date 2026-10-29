@@ -33,7 +33,7 @@ description: "Mohammad Ali Jesar (mjesar), Senior Software Engineer specializing
       "seeks": { "@type": "Demand", "name": "Remote full-time roles, contracts and project work in software engineering, AI automation and Ruby on Rails" },
       "makesOffer": [
 {%- for s in site.data.services %}
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": {{ s.name | jsonify }}, "serviceType": {{ s.service_type | default: s.name | jsonify }}, "description": {{ s.summary | jsonify }}, "url": {{ "/services/" | append: s.slug | append: "/" | absolute_url | jsonify }} } }{% unless forloop.last %},{% endunless %}
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "@id": {{ "/services/" | append: s.slug | append: "/#service" | absolute_url | jsonify }}, "name": {{ s.name | jsonify }}, "serviceType": {{ s.service_type | default: s.name | jsonify }}, "description": {{ s.summary | jsonify }}, "url": {{ "/services/" | append: s.slug | append: "/" | absolute_url | jsonify }} } }{% unless forloop.last %},{% endunless %}
 {%- endfor %}
       ],
       "alumniOf": { "@type": "CollegeOrUniversity", "name": "SAU" },
