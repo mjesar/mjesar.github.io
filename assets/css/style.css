@@ -519,6 +519,10 @@ html { scroll-padding-top: 84px; }
 a, .btn, .theme-toggle, .consent-btn { transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease; }
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
 .site-header :focus-visible, .hero :focus-visible { outline-color: var(--apricot); }
+/* Skip link: off screen until a keyboard user tabs to it, then above the sticky header */
+.skip-link { position: absolute; left: 12px; top: -48px; z-index: 100; padding: 8px 14px; border-radius: 4px; background: var(--apricot); color: var(--indigo); font-weight: 600; text-decoration: none; }
+.skip-link:focus { top: 12px; }
+.skip-link:focus-visible { outline-color: var(--indigo); }
 .btn:hover { transform: translateY(-1px); }
 .btn.primary:hover { background: #f8a273; border-color: #f8a273; }
 .btn:active, .theme-toggle:active, .consent-btn:active { transform: translateY(1px) scale(0.98); }
