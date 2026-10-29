@@ -4,8 +4,11 @@
 {% include head.html %}
 </head>
 <body>
+<a class="skip-link" href="#content">Skip to content</a>
 {% include header.html %}
+<div id="content">
 {{ content }}
+</div>
 {% include footer.html %}
 <script src="/assets/js/motion.js?v={{ site.time | date: '%s' }}" defer></script>
 <script src="/assets/js/llama.js?v={{ site.time | date: '%s' }}" defer></script>
