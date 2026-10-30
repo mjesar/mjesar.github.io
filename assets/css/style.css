@@ -103,6 +103,8 @@ main p, main li { max-width: 65ch; }
 .hero.small h1.long { font-size: clamp(1.4rem, 4vw, 2.5rem); }
 .hero .lede { font-size: clamp(1.05rem, 2.6vw, var(--fs-lead)); color: #a9b2c8; margin: 0 0 8px; max-width: 65ch; text-wrap: pretty; }
 .hero .meta { color: #a9b2c8; margin: 0; font-size: var(--fs-label); }
+.hero .meta a { color: inherit; text-underline-offset: 3px; }
+.hero .meta a:hover { color: var(--apricot); }
 .hero .links { margin-top: 24px; }
 .hero .meta:last-child { margin-bottom: 0; }
 

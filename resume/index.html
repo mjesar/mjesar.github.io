@@ -1,5 +1,7 @@
 ---
 title: "Resume: Senior Software Engineer, AI Automation, Ruby on Rails"
+# Claude artifact with the same resume and a chat box; linked from the hero button.
+resume_chat_url: "https://claude.ai/artifact/TQoJitx7ysyNJm8tfCWqMg"
 ask_ai_question: "Read https://mjesar.github.io/resume/ and summarize Ali Jesar's work experience and technical skills."
 description: "Resume of Mohammad Ali Jesar, senior software engineer in AI automation: 7+ years of Ruby on Rails, AI agents, MCP, GEO and AEO, and Shopify apps."
 jsonld:
@@ -22,10 +24,10 @@ jsonld:
       <h1>Mohammad Ali Jesar</h1>
     </div>
     <p class="lede">Senior Software Engineer specializing in AI automation. I build AI agents in Ruby on Rails that work with real business data.</p>
-    <p class="meta">Lahore, Pakistan · mohammadalijaisar@gmail.com<span class="print-only"> · mjesar.github.io</span> · github.com/mjesar · linkedin.com/in/mjesar</p>
+    <p class="meta">Lahore, Pakistan · <a data-ga-location="hero" href="{% include mailto.html contact="hiring_contact" %}">mohammadalijaisar@gmail.com</a><span class="print-only"> · mjesar.github.io</span> · github.com/mjesar · linkedin.com/in/mjesar</p>
     <ul class="links no-print">
       <li><a class="btn primary" href="/resume/mohammad-ali-jesar-resume.pdf" download>Download PDF</a></li>
-      <li><a class="btn" data-ga-location="hero" href="{% include mailto.html contact="hiring_contact" %}">Email me</a></li>
+      <li><a class="btn" href="{{ page.resume_chat_url }}" target="_blank" rel="noopener noreferrer">Chat with my resume in Claude</a></li>
     </ul>
   </div>
 </div>
