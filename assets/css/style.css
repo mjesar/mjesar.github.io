@@ -171,11 +171,16 @@ dl.faq dd { margin: 4px 0 0; }
   main section { padding: 0; }
   .resume h2 { font-size: 12pt; margin: 14px 0 6px; padding-bottom: 2px; }
   .resume h3 { font-size: 10.5pt; margin: 0; }
-  .resume .job { margin-bottom: 8px; break-inside: avoid; }
+  /* Paper is wider than a comfortable screen line, so use the full width. Long jobs may
+     split between bullets; a title stays with its first lines. */
+  main p, main li, .hero .lede { max-width: none; }
+  .resume .job { margin-bottom: 8px; }
+  .resume h3, .resume .job > .muted { break-after: avoid; }
   .resume ul { margin: 4px 0; }
-  .resume li { margin-bottom: 1px; }
+  .resume li { margin-bottom: 1px; break-inside: avoid; }
   .resume p { margin: 2px 0; }
 }
+@page { size: A4; margin: 14mm 15mm; }
 
 /* Fraunces (SIL Open Font License 1.1), self-hosted Latin subset; one variable file covers weights 500 to 700 */
 @font-face {
