@@ -113,7 +113,7 @@ test("tool data matches the site's facts", async () => {
   const { registered } = await registerTools();
   const run = (name) => registered.find((t) => t.name === name).execute({}, {});
   const resume = await run("get_resume_summary");
-  assert.equal(resume.education, "BS-IT (Software), Hons, 16 years of education");
+  assert.equal(resume.education, "BS-IT (Software), Hons, SAU (HEC Pakistan), 16 years of education");
   assert.ok(resume.work_history.length > 0 && resume.profiles.length > 0);
   const { pricing } = await run("get_services");
   const table = read("services/index.html").match(/<h2 id="pricing">[\s\S]*?<\/table>/)[0];

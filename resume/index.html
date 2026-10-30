@@ -1,7 +1,7 @@
 ---
 title: "Resume: Senior Ruby on Rails & AI Engineer"
 ask_ai_question: "Read https://mjesar.github.io/resume/ and summarize Ali Jesar's work experience and technical skills."
-description: "Resume of Mohammad Ali Jesar, senior Ruby on Rails engineer specializing in AI integration: 7+ years of production Rails, Shopify and e-commerce, MCP and RAG."
+description: "Resume of Mohammad Ali Jesar, senior software engineer specializing in AI automation with Ruby on Rails: 7+ years of production software, Shopify and e-commerce, AI agents, MCP and RAG."
 jsonld:
   "@context": https://schema.org
   "@type": ProfilePage
@@ -20,7 +20,7 @@ jsonld:
       <img class="avatar no-print" src="/assets/img/mohammad-ali-jesar.webp" srcset="/assets/img/mohammad-ali-jesar-208.webp 208w, /assets/img/mohammad-ali-jesar.webp 400w" sizes="(max-width: 760px) 72px, 104px" width="400" height="400" alt="Portrait of Mohammad Ali Jesar, senior Ruby on Rails engineer, in glasses and a pink shirt">
       <h1>Mohammad Ali Jesar</h1>
     </div>
-    <p class="lede">Senior Ruby on Rails Engineer specializing in AI integration, with 4+ years in Shopify and e-commerce.</p>
+    <p class="lede">Senior Software Engineer specializing in AI automation. I build AI agents in Ruby on Rails that work with real business data.</p>
     <p class="meta">Lahore, Pakistan · mohammadalijaisar@gmail.com · mjesar.github.io · github.com/mjesar · linkedin.com/in/mjesar</p>
     <ul class="links no-print">
       <li><a class="btn primary" href="/resume/mohammad-ali-jesar-resume.pdf" download>Download PDF</a></li>
@@ -35,30 +35,32 @@ jsonld:
 
 <section>
   <h2>Summary</h2>
-  <p>Senior Ruby on Rails engineer specializing in AI integration, with 7+ years of experience building production software for clients in the US and Germany, 4+ of them specialized in Shopify and e-commerce. Contributed, as part of a team, to five apps on the Shopify App Store (three also on BigCommerce), from architecture through App Store publishing and merchant support. Strong in Rails architecture, Sidekiq background processing, and catalog and order synchronization. Now building AI features on the same stack: MCP servers that expose application data to LLM agents, RAG on PostgreSQL with pgvector, and agents with evals and human approval. Three merged pull requests in the little_ghost Ruby AI agent framework.</p>
+  <p>Senior software engineer specializing in AI automation, with Ruby on Rails as the core stack and 7+ years of experience building production software for clients in the US and Germany, 4+ of them on Shopify and e-commerce. As part of a team, published apps on the Shopify and BigCommerce app stores. Now building AI agents and LLM integrations that connect models to real application data and business tools, with only the permissions they need, evals, and human approval for the actions that matter.</p>
 </section>
 
 <section>
   <h2>Skills</h2>
   <ul>
     <li><strong>Backend:</strong> Ruby on Rails, service objects, RESTful and GraphQL APIs, Sidekiq, Solid Queue, Redis</li>
-    <li><strong>AI and LLM integration:</strong> agentic AI, workflow automation with n8n, MCP servers (tools, resources, prompts, JSON Schema validation, read-only and destructive annotations), WebMCP tools for browser AI agents, an MCP client over JSON-RPC 2.0, RAG with pgvector and Voyage AI, tool calling, agent loops, evals, RubyLLM, Claude, OpenAI and Gemini APIs</li>
-    <li><strong>Shopify:</strong> Shopify CLI, Shopify Functions (Scripts-to-Functions migration for discount, delivery and payment customizations), Checkout UI Extensions and Checkout Extensibility, Shopify Plus B2B, Theme App Extensions, Liquid, Polaris and App Bridge, Admin and Storefront APIs, webhooks, App Store publishing</li>
-    <li><strong>E-commerce platforms:</strong> BigCommerce apps (Catalog, Orders and Checkout APIs), Amazon SP-API</li>
+    <li><strong>AI and LLM integration:</strong> agentic AI, workflow automation with n8n, MCP servers (tools, resources, prompts, JSON Schema validation, read-only and destructive annotations), WebMCP tools for browser AI agents, an MCP client over JSON-RPC 2.0, RAG with pgvector and Voyage AI, tool calling, agent loops, evals, RubyLLM, Claude, OpenAI and Gemini APIs, AI search visibility (GEO and AEO)</li>
     <li><strong>Frontend:</strong> React, JavaScript, TypeScript, Hotwire (Turbo, Stimulus), esbuild, HTML and CSS</li>
     <li><strong>Data:</strong> PostgreSQL, pgvector, SQLite, MongoDB (Mongoid), Redis</li>
     <li><strong>Practices and DevOps:</strong> RSpec, code review, branch and pull request workflow, CI, AWS, Heroku, Google Cloud, Docker</li>
+    <li><strong>Shopify:</strong> Shopify CLI, Shopify Functions (Scripts-to-Functions migration for discount, delivery and payment customizations), Checkout UI Extensions and Checkout Extensibility, Shopify Plus B2B, Theme App Extensions, Liquid, Polaris and App Bridge, Admin and Storefront APIs, webhooks, App Store publishing</li>
+    <li><strong>E-commerce platforms:</strong> BigCommerce apps (Catalog, Orders and Checkout APIs), Amazon SP-API</li>
   </ul>
 </section>
 
 <section>
   <h2>Experience</h2>
   <div class="job">
-    <h3>Software Engineer, AI and automation, Independent</h3>
+    <h3>Software Engineer, AI and automation, Independent (open source)</h3>
     <p class="muted">June 2026 to now · Remote</p>
     <ul>
-      <li>Freelance and open-source work on AI that works with real business data, shown in the projects below: shop_mcp_server, ai_shop_assistant and product_geo_agent.</li>
-      <li>Three merged pull requests to little_ghost, a Ruby AI agent framework, released in 0.11.0.</li>
+      <li>Building AI agents and practices for AI search visibility (GEO and AEO), so websites and brands get found and recommended by AI assistants like Google AI and ChatGPT. Methods include llms.txt, schema.org structured data and WebMCP tools. Built product_geo_agent, which checks whether AI assistants recommend a product, scores it and lists what to fix, with steady scores across 5 eval runs.</li>
+      <li>Contributed three bug fixes to little_ghost, an open-source Ruby AI agent framework. All were reviewed and merged by its maintainers and released in 0.11.0.</li>
+      <li>Built shop_mcp_server, an MCP server that gives AI agents safe access to business data (products, orders and inventory): 7 tools, approval-gated writes and an RSpec suite.</li>
+      <li>Building support_engineer, an AI customer support agent in Rails 8.1 that looks up orders and shipments, tested on a public dataset of about 99,000 orders.</li>
     </ul>
   </div>
   <div class="job">
@@ -66,11 +68,12 @@ jsonld:
     <p class="muted">December 2021 to June 2026 · Remote, US clients</p>
     <ul>
       <li>Designed, built and maintained Shopify and BigCommerce apps with Ruby on Rails and React for furniture and retail merchants.</li>
-      <li>Contributed to five published Shopify apps (three also on BigCommerce) covering catalog and order sync, SEO and JSON-LD schema, geolocation redirects and order-fraud prevention.</li>
+      <li>Contributed to published Shopify and BigCommerce apps covering catalog and order sync, SEO and JSON-LD schema, geolocation redirects and order-fraud prevention.</li>
       <li>Built Amazon SP-API integrations for product listings, variants and image uploads, automating previously manual work.</li>
       <li>Designed Sidekiq background processing for synchronization and long-running jobs, with retries and reliability in mind.</li>
       <li>Handled deployment, versioning and releases to the Shopify and BigCommerce app stores, including platform compliance and post-release support.</li>
       <li>Diagnosed production issues across app code, DNS and email delivery, and supported merchants directly through to resolution.</li>
+      <li>Worked daily with US clients in e-commerce, medical and furniture, and gave technical input on proposals for Virginia state government projects.</li>
       <li>Wrote RSpec tests and took part in architecture decisions and code reviews.</li>
     </ul>
   </div>
@@ -118,7 +121,7 @@ jsonld:
 <section>
   <h2>Education</h2>
   <div class="job">
-    <h3>BS-IT (Software), Hons, 2017</h3>
+    <h3>BS-IT (Software), Hons, SAU (HEC Pakistan), 2017</h3>
     <p class="muted">Equivalent to 16 years of education</p>
   </div>
 </section>
