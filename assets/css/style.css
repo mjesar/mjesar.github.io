@@ -103,6 +103,8 @@ main p, main li { max-width: 65ch; }
 .hero.small h1.long { font-size: clamp(1.4rem, 4vw, 2.5rem); }
 .hero .lede { font-size: clamp(1.05rem, 2.6vw, var(--fs-lead)); color: #a9b2c8; margin: 0 0 8px; max-width: 65ch; text-wrap: pretty; }
 .hero .meta { color: #a9b2c8; margin: 0; font-size: var(--fs-label); }
+.hero .meta a { color: inherit; text-underline-offset: 3px; }
+.hero .meta a:hover { color: var(--apricot); }
 .hero .links { margin-top: 24px; }
 .hero .meta:last-child { margin-bottom: 0; }
 
@@ -171,11 +173,19 @@ dl.faq dd { margin: 4px 0 0; }
   main section { padding: 0; }
   .resume h2 { font-size: 12pt; margin: 14px 0 6px; padding-bottom: 2px; }
   .resume h3 { font-size: 10.5pt; margin: 0; }
-  .resume .job { margin-bottom: 8px; break-inside: avoid; }
+  /* Paper is wider than a comfortable screen line, so use the full width. Long jobs may
+     split between bullets; a title stays with its first lines. */
+  main p, main li, .hero .lede { max-width: none; }
+  .resume .job { margin-bottom: 8px; }
+  .resume h3, .resume .job > .muted { break-after: avoid; }
   .resume ul { margin: 4px 0; }
-  .resume li { margin-bottom: 1px; }
+  .resume li { margin-bottom: 1px; break-inside: avoid; }
   .resume p { margin: 2px 0; }
 }
+@page { size: A4; margin: 14mm 15mm; }
+/* Shown only on paper and in the PDF, e.g. the site's own address on the resume */
+.print-only { display: none; }
+@media print { .print-only { display: inline; } }
 
 /* Fraunces (SIL Open Font License 1.1), self-hosted Latin subset; one variable file covers weights 500 to 700 */
 @font-face {
