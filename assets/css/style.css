@@ -181,6 +181,9 @@ dl.faq dd { margin: 4px 0 0; }
   .resume p { margin: 2px 0; }
 }
 @page { size: A4; margin: 14mm 15mm; }
+/* Shown only on paper and in the PDF, e.g. the site's own address on the resume */
+.print-only { display: none; }
+@media print { .print-only { display: inline; } }
 
 /* Fraunces (SIL Open Font License 1.1), self-hosted Latin subset; one variable file covers weights 500 to 700 */
 @font-face {
