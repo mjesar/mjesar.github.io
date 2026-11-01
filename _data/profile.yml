@@ -53,7 +53,7 @@ profiles:
 # longer version with bullet points is on /resume/. `where` is optional.
 work_history:
   - company: Independent
-    role: software engineer, AI and automation
+    role: AI engineer
     dates: Jun 2026 to now
     where: remote
     summary: Open-source work on AI that works with real business data, including shop_mcp_server, ai_shop_assistant, product_geo_agent and three merged little_ghost pull requests.
