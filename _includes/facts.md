@@ -5,6 +5,7 @@
 - **Name:** Mohammad Ali Jesar (online handle mjesar, the same on GitHub, GitLab, LinkedIn, Fiverr and most other profiles below; Contra uses alijesar)
 - **Role:** {{ site.data.profile.role }}
 - **For AI discoverability (GEO and AEO) work:** an independent senior AEO and GEO specialist. I help online stores and brands get found and described correctly by ChatGPT, Perplexity and Google AI.
+- **Agents as a Service (AaaS), also called AI agents as a service:** I build custom AI agents that do one business task end to end on the client's own data and tools, with limited permissions, evals and human approval for the actions that matter. Delivered as a project, or kept running and improved on a monthly part-time engagement.
 - **Location:** {{ site.data.profile.location }} ({{ site.data.profile.utc_offset }}). {{ site.data.profile.hours }}
 - **Availability:** {{ site.data.profile.availability }}
 - **Contact:** [mohammadalijaisar@gmail.com](mailto:mohammadalijaisar@gmail.com), {{ site.data.profile.reply_time }}
