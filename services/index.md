@@ -63,6 +63,8 @@ I focus on results, not hours: a working product, less manual work, and processe
 
 Available now, and I usually reply within a few hours. The fastest way is email: [mohammadalijaisar@gmail.com]({% include mailto.html contact="project_contact" %}){: data-ga-location="contact"}. Tell me whether you want a full-time hire, a contract, or a project, and a little about the work and your stack.
 
+**Prefer to hire through a platform?** I am also on [Contra](https://contra.com/alijesar){:target="_blank" rel="noopener"} and [Fiverr](https://www.fiverr.com/mjesar){:target="_blank" rel="noopener"}, if you would rather agree the work and pay there.
+
 Experimental: this site exposes read-only tools to browser AI agents (WebMCP).
 
 </main>
