@@ -3,6 +3,8 @@ title: "Rails 8.1.4.1 security update: what it fixes, and what it cannot"
 seo_title: "Rails 8.1.4.1 security update and securing Rails AI apps"
 description: "Rails 8.1.4.1 fixes 21 security issues and Rails 8.0 support has ended. What the update fixes, how to apply it, and what it cannot fix in your own app."
 ask_ai_question: "Read https://mjesar.github.io/writing/rails-security-update-what-it-fixes-and-what-it-cannot/ and tell me what I should check in my Rails app."
+image: /assets/img/og/rails-security-update.png
+image_alt: "Preview card for the article Rails 8.1.4.1 security update: what it fixes, and what it cannot. A panel shows that the update fixes Rails itself, while the app's own code still needs a login, users seeing only their own data, and escaped AI output. mjesar, mjesar.github.io"
 related_projects: [shop_mcp_server, ai_shop_assistant, product_geo_agent]
 related_services: [rails-development, ai-in-rails]
 faq:
