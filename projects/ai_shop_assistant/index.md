@@ -65,8 +65,8 @@ It is the same tool calling pattern behind the shopping features in ChatGPT, Per
 
 - **One tool, not many.** The point was to see the model choose when to search, so the tool surface stays minimal.
 - **MongoDB for chats.** Chats and messages are Mongoid documents, so RubyLLM's ActiveRecord-only `acts_as_chat` could not be used and persistence is written by hand.
-- **Stubbed specs.** All 14 specs stub RubyLLM and HTTP, so they are fast and never spend API quota. Live behavior is checked by running the app.
+- **Stubbed specs.** The specs stub RubyLLM and HTTP, so they are fast and never spend API quota. Live behavior is checked by running the app.
 
 ## Status
 
-Works end to end: chat, live catalog search and streamed replies. It is a learning and portfolio project. It only searches (no cart or checkout) and returns at most three products per search.
+Works end to end: chat, live catalog search and streamed replies. It is a learning and portfolio project. It only searches (no cart or checkout) and returns at most three products per search. AI replies are escaped before they reach the browser, a Content Security Policy blocks inline scripts, each chat is tied to the browser that started it, and new chats and messages are rate limited per IP.
