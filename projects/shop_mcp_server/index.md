@@ -84,4 +84,4 @@ The lesson I took from both is to trust running code over docs and tutorials.
 
 ## Status
 
-A working learning project, not production software. Sessions are in memory (single process), there is no authentication, and semantic search has been checked by hand but has no specs yet. The full list of limitations is in the [README](https://github.com/mjesar/shop_mcp_server#status).
+A working learning project, not production software. Sessions are in memory (single process). `/mcp` needs a shared bearer token, and the app will not start without one when it can be reached from outside, but there are no per-user accounts or rate limits yet. Semantic search has been checked by hand but has no specs yet. The full list of limitations is in the [README](https://github.com/mjesar/shop_mcp_server#status).
