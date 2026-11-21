@@ -48,3 +48,39 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+
+  # Tells Bing (and the other IndexNow search engines: Yandex, Naver, Seznam) that the
+  # site changed, so new and edited pages get crawled within minutes instead of days.
+  # Bing also feeds ChatGPT search and Copilot. The key file in the site root proves
+  # we own the site. The site is small, so every sitemap URL is sent on each deploy.
+  # A failed ping never fails the deploy, the site is already live by this point.
+  indexnow:
+    needs: deploy
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    env:
+      HOST: mjesar.github.io
+      KEY: ba634571c4044f1d544442abc92dbe6c
+    steps:
+      - name: Wait for the new deploy to serve the key file
+        run: |
+          for i in $(seq 1 20); do
+            if [ "$(curl -fsS "https://$HOST/$KEY.txt" 2>/dev/null)" = "$KEY" ]; then
+              echo "key file is live"; exit 0
+            fi
+            sleep 15
+          done
+          echo "key file not live after 5 minutes"; exit 1
+      - name: Send sitemap URLs to IndexNow
+        run: |
+          urls=$(curl -fsS "https://$HOST/sitemap.xml" | grep -o '<loc>[^<]*</loc>' | sed 's/<[^>]*>//g')
+          echo "$urls" | wc -l | xargs echo "URLs found:"
+          payload=$(jq -n --arg host "$HOST" --arg key "$KEY" \
+            --arg loc "https://$HOST/$KEY.txt" --arg urls "$urls" \
+            '{host: $host, key: $key, keyLocation: $loc, urlList: ($urls | split("\n") | map(select(length > 0)))}')
+          status=$(curl -sS -o /tmp/indexnow.txt -w '%{http_code}' -X POST \
+            -H 'Content-Type: application/json; charset=utf-8' \
+            --data "$payload" https://api.indexnow.org/indexnow)
+          echo "IndexNow answered HTTP $status"; cat /tmp/indexnow.txt
+          # 200 = accepted, 202 = accepted while the key is being checked
+          [ "$status" = "200" ] || [ "$status" = "202" ]
