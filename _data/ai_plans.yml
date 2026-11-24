@@ -29,6 +29,7 @@
     - Structured data for products or your brand
     - Product or brand data cleanup (up to 50 products)
     - An llms.txt file
+    - "Your ChatGPT business profile: domain check, business details, photos and its AI agent, set up or improved"
 - id: complete
   name: Complete
   price: 1200
@@ -39,6 +40,7 @@
     - Everything in Fix
     - A before-and-after test on 20 buyer questions
     - FAQ content
+    - A test of your ChatGPT business agent's answers, with fixes for anything wrong or missing
     # DRAFT wording, confirm
     - "14 days of follow-up after the fixes: your questions by email, and corrections to any of my changes"
 - id: monthly-monitor

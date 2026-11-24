@@ -1,7 +1,7 @@
 ---
 title: "Now: Open to Remote Rails and AI Work"
 description: "What Mohammad Ali Jesar is working on right now: open to remote Rails and AI roles and freelance projects, plus current open-source builds."
-updated: 2026-10-14
+updated: 2026-11-25
 ---
 <div class="hero small">
   <div class="wrap">
@@ -22,10 +22,12 @@ I am currently open to client projects, freelance work and remote full-time role
 
 ## Building
 
-- **[support_engineer](/projects/support_engineer/):** a Rails AI support agent I am building from scratch and documenting across 14 lessons, from importing data and making the first LLM call to building tools the agent can use. Lessons 1 to 3 are complete, and the agent loop is next.
+- **[store_ai_crew](/projects/store_ai_crew/):** my main project. An AI team for a Shopify store that finds where it is losing sales, drafts the fix and waits for the owner's approval. Self-hosted n8n is the backbone and Rails agents do the AI work. Phase 1, the n8n workflow backbone (Shopify webhooks, signature checks, alerts on Slack, failure handling), is nearly done, and I am moving it to a server now.
+- **[support_engineer](/projects/support_engineer/):** a Rails AI support agent I am building from scratch and documenting across 14 lessons. Lessons 1 to 4 are complete, including a hand-written agent loop. It is paused while store_ai_crew comes first.
 
 ## Research and learning
 
+- **Workflow automation with n8n:** reliable webhooks, retries, approvals and alerts, with AI agents doing the steps that need judgment.
 - **Reliable AI agents:** evaluation, observability and human approval for actions that need it.
 - **AI shopping:** how AI shopping assistants discover and recommend products, and how online stores can improve their visibility through GEO and AEO.
 

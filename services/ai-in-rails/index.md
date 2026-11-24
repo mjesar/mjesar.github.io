@@ -21,7 +21,7 @@ faq:
   - q: "Our AI team works in Python. Can you still help?"
     a: "Yes. I can integrate Python-based AI services with Rails through APIs, background jobs and, where it fits the use case, MCP. The goal is to connect your existing AI work to the application without duplicating it."
   - q: "Do you work with n8n?"
-    a: "Yes. I build workflows in n8n and connect them to Rails through webhooks and APIs, using MCP where it fits, and keep complex business rules and application-specific logic in Rails code."
+    a: "Yes. I build workflows in n8n and connect them to Rails through webhooks and APIs, using MCP where it fits, and keep complex business rules and application-specific logic in Rails code. My current project, store_ai_crew, runs on self-hosted n8n: Shopify webhooks with signature checks, no duplicate alerts, retries and Slack alerts when something fails."
   - q: "Which AI models and providers do you work with?"
     a: "I work with Claude, OpenAI and Gemini through RubyLLM, and with Voyage AI for embeddings. The best choice depends on your use case, data, evaluation results, cost and latency requirements."
 ---
@@ -47,7 +47,7 @@ Companies hiring an AI engineer with Rails, CTOs and product teams with a Rails 
 - **RAG** (retrieval-augmented generation): search by meaning instead of exact words, with pgvector in the PostgreSQL database you already have.
 - **AI agents that use your app's tools**: each tool does one job, checks its inputs and only has the permissions it needs. Exact numbers, such as totals and scores, are calculated in plain Ruby.
 - **Evaluation and tracing**: repeatable test runs with expected answers, and a record of every step the agent took.
-- **Workflow automation** in n8n or Rails, connected to your systems through APIs, webhooks and MCP.
+- **Workflow automation** in n8n or Rails, connected to your systems through APIs, webhooks and MCP. n8n handles triggers, schedules, retries and approvals; the AI work and business rules stay in tested Rails code, and important actions wait for a person's approval.
 
 ## Why build AI in Rails?
 
@@ -58,6 +58,7 @@ Your data, users, permissions and background jobs already live in your Rails app
 - **[shop_mcp_server](/projects/shop_mcp_server/)**: an MCP server in Rails 8.1 that gives Claude a store's products, orders and inventory. Six read-only tools, one approval-gated write, orders in a single transaction with rollback, and semantic search with pgvector. Tested with RSpec, MCP Inspector and Claude as a live custom connector.
 - **[ai_shop_assistant](/projects/ai_shop_assistant/)**: a Rails 8 shopping chat where the model decides when to search Shopify's live catalog over MCP, through a hand-written JSON-RPC client, so it answers with real products and prices.
 - **[product_geo_agent](/projects/product_geo_agent/)**: an AI agent with five tools that it chooses between. The model judges and Ruby computes the score, so the same facts always give the same number. It has an eval harness and a live trace.
+- **[store_ai_crew](/projects/store_ai_crew/)** (in progress): an AI team for a Shopify store on self-hosted n8n. Shopify webhooks are signature-checked, repeat deliveries are dropped, failures retry and alert on Slack, and the workflows can be rebuilt from the repo. AI agents that draft fixes for the owner to approve come next.
 - **[support_engineer](/projects/support_engineer/)** (in progress): an AI support agent built around human approval for refunds, returns and cancellations, with planted test cases that have known correct answers.
 - **[little_ghost](/projects/#open-source)**: three merged pull requests fixing bugs in this open-source Ruby AI agent framework, found while building product_geo_agent.
 

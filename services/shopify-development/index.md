@@ -71,6 +71,7 @@ Store owners (merchants) on Shopify or BigCommerce, Shopify app companies, and a
 - **An Amazon import and sync system** on SP-API that keeps listings, variants and images in step between Amazon and e-commerce stores (client work, not public).
 - **4+ years building Shopify and BigCommerce apps** in Rails and React for US clients (MGLogics, 2021 to 2026).
 - **[ai_shop_assistant](/projects/ai_shop_assistant/)**: a shopping chat that answers from Shopify's live Catalog API over MCP, with real products, prices and links.
+- **[store_ai_crew](/projects/store_ai_crew/)** (in progress): Shopify inventory webhooks into self-hosted n8n, with signature checks, no duplicate alerts, an Admin API product lookup and a low-stock alert on Slack.
 
 ## How a project runs
 

@@ -1,3 +1,7 @@
+- slug: store_ai_crew
+  name: store_ai_crew
+  summary: An AI team for a Shopify store, in progress, on self-hosted n8n. It finds where the store is losing sales, drafts the fix and waits for the owner's approval.
+  stack: n8n · Docker · Shopify webhooks and Admin API · Cloudflare Tunnel · Slack · Rails agents (planned)
 - slug: shop_mcp_server
   name: shop_mcp_server
   summary: An MCP server in Rails that gives Claude real access to a store's products, orders and inventory, with semantic search on pgvector.
