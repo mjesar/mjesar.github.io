@@ -7,7 +7,7 @@
 - q: "How do you keep AI features safe when they use real data?"
   a: "Each AI feature gets validated tool inputs, permission checks, and access to only the data and actions it needs. Write actions can require a person's approval based on your requirements, and important business rules stay in application code instead of relying on the model alone."
 - q: "Can you automate business workflows?"
-  a: "Yes. I automate repetitive business processes, such as order handling, data entry, support triage and reporting, either in n8n or directly in Rails with background jobs, scheduled tasks and webhooks. Steps that need judgment can use AI or wait for a person's approval, and complex business rules stay in tested Rails code."
+  a: "Yes. I automate repetitive business processes, such as order handling, data entry, support triage and reporting, either in n8n or directly in Rails with background jobs, scheduled tasks and webhooks. Steps that need judgment can use AI or wait for a person's approval, and complex business rules stay in tested Rails code. You can see the approach in store_ai_crew, my n8n and Shopify automation project."
 - q: "Do you work in agile teams?"
   a: "Yes. I have worked in agile teams throughout my career, taking part in sprint planning and backlog grooming, defining project scope and estimating each task, and delivering work in small, reviewable pull requests. On freelance projects I use the same approach in short iterations, so you see working software early and can change priorities as you learn."
 - q: "Can you take over a Shopify app or integration someone else built?"
