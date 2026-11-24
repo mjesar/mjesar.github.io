@@ -38,6 +38,8 @@ faq:
     a: "Fixes can go live within days. AI tools discover and update information on their own schedule, so I cannot give a date. The Complete plan includes a re-check of the same buyer questions."
   - q: "Do I have to buy a tool?"
     a: "No. The one-time plans need nothing from you."
+  - q: "Can you set up my business profile in ChatGPT?"
+    a: "Yes, it is part of the Fix and Complete plans. I verify your domain, fill in your business details and photos so they pass review, and set up or improve your ChatGPT business agent: its description, its instructions and what it knows about your business. In Complete, I also test the agent's answers and fix anything wrong or missing. The identity check is done by you with your own ID, and I guide you through it. ChatGPT decides when to show a profile, so this makes your business clear to ChatGPT but cannot guarantee it is recommended."
   - q: "Can you help a brand that has no online store?"
     a: "Yes. I check how assistants such as ChatGPT, Gemini and Perplexity describe your brand today and which sources they rely on, fix unclear or conflicting facts across your site and profiles, and give you a prioritized list of what is left."
 ---
@@ -84,6 +86,7 @@ SEO helps people find your store on Google. GEO and AEO (generative and answer e
 - Whether your store gives AI tools clean product facts, like price, brand and availability.
 - Whether your brand facts match across your website and profiles.
 - What ChatGPT, Perplexity and Google AI say today when buyers ask about products like yours.
+- Whether your business has a verified ChatGPT business profile, and what it says about you.
 
 <details markdown="1">
 <summary>Technical details</summary>
@@ -123,6 +126,7 @@ Probably not. Trackers such as Promptwatch, Peec AI, Trakkr and HubSpot AEO ask 
 - **[Shopify and BigCommerce apps](/projects/#shopify-apps)**: I worked on apps that add structured data (JSON-LD) to stores.
 - **[This website](https://github.com/mjesar/mjesar.github.io){:target="_blank" rel="noopener"}**: the same practices on my own site, with the source code public on GitHub.
 - **[A sample report](/services/ai-discoverability/sample-report/)**: what the written report looks like, on a demo store.
+- **My own ChatGPT business profile**: verified, with its business agent published. When I first set it up, ChatGPT had read only three pages of this site and missed my prices for these plans, my experience and my email. I corrected the agent, and I am updating this site from what it missed.
 
 Open source: I also fixed three bugs in [little_ghost](/projects/#open-source), the Ruby AI agent framework product_geo_agent runs on.
 {: .muted}
