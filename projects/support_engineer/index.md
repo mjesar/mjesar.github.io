@@ -27,7 +27,7 @@ jsonld:
     url: https://mjesar.github.io/
 ---
 
-<div class="callout"><p><strong>In progress.</strong> Lessons 1 to 3 of 14 are done: real and planted data, the first LLM call, and four read tools the model chooses between. A hand-written agent loop, an MCP server, policy search, approvals and evals come next. This page marks what works today and what is planned.</p></div>
+<div class="callout"><p><strong>In progress, paused for now.</strong> Lessons 1 to 4 of 14 are done: real and planted data, the first LLM call, four read tools the model chooses between, and the agent loop written by hand. An MCP server, policy search, approvals and evals come next. It is paused while store_ai_crew comes first. This page marks what works today and what is planned.</p></div>
 
 ## The problem
 
@@ -63,6 +63,8 @@ To answer correctly, a system has to look up the order, check the shipment, find
 **Lesson 2, the first LLM call.** A `SupportAgent` built on RubyLLM answers through Groq (`openai/gpt-oss-120b`), with its system prompt in its own template file.
 
 **Lesson 3, read tools.** `get_order`, `get_shipment`, `get_customer` and `search_orders` are plain Ruby services with thin RubyLLM tool wrappers, and the agent may only call those four.
+
+**Lesson 4, the agent loop written by hand.** The loop that sends the question, runs the tool the model asks for, returns the result and repeats until the model answers, written without a framework so every step is visible. It talks to Groq through one small `LlmClient`. [Lesson notes](https://github.com/mjesar/support_engineer/blob/master/docs/lessons/04-agent-loop.md).
 
 ## What I verified
 
