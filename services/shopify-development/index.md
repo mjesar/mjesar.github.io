@@ -14,8 +14,8 @@ contact_ask: your store or app and what it needs to do
 faq:
   - q: "What is the difference between Shopify Functions and Checkout Extensibility?"
     a: "Checkout Extensibility is Shopify's broader approach to customizing checkout. Checkout UI Extensions add supported interface elements, while Shopify Functions customize supported commerce logic, such as discounts and delivery rules. They solve different problems and can be used together where appropriate."
-  - q: "Can you migrate our Shopify Scripts to Shopify Functions?"
-    a: "Yes. I review what each script does, rebuild the supported behavior with Shopify Functions, and test the new implementation against the existing behavior before switching over. The approach depends on the script and the Shopify APIs available for its use case."
+  - q: "Our Shopify Scripts stopped working. Can you rebuild them?"
+    a: "Yes. Shopify retired Scripts on June 30, 2026, so discount, shipping and payment rules that lived in Scripts no longer run. I rebuild that logic with Shopify Functions, such as discount, delivery customization and payment customization functions, and test it against how your store behaved before. Where a public app already covers a rule, I tell you, so you do not pay for code you do not need."
   - q: "Can you build B2B features on Shopify Plus?"
     a: "Yes. I work with Shopify's B2B features on Shopify Plus, such as company accounts, catalogs with custom price lists, quantity rules, volume pricing and payment terms. When the built-in features do not cover your wholesale process, I extend them with custom apps, Shopify Functions and checkout customizations."
   - q: "Shopify keeps updating its API. Can you keep our app up to date?"
@@ -35,11 +35,12 @@ Store owners (merchants) on Shopify or BigCommerce, Shopify app companies, and a
 
 - Your store needs a feature that no existing app provides.
 - Your checkout needs custom fields, rules, discounts or delivery and payment options.
-- Your discount, shipping or payment logic still lives in Shopify Scripts and needs to move to Shopify Functions.
+- Your discount, shipping or payment rules stopped working when Shopify retired Scripts, and need to be rebuilt with Shopify Functions.
 - You sell wholesale on Shopify Plus and need B2B behavior that the built-in features do not cover.
 - Products, inventory or orders get out of sync between your store and other stores, marketplaces or systems.
 - Your team spends hours on manual store work that an automated workflow could handle.
 - Your Amazon listings fall behind your store, and keeping them up to date is manual work.
+- Your products do not show up in ChatGPT, or you are not sure your store qualifies for Shopify's agentic storefronts.
 - You want AI shopping features that answer from your real catalog.
 
 ## What I build
@@ -60,8 +61,9 @@ Store owners (merchants) on Shopify or BigCommerce, Shopify app companies, and a
 ### 3. Complex commerce requirements
 
 - **Shopify Plus B2B** features for wholesale buyers.
-- **Migrations from Shopify Scripts to Shopify Functions**, tested against how each script behaved before switching over.
+- **Rebuilding retired Shopify Scripts** as Shopify Functions, tested against how your store behaved before.
 - **Shopify API version updates** for public and custom apps, including REST to GraphQL migrations.
+- **Shopify Catalog and agentic storefronts**: checking whether your store and products qualify to appear in ChatGPT and other AI channels, and fixing the product data that holds them back. See [AI discoverability](/services/ai-discoverability/).
 - **AI shopping features** on top of a store's catalog, see [AI engineering](/services/ai-in-rails/).
 - **WebMCP for stores**: checking which tools your store offers to AI agents, and adding tools for features that Shopify's built-in ones do not cover, including on Hydrogen storefronts.
 

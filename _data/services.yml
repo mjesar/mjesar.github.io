@@ -24,7 +24,7 @@
 - slug: shopify-development
   name: Shopify, BigCommerce and e-commerce
   for: store owners (merchants), Shopify app companies and agencies.
-  summary: Custom and public Shopify apps, Shopify Functions (including migrations from Shopify Scripts) and Checkout UI Extensions, Shopify Plus B2B, Theme App Extensions and Liquid, BigCommerce apps, Amazon SP-API listings, data sync with webhooks and retried background jobs, and AI shopping features on top of store catalogs.
+  summary: Custom and public Shopify apps, Shopify Functions (including rebuilding retired Shopify Scripts) and Checkout UI Extensions, Shopify Plus B2B, Theme App Extensions and Liquid, BigCommerce apps, Amazon SP-API listings, data sync with webhooks and retried background jobs, and AI shopping features on top of store catalogs.
   card_headline: Custom commerce features and reliable integrations.
   card_intro: I build the store features that existing apps do not cover, from custom apps to checkout changes and Shopify Plus B2B. I also keep products, inventory and orders in sync everywhere you sell.
   card_tools: Shopify apps · Shopify Functions · Checkout UI Extensions · Liquid · BigCommerce · Amazon SP-API · Product, inventory and order sync
