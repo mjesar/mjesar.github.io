@@ -68,7 +68,7 @@ permalink: /webmcp.json
   "pricing": {{ pricing_json }},
   "plans": {
     "currency": "USD",
-    "scope": "One store or one brand per plan.",
+    "scope": {{ site.ai_plans_scope | jsonify }},
     "guarantee": "No plan guarantees rankings, citations, traffic or AI recommendations.",
     "url": {{ "/services/ai-discoverability/#plans" | absolute_url | jsonify }},
     "items": [
