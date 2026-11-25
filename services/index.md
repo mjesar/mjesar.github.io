@@ -20,7 +20,7 @@ image: /assets/img/og/services.png
 
 <main class="wrap prose" markdown="1">
 
-With 7+ years of experience building software for international clients, I work across backend systems, full-stack applications, LLM integrations, AI agents, MCP servers, RAG and e-commerce integrations. I can help you build a new product, improve an existing Rails application, connect AI to real business data, or solve complex Shopify and e-commerce problems.
+With 7+ years of experience building software for international clients, I build AI automation, AI agents, LLM integrations, MCP servers and RAG on top of real business data, along with full-stack Ruby on Rails applications and Shopify and e-commerce integrations. I can help you connect AI to the data and processes you already have, build a new product, improve an existing Rails application, or solve complex Shopify and e-commerce problems.
 
 I focus on results, not hours: a working product, less manual work, and processes that run on their own.
 

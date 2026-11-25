@@ -3,15 +3,6 @@
 # Service structured data and llms.txt. The card_* fields are the cards on /services/;
 # card_proof is Markdown. Optional: service_type (schema.org serviceType, defaults to
 # name) and plans (name of a _data file whose plans become Offers in the structured data).
-- slug: rails-development
-  name: Full-stack Ruby on Rails development
-  for: startups, founders, CEOs, product teams and agencies.
-  summary: Helping startups launch MVPs, plus new applications, full projects and work on existing codebases, with Hotwire or React frontends and tests.
-  card_headline: Build new products. Improve existing applications.
-  card_intro: I help startups launch MVPs on Rails. For apps already in production, I add features, connect APIs, fix slow pages and handle upgrades.
-  card_tools: Ruby on Rails · PostgreSQL · Hotwire · React · APIs · Background jobs · Automated tests
-  card_proof: "7+ years of production Rails for clients in the US and Germany. [See my projects](/projects/)."
-  card_cta: Explore Rails development
 - slug: ai-in-rails
   name: AI engineering and integration
   for: companies hiring an AI engineer with Rails, CTOs, CEOs and agencies.
@@ -21,10 +12,19 @@
   card_tools: LLM integrations · AI agents · MCP servers · RAG with pgvector · Evals · Observability · Workflow automation (n8n)
   card_proof: "Working projects with MCP, RAG, tool calling and AI agent evaluation: [shop_mcp_server](/projects/shop_mcp_server/), [ai_shop_assistant](/projects/ai_shop_assistant/) and [product_geo_agent](/projects/product_geo_agent/), plus fixes merged into the [little_ghost](/projects/#open-source) Ruby gem."
   card_cta: Explore AI engineering
+- slug: rails-development
+  name: Full-stack Ruby on Rails development
+  for: startups, founders, CEOs, product teams and agencies.
+  summary: Helping startups launch MVPs, plus new applications, full projects and work on existing codebases, with Hotwire or React frontends and tests.
+  card_headline: Build new products. Improve existing applications.
+  card_intro: I help startups launch MVPs on Rails. For apps already in production, I add features, connect APIs, fix slow pages and handle upgrades.
+  card_tools: Ruby on Rails · PostgreSQL · Hotwire · React · APIs · Background jobs · Automated tests
+  card_proof: "7+ years of production Rails for clients in the US and Germany. [See my projects](/projects/)."
+  card_cta: Explore Rails development
 - slug: shopify-development
   name: Shopify, BigCommerce and e-commerce
   for: store owners (merchants), Shopify app companies and agencies.
-  summary: Custom and public Shopify apps, Shopify Functions (including migrations from Shopify Scripts) and Checkout UI Extensions, Shopify Plus B2B, Theme App Extensions and Liquid, BigCommerce apps, Amazon SP-API listings, data sync with webhooks and retried background jobs, and AI shopping features on top of store catalogs.
+  summary: Custom and public Shopify apps, Shopify Functions (including rebuilding retired Shopify Scripts) and Checkout UI Extensions, Shopify Plus B2B, Theme App Extensions and Liquid, BigCommerce apps, Amazon SP-API listings, data sync with webhooks and retried background jobs, and AI shopping features on top of store catalogs.
   card_headline: Custom commerce features and reliable integrations.
   card_intro: I build the store features that existing apps do not cover, from custom apps to checkout changes and Shopify Plus B2B. I also keep products, inventory and orders in sync everywhere you sell.
   card_tools: Shopify apps · Shopify Functions · Checkout UI Extensions · Liquid · BigCommerce · Amazon SP-API · Product, inventory and order sync

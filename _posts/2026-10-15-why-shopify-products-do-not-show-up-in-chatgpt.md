@@ -4,7 +4,10 @@ description: "Often an AI assistant cannot read enough about a product to recomm
 ask_ai_question: "Read https://mjesar.github.io/writing/why-shopify-products-do-not-show-up-in-chatgpt/ and explain why my Shopify products may not show up in ChatGPT, and how I can check my store."
 related_projects: [product_geo_agent]
 related_services: [ai-discoverability, shopify-development]
+last_modified_at: 2026-11-25
 faq:
+  - q: "Do I need to install a ChatGPT app on Shopify?"
+    a: "No. Shopify's agentic storefronts are on by default for eligible stores, and there is no separate ChatGPT sales channel to install. You manage them in your Shopify admin under Sales channels > Agentic. To be eligible, the store must sell to customers in the United States (it can be based anywhere), its products must qualify for Shopify Catalog, and its terms of service, privacy policy and refund policy must be filled in."
   - q: "Does Shopify add product structured data automatically?"
     a: "On the development store I tested, the theme added a Product block to every product page, even when the product description was empty. So a block being there is not enough. Check that it has a real description and offer details."
   - q: "Can I make ChatGPT recommend my product?"
@@ -15,6 +18,14 @@ faq:
 Often the problem is what an AI assistant can read about the product: a thin description, no answers to the questions buyers ask, incomplete structured data, or crawlers that are not allowed in.
 
 I built an AI agent, [product_geo_agent](/projects/product_geo_agent/), that checks these things on a Shopify product and scores it from 0 to 100. Here is what it found on three products, and how you can check your own store.
+
+## First, check Shopify's own route into ChatGPT
+
+*Added 25 November 2026.* Shopify now sends product data to ChatGPT and other AI channels directly, through Shopify Catalog. The feature is called agentic storefronts, and it is on by default for eligible stores, with nothing to install. A store is eligible when it sells to customers in the United States (the store itself can be based anywhere), its products qualify for Shopify Catalog, and its terms of service, privacy policy and refund policy are filled in. A buyer who picks a product in ChatGPT is sent to the store's own checkout.
+
+You can see it in your Shopify admin under **Sales channels > Agentic**, with sales, orders and sessions for each AI channel. If your store does not sell to US customers, this route does not apply, and the product page is what AI assistants read.
+
+Either way, the catalog carries the same product details as your store. A thin description is thin there too, so the checks below still matter.
 
 ## What an AI assistant needs from a product page
 
@@ -55,6 +66,7 @@ Going by where these three products lost points:
 3. **Make the structured data complete.** The `Product` block needs a real description and offer details, not just a name.
 4. **Write alt text** for product images.
 5. **Check robots.txt** so the search crawlers you want can reach your pages.
+6. **Check your Shopify Catalog eligibility** under Sales channels > Agentic, if you sell to US customers.
 
 ## What nobody can promise
 
@@ -62,9 +74,10 @@ Fixing these does not guarantee that ChatGPT, Perplexity or Google AI will recom
 
 ## How to check your own store
 
-1. **Open `yourstore.com/robots.txt`** and look for AI bot names such as OAI-SearchBot, GPTBot or PerplexityBot, and whether they are disallowed.
-2. **Read one product page as a buyer.** Write down five questions a buyer would ask, and check whether the page answers each one in text.
-3. **Run the product URL through Google's Rich Results Test** and check that the `Product` data has a description and an offer.
-4. **Ask ChatGPT or Perplexity** the question your buyer would ask, and note whether your store appears and how it is described.
+1. **Open Sales channels > Agentic** in your Shopify admin and check whether your store and products are eligible.
+2. **Open `yourstore.com/robots.txt`** and look for AI bot names such as OAI-SearchBot, GPTBot or PerplexityBot, and whether they are disallowed.
+3. **Read one product page as a buyer.** Write down five questions a buyer would ask, and check whether the page answers each one in text.
+4. **Run the product URL through Google's Rich Results Test** and check that the `Product` data has a description and an offer.
+5. **Ask ChatGPT or Perplexity** the question your buyer would ask, and note whether your store appears and how it is described.
 
 If you want this done for you, see [AI discoverability](/services/ai-discoverability/) and a [sample report](/services/ai-discoverability/sample-report/).
