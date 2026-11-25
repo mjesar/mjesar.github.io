@@ -43,10 +43,19 @@ layout: default
 </div>
 <main class="wrap prose">
 {{ content }}
+{%- unless svc.plans %}
+<h2 id="pricing">Pricing</h2>
+<ul>
+{%- for r in site.data.pricing %}
+  <li><strong>{{ r.name }}:</strong> {{ r.price }}. {{ r.terms }}</li>
+{%- endfor %}
+</ul>
+<p>All prices are in USD. Every project starts with a short call about your work. Full details are in the <a href="/services/#pricing">pricing table</a>.</p>
+{%- endunless %}
 {%- if page.faq %}{% include faq.html items=page.faq %}{% endif %}
 {% include ask-ai.html kind="service" %}
 <h2 id="contact">Contact</h2>
-<p>Available now, and I usually reply within a few hours. Email me at <a data-ga-location="contact" href="{{ mail_href }}"{% if page.contact_template %} target="_blank" rel="noopener"{% endif %}>{{ mail_address }}</a>. Tell me whether you want a full-time hire, a contract, or a project{% if page.contact_ask %}, and {{ page.contact_ask }}{% endif %}. {% if svc.plans %}Plans and prices are <a href="#plans">above</a>.{% else %}Rates are in the <a href="/services/#pricing">pricing table</a>.{% endif %}</p>
+<p>Available now, and I usually reply within a few hours. Email me at <a data-ga-location="contact" href="{{ mail_href }}"{% if page.contact_template %} target="_blank" rel="noopener"{% endif %}>{{ mail_address }}</a>. Tell me whether you want a full-time hire, a contract, or a project{% if page.contact_ask %}, and {{ page.contact_ask }}{% endif %}. {% if svc.plans %}Plans and prices are <a href="#plans">above</a>.{% else %}Rates are <a href="#pricing">above</a>.{% endif %}</p>
 <section class="no-print">
   <h2>Other services</h2>
   <div class="grid">

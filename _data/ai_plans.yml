@@ -1,4 +1,4 @@
-# AI discoverability (GEO and AEO) plans, all in USD. One store or one brand per plan.
+# AI discoverability (GEO and AEO) plans, all in USD. One store or brand, in one language, per plan (site.ai_plans_scope in _config.yml).
 # Drives the plan cards on /services/ai-discoverability/, the Offer data in its Service
 # structured data, llms.txt, llms-full.txt, /llm-info/ and /.well-known/services.json.
 # Change a price here and every one of those updates together. The price text

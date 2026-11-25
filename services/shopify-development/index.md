@@ -5,7 +5,7 @@ slug: shopify-development
 contact_template: project_contact
 secondary_cta:
   label: See pricing
-  url: /services/#pricing
+  url: "#pricing"
 title: "Shopify & BigCommerce App Development"
 description: "Custom Shopify and BigCommerce apps, Shopify Plus checkout and B2B development, and reliable product, inventory, order and marketplace integrations."
 image: /assets/img/og/shopify-development.png

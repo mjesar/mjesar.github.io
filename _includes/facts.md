@@ -24,7 +24,7 @@
 {% endfor %}
 ## AI discoverability plans (USD)
 
-One store or one brand per plan. Details: [{{ "/services/ai-discoverability/#plans" | absolute_url }}]({{ "/services/ai-discoverability/#plans" | absolute_url }})
+{{ site.ai_plans_scope }} Details: [{{ "/services/ai-discoverability/#plans" | absolute_url }}]({{ "/services/ai-discoverability/#plans" | absolute_url }})
 
 {% for p in site.data.ai_plans -%}
 - **{{ p.name }}{% if p.best_value %} (best value){% endif %}{% if p.optional %} (optional){% endif %}:** {% include price-label.html plan=p %}. {% if p.delivery %}{{ p.delivery }}. {% endif %}{{ p.summary }} Includes: {{ p.deliverables | join: "; " }}.{% if p.note %} {{ p.note }}{% endif %}

@@ -5,7 +5,7 @@ slug: ai-in-rails
 contact_template: project_contact
 secondary_cta:
   label: See pricing
-  url: /services/#pricing
+  url: "#pricing"
 title: "AI Engineer for Ruby on Rails, RAG & AI Agents"
 description: "Add AI to Ruby on Rails applications with LLM integrations, MCP servers, RAG, tool-calling AI agents and evaluation, grounded in real data. n8n workflows too."
 image: /assets/img/og/ai-in-rails.png

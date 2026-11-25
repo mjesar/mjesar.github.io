@@ -12,6 +12,7 @@ permalink: /.well-known/services.json
   "version": {{ updated | jsonify }},
   "lastUpdated": {{ updated | jsonify }},
   "currency": "USD",
+  "scope": {{ site.ai_plans_scope | jsonify }},
   "guarantee": "No guarantee of rankings, citations, traffic or AI recommendations.",
   "plans": [
 {%- for p in site.data.ai_plans %}{% capture price_label %}{% include price-label.html plan=p %}{% endcapture %}

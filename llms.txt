@@ -74,7 +74,7 @@ Pricing is monthly, hourly or fixed price (see below).
 {% endfor %}
 ## AI discoverability plans (USD)
 
-One-off plans, one store or one brand each, with no long contract. No plan guarantees rankings, citations or AI recommendations. My own tools are included; optional tracking subscriptions stay in the client's own account, with no markup.
+One-off plans with no long contract. {{ site.ai_plans_scope }} No plan guarantees rankings, citations or AI recommendations. My own tools are included; optional tracking subscriptions stay in the client's own account, with no markup.
 
 {% for p in site.data.ai_plans -%}
 - [{{ p.name }}]({{ "/services/ai-discoverability/#plan-" | append: p.id | absolute_url }}): {% include price-label.html plan=p %}. {{ p.summary }}
