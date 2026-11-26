@@ -3,7 +3,7 @@ _site/
 .sass-cache/
 
 # private notes, plans, profile exports and research (the repo is public)
-docs/
+docs
 
 # private website plan checklist
 WEBSITE_CHECKLIST.md
